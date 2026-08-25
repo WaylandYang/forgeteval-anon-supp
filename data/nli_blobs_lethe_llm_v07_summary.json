@@ -1,0 +1,60 @@
+{
+  "system": "blobs_lethe_llm_v07",
+  "n": 385,
+  "substring_pass": 344,
+  "nli_pass": 357,
+  "scorer_false_neg": 17,
+  "scorer_false_pos": 4,
+  "by_category": {
+    "substring_trap": {
+      "sub": 36,
+      "nli": 36,
+      "n": 36
+    },
+    "prefix_collision": {
+      "sub": 31,
+      "nli": 38,
+      "n": 39
+    },
+    "paraphrase_supersession": {
+      "sub": 31,
+      "nli": 37,
+      "n": 38
+    },
+    "negation_trap": {
+      "sub": 34,
+      "nli": 34,
+      "n": 40
+    },
+    "temporal_qualifier": {
+      "sub": 37,
+      "nli": 37,
+      "n": 37
+    },
+    "shared_attribute": {
+      "sub": 40,
+      "nli": 40,
+      "n": 40
+    },
+    "compound_fact": {
+      "sub": 35,
+      "nli": 33,
+      "n": 40
+    },
+    "identifier_obfuscation": {
+      "sub": 33,
+      "nli": 33,
+      "n": 38
+    },
+    "cross_lingual_identifier": {
+      "sub": 31,
+      "nli": 31,
+      "n": 38
+    },
+    "recursive_supersession": {
+      "sub": 36,
+      "nli": 38,
+      "n": 39
+    }
+  }
+}

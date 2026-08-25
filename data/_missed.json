@@ -1,0 +1,623 @@
+[
+ {
+  "id": "adv_identifier_obfuscation_01",
+  "mutations": [
+   [
+    "purge",
+    "alice@acme.io"
+   ]
+  ],
+  "setup": [
+   "Customer ALICE@ACME.IO subscribed to Plan A.",
+   "Customer alice@acme.io is the same person (case-normalized).",
+   "Office lunches are catered on Wednesdays.",
+   "Record for morgan.reyes@acme.io is active on the account.",
+   "Same record, alternate form MORGAN.REYES@ACME.IO, was verified."
+  ],
+  "must_not": [
+   "ALICE@ACME.IO subscribed",
+   "alice@acme.io is the same"
+  ],
+  "must_contain": [
+   "morgan.reyes@acme.io"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_02",
+  "mutations": [
+   [
+    "purge",
+    "bob@example.com"
+   ]
+  ],
+  "setup": [
+   "Customer bob@example.com bought 5 licenses.",
+   "Customer bob@example.com  (note trailing whitespace) is the same account.",
+   "Quarterly OKR review is in two weeks.",
+   "Record for morgan.reyes@example.com is active on the account.",
+   "Same record, alternate form MORGAN.REYES@EXAMPLE.COM, was verified."
+  ],
+  "must_not": [
+   "bob@example.com bought 5",
+   "is the same account"
+  ],
+  "must_contain": [
+   "morgan.reyes@example.com"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_03",
+  "mutations": [
+   [
+    "purge",
+    "phone 415-555-0123"
+   ]
+  ],
+  "setup": [
+   "Patient phone on file: +1-415-555-0123.",
+   "Patient phone alternate format: 415-555-0123 (no country code).",
+   "Clinic moved to a new address last month.",
+   "Record for 415-555-0198 is active on the account.",
+   "Same record, alternate form +1 415 555 0198, was verified."
+  ],
+  "must_not": [
+   "+1-415-555-0123",
+   "415-555-0123 (no country code)"
+  ],
+  "must_contain": [
+   "415-555-0198"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_06",
+  "mutations": [
+   [
+    "purge",
+    "card 4111-1111-1111-1111"
+   ]
+  ],
+  "setup": [
+   "Card on file: 4111-1111-1111-1111.",
+   "Same card, no separators: 4111111111111111.",
+   "Office holiday party will be online.",
+   "Record for QW9Z-4T2K-7HD5-3BXP is active on the account.",
+   "Same record, alternate form QW9Z4T2K7HD53BXP, was verified."
+  ],
+  "must_not": [
+   "4111-1111-1111-1111",
+   "4111111111111111"
+  ],
+  "must_contain": [
+   "QW9Z-4T2K-7HD5-3BXP"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_08",
+  "mutations": [
+   [
+    "purge",
+    "@acme-engineer contractor"
+   ]
+  ],
+  "setup": [
+   "Contractor @acme-engineer is on the access list.",
+   "Same contractor without @: acme-engineer.",
+   "All-hands is the third Friday of each month.",
+   "Record for @quinn-ops is active on the account.",
+   "Same record, alternate form quinn-ops, was verified."
+  ],
+  "must_not": [
+   "@acme-engineer is on",
+   "acme-engineer."
+  ],
+  "must_contain": [
+   "@quinn-ops"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_09",
+  "mutations": [
+   [
+    "purge",
+    "server 192.168.1.5 record"
+   ]
+  ],
+  "setup": [
+   "Server IP 192.168.001.005 hosts the staging environment.",
+   "Same server short form 192.168.1.5 (no padding) was logged.",
+   "Office WiFi password rotates monthly.",
+   "Record for 192.168.1.13 is active on the account.",
+   "Same record, alternate form 192.168.001.013, was verified."
+  ],
+  "must_not": [
+   "192.168.001.005 hosts",
+   "192.168.1.5 (no padding)"
+  ],
+  "must_contain": [
+   "192.168.1.13"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_13",
+  "mutations": [
+   [
+    "purge",
+    "Robert Smith / Bob Smith employee record"
+   ]
+  ],
+  "setup": [
+   "Robert Smith was hired on 2023-01-15.",
+   "Same employee, nickname Bob Smith, was promoted in 2024.",
+   "Annual review window opens next month.",
+   "Record for Grace Hopper is active on the account.",
+   "Same record, alternate form G. Hopper, was verified."
+  ],
+  "must_not": [
+   "Robert Smith was hired",
+   "Bob Smith, was promoted"
+  ],
+  "must_contain": [
+   "Grace Hopper"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_14",
+  "mutations": [
+   [
+    "purge",
+    "project ATLAS-2024 PRJ-ATLAS-2024 record"
+   ]
+  ],
+  "setup": [
+   "Project ID PRJ-ATLAS-2024 has 5 milestones.",
+   "Same project shortcut form ATLAS-2024 (no PRJ prefix) is in slides.",
+   "Office snacks were restocked.",
+   "Record for BOOT-TRK-19 is active on the account.",
+   "Same record, alternate form TRK-19, was verified."
+  ],
+  "must_not": [
+   "PRJ-ATLAS-2024 has 5",
+   "ATLAS-2024 (no PRJ prefix)"
+  ],
+  "must_contain": [
+   "BOOT-TRK-19"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_15",
+  "mutations": [
+   [
+    "purge",
+    "event 2025-12-25 gala"
+   ]
+  ],
+  "setup": [
+   "Event scheduled for 2025-12-25 is the company gala.",
+   "Same event in US-format: 12/25/2025 will be at the convention center.",
+   "Holiday schedule was published.",
+   "Record for 2026-03-08 is active on the account.",
+   "Same record, alternate form 03/08/2026, was verified."
+  ],
+  "must_not": [
+   "2025-12-25 is the company gala",
+   "12/25/2025 will be at"
+  ],
+  "must_contain": [
+   "2026-03-08"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_16",
+  "mutations": [
+   [
+    "purge",
+    "account 1234 / 1234-USD record"
+   ]
+  ],
+  "setup": [
+   "Account 1234-USD holds the dollar balance.",
+   "Same account 1234 (without currency suffix) appears in the ledger.",
+   "Audit was completed last quarter.",
+   "Record for 9876-EUR is active on the account.",
+   "Same record, alternate form 9876, was verified."
+  ],
+  "must_not": [
+   "1234-USD holds the dollar",
+   "1234 (without currency suffix)"
+  ],
+  "must_contain": [
+   "9876-EUR"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_19",
+  "mutations": [
+   [
+    "purge",
+    "vendor profile at acme.io/vendor"
+   ]
+  ],
+  "setup": [
+   "Customer's vendor profile is at https://www.acme.io/vendor.",
+   "Same profile, bare form: acme.io/vendor (no scheme, no www).",
+   "Vendor onboarding is finalized.",
+   "Record for https://acme.io/v2/invoices is active on the account.",
+   "Same record, alternate form acme.io/v2/invoices/, was verified."
+  ],
+  "must_not": [
+   "https://www.acme.io/vendor",
+   "acme.io/vendor (no scheme"
+  ],
+  "must_contain": [
+   "https://acme.io/v2/invoices"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_21",
+  "mutations": [
+   [
+    "purge",
+    "email charlie@gmail.com (with/without plus-tag)"
+   ]
+  ],
+  "setup": [
+   "Account holder email: charlie+work@gmail.com.",
+   "Same person, no plus-tag: charlie@gmail.com.",
+   "Promo codes expire on Sunday.",
+   "Record for morgan.reyes@gmail.com is active on the account.",
+   "Same record, alternate form MORGAN.REYES@GMAIL.COM, was verified."
+  ],
+  "must_not": [
+   "charlie+work@gmail.com.",
+   "charlie@gmail.com."
+  ],
+  "must_contain": [
+   "morgan.reyes@gmail.com"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_22",
+  "mutations": [
+   [
+    "purge",
+    "handle dora_writes (with/without @)"
+   ]
+  ],
+  "setup": [
+   "Lead writer handle: @dora_writes.",
+   "Same handle without prefix: dora_writes.",
+   "Submissions are due by EOD Friday.",
+   "Record for rowan_builds is active on the account.",
+   "Same record, alternate form @rowan_builds, was verified."
+  ],
+  "must_not": [
+   "@dora_writes.",
+   "without prefix: dora_writes."
+  ],
+  "must_contain": [
+   "rowan_builds"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_23",
+  "mutations": [
+   [
+    "purge",
+    "plate ABC-1234 / abc1234"
+   ]
+  ],
+  "setup": [
+   "Vehicle plate: ABC-1234 registered to corporate fleet.",
+   "Same plate compact form: abc1234 (no hyphen, lowercase).",
+   "Pickup is at the north lot.",
+   "Record for ORION-1234 is active on the account.",
+   "Same record, alternate form ORION-1234, was verified."
+  ],
+  "must_not": [
+   "ABC-1234 registered",
+   "abc1234 (no hyphen"
+  ],
+  "must_contain": [
+   "ORION-1234"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_24",
+  "mutations": [
+   [
+    "purge",
+    "card 4111111111111111"
+   ]
+  ],
+  "setup": [
+   "Saved card on file: 4111 1111 1111 1111.",
+   "Same PAN, unspaced: 4111111111111111.",
+   "Statement cycle closes on the 28th.",
+   "Record for 4242-4242-4242-4242 is active on the account.",
+   "Same record, alternate form 4242424242424242, was verified."
+  ],
+  "must_not": [
+   "4111 1111 1111 1111.",
+   "4111111111111111."
+  ],
+  "must_contain": [
+   "4242-4242-4242-4242"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_25",
+  "mutations": [
+   [
+    "purge",
+    "server 192.168.1.10"
+   ]
+  ],
+  "setup": [
+   "Server IP: 192.168.1.10 hosts the internal wiki.",
+   "Same host, padded form: 192.168.001.010.",
+   "Backups rotate every three days.",
+   "Record for 192.168.1.18 is active on the account.",
+   "Same record, alternate form 192.168.001.018, was verified."
+  ],
+  "must_not": [
+   "192.168.1.10 hosts",
+   "192.168.001.010."
+  ],
+  "must_contain": [
+   "192.168.1.18"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_26",
+  "mutations": [
+   [
+    "purge",
+    "appointment at 14:30 / 2:30 PM"
+   ]
+  ],
+  "setup": [
+   "Patient appointment is scheduled at 14:30.",
+   "Same appointment in 12-hour form: 2:30 PM.",
+   "Clinic policy requires 24h notice for changes.",
+   "Record for 09:15 is active on the account.",
+   "Same record, alternate form 9:15 AM, was verified."
+  ],
+  "must_not": [
+   "scheduled at 14:30.",
+   "2:30 PM."
+  ],
+  "must_contain": [
+   "09:15"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_27",
+  "mutations": [
+   [
+    "purge",
+    "ISBN 9780134685991"
+   ]
+  ],
+  "setup": [
+   "Customer's last purchase: ISBN 978-0-13-468599-1.",
+   "Same ISBN, unformatted: 9780134685991.",
+   "Free shipping applies to orders over fifty dollars.",
+   "Record for 9781491957660 is active on the account.",
+   "Same record, alternate form 978-1-4919-5766-0, was verified."
+  ],
+  "must_not": [
+   "978-0-13-468599-1.",
+   "9780134685991."
+  ],
+  "must_contain": [
+   "9781491957660"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_29",
+  "mutations": [
+   [
+    "purge",
+    "brand colour FF7A00"
+   ]
+  ],
+  "setup": [
+   "Brand primary colour code: #FF7A00.",
+   "Same colour bare hex: FF7A00 (no hash).",
+   "Logo refresh shipped last week.",
+   "Record for 2E9BD6 is active on the account.",
+   "Same record, alternate form #2e9bd6, was verified."
+  ],
+  "must_not": [
+   "#FF7A00.",
+   "FF7A00 (no hash)."
+  ],
+  "must_contain": [
+   "2E9BD6"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_30",
+  "mutations": [
+   [
+    "purge",
+    "ZIP 94107-1234"
+   ]
+  ],
+  "setup": [
+   "Mailing ZIP: 94107-1234.",
+   "Same ZIP+4 unhyphenated: 941071234.",
+   "Standard envelopes are restocked weekly.",
+   "Record for 02139-4307 is active on the account.",
+   "Same record, alternate form 021394307, was verified."
+  ],
+  "must_not": [
+   "94107-1234.",
+   "941071234."
+  ],
+  "must_contain": [
+   "02139-4307"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_31",
+  "mutations": [
+   [
+    "purge",
+    "SKU SHOE-RNN-42 / RNN-42"
+   ]
+  ],
+  "setup": [
+   "Restocked unit: SKU SHOE-RNN-42.",
+   "Same item, prefix-stripped: RNN-42 (no SHOE).",
+   "Warehouse audit happens monthly.",
+   "Record for BOOT-TRK-19 is active on the account.",
+   "Same record, alternate form TRK-19, was verified."
+  ],
+  "must_not": [
+   "SHOE-RNN-42.",
+   "RNN-42 (no SHOE)."
+  ],
+  "must_contain": [
+   "BOOT-TRK-19"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_32",
+  "mutations": [
+   [
+    "purge",
+    "licence key XK7L-9P3Q-2RVA-8M1N"
+   ]
+  ],
+  "setup": [
+   "Software licence key: XK7L-9P3Q-2RVA-8M1N.",
+   "Same key, dotted-form: XK7L.9P3Q.2RVA.8M1N.",
+   "Patch notes are published quarterly.",
+   "Record for QW9Z-4T2K-7HD5-3BXP is active on the account.",
+   "Same record, alternate form QW9Z4T2K7HD53BXP, was verified."
+  ],
+  "must_not": [
+   "XK7L-9P3Q-2RVA-8M1N.",
+   "XK7L.9P3Q.2RVA.8M1N."
+  ],
+  "must_contain": [
+   "QW9Z-4T2K-7HD5-3BXP"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_33",
+  "mutations": [
+   [
+    "purge",
+    "customer 847"
+   ]
+  ],
+  "setup": [
+   "Customer record ID: 0000847.",
+   "Same record, zero-trimmed: 847.",
+   "Annual loyalty rewards run in December.",
+   "Record for 5391 is active on the account.",
+   "Same record, alternate form no. 5391, was verified."
+  ],
+  "must_not": [
+   "ID: 0000847.",
+   "zero-trimmed: 847."
+  ],
+  "must_contain": [
+   "5391"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_34",
+  "mutations": [
+   [
+    "purge",
+    "ticket INC-22184"
+   ]
+  ],
+  "setup": [
+   "Support ticket reference #INC-22184 is open.",
+   "Same ticket without hash: INC-22184.",
+   "On-call rotation begins next Monday.",
+   "Record for INC-77310 is active on the account.",
+   "Same record, alternate form inc-77310, was verified."
+  ],
+  "must_not": [
+   "#INC-22184 is open.",
+   "without hash: INC-22184."
+  ],
+  "must_contain": [
+   "INC-77310"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_35",
+  "mutations": [
+   [
+    "purge",
+    "phone 650-555-0177"
+   ]
+  ],
+  "setup": [
+   "Emergency contact phone: (650) 555-0177.",
+   "Same number unbracketed: 650-555-0177.",
+   "Carrier portability rules updated this year.",
+   "Record for 650-555-0198 is active on the account.",
+   "Same record, alternate form +1 650 555 0198, was verified."
+  ],
+  "must_not": [
+   "(650) 555-0177.",
+   "650-555-0177."
+  ],
+  "must_contain": [
+   "650-555-0198"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_36",
+  "mutations": [
+   [
+    "purge",
+    "order ORD-2026-00921 / 00921"
+   ]
+  ],
+  "setup": [
+   "Pending shipment: order ORD-2026-00921.",
+   "Same shipment short-form: 00921.",
+   "Distribution centre operates 24/7.",
+   "Record for ORION-2026 is active on the account.",
+   "Same record, alternate form ORION-2026, was verified."
+  ],
+  "must_not": [
+   "ORD-2026-00921.",
+   "short-form: 00921."
+  ],
+  "must_contain": [
+   "ORION-2026"
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_37",
+  "mutations": [
+   [
+    "purge",
+    "VIN 1HGCM82633A004352"
+   ]
+  ],
+  "setup": [
+   "Test vehicle VIN: 1HGCM82633A004352.",
+   "Same VIN, dashed display: 1HGCM-82633-A004352.",
+   "Inspection date is set for next Tuesday.",
+   "Record for 2FTRX18L1XCA71234 is active on the account.",
+   "Same record, alternate form 2ftrx18l1xca71234, was verified."
+  ],
+  "must_not": [
+   "1HGCM82633A004352.",
+   "1HGCM-82633-A004352."
+  ],
+  "must_contain": [
+   "2FTRX18L1XCA71234"
+  ]
+ }
+]

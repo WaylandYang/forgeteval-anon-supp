@@ -1,0 +1,64 @@
+{
+  "model": "openai/gpt-5.5",
+  "suite": "adversarial-385",
+  "limit": 0,
+  "overall_pass": 33,
+  "overall_total": 77,
+  "overall_rate": 0.42857142857142855,
+  "by_category": {
+    "substring_trap": {
+      "pass": 8,
+      "total": 8
+    },
+    "prefix_collision": {
+      "pass": 5,
+      "total": 5
+    },
+    "paraphrase_supersession": {
+      "pass": 6,
+      "total": 8
+    },
+    "negation_trap": {
+      "pass": 0,
+      "total": 8
+    },
+    "temporal_qualifier": {
+      "pass": 3,
+      "total": 8
+    },
+    "shared_attribute": {
+      "pass": 2,
+      "total": 8
+    },
+    "compound_fact": {
+      "pass": 0,
+      "total": 8
+    },
+    "identifier_obfuscation": {
+      "pass": 8,
+      "total": 8
+    },
+    "cross_lingual_identifier": {
+      "pass": 0,
+      "total": 8
+    },
+    "recursive_supersession": {
+      "pass": 1,
+      "total": 8
+    }
+  },
+  "usage": {
+    "calls": 62,
+    "cache_hits": 0,
+    "in_tok": 20000,
+    "out_tok": 13912,
+    "errors": 0
+  },
+  "cost_usd": 0.51736,
+  "wall_seconds": 367.2907826999435,
+  "placement_stats": {
+    "inscribe_calls": 0,
+    "annotated": 0,
+    "failed": 0
+  }
+}

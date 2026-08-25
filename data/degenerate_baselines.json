@@ -1,0 +1,157 @@
+{
+  "null": {
+    "overall_pass": 96,
+    "overall_total": 385,
+    "overall_rate": 0.24935064935064935,
+    "by_category": {
+      "substring_trap": {
+        "pass": 20,
+        "total": 36
+      },
+      "prefix_collision": {
+        "pass": 0,
+        "total": 39
+      },
+      "paraphrase_supersession": {
+        "pass": 0,
+        "total": 38
+      },
+      "negation_trap": {
+        "pass": 0,
+        "total": 40
+      },
+      "temporal_qualifier": {
+        "pass": 0,
+        "total": 37
+      },
+      "shared_attribute": {
+        "pass": 0,
+        "total": 40
+      },
+      "compound_fact": {
+        "pass": 0,
+        "total": 40
+      },
+      "identifier_obfuscation": {
+        "pass": 38,
+        "total": 38
+      },
+      "cross_lingual_identifier": {
+        "pass": 38,
+        "total": 38
+      },
+      "recursive_supersession": {
+        "pass": 0,
+        "total": 39
+      }
+    }
+  },
+  "nuke": {
+    "overall_pass": 231,
+    "overall_total": 385,
+    "overall_rate": 0.6,
+    "by_category": {
+      "substring_trap": {
+        "pass": 29,
+        "total": 36
+      },
+      "prefix_collision": {
+        "pass": 0,
+        "total": 39
+      },
+      "paraphrase_supersession": {
+        "pass": 32,
+        "total": 38
+      },
+      "negation_trap": {
+        "pass": 21,
+        "total": 40
+      },
+      "temporal_qualifier": {
+        "pass": 37,
+        "total": 37
+      },
+      "shared_attribute": {
+        "pass": 0,
+        "total": 40
+      },
+      "compound_fact": {
+        "pass": 0,
+        "total": 40
+      },
+      "identifier_obfuscation": {
+        "pass": 38,
+        "total": 38
+      },
+      "cross_lingual_identifier": {
+        "pass": 38,
+        "total": 38
+      },
+      "recursive_supersession": {
+        "pass": 36,
+        "total": 39
+      }
+    }
+  },
+  "normalize": {
+    "overall_pass": 240,
+    "overall_total": 385,
+    "overall_rate": 0.6233766233766234,
+    "by_category": {
+      "substring_trap": {
+        "pass": 31,
+        "total": 36
+      },
+      "prefix_collision": {
+        "pass": 14,
+        "total": 39
+      },
+      "paraphrase_supersession": {
+        "pass": 5,
+        "total": 38
+      },
+      "negation_trap": {
+        "pass": 34,
+        "total": 40
+      },
+      "temporal_qualifier": {
+        "pass": 27,
+        "total": 37
+      },
+      "shared_attribute": {
+        "pass": 25,
+        "total": 40
+      },
+      "compound_fact": {
+        "pass": 0,
+        "total": 40
+      },
+      "identifier_obfuscation": {
+        "pass": 35,
+        "total": 38
+      },
+      "cross_lingual_identifier": {
+        "pass": 36,
+        "total": 38
+      },
+      "recursive_supersession": {
+        "pass": 33,
+        "total": 39
+      }
+    }
+  },
+  "cases_without_positive_requirement": {
+    "substring_trap": {
+      "empty": 20,
+      "total": 36
+    },
+    "identifier_obfuscation": {
+      "empty": 38,
+      "total": 38
+    },
+    "cross_lingual_identifier": {
+      "empty": 38,
+      "total": 38
+    }
+  }
+}

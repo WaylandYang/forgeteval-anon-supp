@@ -1,0 +1,226 @@
+{
+  "model": "deepseek/deepseek-v4-pro",
+  "n_runs": 7,
+  "n_cases": 385,
+  "run_files": [
+    "openrouter_hook_deepseek_deepseek-v4-pro_ckpt.jsonl",
+    "openrouter_hook_deepseek_deepseek-v4-pro_p1_ckpt.jsonl",
+    "openrouter_hook_deepseek_deepseek-v4-pro_p2_ckpt.jsonl",
+    "openrouter_hook_deepseek_deepseek-v4-pro_r2_ckpt.jsonl",
+    "openrouter_hook_deepseek_deepseek-v4-pro_r3_ckpt.jsonl",
+    "openrouter_hook_deepseek_deepseek-v4-pro_r4_ckpt.jsonl",
+    "openrouter_hook_deepseek_deepseek-v4-pro_r5_ckpt.jsonl"
+  ],
+  "rates": [
+    0.8961038961038961,
+    0.8961038961038961,
+    0.9038961038961039,
+    0.9090909090909091,
+    0.9012987012987013,
+    0.8987012987012987,
+    0.9012987012987013
+  ],
+  "mean": 0.9009276437847866,
+  "stdev": 0.004604702651573603,
+  "unstable_cases": [
+    {
+      "id": "adv_compound_fact_01",
+      "passes": 5,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_06",
+      "passes": 3,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_08",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_11",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_13",
+      "passes": 4,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_18",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_19",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_20",
+      "passes": 4,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_22",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_24",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_29",
+      "passes": 5,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_30",
+      "passes": 4,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_32",
+      "passes": 5,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_35",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_36",
+      "passes": 2,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_37",
+      "passes": 2,
+      "runs": 7
+    },
+    {
+      "id": "adv_compound_fact_39",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_cross_lingual_identifier_03",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_cross_lingual_identifier_06",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_cross_lingual_identifier_16",
+      "passes": 3,
+      "runs": 7
+    },
+    {
+      "id": "adv_cross_lingual_identifier_31",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_cross_lingual_identifier_35",
+      "passes": 4,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_08",
+      "passes": 1,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_09",
+      "passes": 5,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_10",
+      "passes": 2,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_12",
+      "passes": 2,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_14",
+      "passes": 4,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_15",
+      "passes": 3,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_19",
+      "passes": 4,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_20",
+      "passes": 2,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_21",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_25",
+      "passes": 5,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_28",
+      "passes": 1,
+      "runs": 7
+    },
+    {
+      "id": "adv_identifier_obfuscation_38",
+      "passes": 1,
+      "runs": 7
+    },
+    {
+      "id": "adv_negation_trap_17",
+      "passes": 5,
+      "runs": 7
+    },
+    {
+      "id": "adv_prefix_collision_30",
+      "passes": 5,
+      "runs": 7
+    },
+    {
+      "id": "adv_shared_attribute_12",
+      "passes": 6,
+      "runs": 7
+    },
+    {
+      "id": "adv_substring_trap_33",
+      "passes": 1,
+      "runs": 7
+    }
+  ],
+  "unstable_by_category": {
+    "compound_fact": 17,
+    "cross_lingual_identifier": 5,
+    "identifier_obfuscation": 12,
+    "negation_trap": 1,
+    "prefix_collision": 1,
+    "shared_attribute": 1,
+    "substring_trap": 1
+  }
+}

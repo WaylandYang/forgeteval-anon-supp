@@ -1,0 +1,608 @@
+﻿{
+  "judge_model": "claude-opus-4-7-1m",
+  "judge_family": "Anthropic",
+  "n_cases": 100,
+  "per_case": [
+    {
+      "case_id": "adv_negation_trap_17",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Supersede replaces the 'does NOT own a car' fact with the Tesla Model 3 row; end state has Tesla row + bicycle row, MC satisfied and both MNC strings are gone."
+    },
+    {
+      "case_id": "adv_negation_trap_05",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Release soft-deletes the 'does not speak French' row; only Spanish row remains reachable, satisfying MC and removing the MNC string."
+    },
+    {
+      "case_id": "adv_negation_trap_34",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Release removes the spicy/medical row; Italian cuisine row remains, MC ok and both MNC strings are in the released row."
+    },
+    {
+      "case_id": "adv_prefix_collision_40",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge by identifier targets the shorter MAC; surviving 5E row contains '00:1A:2B:3C:4D:5E' but the MNC literal '00:1A:2B:3C:4D was last seen' is broken by ':5E' so not a substring."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_14",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both Nguyen rows; OKR row remains, MC empty and neither MNC string appears in surviving text."
+    },
+    {
+      "case_id": "adv_substring_trap_34",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Release soft-deletes Jenny row; surviving rows ('apples', fire drill, Horizon) do not contain 'apple456' or \"Jenny's employee\" as substrings."
+    },
+    {
+      "case_id": "adv_shared_attribute_04",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release of Hannah-related facts soft-deletes rows mentioning Hannah; row 'Ivan leads the design team' remains, MC 'Ivan' ok and MNC 'Hannah and Ivan share' was in released row."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_26",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Supersede replaces Tesla row with Rivian R1T/March 2023; guitar row unaffected. MC met; 'Tesla Model 3' not in any surviving row."
+    },
+    {
+      "case_id": "adv_substring_trap_21",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Release targets the basketball-player Jordan row; surviving rows (restaurant, arena, IT) do not contain 'Chicago Bulls' or 'point guard'."
+    },
+    {
+      "case_id": "adv_compound_fact_07",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: the supersede REPLACES the entire row containing 'Enterprise plan and pays via wire transfer' with a payment-only row; no surviving row contains 'Enterprise', so MC fails."
+    },
+    {
+      "case_id": "adv_negation_trap_02",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Release removes coffee-negation row; only green tea row remains, MC met and MNC string is gone."
+    },
+    {
+      "case_id": "adv_shared_attribute_39",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes the Azure row; Google Cloud and AWS rows remain. MC 'Google Cloud' present, MNC 'Microsoft Azure offers Kubernetes' was in released row."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_38",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both Miriam Cohen rows; cafeteria row remains and contains neither MNC string."
+    },
+    {
+      "case_id": "adv_negation_trap_31",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Supersede replaces the 'never visited Asia' row with the Southeast Asia backpacking row; Europe-travel row unchanged. MC met, both MNC strings gone."
+    },
+    {
+      "case_id": "adv_prefix_collision_23",
+      "category": "prefix_collision",
+      "well_formed": false,
+      "reason": "SUBSTRING-COLLISION BUG: MNC includes 'ABC123' but the surviving Bob row literally contains 'ABC123' as a substring of 'ABC1234'. Case can never pass under literal-substring scoring."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_39",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge removes both Mueller rows; server maintenance row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_03",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge removes both Kim Minji rows; only cafeteria row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_negation_trap_24",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Release removes alcohol-negation row; craft soda row remains, MC met and MNC gone."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_27",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Chained supersedes: Paris -> Barcelona -> Singapore. End state Singapore row + French row. MC met, neither 'Paris' nor 'Barcelona' appears in surviving rows."
+    },
+    {
+      "case_id": "adv_shared_attribute_06",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes the Liam row; Mia and Noah rows remain, MC 'Mia' present and MNC 'Liam is enrolled in CS 224N' was in released row."
+    },
+    {
+      "case_id": "adv_shared_attribute_29",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes the Team Alpha row; Beta (Python+C++) and Gamma (Rust) remain. MC 'Team Beta'/'Python' present, MNC about Alpha gone."
+    },
+    {
+      "case_id": "adv_prefix_collision_15",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge removes the abc1234 row; surviving abc12345 row contains 'abc1234' as substring but the full MNC string 'abc1234 reverted the payment' is not present (text continues '5 fixed the email')."
+    },
+    {
+      "case_id": "adv_recursive_supersession_12",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes Stanford -> MIT -> Stanford-PhD. End state contains 'Stanford' and not 'MIT'."
+    },
+    {
+      "case_id": "adv_recursive_supersession_37",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes Spotify -> Apple Music -> Spotify. End-state text 'went back to Spotify in 2023' satisfies MC; MNC 'switched to Apple Music in 2021' is gone."
+    },
+    {
+      "case_id": "adv_shared_attribute_25",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes the Smith row; Johnson (Physics 101 at MIT) and Lee remain, MC satisfied and MNC about Smith was released."
+    },
+    {
+      "case_id": "adv_prefix_collision_18",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge removes the 4567 row; surviving 8901 row contains MC string and does not contain '+1-555-123-4567'."
+    },
+    {
+      "case_id": "adv_recursive_supersession_27",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes Renaissance -> Modern -> Renaissance reinstalled. End state contains 'Renaissance' and not 'Modern'."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_18",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both john.doe rows; only maintenance row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_substring_trap_25",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Release removes both Alice rows (works at Stripe, tiramisu); surviving rows are 'alice blue color scheme' and Bob — neither contains 'Alice works' or \"Alice's favorite\" (case-sensitive)."
+    },
+    {
+      "case_id": "adv_negation_trap_26",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Release removes spicy-food row; Italian-cuisine row remains, MC met and MNC strings gone."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_10",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge removes both Somchai rows; warehouse row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_compound_fact_37",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss + substring trap: supersede replaces the row containing 'twin sister named Emily' so MC fails, AND the replacement row 'sold the coffee shop and now runs a bookstore' literally contains 'coffee shop' violating MNC."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_40",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces golden-retriever row with rescue-cat row; yoga row unchanged. MC met, MNC strings ('golden retriever', 'Max') gone."
+    },
+    {
+      "case_id": "adv_compound_fact_33",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: supersede replaces the row 'golden retriever Max AND Tesla Model 3' with a Rivian-only row; 'Max' is no longer in any reachable row, so MC fails."
+    },
+    {
+      "case_id": "adv_shared_attribute_23",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes Team Alpha row; Beta (Java+C++) and Gamma remain. MC 'Team Beta' present, MNC about Alpha released."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_15",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both event-date rows; holiday row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_05",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Four-step chained supersedes terminate in 'registered as Green in 2025'; MC met and none of the prior party strings remain."
+    },
+    {
+      "case_id": "adv_prefix_collision_03",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge removes the John Smith prescription row; surviving John Smithson row contains 'John Smith' as substring but not the full MNC 'John Smith was prescribed' (next char is 'son'). MC 'penicillin' present."
+    },
+    {
+      "case_id": "adv_recursive_supersession_01",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes Chrome -> Brave -> Chrome. End state 'switched back to Chrome' contains 'Brave' but not the literal MNC 'switched to Brave'."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_03",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Supersede replaces first-job row with Meta row. Conference and chocolate rows untouched. MC 'Meta' met; the literal long string about 'first job' is gone."
+    },
+    {
+      "case_id": "adv_recursive_supersession_32",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes Microsoft -> Google -> Microsoft. End state 'returned to Microsoft in 2023' satisfies MC; 'joined Google in 2021' literal is gone."
+    },
+    {
+      "case_id": "adv_substring_trap_40",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Release removes the codename row; surviving rows mention 'mercury at 75°F' (lowercase) but not the literal 'Mercury Rising'."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_07",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge removes both Jose Garcia rows; office-supply row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_prefix_collision_04",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge removes order_2024_001 row; surviving order_2024_0010 row contains '12 units' (MC) and does not contain the literal 'order_2024_001 was for 5'."
+    },
+    {
+      "case_id": "adv_recursive_supersession_02",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes vegetarian -> meat -> vegetarian. End state 'returned to a vegetarian diet in 2024' satisfies MC; 'started eating meat in 2021' literal gone."
+    },
+    {
+      "case_id": "adv_recursive_supersession_21",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes diesel -> electric -> diesel. End state 'returned to diesel buses' satisfies MC and 'electric' is no longer in any surviving row."
+    },
+    {
+      "case_id": "adv_compound_fact_10",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: supersede replaces the row 'allergic to peanuts and plays the violin professionally' with a shellfish-allergy-only row; 'violin' is no longer in any reachable row, so MC fails."
+    },
+    {
+      "case_id": "adv_substring_trap_37",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Supersede replaces Phoenix office row with Denver row. Surviving 'phoenix bird' is lowercase and doesn't contain the literal 'Phoenix, Arizona' or 'located in Phoenix' (case-sensitive)."
+    },
+    {
+      "case_id": "adv_substring_trap_32",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Purge removes WiFi password row; surviving rows ('Delta Force', reviews, shuttle) contain neither 'deltaFoxtrot123' substring."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_16",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge removes both @dev rows; CI-runner row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form (case-normalized) removes both alice@acme.io rows; only lunches row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_09",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge removes both Raj Sharma rows; holiday-calendar row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_compound_fact_02",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: supersede replaces the row 'married to Jamie and works at Google' with an Anthropic-only row; 'married to Jamie' is no longer in any reachable row, so MC fails."
+    },
+    {
+      "case_id": "adv_prefix_collision_06",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge removes prod-token row; surviving dev-token row contains the MC string and does not contain 'sk-abc-prod-9f3a'."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_10",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both webhook URL rows; Slack-channel row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_35",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces education row with neuroscience-transition row. Surviving row says 'physics work' not 'particle physics' so MNC literal not present; MIT also absent."
+    },
+    {
+      "case_id": "adv_shared_attribute_03",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes patient John row; Mary (diabetes/insulin) and Tom (hypertension) remain. MC 'Mary'+'diabetes' present, MNC about John released."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_22",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge removes both Jose Gonzalez rows; legal-department row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_compound_fact_04",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: supersede replaces row 'plays the cello and lives in Vienna' with a Toronto-only row; 'cello' is no longer in any reachable row, so MC fails."
+    },
+    {
+      "case_id": "adv_compound_fact_22",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: supersede replaces row 'licensed pilot and grows heirloom tomatoes' with a pilot-license-expired row; 'heirloom tomatoes' is no longer in any reachable row, so MC fails."
+    },
+    {
+      "case_id": "adv_compound_fact_35",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: supersede replaces row 'plays competitive chess and resides in Toronto' with a Vancouver-only row; 'chess' is no longer in any reachable row, so MC fails."
+    },
+    {
+      "case_id": "adv_compound_fact_25",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: supersede replaces the compound row containing 'Max' with a Mustang-only row; 'Max' is no longer in any reachable row, so MC fails."
+    },
+    {
+      "case_id": "adv_recursive_supersession_19",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes AWS -> Azure -> AWS. End state 'switched back to AWS in 2023' satisfies MC and 'Azure' is no longer in any surviving row."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_14",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces education row with mindfulness-coaching-business row; meditation row unchanged. MC met; 'neuroscience' and 'MIT' gone."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_29",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces political-affiliation row with 'left the Democratic party and registered as an Independent'. MC 'Independent' present; the literal 'registered Democrat' is not a substring (text has 'registered as an Independent' and 'the Democratic')."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_25",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "Purge removes both Anna Ivanova rows; new-products row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_17",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both @johndoe rows; maintenance row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_06",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both card-number rows; only holiday-party row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_08",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both @acme-engineer rows; all-hands row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_prefix_collision_31",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge removes employee_jdoe@company.com row; surviving employee_jdoe_manager@company.com row does NOT contain 'employee_jdoe@company.com' as substring (the @ comes after '_manager'), so MNC passes."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_36",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Chained supersedes StartupX -> TechCorp -> NewVentures. End state 'founded his own company, NewVentures, in 2020' satisfies MC; prior role strings are gone."
+    },
+    {
+      "case_id": "adv_negation_trap_01",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Supersede replaces 'does NOT work at Anthropic and has never interviewed' row with the joined-Anthropic row; espresso row unchanged. MC and MNC both satisfied."
+    },
+    {
+      "case_id": "adv_shared_attribute_10",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes Xavier row; Yara (MacBook Pro 16 M3) and Zoe remain. MC 'Yara' met and MNC about Xavier's MacBook was released."
+    },
+    {
+      "case_id": "adv_negation_trap_33",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Supersede replaces car-ownership row with Tesla row; bicycle row unchanged. MC met and both MNC strings gone."
+    },
+    {
+      "case_id": "adv_shared_attribute_12",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes Diana's coauthorship row; Ethan (also coauthor) and Felix (VLDB) remain. MC 'Ethan' present; MNC about Diana released."
+    },
+    {
+      "case_id": "adv_negation_trap_11",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "Supersede replaces 'never eats spicy food due to medical reasons' row with the recovered/Thai-food row. MC 'spicy Thai food' met; both MNC strings gone."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_34",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces favorite-movie row with EEAAO row. MC met; 'Inception' is no longer in any reachable row."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_36",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces vehicle row with 'switched to public transit and sold their electric car' row. MC 'public transit' met; neither 'Tesla' nor 'Model 3' appears (only 'electric car')."
+    },
+    {
+      "case_id": "adv_substring_trap_24",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Purge removes API-key row; surviving 'sunny yellow' decor row contains 'sunny' but not the literal 'sunny78' substring."
+    },
+    {
+      "case_id": "adv_shared_attribute_11",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Release removes Aiden row; Bella (also shellfish allergy) and Caleb remain. MC 'Bella' present; MNC about Aiden was released."
+    },
+    {
+      "case_id": "adv_compound_fact_09",
+      "category": "compound_fact",
+      "well_formed": false,
+      "reason": "Compound-fact loss: supersede replaces row 'golden retriever Max AND Tesla Model 3' with a Rivian-only row; 'Max' is no longer in any reachable row, so MC fails."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_09",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Supersede replaces Microsoft row with 'Alice joined Apple in January 2021'. MC 'Apple'+'January 2021' satisfied; MNC 'worked at Microsoft' gone."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_09",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces job row with climate-modeling-nonprofit row; Alps row unchanged. MC met; 'TikTok' and 'data scientist' no longer present."
+    },
+    {
+      "case_id": "adv_recursive_supersession_14",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes Scrum -> Kanban -> Scrum. End state 'returned to Scrum in 2022' satisfies MC and 'Kanban' is no longer in any surviving row."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form (trailing whitespace) removes both bob@example.com rows; OKR row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_substring_trap_19",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Release removes both Alice rows; surviving 'Berlin wall exhibit' row satisfies MC and does not contain 'Alice manages' or the literal 'Berlin office'."
+    },
+    {
+      "case_id": "adv_prefix_collision_07",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge removes case_id 12345 row; surviving 'case_id 123456 was filed' row contains '12345' as substring but not the full MNC 'case_id 12345 was filed' (next char is '6', not space)."
+    },
+    {
+      "case_id": "adv_prefix_collision_16",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "Purge removes 4-digit phone row; surviving 5-digit phone row contains '+1-555-0100' as substring but not the full MNC '+1-555-0100 is the main' (next char is '0', not space)."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_33",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Supersede replaces Tesla row with Rivian/2023 row; hiking row unchanged. MC met and MNC gone."
+    },
+    {
+      "case_id": "adv_recursive_supersession_40",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "Chained supersedes New York -> London -> New York. End state 'returned to the New York office in 2024' satisfies MC and 'London' is no longer in any surviving row."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_24",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces academic row with 'transitioned from academia to professional poker, leveraging probability skills'. MC 'poker'+'probability' met; 'quantum physics' and 'MIT' gone."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_16",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "Supersede replaces book row with sci-fi-novels row. MC 'science fiction'+'contemporary' met; 'War and Peace' and 'favorite book' gone."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_03",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both phone-number rows; clinic-address row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_31",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Chained supersedes McKinsey -> Bain -> BCG. End state 'moved to Boston Consulting Group in 2021' satisfies MC; both McKinsey and Bain strings gone."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_23",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Supersede replaces Netflix row with 'Grace joined Disney+ in 2021 as a content strategist'. MC met; 'Netflix from 2016' gone."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_25",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "Supersede replaces Stanford row with MIT master's row. MC met; 'Stanford University from 2016' gone."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_28",
+      "category": "paraphrase_supersession",
+      "well_formed": false,
+      "reason": "SUBSTRING-COLLISION/SELF-SUBSTRING-TRAP: the supersede replacement text 'User adopted a rescue cat named Luna after Max passed away.' literally contains 'Max' which is on the MNC list; case cannot pass under literal-substring scoring."
+    },
+    {
+      "case_id": "adv_substring_trap_17",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Purge removes emergency-contact row; surviving rows ('violets' lowercase, maintenance, badges) do not contain '555-3344' or the literal 'ask for Violet' (case-sensitive)."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_04",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Purge any-surface-form removes both UUID rows; only server-maintenance row remains, neither MNC string present."
+    },
+    {
+      "case_id": "adv_substring_trap_12",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "Purge removes WiFi-password row; surviving 'pineapple scented candle' row contains 'pineapple' but not the literal 'pineapple42' substring."
+    }
+  ]
+}
+

@@ -1,0 +1,2205 @@
+﻿[
+ {
+  "id": "adv_substring_trap_13",
+  "category": "substring_trap",
+  "reason": "leaked must_not_contain \"Alice's favorite\"",
+  "must_contain": [
+   "Bob"
+  ],
+  "must_not_contain": [
+   "Alice works",
+   "Alice's favorite"
+  ],
+  "final_query": "Tell me about the people we discussed.",
+  "retrieved": [
+   "Bob handles customer support escalations.",
+   "The team had an alice in wonderland themed party last year.",
+   "Alice's favorite book is 'The Martian'."
+  ]
+ },
+ {
+  "id": "adv_substring_trap_25",
+  "category": "substring_trap",
+  "reason": "leaked must_not_contain \"Alice's favorite\"",
+  "must_contain": [
+   "Bob"
+  ],
+  "must_not_contain": [
+   "Alice works",
+   "Alice's favorite"
+  ],
+  "final_query": "Who are the employees we discussed?",
+  "retrieved": [
+   "Bob handles customer support escalations.",
+   "The meeting had an alice blue color scheme.",
+   "Alice's favorite dessert is tiramisu."
+  ]
+ },
+ {
+  "id": "adv_substring_trap_33",
+  "category": "substring_trap",
+  "reason": "leaked must_not_contain \"David's favorite\"",
+  "must_contain": [],
+  "must_not_contain": [
+   "David manages",
+   "David's favorite"
+  ],
+  "final_query": "Who manages the sales team?",
+  "retrieved": [
+   "New ergonomic chairs have been ordered for the open office.",
+   "David's favorite sports team is the Bulls.",
+   "The sculpture in the lobby is called \"David\" after the Michelangelo statue."
+  ]
+ },
+ {
+  "id": "adv_prefix_collision_19",
+  "category": "prefix_collision",
+  "reason": "leaked must_not_contain '2024-1001'",
+  "must_contain": [
+   "fraud investigation"
+  ],
+  "must_not_contain": [
+   "2024-1001",
+   "theft investigation"
+  ],
+  "final_query": "What is the nature of case 2024-10012?",
+  "retrieved": [
+   "Case number 2024-10012 involves a fraud investigation.",
+   "The detective is on vacation next week."
+  ]
+ },
+ {
+  "id": "adv_prefix_collision_20",
+  "category": "prefix_collision",
+  "reason": "leaked must_not_contain '/v1/users/12345'",
+  "must_contain": [
+   "/v1/users/123456"
+  ],
+  "must_not_contain": [
+   "/v1/users/12345"
+  ],
+  "final_query": "Which endpoint returns admin details?",
+  "retrieved": [
+   "API endpoint: /v1/users/123456 returns admin details.",
+   "The system will undergo maintenance tonight."
+  ]
+ },
+ {
+  "id": "adv_prefix_collision_21",
+  "category": "prefix_collision",
+  "reason": "leaked must_not_contain 'doc-2024-001'",
+  "must_contain": [
+   "doc-2024-001a"
+  ],
+  "must_not_contain": [
+   "doc-2024-001"
+  ],
+  "final_query": "Which document reference is public?",
+  "retrieved": [
+   "Document reference doc-2024-001a is public.",
+   "The filing cabinet was moved to room 302."
+  ]
+ },
+ {
+  "id": "adv_prefix_collision_22",
+  "category": "prefix_collision",
+  "reason": "leaked must_not_contain 'tx-abc123'",
+  "must_contain": [
+   "$50"
+  ],
+  "must_not_contain": [
+   "tx-abc123",
+   "$100"
+  ],
+  "final_query": "What was the amount for transaction tx-abc1234?",
+  "retrieved": [
+   "Transaction ID: tx-abc1234 was for $50.",
+   "The payment system was upgraded yesterday."
+  ]
+ },
+ {
+  "id": "adv_prefix_collision_23",
+  "category": "prefix_collision",
+  "reason": "leaked must_not_contain 'ABC123'",
+  "must_contain": [
+   "Bob"
+  ],
+  "must_not_contain": [
+   "ABC123",
+   "Alice"
+  ],
+  "final_query": "Who owns license plate ABC1234?",
+  "retrieved": [
+   "License plate ABC1234 is registered to Bob.",
+   "The DMV will be closed on Monday."
+  ]
+ },
+ {
+  "id": "adv_prefix_collision_24",
+  "category": "prefix_collision",
+  "reason": "leaked must_not_contain 'PROD-789'",
+  "must_contain": [
+   "200"
+  ],
+  "must_not_contain": [
+   "PROD-789",
+   "100"
+  ],
+  "final_query": "How many units of PROD-7890 are in stock?",
+  "retrieved": [
+   "Product SKU PROD-7890 has 200 units in stock.",
+   "The warehouse is undergoing inventory this week."
+  ]
+ },
+ {
+  "id": "adv_prefix_collision_28",
+  "category": "prefix_collision",
+  "reason": "leaked must_not_contain 'MRN-45678'",
+  "must_contain": [
+   "COVID"
+  ],
+  "must_not_contain": [
+   "MRN-45678"
+  ],
+  "final_query": "What is MRN-456789's diagnosis?",
+  "retrieved": [
+   "Patient ID: MRN-456789 diagnosed with COVID.",
+   "Hospital cafeteria will be closed tomorrow."
+  ]
+ },
+ {
+  "id": "adv_paraphrase_supersession_12",
+  "category": "paraphrase_supersession",
+  "reason": "leaked must_not_contain 'Max'",
+  "must_contain": [
+   "greyhound",
+   "rescue"
+  ],
+  "must_not_contain": [
+   "poodle",
+   "Max"
+  ],
+  "final_query": "What pet does the user have now?",
+  "retrieved": [
+   "User adopted a rescue greyhound after Max passed away.",
+   "User works as a freelance graphic designer."
+  ]
+ },
+ {
+  "id": "adv_paraphrase_supersession_13",
+  "category": "paraphrase_supersession",
+  "reason": "leaked must_not_contain 'nut allergy'",
+  "must_contain": [
+   "shellfish"
+  ],
+  "must_not_contain": [
+   "peanuts",
+   "nut allergy"
+  ],
+  "final_query": "What is the user currently allergic to?",
+  "retrieved": [
+   "User outgrew the nut allergy but developed a shellfish sensitivity.",
+   "User plays the violin professionally."
+  ]
+ },
+ {
+  "id": "adv_paraphrase_supersession_20",
+  "category": "paraphrase_supersession",
+  "reason": "leaked must_not_contain 'architect'",
+  "must_contain": [
+   "urban farming",
+   "collective"
+  ],
+  "must_not_contain": [
+   "architect",
+   "Foster + Partners"
+  ],
+  "final_query": "What is the user's current occupation?",
+  "retrieved": [
+   "User left the architecture firm to start an urban farming collective.",
+   "User plays the cello in a community orchestra."
+  ]
+ },
+ {
+  "id": "adv_paraphrase_supersession_21",
+  "category": "paraphrase_supersession",
+  "reason": "leaked must_not_contain 'Max'",
+  "must_contain": [
+   "greyhound"
+  ],
+  "must_not_contain": [
+   "golden retriever",
+   "Max"
+  ],
+  "final_query": "What pet does the user have?",
+  "retrieved": [
+   "User now cares for a rescued greyhound after Max passed away.",
+   "User has a black belt in karate."
+  ]
+ },
+ {
+  "id": "adv_paraphrase_supersession_28",
+  "category": "paraphrase_supersession",
+  "reason": "leaked must_not_contain 'Max'",
+  "must_contain": [
+   "cat",
+   "Luna"
+  ],
+  "must_not_contain": [
+   "golden retriever",
+   "Max"
+  ],
+  "final_query": "What pet does the user have?",
+  "retrieved": [
+   "User adopted a rescue cat named Luna after Max passed away.",
+   "User works as a freelance graphic designer."
+  ]
+ },
+ {
+  "id": "adv_paraphrase_supersession_35",
+  "category": "paraphrase_supersession",
+  "reason": "leaked must_not_contain 'particle physics'",
+  "must_contain": [
+   "neuroscience"
+  ],
+  "must_not_contain": [
+   "particle physics",
+   "MIT"
+  ],
+  "final_query": "What is the user's current research field?",
+  "retrieved": [
+   "User transitioned to neuroscience research after their physics work.",
+   "User completed a PhD in particle physics at MIT."
+  ]
+ },
+ {
+  "id": "adv_paraphrase_supersession_37",
+  "category": "paraphrase_supersession",
+  "reason": "leaked must_not_contain 'architect'",
+  "must_contain": [
+   "teach",
+   "RISD"
+  ],
+  "must_not_contain": [
+   "architect",
+   "SOM"
+  ],
+  "final_query": "What is the user's current occupation?",
+  "retrieved": [
+   "User participates in triathlons.",
+   "User left corporate architecture to teach design at RISD."
+  ]
+ },
+ {
+  "id": "adv_negation_trap_13",
+  "category": "negation_trap",
+  "reason": "leaked must_not_contain 'San Francisco'",
+  "must_contain": [
+   "New York",
+   "job opportunity"
+  ],
+  "must_not_contain": [
+   "no longer lives in New York",
+   "San Francisco"
+  ],
+  "final_query": "Where does the user live?",
+  "retrieved": [
+   "User's current city is San Francisco.",
+   "User has returned to New York for a new job opportunity."
+  ]
+ },
+ {
+  "id": "adv_negation_trap_15",
+  "category": "negation_trap",
+  "reason": "leaked must_not_contain 'does NOT work at Google'",
+  "must_contain": [
+   "Google",
+   "Senior Engineer"
+  ],
+  "must_not_contain": [
+   "does NOT work at Google",
+   "Microsoft"
+  ],
+  "final_query": "Where does the user work?",
+  "retrieved": [
+   "User accepted a position at Google as a Senior Engineer.",
+   "User does NOT work at Google and has declined all offers from them."
+  ]
+ },
+ {
+  "id": "adv_shared_attribute_04",
+  "category": "shared_attribute",
+  "reason": "leaked must_not_contain 'Hannah and Ivan share'",
+  "must_contain": [
+   "Ivan"
+  ],
+  "must_not_contain": [
+   "Hannah and Ivan share"
+  ],
+  "final_query": "Who works on the 4th floor?",
+  "retrieved": [
+   "Hannah and Ivan share the 4th floor office near the elevator.",
+   "Ivan leads the design team.",
+   "Judy works remotely from Madrid."
+  ]
+ },
+ {
+  "id": "adv_shared_attribute_05",
+  "category": "shared_attribute",
+  "reason": "missing must_contain 'bob@example.com'",
+  "must_contain": [
+   "bob@example.com"
+  ],
+  "must_not_contain": [
+   "alice@example.com used coupon"
+  ],
+  "final_query": "Who used coupon SAVE20?",
+  "retrieved": [
+   "Marketing team rotates coupons quarterly."
+  ]
+ },
+ {
+  "id": "adv_shared_attribute_27",
+  "category": "shared_attribute",
+  "reason": "missing must_contain 'Building B'",
+  "must_contain": [
+   "Building B",
+   "solar panels"
+  ],
+  "must_not_contain": [
+   "Building A uses solar panels"
+  ],
+  "final_query": "Which buildings use solar panels?",
+  "retrieved": [
+   "Building C uses only geothermal energy."
+  ]
+ },
+ {
+  "id": "adv_shared_attribute_31",
+  "category": "shared_attribute",
+  "reason": "missing must_contain 'User2'",
+  "must_contain": [
+   "User2",
+   "Database A"
+  ],
+  "must_not_contain": [
+   "User1 has access to Database A"
+  ],
+  "final_query": "Which users have access to Database A?",
+  "retrieved": [
+   "User3 has access only to Database D."
+  ]
+ },
+ {
+  "id": "adv_shared_attribute_40",
+  "category": "shared_attribute",
+  "reason": "missing must_contain 'The Uffizi'",
+  "must_contain": [
+   "The Uffizi"
+  ],
+  "must_not_contain": [
+   "The Louvre displays the Mona Lisa"
+  ],
+  "final_query": "Which museums display the Mona Lisa?",
+  "retrieved": [
+   "The Met displays Washington Crossing the Delaware."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_01",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Stripe'",
+  "must_contain": [
+   "Stripe"
+  ],
+  "must_not_contain": [
+   "lives in Berlin"
+  ],
+  "final_query": "Where does the user work?",
+  "retrieved": [
+   "User relocated to Madrid and continues working remotely.",
+   "User uses an ergonomic mechanical keyboard."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_02",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'married to Jamie'",
+  "must_contain": [
+   "married to Jamie"
+  ],
+  "must_not_contain": [
+   "works at Google"
+  ],
+  "final_query": "Is the user still married?",
+  "retrieved": [
+   "User has two cats named Pixel and Bit.",
+   "User joined Anthropic as a research engineer."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_03",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Italian'",
+  "must_contain": [
+   "Italian"
+  ],
+  "must_not_contain": [
+   "Mediterranean diet"
+  ],
+  "final_query": "What languages does the user speak?",
+  "retrieved": [
+   "User runs a small wine-tasting club in their neighborhood.",
+   "User switched to a strict vegan diet for ethical reasons."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_04",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'cello'",
+  "must_contain": [
+   "cello"
+  ],
+  "must_not_contain": [
+   "lives in Vienna"
+  ],
+  "final_query": "Does the user still play the cello?",
+  "retrieved": [
+   "User moved to Toronto last autumn for a new opportunity.",
+   "User's day job is database administration."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_05",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Border Collie'",
+  "must_contain": [
+   "Border Collie",
+   "Rex"
+  ],
+  "must_not_contain": [
+   "drives a 2018 Subaru"
+  ],
+  "final_query": "What pet does the user have?",
+  "retrieved": [
+   "User upgraded to a new electric pickup truck.",
+   "User's preferred reading genre is hard sci-fi."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_06",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'PhD in physics'",
+  "must_contain": [
+   "PhD in physics",
+   "MIT"
+  ],
+  "must_not_contain": [
+   "works as a quant at Renaissance"
+  ],
+  "final_query": "What is the user's educational background?",
+  "retrieved": [
+   "User left finance entirely and joined a nonprofit climate research lab.",
+   "User's morning routine includes a 5km run."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_07",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Enterprise'",
+  "must_contain": [
+   "Enterprise"
+  ],
+  "must_not_contain": [
+   "pays via wire transfer"
+  ],
+  "final_query": "What plan is the customer on?",
+  "retrieved": [
+   "Customer's account is in good standing.",
+   "Customer updated payment method to credit card on file."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_08",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Atlas'",
+  "must_contain": [
+   "Atlas"
+  ],
+  "must_not_contain": [
+   "reports to the VP of Engineering"
+  ],
+  "final_query": "What project does the user lead?",
+  "retrieved": [
+   "User now reports directly to the CTO after a reorg.",
+   "User's preferred meeting time is afternoons."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_09",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Max'",
+  "must_contain": [
+   "Max"
+  ],
+  "must_not_contain": [
+   "Tesla Model 3"
+  ],
+  "final_query": "What is the name of the user's pet?",
+  "retrieved": [
+   "User volunteers at a local animal shelter on weekends.",
+   "User recently upgraded to a Rivian R1T."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_10",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'violin'",
+  "must_contain": [
+   "violin"
+  ],
+  "must_not_contain": [
+   "peanuts"
+  ],
+  "final_query": "What instrument does the user play?",
+  "retrieved": [
+   "User has a collection of rare vinyl records.",
+   "User outgrew their peanut allergy but developed a shellfish allergy."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_11",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'judo'",
+  "must_contain": [
+   "judo"
+  ],
+  "must_not_contain": [
+   "Stanford"
+  ],
+  "final_query": "What martial art does the user practice?",
+  "retrieved": [
+   "User accepted a professorship at MIT this semester.",
+   "User writes science fiction novels in their spare time."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_12",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Toronto'",
+  "must_contain": [
+   "Toronto"
+  ],
+  "must_not_contain": [
+   "Green Party"
+  ],
+  "final_query": "Where is the user originally from?",
+  "retrieved": [
+   "User switched allegiance to the Socialist Party last election.",
+   "User runs an urban gardening blog with 50k followers."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_13",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'neurosurgeon'",
+  "must_contain": [
+   "neurosurgeon"
+  ],
+  "must_not_contain": [
+   "triathlons"
+  ],
+  "final_query": "What is the user's profession?",
+  "retrieved": [
+   "User collects antique medical instruments.",
+   "User has shifted focus to ultramarathons, completing their first 100-miler."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_14",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Mandarin'",
+  "must_contain": [
+   "Mandarin"
+  ],
+  "must_not_contain": [
+   "cryptocurrency"
+  ],
+  "final_query": "What languages does the user speak?",
+  "retrieved": [
+   "User maintains a zero-waste lifestyle.",
+   "User liquidated all crypto holdings after the FTX collapse."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_15",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'sourdough bread'",
+  "must_contain": [
+   "sourdough bread"
+  ],
+  "must_not_contain": [
+   "licensed pilot"
+  ],
+  "final_query": "What does the user enjoy baking?",
+  "retrieved": [
+   "User let their pilot's license expire last year.",
+   "User has traveled to over 60 countries."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_16",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'quantum physics'",
+  "must_contain": [
+   "quantum physics"
+  ],
+  "must_not_contain": [
+   "firefighter"
+  ],
+  "final_query": "What is the user's academic background?",
+  "retrieved": [
+   "User stepped back from firefighting due to back injuries.",
+   "User maintains an apiary with 20 honeybee hives."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_17",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'golden retriever'",
+  "must_contain": [
+   "golden retriever"
+  ],
+  "must_not_contain": [
+   "Tesla Model 3"
+  ],
+  "final_query": "What pet does the user have?",
+  "retrieved": [
+   "User volunteers at a local animal shelter on weekends.",
+   "User recently upgraded to a Rivian R1T."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_18",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'PhD in neuroscience'",
+  "must_contain": [
+   "PhD in neuroscience"
+  ],
+  "must_not_contain": [
+   "plays chess"
+  ],
+  "final_query": "What is the user's highest academic degree?",
+  "retrieved": [
+   "User collects vintage board games.",
+   "User now focuses on Go as their primary strategy game."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_19",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'firefighter'",
+  "must_contain": [
+   "firefighter"
+  ],
+  "must_not_contain": [
+   "allergic to peanuts"
+  ],
+  "final_query": "What is the user's profession?",
+  "retrieved": [
+   "User participates in triathlons annually.",
+   "User has outgrown their peanut allergy through immunotherapy."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_20",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Japanese'",
+  "must_contain": [
+   "Japanese"
+  ],
+  "must_not_contain": [
+   "writes poetry"
+  ],
+  "final_query": "What languages does the user speak fluently?",
+  "retrieved": [
+   "User has visited every continent except Antarctica.",
+   "User has transitioned to writing short stories instead of poetry."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_21",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'coffee shop'",
+  "must_contain": [
+   "coffee shop"
+  ],
+  "must_not_contain": [
+   "practices archery"
+  ],
+  "final_query": "What business does the user own?",
+  "retrieved": [
+   "User has a collection of rare coffee beans from around the world.",
+   "User has switched to competitive shooting sports."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_22",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'heirloom tomatoes'",
+  "must_contain": [
+   "heirloom tomatoes"
+  ],
+  "must_not_contain": [
+   "licensed pilot"
+  ],
+  "final_query": "What does the user grow?",
+  "retrieved": [
+   "User built their own greenhouse last summer.",
+   "User let their pilot license expire due to time constraints."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_23",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'cello'",
+  "must_contain": [
+   "cello"
+  ],
+  "must_not_contain": [
+   "converted warehouse"
+  ],
+  "final_query": "What instrument does the user play?",
+  "retrieved": [
+   "User has perfect pitch.",
+   "User moved to a lakeside cottage last month."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_24",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'marine biologist'",
+  "must_contain": [
+   "marine biologist"
+  ],
+  "must_not_contain": [
+   "12 marathons"
+  ],
+  "final_query": "What is the user's profession?",
+  "retrieved": [
+   "User specializes in coral reef ecosystems.",
+   "User has completed their 15th marathon this year."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_25",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Max'",
+  "must_contain": [
+   "Max"
+  ],
+  "must_not_contain": [
+   "Tesla Model 3"
+  ],
+  "final_query": "What is the name of the user's dog?",
+  "retrieved": [
+   "User volunteers at a local animal shelter on weekends.",
+   "User recently upgraded to a Ford Mustang Mach-E."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_26",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'violin'",
+  "must_contain": [
+   "violin"
+  ],
+  "must_not_contain": [
+   "Taekwondo"
+  ],
+  "final_query": "What instrument does the user play?",
+  "retrieved": [
+   "User stopped practicing Taekwondo due to an injury.",
+   "User collects vintage comic books."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_27",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Mandarin'",
+  "must_contain": [
+   "Mandarin"
+  ],
+  "must_not_contain": [
+   "PhD"
+  ],
+  "final_query": "What languages does the user speak?",
+  "retrieved": [
+   "User enjoys hiking in the Rocky Mountains.",
+   "User obtained an MD degree from Harvard Medical School."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_28",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'peanuts'",
+  "must_contain": [
+   "peanuts"
+  ],
+  "must_not_contain": [
+   "Microsoft"
+  ],
+  "final_query": "What is the user allergic to?",
+  "retrieved": [
+   "User participates in competitive chess tournaments.",
+   "User accepted a position as CTO at a startup."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_29",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'three'",
+  "must_contain": [
+   "three"
+  ],
+  "must_not_contain": [
+   "Tokyo"
+  ],
+  "final_query": "How many novels has the user published?",
+  "retrieved": [
+   "User practices meditation daily.",
+   "User moved to Kyoto last month."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_30",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'yoga instructor'",
+  "must_contain": [
+   "yoga instructor"
+  ],
+  "must_not_contain": [
+   "coffee shop"
+  ],
+  "final_query": "What certification does the user hold?",
+  "retrieved": [
+   "User sold the coffee shop and now runs a bookstore.",
+   "User has traveled to over 30 countries."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_31",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'left-handed'",
+  "must_contain": [
+   "left-handed"
+  ],
+  "must_not_contain": [
+   "tennis"
+  ],
+  "final_query": "Which hand does the user write with?",
+  "retrieved": [
+   "User retired from competitive tennis to focus on coaching.",
+   "User collects rare vinyl records."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_32",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'twin brother'",
+  "must_contain": [
+   "twin brother"
+  ],
+  "must_not_contain": [
+   "marine biologist"
+  ],
+  "final_query": "Does the user have siblings?",
+  "retrieved": [
+   "User transitioned to environmental law.",
+   "User enjoys scuba diving in the Caribbean."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_33",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Max'",
+  "must_contain": [
+   "Max"
+  ],
+  "must_not_contain": [
+   "Tesla Model 3"
+  ],
+  "final_query": "What is the name of the user's dog?",
+  "retrieved": [
+   "User volunteers at a local animal shelter on weekends.",
+   "User recently upgraded to a Rivian R1T."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_34",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'black belt'",
+  "must_contain": [
+   "black belt"
+  ],
+  "must_not_contain": [
+   "pediatrician"
+  ],
+  "final_query": "What martial arts rank does the user hold?",
+  "retrieved": [
+   "User transitioned to emergency medicine last year.",
+   "User enjoys baking sourdough bread as a hobby."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_35",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'chess'",
+  "must_contain": [
+   "chess"
+  ],
+  "must_not_contain": [
+   "Toronto"
+  ],
+  "final_query": "What competitive game does the user play?",
+  "retrieved": [
+   "User collects vintage vinyl records from the 1970s.",
+   "User moved to Vancouver for a job opportunity."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_36",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'flight attendant'",
+  "must_contain": [
+   "flight attendant"
+  ],
+  "must_not_contain": [
+   "peanuts"
+  ],
+  "final_query": "What is the user's occupation?",
+  "retrieved": [
+   "User developed a shellfish allergy last summer.",
+   "User has completed marathons in three different countries."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_37",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'twin sister named Emily'",
+  "must_contain": [
+   "twin sister named Emily"
+  ],
+  "must_not_contain": [
+   "coffee shop"
+  ],
+  "final_query": "Does the user have any siblings?",
+  "retrieved": [
+   "User sold the coffee shop and now runs a bookstore.",
+   "User practices meditation daily before sunrise."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_38",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'Mandarin'",
+  "must_contain": [
+   "Mandarin"
+  ],
+  "must_not_contain": [
+   "afraid of heights"
+  ],
+  "final_query": "What languages does the user speak fluently?",
+  "retrieved": [
+   "User has a collection of rare orchids in their greenhouse.",
+   "User overcame their fear through exposure therapy."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_39",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'prescription glasses'",
+  "must_contain": [
+   "prescription glasses"
+  ],
+  "must_not_contain": [
+   "food bank"
+  ],
+  "final_query": "Does the user require vision correction?",
+  "retrieved": [
+   "User maintains a perfect credit score.",
+   "User now volunteers at an after-school tutoring program."
+  ]
+ },
+ {
+  "id": "adv_compound_fact_40",
+  "category": "compound_fact",
+  "reason": "missing must_contain 'violin'",
+  "must_contain": [
+   "violin"
+  ],
+  "must_not_contain": [
+   "Netflix"
+  ],
+  "final_query": "What musical instrument does the user play?",
+  "retrieved": [
+   "User accepted a research position at DeepMind.",
+   "User grows heirloom tomatoes in their backyard."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_01",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'alice@acme.io is the same'",
+  "must_contain": [],
+  "must_not_contain": [
+   "ALICE@ACME.IO subscribed",
+   "alice@acme.io is the same"
+  ],
+  "final_query": "What plan does alice@acme.io have?",
+  "retrieved": [
+   "Customer alice@acme.io is the same person (case-normalized).",
+   "Office lunches are catered on Wednesdays."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_02",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'is the same account'",
+  "must_contain": [],
+  "must_not_contain": [
+   "bob@example.com bought 5",
+   "is the same account"
+  ],
+  "final_query": "What did bob@example.com buy?",
+  "retrieved": [
+   "Customer bob@example.com  (note trailing whitespace) is the same account.",
+   "Quarterly OKR review is in two weeks."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_03",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '415-555-0123 (no country code)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "+1-415-555-0123",
+   "415-555-0123 (no country code)"
+  ],
+  "final_query": "What is the patient's phone number?",
+  "retrieved": [
+   "Patient phone alternate format: 415-555-0123 (no country code).",
+   "Clinic moved to a new address last month."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_04",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '550e8400e29b41d4'",
+  "must_contain": [],
+  "must_not_contain": [
+   "550e8400-e29b-41d4",
+   "550e8400e29b41d4"
+  ],
+  "final_query": "What is the user token?",
+  "retrieved": [
+   "Same user, compact form: 550e8400e29b41d4a716446655440000.",
+   "Server maintenance window is Tuesdays."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_05",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '123456789 (no dashes)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "123-45-6789",
+   "123456789 (no dashes)"
+  ],
+  "final_query": "What is the customer's SSN?",
+  "retrieved": [
+   "Customer alternate record: 123456789 (no dashes).",
+   "Tax filings are due in April."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_06",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '4111111111111111'",
+  "must_contain": [],
+  "must_not_contain": [
+   "4111-1111-1111-1111",
+   "4111111111111111"
+  ],
+  "final_query": "What card is on file?",
+  "retrieved": [
+   "Same card, no separators: 4111111111111111.",
+   "Office holiday party will be online."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_07",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'Same customer in canonical'",
+  "must_contain": [],
+  "must_not_contain": [
+   "\"john.doe\"@company.com subscribed",
+   "Same customer in canonical"
+  ],
+  "final_query": "What plan does john.doe@company.com have?",
+  "retrieved": [
+   "Same customer in canonical form: john.doe@company.com.",
+   "Annual leave policy updates take effect next quarter."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_08",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '@acme-engineer is on'",
+  "must_contain": [],
+  "must_not_contain": [
+   "@acme-engineer is on",
+   "acme-engineer."
+  ],
+  "final_query": "Is @acme-engineer still on the access list?",
+  "retrieved": [
+   "Contractor @acme-engineer is on the access list.",
+   "All-hands is the third Friday of each month."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_09",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '192.168.001.005 hosts'",
+  "must_contain": [],
+  "must_not_contain": [
+   "192.168.001.005 hosts",
+   "192.168.1.5 (no padding)"
+  ],
+  "final_query": "What does 192.168.1.5 host?",
+  "retrieved": [
+   "Server IP 192.168.001.005 hosts the staging environment.",
+   "Office WiFi password rotates monthly."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_10",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'api.acme.io/v2/events/ (trailing slash)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "https://api.acme.io/v2/events fires",
+   "api.acme.io/v2/events/ (trailing slash)"
+  ],
+  "final_query": "Where does the webhook fire?",
+  "retrieved": [
+   "Same endpoint http-form api.acme.io/v2/events/ (trailing slash) is in legacy docs.",
+   "Slack channel was renamed last week."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_11",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'Dr. Alan Turing accessed'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Mr. Alan Turing logged",
+   "Dr. Alan Turing accessed"
+  ],
+  "final_query": "Does Alan Turing have any sessions on file?",
+  "retrieved": [
+   "Dr. Alan Turing accessed the same project repository.",
+   "Office plants were watered this morning."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_12",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'ada+promo@example.com used a coupon'",
+  "must_contain": [],
+  "must_not_contain": [
+   "ada@example.com signed up",
+   "ada+promo@example.com used a coupon"
+  ],
+  "final_query": "Does ada+promo@example.com still have coupon history?",
+  "retrieved": [
+   "Same customer email-with-tag: ada+promo@example.com used a coupon.",
+   "Print queue was migrated to AirPrint."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_13",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'Robert Smith was hired'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Robert Smith was hired",
+   "Bob Smith, was promoted"
+  ],
+  "final_query": "Show me Bob Smith's promotion record.",
+  "retrieved": [
+   "Robert Smith was hired on 2023-01-15.",
+   "Annual review window opens next month."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_14",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'ATLAS-2024 (no PRJ prefix)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "PRJ-ATLAS-2024 has 5",
+   "ATLAS-2024 (no PRJ prefix)"
+  ],
+  "final_query": "How many milestones in ATLAS-2024?",
+  "retrieved": [
+   "Same project shortcut form ATLAS-2024 (no PRJ prefix) is in slides.",
+   "Office snacks were restocked."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_15",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '12/25/2025 will be at'",
+  "must_contain": [],
+  "must_not_contain": [
+   "2025-12-25 is the company gala",
+   "12/25/2025 will be at"
+  ],
+  "final_query": "Where is the 12/25/2025 event held?",
+  "retrieved": [
+   "Same event in US-format: 12/25/2025 will be at the convention center.",
+   "Holiday schedule was published."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_16",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '1234 (without currency suffix)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "1234-USD holds the dollar",
+   "1234 (without currency suffix)"
+  ],
+  "final_query": "What is the balance on account 1234?",
+  "retrieved": [
+   "Same account 1234 (without currency suffix) appears in the ledger.",
+   "Audit was completed last quarter."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_19",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'acme.io/vendor (no scheme'",
+  "must_contain": [],
+  "must_not_contain": [
+   "https://www.acme.io/vendor",
+   "acme.io/vendor (no scheme"
+  ],
+  "final_query": "Where is the vendor profile?",
+  "retrieved": [
+   "Same profile, bare form: acme.io/vendor (no scheme, no www).",
+   "Vendor onboarding is finalized."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_20",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'api.beta.io/v2/users/ (with trailing'",
+  "must_contain": [],
+  "must_not_contain": [
+   "api.beta.io/v2/users.",
+   "api.beta.io/v2/users/ (with trailing"
+  ],
+  "final_query": "What endpoint is registered?",
+  "retrieved": [
+   "Equivalent canonical: https://api.beta.io/v2/users/ (with trailing slash).",
+   "OAuth refresh ran cleanly overnight."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_21",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'charlie+work@gmail.com.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "charlie+work@gmail.com.",
+   "charlie@gmail.com."
+  ],
+  "final_query": "What is the account holder's email?",
+  "retrieved": [
+   "Account holder email: charlie+work@gmail.com.",
+   "Promo codes expire on Sunday."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_22",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '@dora_writes.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "@dora_writes.",
+   "without prefix: dora_writes."
+  ],
+  "final_query": "Who is the lead writer?",
+  "retrieved": [
+   "Lead writer handle: @dora_writes.",
+   "Submissions are due by EOD Friday."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_23",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'abc1234 (no hyphen'",
+  "must_contain": [],
+  "must_not_contain": [
+   "ABC-1234 registered",
+   "abc1234 (no hyphen"
+  ],
+  "final_query": "What vehicle is on file?",
+  "retrieved": [
+   "Pickup is at the north lot.",
+   "Same plate compact form: abc1234 (no hyphen, lowercase)."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_24",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '4111 1111 1111 1111.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "4111 1111 1111 1111.",
+   "4111111111111111."
+  ],
+  "final_query": "What card is saved on file?",
+  "retrieved": [
+   "Saved card on file: 4111 1111 1111 1111.",
+   "Statement cycle closes on the 28th."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_25",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '192.168.001.010.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "192.168.1.10 hosts",
+   "192.168.001.010."
+  ],
+  "final_query": "What is the wiki server's IP?",
+  "retrieved": [
+   "Same host, padded form: 192.168.001.010.",
+   "Backups rotate every three days."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_26",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '2:30 PM.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "scheduled at 14:30.",
+   "2:30 PM."
+  ],
+  "final_query": "When is the appointment?",
+  "retrieved": [
+   "Same appointment in 12-hour form: 2:30 PM.",
+   "Clinic policy requires 24h notice for changes."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_27",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '978-0-13-468599-1.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "978-0-13-468599-1.",
+   "9780134685991."
+  ],
+  "final_query": "Which book did the customer buy?",
+  "retrieved": [
+   "Customer's last purchase: ISBN 978-0-13-468599-1.",
+   "Free shipping applies to orders over fifty dollars."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_28",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'releases\\\\\\\\v3\\\\\\\\bundle.zip.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "releases\\\\v3\\\\bundle.zip.",
+   "releases/v3/bundle.zip."
+  ],
+  "final_query": "Where is the v3 bundle?",
+  "retrieved": [
+   "Build artefact lives at C:\\\\releases\\\\v3\\\\bundle.zip.",
+   "CI pipeline reruns nightly."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_29",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'FF7A00 (no hash).'",
+  "must_contain": [],
+  "must_not_contain": [
+   "#FF7A00.",
+   "FF7A00 (no hash)."
+  ],
+  "final_query": "What is the brand primary colour?",
+  "retrieved": [
+   "Same colour bare hex: FF7A00 (no hash).",
+   "Logo refresh shipped last week."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_30",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '941071234.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "94107-1234.",
+   "941071234."
+  ],
+  "final_query": "What ZIP is on the mailing record?",
+  "retrieved": [
+   "Same ZIP+4 unhyphenated: 941071234.",
+   "Standard envelopes are restocked weekly."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_31",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'RNN-42 (no SHOE).'",
+  "must_contain": [],
+  "must_not_contain": [
+   "SHOE-RNN-42.",
+   "RNN-42 (no SHOE)."
+  ],
+  "final_query": "What did we restock?",
+  "retrieved": [
+   "Same item, prefix-stripped: RNN-42 (no SHOE).",
+   "Warehouse audit happens monthly."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_32",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'XK7L.9P3Q.2RVA.8M1N.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "XK7L-9P3Q-2RVA-8M1N.",
+   "XK7L.9P3Q.2RVA.8M1N."
+  ],
+  "final_query": "What is the licence key?",
+  "retrieved": [
+   "Same key, dotted-form: XK7L.9P3Q.2RVA.8M1N.",
+   "Patch notes are published quarterly."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_33",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'zero-trimmed: 847.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "ID: 0000847.",
+   "zero-trimmed: 847."
+  ],
+  "final_query": "Which customer record?",
+  "retrieved": [
+   "Same record, zero-trimmed: 847.",
+   "Annual loyalty rewards run in December."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_34",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '#INC-22184 is open.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "#INC-22184 is open.",
+   "without hash: INC-22184."
+  ],
+  "final_query": "Which support ticket?",
+  "retrieved": [
+   "Support ticket reference #INC-22184 is open.",
+   "On-call rotation begins next Monday."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_35",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '650-555-0177.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "(650) 555-0177.",
+   "650-555-0177."
+  ],
+  "final_query": "What is the emergency contact number?",
+  "retrieved": [
+   "Same number unbracketed: 650-555-0177.",
+   "Carrier portability rules updated this year."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_36",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'short-form: 00921.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "ORD-2026-00921.",
+   "short-form: 00921."
+  ],
+  "final_query": "Which order is pending?",
+  "retrieved": [
+   "Same shipment short-form: 00921.",
+   "Distribution centre operates 24/7."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_37",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain '1HGCM-82633-A004352.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "1HGCM82633A004352.",
+   "1HGCM-82633-A004352."
+  ],
+  "final_query": "What is the test vehicle's VIN?",
+  "retrieved": [
+   "Same VIN, dashed display: 1HGCM-82633-A004352.",
+   "Inspection date is set for next Tuesday."
+  ]
+ },
+ {
+  "id": "adv_identifier_obfuscation_38",
+  "category": "identifier_obfuscation",
+  "reason": "leaked must_not_contain 'DEUTDEFFXXX.'",
+  "must_contain": [],
+  "must_not_contain": [
+   "DEUTDEFFXXX.",
+   "DEUTDEFF."
+  ],
+  "final_query": "Which BIC is on the wire instruction?",
+  "retrieved": [
+   "Wire transfer BIC: DEUTDEFFXXX.",
+   "Currency hedge ratio is reviewed quarterly."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_01",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain '张伟'",
+  "must_contain": [],
+  "must_not_contain": [
+   "张伟",
+   "Zhang Wei subscribed"
+  ],
+  "final_query": "What orders does Zhang Wei have?",
+  "retrieved": [
+   "Customer 张伟 placed an order in March.",
+   "Marketing team rotated coupons last quarter."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_02",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain '田中太郎 was prescribed'",
+  "must_contain": [],
+  "must_not_contain": [
+   "田中太郎 was prescribed",
+   "Tanaka Taro has"
+  ],
+  "final_query": "What medication did Tanaka Taro receive?",
+  "retrieved": [
+   "Patient 田中太郎 was prescribed aspirin.",
+   "Pharmacy was inspected on Tuesday."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_03",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain '김민지 logged'",
+  "must_contain": [],
+  "must_not_contain": [
+   "김민지 logged",
+   "Kim Minji has"
+  ],
+  "final_query": "Show me Kim Minji's login activity.",
+  "retrieved": [
+   "User 김민지 logged in from Seoul.",
+   "Office cafeteria is closed on Sundays."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_04",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Ivan Petrov, transliterated'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Иван Петров pays",
+   "Ivan Petrov, transliterated"
+  ],
+  "final_query": "What tier is Ivan Petrov on?",
+  "retrieved": [
+   "Same customer (Ivan Petrov, transliterated) has Premium tier.",
+   "Quarterly sales meeting is in November."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_05",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Mohammed Ali had surgery'",
+  "must_contain": [],
+  "must_not_contain": [
+   "محمد علي is allergic",
+   "Mohammed Ali had surgery"
+  ],
+  "final_query": "Is Mohammed Ali allergic to anything?",
+  "retrieved": [
+   "Same patient as Mohammed Ali had surgery last year.",
+   "Lab equipment was upgraded recently."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_06",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Alibaba sent invoice'",
+  "must_contain": [],
+  "must_not_contain": [
+   "阿里巴巴 shipped",
+   "Alibaba sent invoice"
+  ],
+  "final_query": "What did Alibaba ship?",
+  "retrieved": [
+   "Same vendor as Alibaba sent invoice for $5000.",
+   "Annual conference is in Las Vegas this year."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_07",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Jose Garcia (no accents)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "José García placed",
+   "Jose Garcia (no accents)"
+  ],
+  "final_query": "What plan is Jose Garcia on?",
+  "retrieved": [
+   "Same customer as Jose Garcia (no accents) has Plan B.",
+   "Office supply order was approved."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_08",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Grossmann GmbH (without'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Großmann GmbH delivered",
+   "Grossmann GmbH (without"
+  ],
+  "final_query": "Show me Grossmann's recent activity.",
+  "retrieved": [
+   "Same vendor as Grossmann GmbH (without ß) sent the invoice.",
+   "Holiday schedule was distributed."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_09",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Raj Sharma (transliterated)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "राज शर्मा placed",
+   "Raj Sharma (transliterated)"
+  ],
+  "final_query": "Does Raj Sharma have a refund?",
+  "retrieved": [
+   "Same customer as Raj Sharma (transliterated) has a refund pending.",
+   "Holiday calendar was updated."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_10",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Somchai Jaidee (romanized)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "สมชาย ใจดี delivered",
+   "Somchai Jaidee (romanized)"
+  ],
+  "final_query": "Who delivered the parts?",
+  "retrieved": [
+   "Warehouse layout was reorganized.",
+   "Same vendor Somchai Jaidee (romanized) issued an invoice."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_11",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Nikos Papadopoulos (Latin)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Νίκος Παπαδόπουλος is on",
+   "Nikos Papadopoulos (Latin)"
+  ],
+  "final_query": "How did Nikos Papadopoulos pay?",
+  "retrieved": [
+   "Same customer Nikos Papadopoulos (Latin) paid by card.",
+   "DNS migration finished overnight."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_12",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'David Cohen (transliterated)'",
+  "must_contain": [],
+  "must_not_contain": [
+   "דוד כהן has an upcoming",
+   "David Cohen (transliterated)"
+  ],
+  "final_query": "What medication is David Cohen taking?",
+  "retrieved": [
+   "Same patient David Cohen (transliterated) is on medication.",
+   "Office printer toner was replaced."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_13",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Beijing (English) hosts'",
+  "must_contain": [],
+  "must_not_contain": [
+   "北京 reports to",
+   "Beijing (English) hosts"
+  ],
+  "final_query": "How many employees in the Beijing branch?",
+  "retrieved": [
+   "Same branch office Beijing (English) hosts 120 employees.",
+   "Travel policy was revised in October."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_14",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Nguyen Van Hung (no diacritics) was'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Nguyễn Văn Hùng filed",
+   "Nguyen Van Hung (no diacritics) was"
+  ],
+  "final_query": "Was Nguyen Van Hung promoted?",
+  "retrieved": [
+   "Same engineer Nguyen Van Hung (no diacritics) was promoted last cycle.",
+   "Quarterly OKR review is next Monday."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_15",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Francois Muller (no accents) requested'",
+  "must_contain": [],
+  "must_not_contain": [
+   "François Müller paid",
+   "Francois Muller (no accents) requested"
+  ],
+  "final_query": "Did Francois Muller request a refund?",
+  "retrieved": [
+   "Same client Francois Muller (no accents) requested a refund.",
+   "Conference room schedule was updated."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_16",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain '@dev (no emoji) approved'",
+  "must_contain": [],
+  "must_not_contain": [
+   "@dev🚀 left feedback",
+   "@dev (no emoji) approved"
+  ],
+  "final_query": "Did @dev approve PR #45?",
+  "retrieved": [
+   "Same reviewer plain form: @dev (no emoji) approved PR #45.",
+   "CI runner pool was scaled up."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_17",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Maria Papadopoulou has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Μαρία Παπαδοπούλου had",
+   "Maria Papadopoulou has"
+  ],
+  "final_query": "What are Maria Papadopoulou's test results?",
+  "retrieved": [
+   "Same patient in Latin script: Maria Papadopoulou has type O+ blood.",
+   "Lab results were processed on Wednesday."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_19",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Ivan Petrov subscribed'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Иван Петров bought",
+   "Ivan Petrov subscribed"
+  ],
+  "final_query": "What did Ivan Petrov purchase?",
+  "retrieved": [
+   "Same customer as Ivan Petrov subscribed to premium support.",
+   "Store inventory was updated today."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_20",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain '山田花子 uploaded'",
+  "must_contain": [],
+  "must_not_contain": [
+   "山田花子 uploaded",
+   "Yamada Hanako has"
+  ],
+  "final_query": "What permissions does Yamada Hanako have?",
+  "retrieved": [
+   "User 山田花子 uploaded documents.",
+   "Server backup completed at 2AM."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_21",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Mueller, Juergen was'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Müller, Jürgen visited",
+   "Mueller, Juergen was"
+  ],
+  "final_query": "What treatment did Juergen Mueller receive?",
+  "retrieved": [
+   "Same patient as Mueller, Juergen was prescribed antibiotics.",
+   "Waiting room was cleaned at noon."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_22",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Jose Gonzalez made'",
+  "must_contain": [],
+  "must_not_contain": [
+   "José González signed",
+   "Jose Gonzalez made"
+  ],
+  "final_query": "What contracts does Jose Gonzalez have?",
+  "retrieved": [
+   "Same client as Jose Gonzalez made payment yesterday.",
+   "Legal department is closed Fridays."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_24",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Georgios Papadopoulos had'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Γεώργιος Παπαδόπουλος requested",
+   "Georgios Papadopoulos had"
+  ],
+  "final_query": "What was Georgios Papadopoulos's request?",
+  "retrieved": [
+   "Same customer as Georgios Papadopoulos had order #7890.",
+   "Accounting system will be upgraded next week."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_23",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Ioannis Papadopoulos has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Ιωάννης Παπαδόπουλος requested",
+   "Ioannis Papadopoulos has"
+  ],
+  "final_query": "Show Ioannis Papadopoulos's employment details.",
+  "retrieved": [
+   "Same employee as Ioannis Papadopoulos has 3 years tenure.",
+   "HR system was updated last month."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_25",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Anna Ivanova has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Анна Иванова purchased",
+   "Anna Ivanova has"
+  ],
+  "final_query": "What did Anna Ivanova buy?",
+  "retrieved": [
+   "Same customer as Anna Ivanova has payment on file.",
+   "New products launching next week."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_26",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'David Cohen has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "דוד כהן was admitted",
+   "David Cohen has"
+  ],
+  "final_query": "What is David Cohen's medical status?",
+  "retrieved": [
+   "Same patient as David Cohen has allergies listed.",
+   "Hospital visiting hours changed recently."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_27",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Francois Duchene has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "François Duchêne created",
+   "Francois Duchene has"
+  ],
+  "final_query": "Check Francois Duchene's support requests.",
+  "retrieved": [
+   "Same user as Francois Duchene has VIP status.",
+   "Support system upgrade completed yesterday."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_30",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Athina Papandreou has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Αθηνά Παπανδρέου changed",
+   "Athina Papandreou has"
+  ],
+  "final_query": "Check Athina Papandreou's security settings.",
+  "retrieved": [
+   "Same user as Athina Papandreou has MFA disabled.",
+   "Security audit scheduled for Friday."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_28",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Ahmed has platinum'",
+  "must_contain": [],
+  "must_not_contain": [
+   "أحمد booked",
+   "Ahmed has platinum"
+  ],
+  "final_query": "What is Ahmed's flight booking?",
+  "retrieved": [
+   "Same user as Ahmed has platinum status.",
+   "New security protocol was implemented yesterday."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_29",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'George requested'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Γιώργος placed",
+   "George requested"
+  ],
+  "final_query": "Show George's recent orders",
+  "retrieved": [
+   "Same customer as George requested express shipping.",
+   "Warehouse inventory was updated this morning."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_31",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'גלית submitted'",
+  "must_contain": [],
+  "must_not_contain": [
+   "גלית submitted",
+   "Galit Cohen is on"
+  ],
+  "final_query": "Show Galit Cohen's current projects",
+  "retrieved": [
+   "Employee גלית submitted vacation request.",
+   "Company picnic is scheduled for June."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_32",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Francois Dubois has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "François Dubois made",
+   "Francois Dubois has"
+  ],
+  "final_query": "What did Francois Dubois purchase?",
+  "retrieved": [
+   "Same customer as Francois Dubois has loyalty points.",
+   "Store hours changed effective today."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_33",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Mueller, Hans changed'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Müller, Hans logged",
+   "Mueller, Hans changed"
+  ],
+  "final_query": "Show login history for Mueller, Hans",
+  "retrieved": [
+   "Same user as Mueller, Hans changed password recently.",
+   "System maintenance planned for tonight."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_34",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain '박지민 was prescribed'",
+  "must_contain": [],
+  "must_not_contain": [
+   "박지민 was prescribed",
+   "Park Jimin has annual"
+  ],
+  "final_query": "What prescriptions does Park Jimin have?",
+  "retrieved": [
+   "Patient 박지민 was prescribed vitamin D.",
+   "Clinic is closed on holidays."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_35",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Archer_123 has 3 failed'",
+  "must_contain": [],
+  "must_not_contain": [
+   "🎯Archer_123 set up",
+   "Archer_123 has 3 failed"
+  ],
+  "final_query": "Show security status for Archer_123",
+  "retrieved": [
+   "Same user as Archer_123 has 3 failed login attempts.",
+   "New feature rollout begins next week."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_37",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Georgios has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Γεώργιος clocked",
+   "Georgios has"
+  ],
+  "final_query": "What's Georgios's attendance record?",
+  "retrieved": [
+   "Same employee as Georgios has 3 vacation days left.",
+   "HR system will be upgraded next week."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_38",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Miriam Cohen has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "מרים כהן was discharged",
+   "Miriam Cohen has"
+  ],
+  "final_query": "When is Miriam Cohen's next appointment?",
+  "retrieved": [
+   "Same patient as Miriam Cohen has a follow-up in 2 weeks.",
+   "Hospital cafeteria has new menu items."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_39",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain 'Mueller has'",
+  "must_contain": [],
+  "must_not_contain": [
+   "Müller 💻 renewed",
+   "Mueller has"
+  ],
+  "final_query": "What's Mueller's subscription status?",
+  "retrieved": [
+   "Same subscriber as Mueller has payment issue.",
+   "Server maintenance scheduled for Friday."
+  ]
+ },
+ {
+  "id": "adv_cross_lingual_identifier_40",
+  "category": "cross_lingual_identifier",
+  "reason": "leaked must_not_contain '박지민 submitted'",
+  "must_contain": [],
+  "must_not_contain": [
+   "박지민 submitted",
+   "Park Jimin failed"
+  ],
+  "final_query": "What forms did Park Jimin submit?",
+  "retrieved": [
+   "Applicant 박지민 submitted form F-221.",
+   "New application portal launches next month."
+  ]
+ },
+ {
+  "id": "adv_recursive_supersession_10",
+  "category": "recursive_supersession",
+  "reason": "leaked must_not_contain 'Crestor'",
+  "must_contain": [
+   "Lipitor"
+  ],
+  "must_not_contain": [
+   "Crestor"
+  ],
+  "final_query": "What cholesterol medication is the patient currently taking?",
+  "retrieved": [
+   "Patient returned to Lipitor in 2024 after Crestor proved ineffective."
+  ]
+ },
+ {
+  "id": "adv_recursive_supersession_17",
+  "category": "recursive_supersession",
+  "reason": "leaked must_not_contain 'Disney+'",
+  "must_contain": [
+   "Netflix"
+  ],
+  "must_not_contain": [
+   "Disney+"
+  ],
+  "final_query": "What streaming service does the user currently subscribe to?",
+  "retrieved": [
+   "User went back to Netflix in 2024 after Disney+ raised prices."
+  ]
+ },
+ {
+  "id": "adv_recursive_supersession_18",
+  "category": "recursive_supersession",
+  "reason": "leaked must_not_contain 'Crestor'",
+  "must_contain": [
+   "Lipitor"
+  ],
+  "must_not_contain": [
+   "Crestor"
+  ],
+  "final_query": "What is the patient's current cholesterol medication?",
+  "retrieved": [
+   "Patient returned to Lipitor in 2023 after Crestor didn't work."
+  ]
+ }
+]

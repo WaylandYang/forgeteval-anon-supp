@@ -1,0 +1,1841 @@
+{
+  "n_raw": 80,
+  "n_admitted": 77,
+  "n_rejected": 3,
+  "authors": {
+    "dxy": 20,
+    "dxy2": 20,
+    "dxy3": 20,
+    "med": 20
+  },
+  "category_distribution": {
+    "substring_trap": 8,
+    "prefix_collision": 5,
+    "paraphrase_supersession": 8,
+    "negation_trap": 8,
+    "temporal_qualifier": 8,
+    "shared_attribute": 8,
+    "compound_fact": 8,
+    "identifier_obfuscation": 8,
+    "cross_lingual_identifier": 8,
+    "recursive_supersession": 8
+  },
+  "admitted_cases": [
+    {
+      "id": "ext_dxy_substring_interference_01",
+      "category": "substring_trap",
+      "setup_facts": [
+        "Charlie reset the staging database password to delta-99.",
+        "Charlie currently has 99 unread support tickets.",
+        "Charlie archived the April deployment notes.",
+        "Charlie manages the nightly backup pipeline."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "delta-99 database password"
+        ]
+      ],
+      "final_query": "How many unread support tickets does Charlie have?",
+      "must_contain": [
+        "99 unread support tickets"
+      ],
+      "must_not_contain": [
+        "delta-99"
+      ]
+    },
+    {
+      "id": "ext_dxy_identifier_prefix_collision_01",
+      "category": "prefix_collision",
+      "setup_facts": [
+        "Alice's primary email is alice@acme.test.",
+        "Alice's backup email is alice.smith@acme.test.",
+        "Alice reviews frontend pull requests.",
+        "Alice maintains the release checklist."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "alice@acme.test primary email"
+        ]
+      ],
+      "final_query": "What is Alice's backup email?",
+      "must_contain": [
+        "alice.smith@acme.test"
+      ],
+      "must_not_contain": [
+        "alice@acme.test"
+      ]
+    },
+    {
+      "id": "ext_dxy_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "setup_facts": [
+        "Bob works at Acme Robotics.",
+        "Bob leads the warehouse automation initiative.",
+        "Bob relocated to the Austin office.",
+        "Bob now serves as an engineer at Acme Robotics Group."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Bob works at Acme Robotics",
+          "Bob now serves as an engineer at Acme Robotics Group."
+        ]
+      ],
+      "final_query": "Where does Bob work?",
+      "must_contain": [
+        "Acme Robotics Group"
+      ],
+      "must_not_contain": [
+        "works at Acme Robotics."
+      ]
+    },
+    {
+      "id": "ext_dxy_negation_inconsistency_01",
+      "category": "negation_trap",
+      "setup_facts": [
+        "Dana does not have production database access.",
+        "Dana can access the staging cluster.",
+        "Dana handles QA validation for releases.",
+        "Dana joined the reliability team in March."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Dana production database access"
+        ]
+      ],
+      "final_query": "Can Dana access the production database?",
+      "must_contain": [
+        "does not"
+      ],
+      "must_not_contain": [
+        "has production database access"
+      ]
+    },
+    {
+      "id": "ext_dxy_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "setup_facts": [
+        "Eve's 2024 office location was Building A.",
+        "Eve managed the migration audit in 2024.",
+        "Eve's 2025 office location is Building F.",
+        "Eve currently works with the compliance group."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Eve office location",
+          "Eve's 2025 office location is Building F."
+        ]
+      ],
+      "final_query": "Where is Eve's current office?",
+      "must_contain": [
+        "Building F"
+      ],
+      "must_not_contain": [
+        "Building A"
+      ]
+    },
+    {
+      "id": "ext_dxy_shared_attribute_01",
+      "category": "shared_attribute",
+      "setup_facts": [
+        "Frank works from the Harbor HQ office.",
+        "Grace also works from the Harbor HQ office.",
+        "Frank maintains the observability dashboard.",
+        "Grace coordinates vendor onboarding."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Frank Harbor HQ"
+        ]
+      ],
+      "final_query": "Where does Grace work?",
+      "must_contain": [
+        "Harbor HQ office"
+      ],
+      "must_not_contain": [
+        "Frank works from the Harbor HQ office"
+      ]
+    },
+    {
+      "id": "ext_dxy_partial_fact_mutation_01",
+      "category": "compound_fact",
+      "setup_facts": [
+        "Henry's office phone is 555-0188 and his email is henry@northwind.test.",
+        "Henry owns the release coordination document.",
+        "Henry reviews deployment summaries weekly."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Henry office phone",
+          "Henry's office phone is 555-0188 and his email is henry@northwind.test."
+        ]
+      ],
+      "final_query": "What is Henry's email?",
+      "must_contain": [
+        "henry@northwind.test"
+      ],
+      "must_not_contain": [
+        "555-0188"
+      ]
+    },
+    {
+      "id": "ext_dxy_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "setup_facts": [
+        "The deployment project is tracked internally as ACME-CORP.",
+        "Several legacy documents still call it Acme Corp.",
+        "The finance dashboard labels it acme_corp.",
+        "The migration completed in February."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "ACME-CORP project identifier"
+        ]
+      ],
+      "final_query": "What is the deployment project called?",
+      "must_contain": [],
+      "must_not_contain": [
+        "ACME-CORP",
+        "Acme Corp",
+        "acme_corp"
+      ]
+    },
+    {
+      "id": "ext_dxy_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "setup_facts": [
+        "The regional operations center is located in Beijing.",
+        "Internal Chinese documents refer to the city as 北京.",
+        "Older logistics records still use the spelling Peking.",
+        "The compliance audit finished in April."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Beijing regional operations center"
+        ]
+      ],
+      "final_query": "Where is the regional operations center located?",
+      "must_contain": [],
+      "must_not_contain": [
+        "Beijing",
+        "北京",
+        "Peking"
+      ]
+    },
+    {
+      "id": "ext_dxy_cyclic_supersession_01",
+      "category": "recursive_supersession",
+      "setup_facts": [
+        "Iris initially used Chrome as her primary browser.",
+        "Iris later switched to Brave for privacy testing.",
+        "Iris now uses Chrome again for extension compatibility.",
+        "Iris maintains the internal browser policy page."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Iris primary browser",
+          "Iris now uses Chrome again for extension compatibility."
+        ]
+      ],
+      "final_query": "What browser does Iris currently use?",
+      "must_contain": [
+        "Chrome"
+      ],
+      "must_not_contain": [
+        "Brave"
+      ]
+    },
+    {
+      "id": "ext_dxy_substring_interference_02",
+      "category": "substring_trap",
+      "setup_facts": [
+        "Mia's temporary VPN code is raven-42.",
+        "Mia manages 42 active onboarding tasks.",
+        "Mia owns the team calendar for May.",
+        "Mia writes the weekly operations summary."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "raven-42 temporary VPN code"
+        ]
+      ],
+      "final_query": "How many active onboarding tasks does Mia manage?",
+      "must_contain": [
+        "42 active onboarding tasks"
+      ],
+      "must_not_contain": [
+        "raven-42"
+      ]
+    },
+    {
+      "id": "ext_dxy_identifier_prefix_collision_02",
+      "category": "prefix_collision",
+      "setup_facts": [
+        "Noah's service account is noah@app.example.",
+        "Noah's analytics account is noah.analytics@app.example.",
+        "Noah monitors the billing export job.",
+        "Noah attends the Monday platform sync."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "noah@app.example service account"
+        ]
+      ],
+      "final_query": "What is Noah's analytics account?",
+      "must_contain": [
+        "noah.analytics@app.example"
+      ],
+      "must_not_contain": [
+        "noah@app.example"
+      ]
+    },
+    {
+      "id": "ext_dxy_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "setup_facts": [
+        "Olivia is the owner of the Atlas migration project.",
+        "Olivia sends the Friday status report.",
+        "Olivia is based in the West lab.",
+        "Responsibility for the Atlas migration has moved to Ethan."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Atlas migration project owner",
+          "Responsibility for the Atlas migration has moved to Ethan."
+        ]
+      ],
+      "final_query": "Who owns the Atlas migration project now?",
+      "must_contain": [
+        "Ethan"
+      ],
+      "must_not_contain": [
+        "Olivia is the owner"
+      ]
+    },
+    {
+      "id": "ext_dxy_negation_inconsistency_02",
+      "category": "negation_trap",
+      "setup_facts": [
+        "Paul is not approved to deploy to production.",
+        "Paul can deploy to the sandbox environment.",
+        "Paul reviews frontend error reports.",
+        "Paul is assigned to the Luna dashboard project."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Paul production deployment approval"
+        ]
+      ],
+      "final_query": "Is Paul approved to deploy to production?",
+      "must_contain": [
+        "not approved"
+      ],
+      "must_not_contain": [
+        "approved to deploy to production"
+      ]
+    },
+    {
+      "id": "ext_dxy_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "setup_facts": [
+        "Quinn's 2024 manager was Harper.",
+        "Quinn worked on the Orion billing module in 2024.",
+        "Quinn's 2026 manager is Riley.",
+        "Quinn currently handles API reliability reviews."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Quinn manager",
+          "Quinn's 2026 manager is Riley."
+        ]
+      ],
+      "final_query": "Who is Quinn's current manager?",
+      "must_contain": [
+        "Riley"
+      ],
+      "must_not_contain": [
+        "Harper"
+      ]
+    },
+    {
+      "id": "ext_dxy_shared_attribute_02",
+      "category": "shared_attribute",
+      "setup_facts": [
+        "Ruby is assigned to the Cedar security review.",
+        "Sam is assigned to the Cedar security review.",
+        "Ruby maintains the access-control checklist.",
+        "Sam prepares the vendor risk notes."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Ruby Cedar security review"
+        ]
+      ],
+      "final_query": "Which security review is Sam assigned to?",
+      "must_contain": [
+        "Cedar security review"
+      ],
+      "must_not_contain": [
+        "Ruby is assigned to the Cedar security review"
+      ]
+    },
+    {
+      "id": "ext_dxy_partial_fact_mutation_02",
+      "category": "compound_fact",
+      "setup_facts": [
+        "Tina's desk is Room 4B and her project alias is comet-blue.",
+        "Tina updates the incident response tracker.",
+        "Tina attends the Wednesday release meeting.",
+        "Tina's desk has moved to Room 7C."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Tina desk location",
+          "Tina's desk is Room 4B and her project alias is comet-blue."
+        ]
+      ],
+      "final_query": "What is Tina's project alias?",
+      "must_contain": [
+        "comet-blue"
+      ],
+      "must_not_contain": [
+        "Room 4B"
+      ]
+    },
+    {
+      "id": "ext_dxy_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "setup_facts": [
+        "The customer sandbox is labeled NOVA-EDGE.",
+        "Some notes spell the same sandbox as Nova Edge.",
+        "The import script uses nova_edge as the sandbox key.",
+        "The sandbox refresh runs every Tuesday."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "NOVA-EDGE customer sandbox"
+        ]
+      ],
+      "final_query": "What is the customer sandbox label?",
+      "must_contain": [],
+      "must_not_contain": [
+        "NOVA-EDGE",
+        "Nova Edge",
+        "nova_edge"
+      ]
+    },
+    {
+      "id": "ext_dxy_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "setup_facts": [
+        "The backup data hub is located in Tokyo.",
+        "Japanese handover notes refer to the city as 東京.",
+        "Older travel sheets use the romanization Toukyou.",
+        "The backup data hub stores monthly archive exports."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Tokyo backup data hub"
+        ]
+      ],
+      "final_query": "Where is the backup data hub located?",
+      "must_contain": [],
+      "must_not_contain": [
+        "Tokyo",
+        "東京",
+        "Toukyou"
+      ]
+    },
+    {
+      "id": "ext_dxy_cyclic_supersession_02",
+      "category": "recursive_supersession",
+      "setup_facts": [
+        "Victor first used Slack as the team notification channel.",
+        "Victor later switched the team notification channel to Matrix.",
+        "Victor has now moved the team notification channel back to Slack.",
+        "Victor maintains the team communication guide."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Victor team notification channel",
+          "Victor has now moved the team notification channel back to Slack."
+        ]
+      ],
+      "final_query": "What notification channel does Victor currently use for the team?",
+      "must_contain": [
+        "Slack"
+      ],
+      "must_not_contain": [
+        "Matrix"
+      ]
+    },
+    {
+      "id": "ext_dxy2_substring_interference_01",
+      "category": "substring_trap",
+      "setup_facts": [
+        "Jared's expired locker PIN was 8080.",
+        "Jared processed 8080 image files during the archive migration.",
+        "Jared maintains the media checksum validator.",
+        "Jared rotated the CDN cache yesterday."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "8080 locker PIN"
+        ]
+      ],
+      "final_query": "How many image files did Jared process?",
+      "must_contain": [
+        "8080 image files"
+      ],
+      "must_not_contain": [
+        "locker PIN was 8080"
+      ]
+    },
+    {
+      "id": "ext_dxy2_substring_interference_02",
+      "category": "substring_trap",
+      "setup_facts": [
+        "Kira's temporary incident token was maple-17.",
+        "Kira closed 17 infrastructure alerts this week.",
+        "Kira owns the edge routing dashboard.",
+        "Kira prepared the quarterly outage summary."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "maple-17 incident token"
+        ]
+      ],
+      "final_query": "How many infrastructure alerts did Kira close?",
+      "must_contain": [
+        "17 infrastructure alerts"
+      ],
+      "must_not_contain": [
+        "maple-17"
+      ]
+    },
+    {
+      "id": "ext_dxy2_identifier_prefix_collision_01",
+      "category": "prefix_collision",
+      "setup_facts": [
+        "Lena's Git account is lena.dev@forge.test.",
+        "Lena's automation account is lena.dev.ops@forge.test.",
+        "Lena maintains the CI release pipeline.",
+        "Lena documents rollback procedures."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "lena.dev@forge.test Git account"
+        ]
+      ],
+      "final_query": "What is Lena's automation account?",
+      "must_contain": [
+        "lena.dev.ops@forge.test"
+      ],
+      "must_not_contain": [
+        "lena.dev@forge.test"
+      ]
+    },
+    {
+      "id": "ext_dxy2_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "setup_facts": [
+        "Nina oversees the Polaris compliance rollout.",
+        "Nina tracks audit exceptions every Friday.",
+        "Nina moved to the security operations team.",
+        "Leadership of the Polaris rollout has been transferred to Omar."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Polaris compliance rollout owner",
+          "Leadership of the Polaris rollout has been transferred to Omar."
+        ]
+      ],
+      "final_query": "Who currently oversees the Polaris compliance rollout?",
+      "must_contain": [
+        "Omar"
+      ],
+      "must_not_contain": [
+        "Nina oversees the Polaris compliance rollout"
+      ]
+    },
+    {
+      "id": "ext_dxy2_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "setup_facts": [
+        "Priya manages vendor onboarding for the Atlas program.",
+        "Priya reviews procurement exceptions weekly.",
+        "Priya migrated to the operations governance team.",
+        "Vendor onboarding responsibility for Atlas is now handled by Serena."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Atlas vendor onboarding manager",
+          "Vendor onboarding responsibility for Atlas is now handled by Serena."
+        ]
+      ],
+      "final_query": "Who handles vendor onboarding for Atlas now?",
+      "must_contain": [
+        "Serena"
+      ],
+      "must_not_contain": [
+        "Priya manages vendor onboarding"
+      ]
+    },
+    {
+      "id": "ext_dxy2_negation_inconsistency_01",
+      "category": "negation_trap",
+      "setup_facts": [
+        "Theo does not administer the payment cluster.",
+        "Theo maintains the staging observability stack.",
+        "Theo documents failover recovery steps.",
+        "Theo joined the infrastructure tooling group."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Theo payment cluster administration"
+        ]
+      ],
+      "final_query": "Does Theo administer the payment cluster?",
+      "must_contain": [
+        "does not administer"
+      ],
+      "must_not_contain": [
+        "administers the payment cluster"
+      ]
+    },
+    {
+      "id": "ext_dxy2_negation_inconsistency_02",
+      "category": "negation_trap",
+      "setup_facts": [
+        "Uma is not part of the emergency approval rotation.",
+        "Uma can review internal staging deployments.",
+        "Uma maintains the release calendar.",
+        "Uma archived the March audit notes."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Uma emergency approval rotation"
+        ]
+      ],
+      "final_query": "Is Uma part of the emergency approval rotation?",
+      "must_contain": [
+        "not part"
+      ],
+      "must_not_contain": [
+        "part of the emergency approval rotation"
+      ]
+    },
+    {
+      "id": "ext_dxy2_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "setup_facts": [
+        "Will's temporary workspace in 2025 was Lab-2.",
+        "Will maintained the edge replication monitor in 2025.",
+        "Will's current workspace in 2026 is Lab-9.",
+        "Will now supports the reliability escalation team."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Will workspace location",
+          "Will's current workspace in 2026 is Lab-9."
+        ]
+      ],
+      "final_query": "What is Will's current workspace?",
+      "must_contain": [
+        "Lab-9"
+      ],
+      "must_not_contain": [
+        "Lab-2"
+      ]
+    },
+    {
+      "id": "ext_dxy2_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "setup_facts": [
+        "Xena used ticket queue Delta during Q1.",
+        "Xena coordinated the migration review board.",
+        "Xena switched to ticket queue Omega in Q2.",
+        "Xena currently handles escalation triage."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Xena ticket queue",
+          "Xena switched to ticket queue Omega in Q2."
+        ]
+      ],
+      "final_query": "Which ticket queue does Xena currently use?",
+      "must_contain": [
+        "Omega"
+      ],
+      "must_not_contain": [
+        "Delta"
+      ]
+    },
+    {
+      "id": "ext_dxy2_shared_attribute_01",
+      "category": "shared_attribute",
+      "setup_facts": [
+        "Yuri and Zoe both maintain the Mercury deployment board.",
+        "Yuri owns the rollback checklist.",
+        "Zoe prepares the deployment status digest.",
+        "The Mercury board sync happens every Thursday."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Yuri Mercury deployment board"
+        ]
+      ],
+      "final_query": "What deployment board does Zoe maintain?",
+      "must_contain": [
+        "Mercury deployment board"
+      ],
+      "must_not_contain": [
+        "Yuri and Zoe both maintain"
+      ]
+    },
+    {
+      "id": "ext_dxy2_shared_attribute_02",
+      "category": "shared_attribute",
+      "setup_facts": [
+        "Aaron and Bianca are assigned to the Redwood migration.",
+        "Aaron maintains the schema conversion scripts.",
+        "Bianca reviews ingestion consistency checks.",
+        "The Redwood migration is scheduled for June."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Aaron Redwood migration"
+        ]
+      ],
+      "final_query": "Which migration is Bianca assigned to?",
+      "must_contain": [
+        "Redwood migration"
+      ],
+      "must_not_contain": [
+        "Aaron and Bianca are assigned"
+      ]
+    },
+    {
+      "id": "ext_dxy2_partial_fact_mutation_01",
+      "category": "compound_fact",
+      "setup_facts": [
+        "Celine's support extension is 4102 and her Slack alias is celine_ops.",
+        "Celine updates the overnight incident report.",
+        "Celine tracks API timeout regressions.",
+        "Celine's support extension changed to 7710."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Celine support extension",
+          "Celine's support extension is 4102 and her Slack alias is celine_ops."
+        ]
+      ],
+      "final_query": "What is Celine's Slack alias?",
+      "must_contain": [
+        "celine_ops"
+      ],
+      "must_not_contain": [
+        "4102"
+      ]
+    },
+    {
+      "id": "ext_dxy2_partial_fact_mutation_02",
+      "category": "compound_fact",
+      "setup_facts": [
+        "Dorian stores archives in vault shelf C-18 and labels exports with tag frostline.",
+        "Dorian validates archive retention windows.",
+        "Dorian maintains the cold-storage audit sheet.",
+        "The archive shelf for Dorian is now D-03."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Dorian archive shelf",
+          "Dorian stores archives in vault shelf C-18 and labels exports with tag frostline."
+        ]
+      ],
+      "final_query": "What export tag does Dorian use?",
+      "must_contain": [
+        "frostline"
+      ],
+      "must_not_contain": [
+        "C-18"
+      ]
+    },
+    {
+      "id": "ext_dxy2_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "setup_facts": [
+        "The internal codename is SKY-HARBOR.",
+        "Older planning docs spell it Sky Harbor.",
+        "The automation config references sky_harbor.",
+        "The codename appears in migration dashboards."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "SKY-HARBOR codename"
+        ]
+      ],
+      "final_query": "What is the internal codename?",
+      "must_contain": [],
+      "must_not_contain": [
+        "SKY-HARBOR",
+        "Sky Harbor",
+        "sky_harbor"
+      ]
+    },
+    {
+      "id": "ext_dxy2_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "setup_facts": [
+        "The backup cluster is tracked as VECTOR-NODE.",
+        "Some handoff notes refer to it as Vector Node.",
+        "Legacy scripts still use vector_node.",
+        "The backup cluster handles nightly replication."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "VECTOR-NODE backup cluster"
+        ]
+      ],
+      "final_query": "What is the backup cluster called?",
+      "must_contain": [],
+      "must_not_contain": [
+        "VECTOR-NODE",
+        "Vector Node",
+        "vector_node"
+      ]
+    },
+    {
+      "id": "ext_dxy2_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "setup_facts": [
+        "The analytics relay is hosted in Seoul.",
+        "Korean maintenance notes call the city 서울.",
+        "Some logistics exports still use Soul as an old transliteration.",
+        "The relay handles regional event aggregation."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Seoul analytics relay"
+        ]
+      ],
+      "final_query": "Where is the analytics relay hosted?",
+      "must_contain": [],
+      "must_not_contain": [
+        "Seoul",
+        "서울",
+        "Soul"
+      ]
+    },
+    {
+      "id": "ext_dxy2_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "setup_facts": [
+        "The compliance mirror is located in Munich.",
+        "German records refer to the city as München.",
+        "Legacy route manifests spell it Munchen.",
+        "The mirror stores audit reconciliation snapshots."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Munich compliance mirror"
+        ]
+      ],
+      "final_query": "Where is the compliance mirror located?",
+      "must_contain": [],
+      "must_not_contain": [
+        "Munich",
+        "München",
+        "Munchen"
+      ]
+    },
+    {
+      "id": "ext_dxy2_cyclic_supersession_01",
+      "category": "recursive_supersession",
+      "setup_facts": [
+        "Elena originally stored release notes in Notion.",
+        "Elena later migrated release notes to Confluence.",
+        "Elena has moved release notes back to Notion.",
+        "Elena documents the release publishing workflow."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Elena release notes platform",
+          "Elena has moved release notes back to Notion."
+        ]
+      ],
+      "final_query": "Where does Elena currently store release notes?",
+      "must_contain": [
+        "Notion"
+      ],
+      "must_not_contain": [
+        "Confluence"
+      ]
+    },
+    {
+      "id": "ext_dxy2_cyclic_supersession_02",
+      "category": "recursive_supersession",
+      "setup_facts": [
+        "Felix first routed alerts through PagerDuty.",
+        "Felix temporarily switched alerts to Opsgenie.",
+        "Felix restored PagerDuty as the active alerting platform.",
+        "Felix maintains the incident escalation matrix."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Felix alerting platform",
+          "Felix restored PagerDuty as the active alerting platform."
+        ]
+      ],
+      "final_query": "What alerting platform does Felix currently use?",
+      "must_contain": [
+        "PagerDuty"
+      ],
+      "must_not_contain": [
+        "Opsgenie"
+      ]
+    },
+    {
+      "id": "ext_dxy3_substring_interference_01",
+      "category": "substring_trap",
+      "setup_facts": [
+        "Ivy's deprecated kiosk access code was orbit-31.",
+        "Ivy resolved 31 replication conflicts during the storage migration.",
+        "Ivy maintains the archive reconciliation dashboard.",
+        "Ivy rotated the internal cache snapshots."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "orbit-31 kiosk access code"
+        ]
+      ],
+      "final_query": "How many replication conflicts did Ivy resolve?",
+      "must_contain": [
+        "31 replication conflicts"
+      ],
+      "must_not_contain": [
+        "orbit-31"
+      ]
+    },
+    {
+      "id": "ext_dxy3_substring_interference_02",
+      "category": "substring_trap",
+      "setup_facts": [
+        "Jonah's retired approval phrase was amber-64.",
+        "Jonah archived 64 compliance reports this quarter.",
+        "Jonah monitors the procurement audit feed.",
+        "Jonah updates the policy exception tracker."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "amber-64 approval phrase"
+        ]
+      ],
+      "final_query": "How many compliance reports did Jonah archive?",
+      "must_contain": [
+        "64 compliance reports"
+      ],
+      "must_not_contain": [
+        "amber-64"
+      ]
+    },
+    {
+      "id": "ext_dxy3_identifier_prefix_collision_02",
+      "category": "prefix_collision",
+      "setup_facts": [
+        "Leah's routing alias is leah@relay.test.",
+        "Leah's archival alias is leah.ops@relay.test.",
+        "Leah manages the synchronization checkpoint service.",
+        "Leah prepares the rollback readiness review."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "leah@relay.test routing alias"
+        ]
+      ],
+      "final_query": "What is Leah's archival alias?",
+      "must_contain": [
+        "leah.ops@relay.test"
+      ],
+      "must_not_contain": [
+        "leah@relay.test"
+      ]
+    },
+    {
+      "id": "ext_dxy3_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "setup_facts": [
+        "Mason coordinates the Horizon retention project.",
+        "Mason validates long-term archive integrity.",
+        "Mason transferred to the governance automation group.",
+        "Responsibility for Horizon retention planning now belongs to Clara."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Horizon retention project coordinator",
+          "Responsibility for Horizon retention planning now belongs to Clara."
+        ]
+      ],
+      "final_query": "Who coordinates the Horizon retention project now?",
+      "must_contain": [
+        "Clara"
+      ],
+      "must_not_contain": [
+        "Mason coordinates the Horizon retention project"
+      ]
+    },
+    {
+      "id": "ext_dxy3_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "setup_facts": [
+        "Nora supervises the Glacier backup initiative.",
+        "Nora tracks backup checksum consistency weekly.",
+        "Nora joined the infrastructure resilience office.",
+        "The Glacier initiative is currently supervised by Ethan."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Glacier backup initiative supervisor",
+          "The Glacier initiative is currently supervised by Ethan."
+        ]
+      ],
+      "final_query": "Who currently supervises the Glacier backup initiative?",
+      "must_contain": [
+        "Ethan"
+      ],
+      "must_not_contain": [
+        "Nora supervises the Glacier backup initiative"
+      ]
+    },
+    {
+      "id": "ext_dxy3_negation_inconsistency_01",
+      "category": "negation_trap",
+      "setup_facts": [
+        "Owen does not maintain the production message queue.",
+        "Owen can inspect staging queue metrics.",
+        "Owen documents retry handling procedures.",
+        "Owen participates in reliability planning meetings."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Owen production queue maintenance"
+        ]
+      ],
+      "final_query": "Does Owen maintain the production message queue?",
+      "must_contain": [
+        "does not maintain"
+      ],
+      "must_not_contain": [
+        "maintains the production message queue"
+      ]
+    },
+    {
+      "id": "ext_dxy3_negation_inconsistency_02",
+      "category": "negation_trap",
+      "setup_facts": [
+        "Piper is not authorized to approve emergency schema changes.",
+        "Piper reviews staging migration logs.",
+        "Piper maintains the schema validation checklist.",
+        "Piper attends weekly reliability reviews."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Piper emergency schema approval"
+        ]
+      ],
+      "final_query": "Can Piper approve emergency schema changes?",
+      "must_contain": [
+        "not authorized"
+      ],
+      "must_not_contain": [
+        "authorized to approve"
+      ]
+    },
+    {
+      "id": "ext_dxy3_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "setup_facts": [
+        "Quentin used cluster Vega during the January rollout.",
+        "Quentin archived January migration diagnostics.",
+        "Quentin moved to cluster Atlas during the April rollout.",
+        "Quentin currently reviews failover recovery tests."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Quentin active cluster",
+          "Quentin moved to cluster Atlas during the April rollout."
+        ]
+      ],
+      "final_query": "Which cluster does Quentin currently use?",
+      "must_contain": [
+        "Atlas"
+      ],
+      "must_not_contain": [
+        "Vega"
+      ]
+    },
+    {
+      "id": "ext_dxy3_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "setup_facts": [
+        "Rhea's original escalation mailbox was ops-red@notify.test.",
+        "Rhea coordinated the incident archive migration.",
+        "Rhea's current escalation mailbox is ops-gold@notify.test.",
+        "Rhea maintains the alert escalation policy."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Rhea escalation mailbox",
+          "Rhea's current escalation mailbox is ops-gold@notify.test."
+        ]
+      ],
+      "final_query": "What is Rhea's current escalation mailbox?",
+      "must_contain": [
+        "ops-gold@notify.test"
+      ],
+      "must_not_contain": [
+        "ops-red@notify.test"
+      ]
+    },
+    {
+      "id": "ext_dxy3_shared_attribute_01",
+      "category": "shared_attribute",
+      "setup_facts": [
+        "Seth and Talia both support the Aurora audit pipeline.",
+        "Seth owns the archive reconciliation workflow.",
+        "Talia validates ingestion consistency reports.",
+        "The Aurora pipeline runs every midnight."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Seth Aurora audit pipeline"
+        ]
+      ],
+      "final_query": "Which audit pipeline does Talia support?",
+      "must_contain": [
+        "Aurora audit pipeline"
+      ],
+      "must_not_contain": [
+        "Seth and Talia both support"
+      ]
+    },
+    {
+      "id": "ext_dxy3_shared_attribute_02",
+      "category": "shared_attribute",
+      "setup_facts": [
+        "Uma and Victor both review the Summit deployment checklist.",
+        "Uma tracks deployment rollback readiness.",
+        "Victor maintains the post-release audit report.",
+        "The Summit checklist is updated weekly."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Uma Summit deployment checklist"
+        ]
+      ],
+      "final_query": "What checklist does Victor review?",
+      "must_contain": [
+        "Summit deployment checklist"
+      ],
+      "must_not_contain": [
+        "Uma and Victor both review"
+      ]
+    },
+    {
+      "id": "ext_dxy3_partial_fact_mutation_01",
+      "category": "compound_fact",
+      "setup_facts": [
+        "Will's archive cabinet is Shelf-22 and his review alias is winter-node.",
+        "Will validates archive retention logs.",
+        "Will updates the governance audit tracker.",
+        "Will's archive cabinet has moved to Shelf-09."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Will archive cabinet",
+          "Will's archive cabinet is Shelf-22 and his review alias is winter-node."
+        ]
+      ],
+      "final_query": "What is Will's review alias?",
+      "must_contain": [
+        "winter-node"
+      ],
+      "must_not_contain": [
+        "Shelf-22"
+      ]
+    },
+    {
+      "id": "ext_dxy3_partial_fact_mutation_02",
+      "category": "compound_fact",
+      "setup_facts": [
+        "Xavier stores exports in Vault-7 and labels verification runs as cobalt-scan.",
+        "Xavier reviews export retention policies.",
+        "Xavier manages the replication integrity report.",
+        "Xavier now stores exports in Vault-14."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Xavier export vault",
+          "Xavier stores exports in Vault-7 and labels verification runs as cobalt-scan."
+        ]
+      ],
+      "final_query": "What label does Xavier use for verification runs?",
+      "must_contain": [
+        "cobalt-scan"
+      ],
+      "must_not_contain": [
+        "Vault-7"
+      ]
+    },
+    {
+      "id": "ext_dxy3_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "setup_facts": [
+        "The retention platform is internally named FROST-CORE.",
+        "Some migration notes call it Frost Core.",
+        "The backup scripts reference frost_core.",
+        "The platform stores quarterly archive snapshots."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "FROST-CORE retention platform"
+        ]
+      ],
+      "final_query": "What is the retention platform called?",
+      "must_contain": [],
+      "must_not_contain": [
+        "FROST-CORE",
+        "Frost Core",
+        "frost_core"
+      ]
+    },
+    {
+      "id": "ext_dxy3_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "setup_facts": [
+        "The migration coordinator service is called NORTH-DELTA.",
+        "Legacy handoff notes refer to it as North Delta.",
+        "Old deployment scripts use north_delta.",
+        "The coordinator service handles replication cutovers."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "NORTH-DELTA migration coordinator"
+        ]
+      ],
+      "final_query": "What is the migration coordinator service called?",
+      "must_contain": [],
+      "must_not_contain": [
+        "NORTH-DELTA",
+        "North Delta",
+        "north_delta"
+      ]
+    },
+    {
+      "id": "ext_dxy3_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "setup_facts": [
+        "The observability mirror is hosted in Moscow.",
+        "Russian maintenance notes refer to the city as Москва.",
+        "Legacy shipping manifests use Moskva.",
+        "The mirror aggregates telemetry snapshots."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Moscow observability mirror"
+        ]
+      ],
+      "final_query": "Where is the observability mirror hosted?",
+      "must_contain": [],
+      "must_not_contain": [
+        "Moscow",
+        "Москва",
+        "Moskva"
+      ]
+    },
+    {
+      "id": "ext_dxy3_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "setup_facts": [
+        "The archival relay is located in Athens.",
+        "Greek documentation refers to the city as Αθήνα.",
+        "Some legacy exports spell it Athina.",
+        "The relay processes long-term storage synchronization."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Athens archival relay"
+        ]
+      ],
+      "final_query": "Where is the archival relay located?",
+      "must_contain": [],
+      "must_not_contain": [
+        "Athens",
+        "Αθήνα",
+        "Athina"
+      ]
+    },
+    {
+      "id": "ext_dxy3_cyclic_supersession_01",
+      "category": "recursive_supersession",
+      "setup_facts": [
+        "Yara originally tracked incidents in Jira.",
+        "Yara temporarily migrated incident tracking to Linear.",
+        "Yara restored Jira as the primary incident tracker.",
+        "Yara maintains the escalation response handbook."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Yara incident tracking platform",
+          "Yara restored Jira as the primary incident tracker."
+        ]
+      ],
+      "final_query": "What platform does Yara currently use for incident tracking?",
+      "must_contain": [
+        "Jira"
+      ],
+      "must_not_contain": [
+        "Linear"
+      ]
+    },
+    {
+      "id": "ext_dxy3_cyclic_supersession_02",
+      "category": "recursive_supersession",
+      "setup_facts": [
+        "Zane first stored deployment logs in S3.",
+        "Zane later migrated deployment logs to MinIO.",
+        "Zane has switched deployment logs back to S3.",
+        "Zane maintains the deployment retention policy."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Zane deployment log storage",
+          "Zane has switched deployment logs back to S3."
+        ]
+      ],
+      "final_query": "Where are Zane's deployment logs currently stored?",
+      "must_contain": [
+        "S3"
+      ],
+      "must_not_contain": [
+        "MinIO"
+      ]
+    },
+    {
+      "id": "ext_med_substring_interference_01",
+      "category": "substring_trap",
+      "setup_facts": [
+        "Patient A's retired imaging access PIN was cardio-55.",
+        "Patient A completed 55 cardiac rehabilitation sessions.",
+        "Patient A's follow-up scans are stored in the recovery archive.",
+        "Patient A attends monthly rehabilitation reviews."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "cardio-55 imaging access PIN"
+        ]
+      ],
+      "final_query": "How many rehabilitation sessions did Patient A complete?",
+      "must_contain": [
+        "55 cardiac rehabilitation sessions"
+      ],
+      "must_not_contain": [
+        "cardio-55"
+      ]
+    },
+    {
+      "id": "ext_med_substring_interference_02",
+      "category": "substring_trap",
+      "setup_facts": [
+        "Patient B's expired referral code was neuro-21.",
+        "Patient B attended 21 neurology monitoring visits.",
+        "Patient B's EEG summaries were archived last month.",
+        "Patient B participates in weekly neurology follow-ups."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "neuro-21 referral code"
+        ]
+      ],
+      "final_query": "How many neurology monitoring visits did Patient B attend?",
+      "must_contain": [
+        "21 neurology monitoring visits"
+      ],
+      "must_not_contain": [
+        "neuro-21"
+      ]
+    },
+    {
+      "id": "ext_med_identifier_prefix_collision_01",
+      "category": "prefix_collision",
+      "setup_facts": [
+        "Patient C's portal email is patient.c@clinic.test.",
+        "Patient C's backup portal email is patient.cardiac@clinic.test.",
+        "Patient C is enrolled in the hypertension monitoring program.",
+        "Patient C reviews medication adjustments monthly."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "patient.c@clinic.test portal email"
+        ]
+      ],
+      "final_query": "What is Patient C's backup portal email?",
+      "must_contain": [
+        "patient.cardiac@clinic.test"
+      ],
+      "must_not_contain": [
+        "patient.c@clinic.test"
+      ]
+    },
+    {
+      "id": "ext_med_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "setup_facts": [
+        "Patient E receives treatment at the North Valley clinic.",
+        "Patient E attends weekly metabolic monitoring visits.",
+        "Patient E transferred to the endocrine specialty program.",
+        "Patient E is now being treated through the North Valley Medical Center."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Patient E treatment location",
+          "Patient E is now being treated through the North Valley Medical Center."
+        ]
+      ],
+      "final_query": "Where is Patient E currently treated?",
+      "must_contain": [
+        "North Valley Medical Center"
+      ],
+      "must_not_contain": [
+        "North Valley clinic"
+      ]
+    },
+    {
+      "id": "ext_med_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "setup_facts": [
+        "Patient F was monitored by the respiratory care unit.",
+        "Patient F completed pulmonary function testing in March.",
+        "Patient F enrolled in the chronic recovery program.",
+        "Ongoing respiratory monitoring for Patient F is now handled by the pulmonary specialty center."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Patient F respiratory monitoring provider",
+          "Ongoing respiratory monitoring for Patient F is now handled by the pulmonary specialty center."
+        ]
+      ],
+      "final_query": "Who currently monitors Patient F's respiratory care?",
+      "must_contain": [
+        "pulmonary specialty center"
+      ],
+      "must_not_contain": [
+        "respiratory care unit"
+      ]
+    },
+    {
+      "id": "ext_med_negation_inconsistency_01",
+      "category": "negation_trap",
+      "setup_facts": [
+        "Patient G does not have a penicillin allergy.",
+        "Patient G requires seasonal respiratory monitoring.",
+        "Patient G completed vaccination review in April.",
+        "Patient G attends annual medication reconciliation visits."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Patient G penicillin allergy"
+        ]
+      ],
+      "final_query": "Does Patient G have a penicillin allergy?",
+      "must_contain": [
+        "does not have"
+      ],
+      "must_not_contain": [
+        "has a penicillin allergy"
+      ]
+    },
+    {
+      "id": "ext_med_negation_inconsistency_02",
+      "category": "negation_trap",
+      "setup_facts": [
+        "Patient H is not cleared for contrast-enhanced imaging.",
+        "Patient H receives weekly renal monitoring.",
+        "Patient H's hydration protocol was updated in May.",
+        "Patient H follows the nephrology review schedule."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Patient H contrast-enhanced imaging clearance"
+        ]
+      ],
+      "final_query": "Is Patient H cleared for contrast-enhanced imaging?",
+      "must_contain": [
+        "not cleared"
+      ],
+      "must_not_contain": [
+        "cleared for contrast-enhanced imaging"
+      ]
+    },
+    {
+      "id": "ext_med_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "setup_facts": [
+        "Patient I used insulin regimen Delta in 2024.",
+        "Patient I completed endocrinology follow-ups throughout 2024.",
+        "Patient I switched to insulin regimen Nova in 2025.",
+        "Patient I currently attends metabolic review appointments."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Patient I insulin regimen",
+          "Patient I switched to insulin regimen Nova in 2025."
+        ]
+      ],
+      "final_query": "What insulin regimen does Patient I currently use?",
+      "must_contain": [
+        "Nova"
+      ],
+      "must_not_contain": [
+        "Delta"
+      ]
+    },
+    {
+      "id": "ext_med_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "setup_facts": [
+        "Patient J's primary rehabilitation clinic in 2024 was East Wing Rehab.",
+        "Patient J completed mobility therapy evaluations in 2024.",
+        "Patient J's rehabilitation clinic in 2025 is Lakeside Recovery Center.",
+        "Patient J now attends advanced mobility assessments monthly."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Patient J rehabilitation clinic",
+          "Patient J's rehabilitation clinic in 2025 is Lakeside Recovery Center."
+        ]
+      ],
+      "final_query": "What is Patient J's current rehabilitation clinic?",
+      "must_contain": [
+        "Lakeside Recovery Center"
+      ],
+      "must_not_contain": [
+        "East Wing Rehab"
+      ]
+    },
+    {
+      "id": "ext_med_shared_attribute_01",
+      "category": "shared_attribute",
+      "setup_facts": [
+        "Patient K and Patient L are both enrolled in the cardiac monitoring program.",
+        "Patient K completed a medication adjustment review.",
+        "Patient L completed a rehabilitation intake assessment.",
+        "The cardiac monitoring program issues monthly follow-up reports."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Patient K cardiac monitoring program"
+        ]
+      ],
+      "final_query": "Which program is Patient L enrolled in?",
+      "must_contain": [
+        "cardiac monitoring program"
+      ],
+      "must_not_contain": [
+        "Patient K and Patient L are both enrolled"
+      ]
+    },
+    {
+      "id": "ext_med_shared_attribute_02",
+      "category": "shared_attribute",
+      "setup_facts": [
+        "Patient M and Patient N both receive care through the pulmonary recovery clinic.",
+        "Patient M follows a weekly respiratory therapy schedule.",
+        "Patient N attends monthly pulmonary function reviews.",
+        "The pulmonary recovery clinic archives therapy progress reports."
+      ],
+      "mutations": [
+        [
+          "release",
+          "Patient M pulmonary recovery clinic"
+        ]
+      ],
+      "final_query": "Where does Patient N receive care?",
+      "must_contain": [
+        "pulmonary recovery clinic"
+      ],
+      "must_not_contain": [
+        "Patient M and Patient N both receive care"
+      ]
+    },
+    {
+      "id": "ext_med_partial_fact_mutation_01",
+      "category": "compound_fact",
+      "setup_facts": [
+        "Patient O's rehabilitation room is Ward-12 and the assigned nutrition plan is low-sodium.",
+        "Patient O completed post-operative recovery training.",
+        "Patient O attends weekly cardiovascular evaluations.",
+        "Patient O was transferred to rehabilitation room Ward-18."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Patient O rehabilitation room",
+          "Patient O's rehabilitation room is Ward-12 and the assigned nutrition plan is low-sodium."
+        ]
+      ],
+      "final_query": "What nutrition plan is assigned to Patient O?",
+      "must_contain": [
+        "low-sodium"
+      ],
+      "must_not_contain": [
+        "Ward-12"
+      ]
+    },
+    {
+      "id": "ext_med_partial_fact_mutation_02",
+      "category": "compound_fact",
+      "setup_facts": [
+        "Patient P stores imaging records in Archive-4 and follows the renal-care protocol.",
+        "Patient P completed nephrology consultation reviews.",
+        "Patient P attends hydration monitoring visits.",
+        "Patient P's imaging records were moved to Archive-9."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Patient P imaging archive",
+          "Patient P stores imaging records in Archive-4 and follows the renal-care protocol."
+        ]
+      ],
+      "final_query": "What care protocol does Patient P follow?",
+      "must_contain": [
+        "renal-care protocol"
+      ],
+      "must_not_contain": [
+        "Archive-4"
+      ]
+    },
+    {
+      "id": "ext_med_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "setup_facts": [
+        "The rehabilitation initiative is internally labeled HEART-LINK.",
+        "Older care summaries refer to it as Heart Link.",
+        "Legacy scheduling exports use heart_link.",
+        "The initiative coordinates post-operative cardiac recovery."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "HEART-LINK rehabilitation initiative"
+        ]
+      ],
+      "final_query": "What is the rehabilitation initiative called?",
+      "must_contain": [],
+      "must_not_contain": [
+        "HEART-LINK",
+        "Heart Link",
+        "heart_link"
+      ]
+    },
+    {
+      "id": "ext_med_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "setup_facts": [
+        "The pulmonary tracking program is named LUNG-TRACE.",
+        "Several intake forms spell it Lung Trace.",
+        "The archival scheduler references lung_trace.",
+        "The program tracks respiratory recovery metrics."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "LUNG-TRACE pulmonary tracking program"
+        ]
+      ],
+      "final_query": "What is the pulmonary tracking program called?",
+      "must_contain": [],
+      "must_not_contain": [
+        "LUNG-TRACE",
+        "Lung Trace",
+        "lung_trace"
+      ]
+    },
+    {
+      "id": "ext_med_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "setup_facts": [
+        "Patient Q's treatment records are coordinated through Beijing General Clinic.",
+        "Chinese referral notes refer to the location as 北京.",
+        "Some archival documents use the older spelling Peking.",
+        "The clinic manages long-term oncology monitoring."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Beijing General Clinic"
+        ]
+      ],
+      "final_query": "Where are Patient Q's treatment records coordinated?",
+      "must_contain": [],
+      "must_not_contain": [
+        "Beijing",
+        "北京",
+        "Peking"
+      ]
+    },
+    {
+      "id": "ext_med_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "setup_facts": [
+        "Patient R's rehabilitation reviews are managed through the Tokyo Recovery Center.",
+        "Japanese care documents refer to the city as 東京.",
+        "Legacy appointment exports use the spelling Toukyou.",
+        "The recovery center schedules neurological rehabilitation follow-ups."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Tokyo Recovery Center"
+        ]
+      ],
+      "final_query": "Where are Patient R's rehabilitation reviews managed?",
+      "must_contain": [],
+      "must_not_contain": [
+        "Tokyo",
+        "東京",
+        "Toukyou"
+      ]
+    },
+    {
+      "id": "ext_med_cyclic_supersession_01",
+      "category": "recursive_supersession",
+      "setup_facts": [
+        "Patient S initially received therapy at Harbor Physical Rehab.",
+        "Patient S later transferred to Summit Mobility Center.",
+        "Patient S has now returned to Harbor Physical Rehab.",
+        "Patient S attends monthly rehabilitation outcome reviews."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Patient S therapy location",
+          "Patient S has now returned to Harbor Physical Rehab."
+        ]
+      ],
+      "final_query": "Where does Patient S currently receive therapy?",
+      "must_contain": [
+        "Harbor Physical Rehab"
+      ],
+      "must_not_contain": [
+        "Summit Mobility Center"
+      ]
+    },
+    {
+      "id": "ext_med_cyclic_supersession_02",
+      "category": "recursive_supersession",
+      "setup_facts": [
+        "Patient T originally used medication schedule Alpha.",
+        "Patient T later switched to medication schedule Beta.",
+        "Patient T has now returned to medication schedule Alpha.",
+        "Patient T follows monthly endocrinology reviews."
+      ],
+      "mutations": [
+        [
+          "supersede",
+          "Patient T medication schedule",
+          "Patient T has now returned to medication schedule Alpha."
+        ]
+      ],
+      "final_query": "What medication schedule does Patient T currently use?",
+      "must_contain": [
+        "Alpha"
+      ],
+      "must_not_contain": [
+        "Beta"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "id": "ext_dxy2_identifier_prefix_collision_02",
+      "reason": "self-trap: must_not_contain 'core.analytics.' inside must_contain"
+    },
+    {
+      "id": "ext_dxy3_identifier_prefix_collision_01",
+      "reason": "self-trap: must_not_contain 'infra.ops' inside must_contain"
+    },
+    {
+      "id": "ext_med_identifier_prefix_collision_02",
+      "reason": "self-trap: must_not_contain 'scan.alpha' inside must_contain"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek/deepseek-v4-flash",
+  "suite": "adversarial-385",
+  "limit": 15,
+  "overall_pass": 9,
+  "overall_total": 15,
+  "overall_rate": 0.6,
+  "by_category": {
+    "substring_trap": {
+      "pass": 9,
+      "total": 15
+    }
+  },
+  "usage": {
+    "calls": 0,
+    "cache_hits": 0,
+    "in_tok": 0,
+    "out_tok": 0,
+    "errors": 0
+  },
+  "cost_usd": 0.0,
+  "wall_seconds": 618.0724883000366
+}

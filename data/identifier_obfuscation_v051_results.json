@@ -1,0 +1,539 @@
+{
+  "new_case_count": 20,
+  "by_system": {
+    "Lethe": {
+      "system": "Lethe",
+      "results": [
+        {
+          "case_id": "adv_identifier_obfuscation_19",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_20",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_21",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_22",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_23",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_24",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_25",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_26",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_27",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_28",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_29",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_30",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_31",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_32",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_33",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_34",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_35",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_36",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_37",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_38",
+          "pass": false
+        }
+      ],
+      "pass": 0,
+      "evaluable": 20,
+      "na": 0,
+      "wall_s": 0.7984726428985596
+    },
+    "LangGraph": {
+      "system": "LangGraph",
+      "results": [
+        {
+          "case_id": "adv_identifier_obfuscation_19",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_20",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_21",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_22",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_23",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_24",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_25",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_26",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_27",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_28",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_29",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_30",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_31",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_32",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_33",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_34",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_35",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_36",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_37",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_38",
+          "pass": false
+        }
+      ],
+      "pass": 0,
+      "evaluable": 20,
+      "na": 0,
+      "wall_s": 0.8972070217132568
+    },
+    "MemPalace": {
+      "system": "MemPalace",
+      "results": [
+        {
+          "case_id": "adv_identifier_obfuscation_19",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_20",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_21",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_22",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_23",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_24",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_25",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_26",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_27",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_28",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_29",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_30",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_31",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_32",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_33",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_34",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_35",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_36",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_37",
+          "pass": null
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_38",
+          "pass": null
+        }
+      ],
+      "pass": 0,
+      "evaluable": 0,
+      "na": 20,
+      "wall_s": 3.6544575691223145
+    },
+    "Mem0": {
+      "system": "Mem0",
+      "results": [
+        {
+          "case_id": "adv_identifier_obfuscation_19",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_20",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_21",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_22",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_23",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_24",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_25",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_26",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_27",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_28",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_29",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_30",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_31",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_32",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_33",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_34",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_35",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_36",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_37",
+          "pass": false
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_38",
+          "pass": true
+        }
+      ],
+      "pass": 10,
+      "evaluable": 20,
+      "na": 0,
+      "wall_s": 40.203476905822754
+    },
+    "Lethe+LLM": {
+      "system": "Lethe+LLM",
+      "results": [
+        {
+          "case_id": "adv_identifier_obfuscation_19",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_20",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_21",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_22",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_23",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_24",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_25",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_26",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_27",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_28",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_29",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_30",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_31",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_32",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_33",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_34",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_35",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_36",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_37",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_38",
+          "pass": false
+        }
+      ],
+      "pass": 19,
+      "evaluable": 20,
+      "na": 0,
+      "wall_s": 54.52296710014343
+    },
+    "LangGraph+LLM": {
+      "system": "LangGraph+LLM",
+      "results": [
+        {
+          "case_id": "adv_identifier_obfuscation_19",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_20",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_21",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_22",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_23",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_24",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_25",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_26",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_27",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_28",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_29",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_30",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_31",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_32",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_33",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_34",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_35",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_36",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_37",
+          "pass": true
+        },
+        {
+          "case_id": "adv_identifier_obfuscation_38",
+          "pass": true
+        }
+      ],
+      "pass": 20,
+      "evaluable": 20,
+      "na": 0,
+      "wall_s": 48.07375454902649
+    }
+  }
+}

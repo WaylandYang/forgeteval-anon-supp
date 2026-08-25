@@ -1,0 +1,163 @@
+﻿{
+  "adv_substring_trap_02": {
+    "case_id": "adv_substring_trap_02",
+    "category": "substring_trap",
+    "judge_verdict": false,
+    "judge_reason": "The 'purge' mutation removes the row 'Account password for backup: raven42#secure.', but the must_not_contain strings 'raven42' and 'raven42#secure' are substrings of the purged row, leading to a substring-collision bug.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "C_judge_literal_error",
+    "note": "Judge confuses 'substring of purged row' with 'substring of surviving row'. After purge, the password row is gone; surviving facts (raven silhouette, hackathon, HVAC) contain neither 'raven42' nor 'raven42#secure'. Well-formed."
+  },
+  "adv_prefix_collision_07": {
+    "case_id": "adv_prefix_collision_07",
+    "category": "prefix_collision",
+    "judge_verdict": false,
+    "judge_reason": "The must_not_contain string 'case_id 12345 was filed' is a substring of the surviving fact 'Legal case_id 123456 was filed in appellate court.'",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "C_judge_literal_error",
+    "note": "Judge's substring claim is arithmetically false. 'case_id 12345 was filed' is NOT a substring of 'case_id 123456 was filed' (after '12345' the must_not has ' was' but row 2 has '6 was'). Well-formed."
+  },
+  "adv_prefix_collision_16": {
+    "case_id": "adv_prefix_collision_16",
+    "category": "prefix_collision",
+    "judge_verdict": false,
+    "judge_reason": "The must_not_contain string '+1-555-0100 is the main' is a substring of the setup fact '+1-555-0100 is the main office line.', which was not targeted by the purge mutation.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "C_judge_literal_error",
+    "note": "Judge mis-identifies which row gets purged. Purge target 'phone +1-555-0100 office line' matches row 1 (which IS purged), not row 2. After purge, row 2 ('+1-555-01000 is the fax') does not contain '+1-555-0100 is the main' (the digit after '0100' is '0' in row 2, not ' '). Well-formed."
+  },
+  "adv_shared_attribute_04": {
+    "case_id": "adv_shared_attribute_04",
+    "category": "shared_attribute",
+    "judge_verdict": false,
+    "judge_reason": "The 'release' mutation marks the fact 'Hannah leads the backend team' as unreachable, but the must_not_contain string 'Hannah and Ivan share' is a substring of the surviving fact.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "B_multi_row_release",
+    "note": "Judge interprets 'release everything about Hannah on the team' as releasing only one row. The release semantic is multi-row by design — should release fact (1) about Hannah AND Ivan sharing office AND fact (2) about Hannah leading backend. After both released, surviving = Ivan + Judy facts. Well-formed."
+  },
+  "adv_identifier_obfuscation_02": {
+    "case_id": "adv_identifier_obfuscation_02",
+    "category": "identifier_obfuscation",
+    "judge_verdict": false,
+    "judge_reason": "The purge removes all bob@example.com facts, but final_query asks about bob@example.com, which is a contradiction.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Judge mis-reads test intent. final_query='What did bob buy?' is the test query — correct system returns nothing because bob was purged (verifying purge succeeded). Well-formed."
+  },
+  "adv_identifier_obfuscation_08": {
+    "case_id": "adv_identifier_obfuscation_08",
+    "category": "identifier_obfuscation",
+    "judge_verdict": false,
+    "judge_reason": "Purge of '@acme-engineer contractor' removes only the @-form row, leaving the without-@ row.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Judge doesn't understand surface-form equivalence. The category tests whether system identifies @acme-engineer and acme-engineer as same identifier. Well-formed."
+  },
+  "adv_identifier_obfuscation_09": {
+    "case_id": "adv_identifier_obfuscation_09",
+    "category": "identifier_obfuscation",
+    "judge_verdict": false,
+    "judge_reason": "Purge of '192.168.1.5' leaves substrings in both '192.168.001.005' and '192.168.1.5 (no padding)' rows.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "IPv4 padded/unpadded should be canonicalized as same. Well-formed."
+  },
+  "adv_identifier_obfuscation_12": {
+    "case_id": "adv_identifier_obfuscation_12",
+    "category": "identifier_obfuscation",
+    "judge_verdict": false,
+    "judge_reason": "ada+promo@example.com is substring of surviving 'ada+promo@example.com used a coupon' row.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Gmail-style + aliases canonicalize to base address. Purge 'ada@example.com' should match both. Well-formed."
+  },
+  "adv_identifier_obfuscation_14": {
+    "case_id": "adv_identifier_obfuscation_14",
+    "category": "identifier_obfuscation",
+    "judge_verdict": false,
+    "judge_reason": "Purge target string not exactly present in setup, leading to no facts purged.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "PRJ-ATLAS-2024 and ATLAS-2024 are same project under prefix-aliasing. Well-formed."
+  },
+  "adv_identifier_obfuscation_16": {
+    "case_id": "adv_identifier_obfuscation_16",
+    "category": "identifier_obfuscation",
+    "judge_verdict": false,
+    "judge_reason": "must_not_contain strings are substrings of original facts.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Account 1234 and 1234-USD canonicalize to same account. Well-formed."
+  },
+  "adv_cross_lingual_identifier_03": {
+    "case_id": "adv_cross_lingual_identifier_03",
+    "category": "cross_lingual_identifier",
+    "judge_verdict": false,
+    "judge_reason": "final_query asks for Kim Minji's login but she's purged.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Korean 김민지 == romanized Kim Minji. Test verifies purge of both surface forms. Well-formed."
+  },
+  "adv_cross_lingual_identifier_06": {
+    "case_id": "adv_cross_lingual_identifier_06",
+    "category": "cross_lingual_identifier",
+    "judge_verdict": false,
+    "judge_reason": "must_not_contain strings are substrings of facts that would be purged.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Chinese 阿里巴巴 == Alibaba. Both purged means must_not_contain is satisfied. Well-formed."
+  },
+  "adv_cross_lingual_identifier_07": {
+    "case_id": "adv_cross_lingual_identifier_07",
+    "category": "cross_lingual_identifier",
+    "judge_verdict": false,
+    "judge_reason": "Similar to other cross-lingual cases.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Accented José García == unaccented Jose Garcia. Well-formed."
+  },
+  "adv_cross_lingual_identifier_12": {
+    "case_id": "adv_cross_lingual_identifier_12",
+    "category": "cross_lingual_identifier",
+    "judge_verdict": false,
+    "judge_reason": "Similar to other cross-lingual cases.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Hebrew דוד כהן == transliterated David Cohen. Well-formed."
+  },
+  "adv_cross_lingual_identifier_13": {
+    "case_id": "adv_cross_lingual_identifier_13",
+    "category": "cross_lingual_identifier",
+    "judge_verdict": false,
+    "judge_reason": "Purge target not exactly in setup facts.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "A_semantic_equivalence",
+    "note": "Chinese 北京 == Beijing. Well-formed."
+  },
+  "adv_recursive_supersession_02": {
+    "case_id": "adv_recursive_supersession_02",
+    "category": "recursive_supersession",
+    "judge_verdict": false,
+    "judge_reason": "End state contains 'returned to vegetarian' which includes 'started eating meat in 2021' as part of the superseded fact.",
+    "author_verdict": true,
+    "tag": "judge_limit",
+    "failure_mode": "C_judge_literal_error",
+    "note": "Judge confuses chained supersession. After supersede 1 ('vegetarian' -> 'meat 2021') then supersede 2 ('meat' -> 'vegetarian 2024'), only the final row remains. The string 'started eating meat in 2021' is NOT in the final row 'User returned to a vegetarian diet in 2024 after health concerns.'. Well-formed."
+  }
+}
+

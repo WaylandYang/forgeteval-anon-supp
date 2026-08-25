@@ -1,0 +1,548 @@
+{
+  "hand_crafted_n": 132,
+  "llm_drafted_n": 253,
+  "rows": [
+    {
+      "system": "MemPalace",
+      "hc_pass": 0,
+      "hc_eval": 112,
+      "hc_na": 20,
+      "hc_rate": 0.0,
+      "llm_pass": 0,
+      "llm_eval": 253,
+      "llm_na": 0,
+      "llm_rate": 0.0,
+      "delta": 0.0
+    },
+    {
+      "system": "Lethe",
+      "hc_pass": 70,
+      "hc_eval": 132,
+      "hc_na": 0,
+      "hc_rate": 53.03030303030303,
+      "llm_pass": 174,
+      "llm_eval": 253,
+      "llm_na": 0,
+      "llm_rate": 68.77470355731225,
+      "delta": -15.744400527009219
+    },
+    {
+      "system": "Mem0",
+      "hc_pass": 86,
+      "hc_eval": 132,
+      "hc_na": 0,
+      "hc_rate": 65.15151515151516,
+      "llm_pass": 177,
+      "llm_eval": 253,
+      "llm_na": 0,
+      "llm_rate": 69.96047430830039,
+      "delta": -4.808959156785235
+    },
+    {
+      "system": "LangGraph",
+      "hc_pass": 69,
+      "hc_eval": 132,
+      "hc_na": 0,
+      "hc_rate": 52.27272727272727,
+      "llm_pass": 173,
+      "llm_eval": 253,
+      "llm_na": 0,
+      "llm_rate": 68.37944664031622,
+      "delta": -16.106719367588944
+    },
+    {
+      "system": "Letta",
+      "hc_pass": 84,
+      "hc_eval": 110,
+      "hc_na": 22,
+      "hc_rate": 76.36363636363637,
+      "llm_pass": 119,
+      "llm_eval": 200,
+      "llm_na": 53,
+      "llm_rate": 59.5,
+      "delta": 16.863636363636374
+    },
+    {
+      "system": "A-MEM",
+      "hc_pass": 86,
+      "hc_eval": 110,
+      "hc_na": 22,
+      "hc_rate": 78.18181818181819,
+      "llm_pass": 133,
+      "llm_eval": 200,
+      "llm_na": 53,
+      "llm_rate": 66.5,
+      "delta": 11.681818181818187
+    },
+    {
+      "system": "Graphiti",
+      "hc_pass": 7,
+      "hc_eval": 72,
+      "hc_na": 60,
+      "hc_rate": 9.722222222222223,
+      "llm_pass": 10,
+      "llm_eval": 170,
+      "llm_na": 83,
+      "llm_rate": 5.88235294117647,
+      "delta": 3.839869281045753
+    },
+    {
+      "system": "Letta+LLM",
+      "hc_pass": 95,
+      "hc_eval": 110,
+      "hc_na": 22,
+      "hc_rate": 86.36363636363636,
+      "llm_pass": 141,
+      "llm_eval": 200,
+      "llm_na": 53,
+      "llm_rate": 70.5,
+      "delta": 15.86363636363636
+    },
+    {
+      "system": "Lethe+LLM",
+      "hc_pass": 128,
+      "hc_eval": 132,
+      "hc_na": 0,
+      "hc_rate": 96.96969696969697,
+      "llm_pass": 225,
+      "llm_eval": 253,
+      "llm_na": 0,
+      "llm_rate": 88.93280632411067,
+      "delta": 8.036890645586297
+    },
+    {
+      "system": "LangGraph+LLM",
+      "hc_pass": 130,
+      "hc_eval": 132,
+      "hc_na": 0,
+      "hc_rate": 98.48484848484848,
+      "llm_pass": 229,
+      "llm_eval": 253,
+      "llm_na": 0,
+      "llm_rate": 90.51383399209486,
+      "delta": 7.971014492753625
+    }
+  ],
+  "per_category_hc": {
+    "compound_fact": {
+      "MemPalace": [
+        0,
+        8
+      ],
+      "Lethe": [
+        0,
+        8
+      ],
+      "Mem0": [
+        0,
+        8
+      ],
+      "LangGraph": [
+        0,
+        8
+      ],
+      "Letta": [
+        0,
+        8
+      ],
+      "A-MEM": [
+        0,
+        8
+      ],
+      "Graphiti": [
+        1,
+        8
+      ],
+      "Letta+LLM": [
+        0,
+        8
+      ],
+      "Lethe+LLM": [
+        7,
+        8
+      ],
+      "LangGraph+LLM": [
+        6,
+        8
+      ]
+    },
+    "cross_lingual_identifier": {
+      "MemPalace": [
+        0,
+        16
+      ],
+      "Lethe": [
+        0,
+        16
+      ],
+      "Mem0": [
+        8,
+        16
+      ],
+      "LangGraph": [
+        0,
+        16
+      ],
+      "Letta": [
+        16,
+        16
+      ],
+      "A-MEM": [
+        16,
+        16
+      ],
+      "Graphiti": [
+        0,
+        6
+      ],
+      "Letta+LLM": [
+        16,
+        16
+      ],
+      "Lethe+LLM": [
+        16,
+        16
+      ],
+      "LangGraph+LLM": [
+        16,
+        16
+      ]
+    },
+    "identifier_obfuscation": {
+      "MemPalace": [
+        0,
+        16
+      ],
+      "Lethe": [
+        0,
+        36
+      ],
+      "Mem0": [
+        16,
+        36
+      ],
+      "LangGraph": [
+        0,
+        36
+      ],
+      "Letta": [
+        36,
+        36
+      ],
+      "A-MEM": [
+        36,
+        36
+      ],
+      "Graphiti": [
+        0,
+        26
+      ],
+      "Letta+LLM": [
+        35,
+        36
+      ],
+      "Lethe+LLM": [
+        33,
+        36
+      ],
+      "LangGraph+LLM": [
+        36,
+        36
+      ]
+    },
+    "negation_trap": {
+      "MemPalace": [
+        0,
+        8
+      ],
+      "Lethe": [
+        8,
+        8
+      ],
+      "Mem0": [
+        8,
+        8
+      ],
+      "LangGraph": [
+        8,
+        8
+      ],
+      "Letta": [
+        5,
+        5
+      ],
+      "A-MEM": [
+        5,
+        5
+      ],
+      "Graphiti": [
+        0,
+        5
+      ],
+      "Letta+LLM": [
+        5,
+        5
+      ],
+      "Lethe+LLM": [
+        8,
+        8
+      ],
+      "LangGraph+LLM": [
+        8,
+        8
+      ]
+    },
+    "paraphrase_supersession": {
+      "MemPalace": [
+        0,
+        8
+      ],
+      "Lethe": [
+        8,
+        8
+      ],
+      "Mem0": [
+        8,
+        8
+      ],
+      "LangGraph": [
+        8,
+        8
+      ],
+      "Letta": [
+        8,
+        8
+      ],
+      "A-MEM": [
+        8,
+        8
+      ],
+      "Graphiti": [
+        3,
+        8
+      ],
+      "Letta+LLM": [
+        8,
+        8
+      ],
+      "Lethe+LLM": [
+        8,
+        8
+      ],
+      "LangGraph+LLM": [
+        8,
+        8
+      ]
+    },
+    "prefix_collision": {
+      "MemPalace": [
+        0,
+        16
+      ],
+      "Lethe": [
+        16,
+        16
+      ],
+      "Mem0": [
+        8,
+        16
+      ],
+      "LangGraph": [
+        15,
+        16
+      ],
+      "Letta": [
+        0,
+        16
+      ],
+      "A-MEM": [
+        0,
+        16
+      ],
+      "Graphiti": [
+        0,
+        0
+      ],
+      "Letta+LLM": [
+        10,
+        16
+      ],
+      "Lethe+LLM": [
+        16,
+        16
+      ],
+      "LangGraph+LLM": [
+        16,
+        16
+      ]
+    },
+    "recursive_supersession": {
+      "MemPalace": [
+        0,
+        8
+      ],
+      "Lethe": [
+        8,
+        8
+      ],
+      "Mem0": [
+        8,
+        8
+      ],
+      "LangGraph": [
+        8,
+        8
+      ],
+      "Letta": [
+        8,
+        8
+      ],
+      "A-MEM": [
+        8,
+        8
+      ],
+      "Graphiti": [
+        2,
+        8
+      ],
+      "Letta+LLM": [
+        8,
+        8
+      ],
+      "Lethe+LLM": [
+        8,
+        8
+      ],
+      "LangGraph+LLM": [
+        8,
+        8
+      ]
+    },
+    "shared_attribute": {
+      "MemPalace": [
+        0,
+        16
+      ],
+      "Lethe": [
+        14,
+        16
+      ],
+      "Mem0": [
+        15,
+        16
+      ],
+      "LangGraph": [
+        14,
+        16
+      ],
+      "Letta": [
+        0,
+        0
+      ],
+      "A-MEM": [
+        0,
+        0
+      ],
+      "Graphiti": [
+        0,
+        0
+      ],
+      "Letta+LLM": [
+        0,
+        0
+      ],
+      "Lethe+LLM": [
+        16,
+        16
+      ],
+      "LangGraph+LLM": [
+        16,
+        16
+      ]
+    },
+    "substring_trap": {
+      "MemPalace": [
+        0,
+        8
+      ],
+      "Lethe": [
+        8,
+        8
+      ],
+      "Mem0": [
+        7,
+        8
+      ],
+      "LangGraph": [
+        8,
+        8
+      ],
+      "Letta": [
+        4,
+        5
+      ],
+      "A-MEM": [
+        5,
+        5
+      ],
+      "Graphiti": [
+        0,
+        3
+      ],
+      "Letta+LLM": [
+        5,
+        5
+      ],
+      "Lethe+LLM": [
+        8,
+        8
+      ],
+      "LangGraph+LLM": [
+        8,
+        8
+      ]
+    },
+    "temporal_qualifier": {
+      "MemPalace": [
+        0,
+        8
+      ],
+      "Lethe": [
+        8,
+        8
+      ],
+      "Mem0": [
+        8,
+        8
+      ],
+      "LangGraph": [
+        8,
+        8
+      ],
+      "Letta": [
+        7,
+        8
+      ],
+      "A-MEM": [
+        8,
+        8
+      ],
+      "Graphiti": [
+        1,
+        8
+      ],
+      "Letta+LLM": [
+        8,
+        8
+      ],
+      "Lethe+LLM": [
+        8,
+        8
+      ],
+      "LangGraph+LLM": [
+        8,
+        8
+      ]
+    }
+  }
+}

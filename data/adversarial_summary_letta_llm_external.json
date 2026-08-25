@@ -1,0 +1,58 @@
+{
+  "system": "letta+llm",
+  "by_category": {
+    "substring_trap": {
+      "pass": 8,
+      "fail": 0,
+      "na": 0
+    },
+    "prefix_collision": {
+      "pass": 4,
+      "fail": 1,
+      "na": 0
+    },
+    "paraphrase_supersession": {
+      "pass": 5,
+      "fail": 3,
+      "na": 0
+    },
+    "negation_trap": {
+      "pass": 0,
+      "fail": 8,
+      "na": 0
+    },
+    "temporal_qualifier": {
+      "pass": 5,
+      "fail": 3,
+      "na": 0
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "fail": 8,
+      "na": 0
+    },
+    "compound_fact": {
+      "pass": 0,
+      "fail": 8,
+      "na": 0
+    },
+    "identifier_obfuscation": {
+      "pass": 7,
+      "fail": 1,
+      "na": 0
+    },
+    "cross_lingual_identifier": {
+      "pass": 0,
+      "fail": 8,
+      "na": 0
+    },
+    "recursive_supersession": {
+      "pass": 3,
+      "fail": 5,
+      "na": 0
+    }
+  },
+  "hook_model": "deepseek/deepseek-v4-flash",
+  "letta_llm": "deepseek-ai/DeepSeek-V3.1-Terminus",
+  "n_total": 77
+}

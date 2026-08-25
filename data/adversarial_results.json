@@ -1,0 +1,3498 @@
+[
+  {
+    "adapter": "lethe",
+    "suite": "adversarial",
+    "case_count": 112,
+    "overall_pass": 70,
+    "overall_total": 112,
+    "overall_rate": 0.625,
+    "by_family": {
+      "supersession": {
+        "pass": 19,
+        "total": 27,
+        "rate": 0.7037037037037037
+      },
+      "purge": {
+        "pass": 18,
+        "total": 50,
+        "rate": 0.36
+      },
+      "amnesia": {
+        "pass": 16,
+        "total": 18,
+        "rate": 0.8888888888888888
+      },
+      "decay": {
+        "pass": 4,
+        "total": 4,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    },
+    "by_attack_category": {
+      "substring_trap": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "prefix_collision": {
+        "pass": 16,
+        "total": 16,
+        "rate": 1.0
+      },
+      "paraphrase_supersession": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "negation_trap": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "temporal_qualifier": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "shared_attribute": {
+        "pass": 14,
+        "total": 16,
+        "rate": 0.875
+      },
+      "compound_fact": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "identifier_obfuscation": {
+        "pass": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "cross_lingual_identifier": {
+        "pass": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "recursive_supersession": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      }
+    },
+    "per_case": [
+      {
+        "id": "adv_substring_trap_01",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_02",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_03",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_04",
+        "family": "decay",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_05",
+        "family": "drift",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_06",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_07",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_08",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_01",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_02",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_03",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_04",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_05",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_06",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_07",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_08",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_09",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_10",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_11",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_12",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_13",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_14",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_15",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_16",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_01",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_02",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_03",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_04",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_05",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_06",
+        "family": "drift",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_07",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_08",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_01",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_02",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_03",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_04",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_05",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_06",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_07",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_08",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_01",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_02",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_03",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_04",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_05",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_06",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_07",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_08",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_01",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_02",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_03",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_04",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_05",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_06",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_07",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_08",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_09",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_10",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_11",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_12",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_13",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_14",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_15",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_16",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_01",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_02",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_03",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_04",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_05",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_06",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_07",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_08",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_01",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_02",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_03",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_04",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_05",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_06",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_07",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_08",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_09",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_10",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_11",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_12",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_13",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_14",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_15",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_16",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_01",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_02",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_03",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_04",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_05",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_06",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_07",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_08",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_09",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_10",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_11",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_12",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_13",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_14",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_15",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_16",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_01",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_02",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_03",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_04",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_05",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_06",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_07",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_08",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "wall_seconds": 5.41752629999246
+  },
+  {
+    "adapter": "mem0",
+    "suite": "adversarial",
+    "case_count": 112,
+    "overall_pass": 76,
+    "overall_total": 112,
+    "overall_rate": 0.6785714285714286,
+    "by_family": {
+      "supersession": {
+        "pass": 19,
+        "total": 27,
+        "rate": 0.7037037037037037
+      },
+      "purge": {
+        "pass": 24,
+        "total": 50,
+        "rate": 0.48
+      },
+      "amnesia": {
+        "pass": 16,
+        "total": 18,
+        "rate": 0.8888888888888888
+      },
+      "decay": {
+        "pass": 4,
+        "total": 4,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    },
+    "by_attack_category": {
+      "substring_trap": {
+        "pass": 7,
+        "total": 8,
+        "rate": 0.875
+      },
+      "prefix_collision": {
+        "pass": 8,
+        "total": 16,
+        "rate": 0.5
+      },
+      "paraphrase_supersession": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "negation_trap": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "temporal_qualifier": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "shared_attribute": {
+        "pass": 15,
+        "total": 16,
+        "rate": 0.9375
+      },
+      "compound_fact": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "identifier_obfuscation": {
+        "pass": 6,
+        "total": 16,
+        "rate": 0.375
+      },
+      "cross_lingual_identifier": {
+        "pass": 8,
+        "total": 16,
+        "rate": 0.5
+      },
+      "recursive_supersession": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      }
+    },
+    "per_case": [
+      {
+        "id": "adv_substring_trap_01",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_02",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_03",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_04",
+        "family": "decay",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_05",
+        "family": "drift",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_06",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_07",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_08",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_01",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_02",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_03",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_04",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_05",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_06",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_07",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_08",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_09",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_10",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_11",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_12",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_13",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_14",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_15",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_16",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_01",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_02",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_03",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_04",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_05",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_06",
+        "family": "drift",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_07",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_08",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_01",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_02",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_03",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_04",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_05",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_06",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_07",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_08",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_01",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_02",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_03",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_04",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_05",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_06",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_07",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_08",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_01",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_02",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_03",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_04",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_05",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_06",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_07",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_08",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_09",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_10",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_11",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_12",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_13",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_14",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_15",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_16",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_01",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_02",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_03",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_04",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_05",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_06",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_07",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_08",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_01",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_02",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_03",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_04",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_05",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_06",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_07",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_08",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_09",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_10",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_11",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_12",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_13",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_14",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_15",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_16",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_01",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_02",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_03",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_04",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_05",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_06",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_07",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_08",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_09",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_10",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_11",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_12",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_13",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_14",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_15",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_16",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_01",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_02",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_03",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_04",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_05",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_06",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_07",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_08",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "wall_seconds": 58.972589800003334
+  },
+  {
+    "adapter": "mempalace",
+    "suite": "adversarial",
+    "case_count": 112,
+    "overall_pass": 0,
+    "overall_total": 112,
+    "overall_rate": 0.0,
+    "by_family": {
+      "supersession": {
+        "pass": 0,
+        "total": 27,
+        "rate": 0.0
+      },
+      "purge": {
+        "pass": 0,
+        "total": 50,
+        "rate": 0.0
+      },
+      "amnesia": {
+        "pass": 0,
+        "total": 18,
+        "rate": 0.0
+      },
+      "decay": {
+        "pass": 0,
+        "total": 4,
+        "rate": 0.0
+      },
+      "drift": {
+        "pass": 0,
+        "total": 13,
+        "rate": 0.0
+      }
+    },
+    "by_attack_category": {
+      "substring_trap": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "prefix_collision": {
+        "pass": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "paraphrase_supersession": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "negation_trap": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "temporal_qualifier": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "shared_attribute": {
+        "pass": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "compound_fact": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "identifier_obfuscation": {
+        "pass": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "cross_lingual_identifier": {
+        "pass": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "recursive_supersession": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      }
+    },
+    "per_case": [
+      {
+        "id": "adv_substring_trap_01",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_substring_trap_02",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_substring_trap_03",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_substring_trap_04",
+        "family": "decay",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_substring_trap_05",
+        "family": "drift",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_substring_trap_06",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_substring_trap_07",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_substring_trap_08",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_01",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_02",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_03",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_04",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_05",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_06",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_07",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_08",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_09",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_10",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_11",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_12",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_13",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_14",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_15",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_prefix_collision_16",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_paraphrase_supersession_01",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_paraphrase_supersession_02",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_paraphrase_supersession_03",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_paraphrase_supersession_04",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_paraphrase_supersession_05",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_paraphrase_supersession_06",
+        "family": "drift",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_paraphrase_supersession_07",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_paraphrase_supersession_08",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_negation_trap_01",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_negation_trap_02",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_negation_trap_03",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_negation_trap_04",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_negation_trap_05",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_negation_trap_06",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_negation_trap_07",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_negation_trap_08",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_temporal_qualifier_01",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_temporal_qualifier_02",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_temporal_qualifier_03",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_temporal_qualifier_04",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_temporal_qualifier_05",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_temporal_qualifier_06",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_temporal_qualifier_07",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_temporal_qualifier_08",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_01",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_02",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_03",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_04",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_05",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_06",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_07",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_08",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_09",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_10",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_11",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_12",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_13",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_14",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_15",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_shared_attribute_16",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_compound_fact_01",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_compound_fact_02",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_compound_fact_03",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_compound_fact_04",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_compound_fact_05",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_compound_fact_06",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_compound_fact_07",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_compound_fact_08",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_01",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_02",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_03",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_04",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_05",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_06",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_07",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_08",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_09",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_10",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_11",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_12",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_13",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_14",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_15",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_identifier_obfuscation_16",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_01",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_02",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_03",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_04",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_05",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_06",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_07",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_08",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_09",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_10",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_11",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_12",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_13",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_14",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_15",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_cross_lingual_identifier_16",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_recursive_supersession_01",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_recursive_supersession_02",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_recursive_supersession_03",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_recursive_supersession_04",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_recursive_supersession_05",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_recursive_supersession_06",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_recursive_supersession_07",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      },
+      {
+        "id": "adv_recursive_supersession_08",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": "N/A (capability not supported)"
+      }
+    ],
+    "wall_seconds": 18.670517299993662
+  },
+  {
+    "adapter": "langmem",
+    "suite": "adversarial",
+    "case_count": 112,
+    "overall_pass": 69,
+    "overall_total": 112,
+    "overall_rate": 0.6160714285714286,
+    "by_family": {
+      "supersession": {
+        "pass": 19,
+        "total": 27,
+        "rate": 0.7037037037037037
+      },
+      "purge": {
+        "pass": 17,
+        "total": 50,
+        "rate": 0.34
+      },
+      "amnesia": {
+        "pass": 16,
+        "total": 18,
+        "rate": 0.8888888888888888
+      },
+      "decay": {
+        "pass": 4,
+        "total": 4,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    },
+    "by_attack_category": {
+      "substring_trap": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "prefix_collision": {
+        "pass": 15,
+        "total": 16,
+        "rate": 0.9375
+      },
+      "paraphrase_supersession": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "negation_trap": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "temporal_qualifier": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "shared_attribute": {
+        "pass": 14,
+        "total": 16,
+        "rate": 0.875
+      },
+      "compound_fact": {
+        "pass": 0,
+        "total": 8,
+        "rate": 0.0
+      },
+      "identifier_obfuscation": {
+        "pass": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "cross_lingual_identifier": {
+        "pass": 0,
+        "total": 16,
+        "rate": 0.0
+      },
+      "recursive_supersession": {
+        "pass": 8,
+        "total": 8,
+        "rate": 1.0
+      }
+    },
+    "per_case": [
+      {
+        "id": "adv_substring_trap_01",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_02",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_03",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_04",
+        "family": "decay",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_05",
+        "family": "drift",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_06",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_07",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_08",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_01",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_02",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_03",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_04",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_05",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_06",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_07",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_08",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_09",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_10",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_11",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_12",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_13",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_14",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_15",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_16",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_01",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_02",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_03",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_04",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_05",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_06",
+        "family": "drift",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_07",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_08",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_01",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_02",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_03",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_04",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_05",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_06",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_07",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_08",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_01",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_02",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_03",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_04",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_05",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_06",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_07",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_08",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_01",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_02",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_03",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_04",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_05",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_06",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_07",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_08",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_09",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_10",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_11",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_12",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_13",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_14",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_15",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_16",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_01",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_02",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_03",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_04",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_05",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_06",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_07",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_08",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_01",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_02",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_03",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_04",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_05",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_06",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_07",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_08",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_09",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_10",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_11",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_12",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_13",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_14",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_15",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_16",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_01",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_02",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_03",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_04",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_05",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_06",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_07",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_08",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_09",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_10",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_11",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_12",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_13",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_14",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_15",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_16",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_01",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_02",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_03",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_04",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_05",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_06",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_07",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_08",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "wall_seconds": 6.252801899987389
+  }
+]

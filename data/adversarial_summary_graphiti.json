@@ -1,0 +1,56 @@
+{
+  "system": "graphiti",
+  "by_category": {
+    "substring_trap": {
+      "pass": 2,
+      "fail": 34,
+      "na": 0
+    },
+    "prefix_collision": {
+      "pass": 0,
+      "fail": 39,
+      "na": 0
+    },
+    "paraphrase_supersession": {
+      "pass": 7,
+      "fail": 31,
+      "na": 0
+    },
+    "negation_trap": {
+      "pass": 2,
+      "fail": 38,
+      "na": 0
+    },
+    "temporal_qualifier": {
+      "pass": 4,
+      "fail": 33,
+      "na": 0
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "fail": 40,
+      "na": 0
+    },
+    "compound_fact": {
+      "pass": 2,
+      "fail": 38,
+      "na": 0
+    },
+    "identifier_obfuscation": {
+      "pass": 0,
+      "fail": 38,
+      "na": 0
+    },
+    "cross_lingual_identifier": {
+      "pass": 0,
+      "fail": 38,
+      "na": 0
+    },
+    "recursive_supersession": {
+      "pass": 12,
+      "fail": 27,
+      "na": 0
+    }
+  },
+  "model": "deepseek/deepseek-v4-flash"
+}

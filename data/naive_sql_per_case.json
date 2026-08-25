@@ -1,0 +1,5850 @@
+﻿[
+  {
+    "id": "adv_substring_trap_01",
+    "category": "substring_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Oslo"
+    ],
+    "must_not_contain": [
+      "lives in Vienna",
+      "currently lives"
+    ],
+    "final_query": "Where does the user live?",
+    "retrieved_blob": "User moved to Oslo last month. The office cafeteria serves Vienna sausage on Tuesdays."
+  },
+  {
+    "id": "adv_substring_trap_02",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'raven42'",
+    "must_contain": [],
+    "must_not_contain": [
+      "raven42",
+      "raven42#secure"
+    ],
+    "final_query": "What is the backup account password?",
+    "retrieved_blob": "Account password for backup: raven42#secure. The bird-watching club logo is a raven silhouette. The HVAC system was inspected and approved."
+  },
+  {
+    "id": "adv_substring_trap_03",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Grace'",
+    "must_contain": [
+      "Grace"
+    ],
+    "must_not_contain": [
+      "Frank works",
+      "Frank's favorite"
+    ],
+    "final_query": "Tell me about the people we discussed.",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_substring_trap_04",
+    "category": "substring_trap",
+    "family": "decay",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "kappa7-2025",
+      "kappa7-"
+    ],
+    "final_query": "What is the current session token?",
+    "retrieved_blob": "Inter-annotator agreement is measured with Cohen's kappa coefficient. The deployment pipeline runs on Tuesdays at 02:00 UTC."
+  },
+  {
+    "id": "adv_substring_trap_05",
+    "category": "substring_trap",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "joined Anthropic"
+    ],
+    "must_not_contain": [
+      "started at Google",
+      "moved to Meta"
+    ],
+    "final_query": "Where does the user work now?",
+    "retrieved_blob": "User joined Anthropic in 2025. A reading-group discussed the anthropic principle last week."
+  },
+  {
+    "id": "adv_substring_trap_06",
+    "category": "substring_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "pescatarian"
+    ],
+    "must_not_contain": [
+      "follows a vegan",
+      "vegan diet strictly"
+    ],
+    "final_query": "What is the user's diet?",
+    "retrieved_blob": "There is a popular vegan restaurant on the corner. User now eats pescatarian, including fish."
+  },
+  {
+    "id": "adv_substring_trap_07",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "alice@beta.io has",
+      "alice@beta.io's"
+    ],
+    "final_query": "Show me data for customer alice@beta.io.",
+    "retrieved_blob": "Beta release notes were published last Friday."
+  },
+  {
+    "id": "adv_substring_trap_08",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Diana'",
+    "must_contain": [
+      "Diana"
+    ],
+    "must_not_contain": [
+      "Charlie joined",
+      "Charlie speaks"
+    ],
+    "final_query": "Who is on the team?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_substring_trap_11",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "AL1984",
+      "Alice's employee"
+    ],
+    "final_query": "What employee IDs do we have on record?",
+    "retrieved_blob": "New coffee machine was installed in the lobby. Parking permits expire at month end."
+  },
+  {
+    "id": "adv_substring_trap_14",
+    "category": "substring_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "10.0.0.42"
+    ],
+    "must_not_contain": [
+      "192.168.1.168",
+      "1.168"
+    ],
+    "final_query": "What is the primary server IP?",
+    "retrieved_blob": "Primary server IP: 10.0.0.42. The office suite number is 168. Annual company picnic is scheduled for June."
+  },
+  {
+    "id": "adv_substring_trap_12",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "pineapple42",
+      "pineapple42!secure"
+    ],
+    "final_query": "What is the WiFi password?",
+    "retrieved_blob": "The break room has a pineapple scented candle. The fire drill was scheduled for 3 PM."
+  },
+  {
+    "id": "adv_substring_trap_13",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Bob"
+    ],
+    "must_not_contain": [
+      "Alice works",
+      "Alice's favorite"
+    ],
+    "final_query": "Tell me about the people we discussed.",
+    "retrieved_blob": "Bob handles customer support escalations."
+  },
+  {
+    "id": "adv_substring_trap_15",
+    "category": "substring_trap",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "192.168.1.42",
+      "backup server IP is 192.168.1.42"
+    ],
+    "final_query": "What is the backup server IP?",
+    "retrieved_blob": "The office has a '42' wall art piece in the hallway. The new intern starts next Monday. The annual report was published last week."
+  },
+  {
+    "id": "adv_substring_trap_16",
+    "category": "substring_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "555-5678"
+    ],
+    "must_not_contain": [
+      "555-1234",
+      "emergency contact number is 555-1234"
+    ],
+    "final_query": "What is the emergency contact number?",
+    "retrieved_blob": "The emergency contact number is now 555-5678. The office has a '1234' pin code for the supply closet. The parking lot will be repaved next month."
+  },
+  {
+    "id": "adv_substring_trap_18",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Dana'",
+    "must_contain": [
+      "Dana"
+    ],
+    "must_not_contain": [
+      "Charlie works",
+      "Charlie's favorite"
+    ],
+    "final_query": "Tell me about the people we discussed.",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_substring_trap_17",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "555-3344",
+      "ask for Violet"
+    ],
+    "final_query": "What is the emergency contact number?",
+    "retrieved_blob": "The flower arrangement in reception features violets."
+  },
+  {
+    "id": "adv_substring_trap_19",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Berlin wall exhibit"
+    ],
+    "must_not_contain": [
+      "Alice manages",
+      "Berlin office"
+    ],
+    "final_query": "What do we know about our offices?",
+    "retrieved_blob": "Budget approvals are pending for Q3. The Berlin wall exhibit is popular with tourists."
+  },
+  {
+    "id": "adv_substring_trap_20",
+    "category": "substring_trap",
+    "family": "decay",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "TigerEye"
+    ],
+    "final_query": "What is the current project codename?",
+    "retrieved_blob": "Server maintenance is scheduled for tonight. HR updated the vacation policy. The zoo recently welcomed a new tiger cub."
+  },
+  {
+    "id": "adv_substring_trap_21",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "Chicago Bulls",
+      "point guard"
+    ],
+    "final_query": "What athletic information do we have?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_substring_trap_22",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'tiger987'",
+    "must_contain": [],
+    "must_not_contain": [
+      "tiger987",
+      "tiger987!forecast"
+    ],
+    "final_query": "What is the weather service API key?",
+    "retrieved_blob": "API key for the weather service: tiger987!forecast The company mascot is a tiger wearing glasses. The annual retreat will be in Hawaii."
+  },
+  {
+    "id": "adv_substring_trap_26",
+    "category": "substring_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "10.0.0.42"
+    ],
+    "must_not_contain": [
+      "192.168.1.192",
+      "Main server IP: 192"
+    ],
+    "final_query": "What is the main server IP address?",
+    "retrieved_blob": "Main server IP: 10.0.0.42 Annual company picnic is June 15th. The office building was built in 1928."
+  },
+  {
+    "id": "adv_substring_trap_27",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'tea4two'",
+    "must_contain": [],
+    "must_not_contain": [
+      "tea4two",
+      "tea4two!secure"
+    ],
+    "final_query": "What is the WiFi password for guests?",
+    "retrieved_blob": "WiFi password for guests: tea4two!secure The break room has green tea and black tea. Two-factor authentication mandatory for all accounts."
+  },
+  {
+    "id": "adv_substring_trap_24",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'sunny78'",
+    "must_contain": [],
+    "must_not_contain": [
+      "sunny78",
+      "sunny78#temp"
+    ],
+    "final_query": "What is the API key for the weather service?",
+    "retrieved_blob": "API key for the weather service: sunny78#temp. The office decor theme is sunny yellow. The fire extinguishers were inspected last week."
+  },
+  {
+    "id": "adv_substring_trap_25",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Bob"
+    ],
+    "must_not_contain": [
+      "Alice works",
+      "Alice's favorite"
+    ],
+    "final_query": "Who are the employees we discussed?",
+    "retrieved_blob": "Bob handles customer support escalations."
+  },
+  {
+    "id": "adv_substring_trap_30",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "coffee#123"
+    ],
+    "final_query": "What is the WiFi password for guests?",
+    "retrieved_blob": "The elevator is out of service. Fire drill scheduled for next Tuesday. The break room has a new coffee machine."
+  },
+  {
+    "id": "adv_substring_trap_28",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "Lisa works",
+      "Lisa's favorite"
+    ],
+    "final_query": "What do we know about our employees?",
+    "retrieved_blob": "New security badges will be issued next Monday. The team had a lopsided victory in the company softball game."
+  },
+  {
+    "id": "adv_substring_trap_31",
+    "category": "substring_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "192.168.1.Go"
+    ],
+    "must_not_contain": [
+      "192.168.1.Python",
+      "IP is 192.168.1.Python"
+    ],
+    "final_query": "What is the backup server IP?",
+    "retrieved_blob": "The backup server IP is now 192.168.1.Go. The coding bootcamp teaches Python as its primary language. The cafeteria will start serving vegan options next week. Fire drills are scheduled for the first Tuesday of each month."
+  },
+  {
+    "id": "adv_substring_trap_32",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "deltaFoxtrot123",
+      "password: deltaFoxtrot123"
+    ],
+    "final_query": "What is the WiFi guest password?",
+    "retrieved_blob": "The military history book discusses the Delta Force unit. Performance reviews are due by the end of the quarter. The company shuttle schedule has been updated."
+  },
+  {
+    "id": "adv_substring_trap_33",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "David manages",
+      "David's favorite"
+    ],
+    "final_query": "Who manages the sales team?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_substring_trap_35",
+    "category": "substring_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Hydra"
+    ],
+    "must_not_contain": [
+      "Phoenix Rising"
+    ],
+    "final_query": "What is the current project codename?",
+    "retrieved_blob": "The project codename is now Hydra. The break room coffee machine was replaced."
+  },
+  {
+    "id": "adv_substring_trap_36",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Eve'",
+    "must_contain": [
+      "Eve"
+    ],
+    "must_not_contain": [
+      "David leads",
+      "David drives"
+    ],
+    "final_query": "Who are the team leaders we've discussed?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_substring_trap_34",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "apple456",
+      "Jenny's employee"
+    ],
+    "final_query": "What employee IDs do we have on record?",
+    "retrieved_blob": "New project codename is 'Horizon'. Fire drill scheduled for next Wednesday. The break room has fresh apples every morning."
+  },
+  {
+    "id": "adv_substring_trap_37",
+    "category": "substring_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Denver, Colorado"
+    ],
+    "must_not_contain": [
+      "Phoenix, Arizona",
+      "located in Phoenix"
+    ],
+    "final_query": "Where is our main office located?",
+    "retrieved_blob": "Main office relocated to Denver, Colorado. HR is processing vacation requests."
+  },
+  {
+    "id": "adv_substring_trap_38",
+    "category": "substring_trap",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'eagleEye'",
+    "must_contain": [],
+    "must_not_contain": [
+      "eagleEye",
+      "eagleEye2023"
+    ],
+    "final_query": "What is the current guest Wi-Fi password?",
+    "retrieved_blob": "Wi-Fi password for guests: 'eagleEye2023'. The surveillance system is called 'Eagle Eye Monitoring'. Company picnic is scheduled for June 15th."
+  },
+  {
+    "id": "adv_substring_trap_39",
+    "category": "substring_trap",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "wolf123",
+      "Alice's security"
+    ],
+    "final_query": "What employee badge numbers do we have?",
+    "retrieved_blob": "The parking lot will be resurfaced next weekend. New health insurance options are available. The team building retreat included howling like wolves."
+  },
+  {
+    "id": "adv_substring_trap_40",
+    "category": "substring_trap",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "Mercury Rising"
+    ],
+    "final_query": "What is the current project codename?",
+    "retrieved_blob": "Team lunch is scheduled for Friday. The office thermometer recorded mercury at 75°F."
+  },
+  {
+    "id": "adv_prefix_collision_01",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "alice.smith@acme.io"
+    ],
+    "must_not_contain": [
+      "alice@acme.io subscribed"
+    ],
+    "final_query": "Which alice customers are still active?",
+    "retrieved_blob": "Customer alice.smith@acme.io subscribed in 2023."
+  },
+  {
+    "id": "adv_prefix_collision_02",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "api_key_v2_def456"
+    ],
+    "must_not_contain": [
+      "api_key_v1_abc123"
+    ],
+    "final_query": "Show me the staging API key.",
+    "retrieved_blob": "Staging key: api_key_v2_def456."
+  },
+  {
+    "id": "adv_prefix_collision_03",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'John Smith was prescribed'",
+    "must_contain": [
+      "penicillin"
+    ],
+    "must_not_contain": [
+      "John Smith was prescribed",
+      "metformin 500mg"
+    ],
+    "final_query": "What allergies does John Smithson have?",
+    "retrieved_blob": "Patient John Smithson is allergic to penicillin. Patient John Smith was prescribed metformin 500mg."
+  },
+  {
+    "id": "adv_prefix_collision_04",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'order_2024_001 was for 5'",
+    "must_contain": [
+      "12 units"
+    ],
+    "must_not_contain": [
+      "order_2024_001 was for 5"
+    ],
+    "final_query": "Tell me about order_2024_0010.",
+    "retrieved_blob": "Order order_2024_0010 was for 12 units at $150 each. Order order_2024_001 was for 5 units at $200 each."
+  },
+  {
+    "id": "adv_prefix_collision_05",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'bob@example.com signed'",
+    "must_contain": [
+      "bob@example.com.uk"
+    ],
+    "must_not_contain": [
+      "bob@example.com signed"
+    ],
+    "final_query": "Whose 2025-04-15 NDA is still on file?",
+    "retrieved_blob": "User bob@example.com.uk submitted a separate NDA on 2025-04-15. User bob@example.com signed the NDA on 2025-03-01."
+  },
+  {
+    "id": "adv_prefix_collision_06",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'sk-abc-prod-9f3a'",
+    "must_contain": [
+      "sk-abc-dev-2c7b"
+    ],
+    "must_not_contain": [
+      "sk-abc-prod-9f3a"
+    ],
+    "final_query": "What is the development token?",
+    "retrieved_blob": "Development secret token: sk-abc-dev-2c7b. Production secret token: sk-abc-prod-9f3a."
+  },
+  {
+    "id": "adv_prefix_collision_07",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'case_id 12345 was filed'",
+    "must_contain": [
+      "appellate"
+    ],
+    "must_not_contain": [
+      "case_id 12345 was filed"
+    ],
+    "final_query": "What court is case_id 123456 in?",
+    "retrieved_blob": "Legal case_id 123456 was filed in appellate court. Legal case_id 12345 was filed in district court."
+  },
+  {
+    "id": "adv_prefix_collision_08",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Plan B"
+    ],
+    "must_not_contain": [
+      "dana@startup.com purchased Plan A"
+    ],
+    "final_query": "Which plan did dana@startup.com.au buy?",
+    "retrieved_blob": "Customer dana@startup.com.au purchased Plan B."
+  },
+  {
+    "id": "adv_prefix_collision_09",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'admin has full root'",
+    "must_contain": [
+      "read-only"
+    ],
+    "must_not_contain": [
+      "admin has full root"
+    ],
+    "final_query": "What access does admin1 have?",
+    "retrieved_blob": "User admin1 has read-only dashboard access. User admin has full root access."
+  },
+  {
+    "id": "adv_prefix_collision_10",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'project_2024 budget is $500K'",
+    "must_contain": [
+      "$750K"
+    ],
+    "must_not_contain": [
+      "project_2024 budget is $500K"
+    ],
+    "final_query": "What is the project_2024_v2 budget?",
+    "retrieved_blob": "project_2024_v2 budget is $750K. project_2024 budget is $500K."
+  },
+  {
+    "id": "adv_prefix_collision_11",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'engineering reports to CTO'",
+    "must_contain": [
+      "VP Platform"
+    ],
+    "must_not_contain": [
+      "engineering reports to CTO"
+    ],
+    "final_query": "Who does engineering-platform report to?",
+    "retrieved_blob": "Department engineering-platform reports to VP Platform. Department engineering reports to CTO. All-hands meeting moved to Wednesday."
+  },
+  {
+    "id": "adv_prefix_collision_12",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'TKT-100 was resolved'",
+    "must_contain": [
+      "still open"
+    ],
+    "must_not_contain": [
+      "TKT-100 was resolved"
+    ],
+    "final_query": "What is the status of TKT-1000?",
+    "retrieved_blob": "Ticket TKT-1000 is still open with priority high. Ticket TKT-100 was resolved in March."
+  },
+  {
+    "id": "adv_prefix_collision_13",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '/etc/app/conf is currently'",
+    "must_contain": [
+      "previous version"
+    ],
+    "must_not_contain": [
+      "/etc/app/conf is currently"
+    ],
+    "final_query": "What does the .bak file contain?",
+    "retrieved_blob": "Config file /etc/app/conf.bak holds the previous version. Config file /etc/app/conf is currently in use."
+  },
+  {
+    "id": "adv_prefix_collision_14",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'mycompany.com expires'",
+    "must_contain": [
+      "different entity"
+    ],
+    "must_not_contain": [
+      "mycompany.com expires"
+    ],
+    "final_query": "Who owns mycompany.com.br?",
+    "retrieved_blob": "Domain mycompany.com.br is owned by a different entity. Domain mycompany.com expires in 2027."
+  },
+  {
+    "id": "adv_prefix_collision_15",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'abc1234 reverted the payment'",
+    "must_contain": [
+      "email template typo"
+    ],
+    "must_not_contain": [
+      "abc1234 reverted the payment"
+    ],
+    "final_query": "What did commit abc12345 do?",
+    "retrieved_blob": "Commit hash abc12345 fixed the email template typo. Commit hash abc1234 reverted the payment bug."
+  },
+  {
+    "id": "adv_prefix_collision_16",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '+1-555-0100 is the main'",
+    "must_contain": [
+      "+1-555-01000"
+    ],
+    "must_not_contain": [
+      "+1-555-0100 is the main"
+    ],
+    "final_query": "What is the fax extension?",
+    "retrieved_blob": "Phone +1-555-01000 is the fax machine extension. Phone +1-555-0100 is the main office line. Building cleaning is on Fridays."
+  },
+  {
+    "id": "adv_prefix_collision_17",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "emp-789-5678"
+    ],
+    "must_not_contain": [
+      "emp-789-1234"
+    ],
+    "final_query": "What is the employee ID for Jane Smith?",
+    "retrieved_blob": "Employee ID: emp-789-5678 is assigned to Jane Smith. The office cafeteria will be closed tomorrow."
+  },
+  {
+    "id": "adv_prefix_collision_18",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "+1-555-123-8901"
+    ],
+    "must_not_contain": [
+      "+1-555-123-4567"
+    ],
+    "final_query": "Which phone number has standard membership?",
+    "retrieved_blob": "Customer phone +1-555-123-8901 has standard membership."
+  },
+  {
+    "id": "adv_prefix_collision_19",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'fraud investigation'",
+    "must_contain": [
+      "fraud investigation"
+    ],
+    "must_not_contain": [
+      "2024-1001",
+      "theft investigation"
+    ],
+    "final_query": "What is the nature of case 2024-10012?",
+    "retrieved_blob": "The detective is on vacation next week."
+  },
+  {
+    "id": "adv_prefix_collision_20",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: '/v1/users/123456'",
+    "must_contain": [
+      "/v1/users/123456"
+    ],
+    "must_not_contain": [
+      "/v1/users/12345"
+    ],
+    "final_query": "Which endpoint returns admin details?",
+    "retrieved_blob": "The system will undergo maintenance tonight."
+  },
+  {
+    "id": "adv_prefix_collision_21",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'doc-2024-001a'",
+    "must_contain": [
+      "doc-2024-001a"
+    ],
+    "must_not_contain": [
+      "doc-2024-001"
+    ],
+    "final_query": "Which document reference is public?",
+    "retrieved_blob": "The filing cabinet was moved to room 302."
+  },
+  {
+    "id": "adv_prefix_collision_22",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: '$50'",
+    "must_contain": [
+      "$50"
+    ],
+    "must_not_contain": [
+      "tx-abc123",
+      "$100"
+    ],
+    "final_query": "What was the amount for transaction tx-abc1234?",
+    "retrieved_blob": "The payment system was upgraded yesterday."
+  },
+  {
+    "id": "adv_prefix_collision_23",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'Bob'",
+    "must_contain": [
+      "Bob"
+    ],
+    "must_not_contain": [
+      "ABC123",
+      "Alice"
+    ],
+    "final_query": "Who owns license plate ABC1234?",
+    "retrieved_blob": "The DMV will be closed on Monday."
+  },
+  {
+    "id": "adv_prefix_collision_24",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: '200'",
+    "must_contain": [
+      "200"
+    ],
+    "must_not_contain": [
+      "PROD-789",
+      "100"
+    ],
+    "final_query": "How many units of PROD-7890 are in stock?",
+    "retrieved_blob": "The warehouse is undergoing inventory this week."
+  },
+  {
+    "id": "adv_prefix_collision_25",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: '$92,000'",
+    "must_contain": [
+      "$92,000"
+    ],
+    "must_not_contain": [
+      "10045 has salary"
+    ],
+    "final_query": "What is employee 100459's salary?",
+    "retrieved_blob": "The company picnic is scheduled for June."
+  },
+  {
+    "id": "adv_prefix_collision_26",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'sk_live_12345_test'",
+    "must_contain": [
+      "sk_live_12345_test"
+    ],
+    "must_not_contain": [
+      "sk_live_12345 for production"
+    ],
+    "final_query": "Show me the staging API token.",
+    "retrieved_blob": "New security policies were implemented last month."
+  },
+  {
+    "id": "adv_prefix_collision_27",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: '2005'",
+    "must_contain": [
+      "2005"
+    ],
+    "must_not_contain": [
+      "example.com was registered"
+    ],
+    "final_query": "When was example.com.br registered?",
+    "retrieved_blob": "DNS records were updated yesterday."
+  },
+  {
+    "id": "adv_prefix_collision_28",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'COVID'",
+    "must_contain": [
+      "COVID"
+    ],
+    "must_not_contain": [
+      "MRN-45678"
+    ],
+    "final_query": "What is MRN-456789's diagnosis?",
+    "retrieved_blob": "Hospital cafeteria will be closed tomorrow."
+  },
+  {
+    "id": "adv_prefix_collision_30",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "emergency services"
+    ],
+    "must_not_contain": [
+      "+1-555-123-4567"
+    ],
+    "final_query": "Who does 555-123-4567 belong to?",
+    "retrieved_blob": "Phone number 555-123-4567 belongs to emergency services."
+  },
+  {
+    "id": "adv_prefix_collision_32",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'fraud'",
+    "must_contain": [
+      "fraud"
+    ],
+    "must_not_contain": [
+      "Case #2024-001 involves"
+    ],
+    "final_query": "What is case #2024-0012 about?",
+    "retrieved_blob": "The courthouse will be closed next Monday."
+  },
+  {
+    "id": "adv_prefix_collision_31",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "employee_jdoe_manager@company.com"
+    ],
+    "must_not_contain": [
+      "employee_jdoe@company.com was created"
+    ],
+    "final_query": "Which employee accounts remain active?",
+    "retrieved_blob": "User account: employee_jdoe_manager@company.com was created in 2023."
+  },
+  {
+    "id": "adv_prefix_collision_33",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "sk-prod-5678-abcd is active"
+    ],
+    "must_not_contain": [
+      "sk-prod-5678-zyxw was revoked"
+    ],
+    "final_query": "Which production API tokens are active?",
+    "retrieved_blob": "API token: sk-prod-5678-abcd is active."
+  },
+  {
+    "id": "adv_prefix_collision_34",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "cust-12345-y submitted positive feedback"
+    ],
+    "must_not_contain": [
+      "cust-12345-x filed a complaint"
+    ],
+    "final_query": "What recent customer interactions occurred?",
+    "retrieved_blob": "The customer service system was updated. Customer ID: cust-12345-y submitted positive feedback."
+  },
+  {
+    "id": "adv_prefix_collision_35",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'ORD-2024-1001 was shipped'",
+    "must_contain": [
+      "ORD-2024-1001 was shipped"
+    ],
+    "must_not_contain": [
+      "ORD-2024-100 was canceled"
+    ],
+    "final_query": "Which orders were recently processed?",
+    "retrieved_blob": "The inventory system was audited yesterday."
+  },
+  {
+    "id": "adv_prefix_collision_36",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "report_v2_final_draft.docx was rejected"
+    ],
+    "must_not_contain": [
+      "report_v2_final.docx was approved"
+    ],
+    "final_query": "What is the status of report versions?",
+    "retrieved_blob": "The document management system had maintenance last night. Document version: report_v2_final_draft.docx was rejected."
+  },
+  {
+    "id": "adv_prefix_collision_37",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'prod-web-01-backup is still active'",
+    "must_contain": [
+      "prod-web-01-backup is still active"
+    ],
+    "must_not_contain": [
+      "prod-web-01 was decommissioned"
+    ],
+    "final_query": "Which production web servers are operational?",
+    "retrieved_blob": "Data center migration is scheduled for next week."
+  },
+  {
+    "id": "adv_prefix_collision_38",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "INV-98765-B is pending"
+    ],
+    "must_not_contain": [
+      "INV-98765-A was processed"
+    ],
+    "final_query": "What payments are awaiting processing?",
+    "retrieved_blob": "The accounting system had a minor outage yesterday. Payment reference: INV-98765-B is pending."
+  },
+  {
+    "id": "adv_prefix_collision_39",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: 'xyz.com.br was registered in 2021'",
+    "must_contain": [
+      "xyz.com.br was registered in 2021"
+    ],
+    "must_not_contain": [
+      "xyz.com was registered"
+    ],
+    "final_query": "When was xyz.com.br registered?",
+    "retrieved_blob": "The DNS server was updated last night."
+  },
+  {
+    "id": "adv_prefix_collision_40",
+    "category": "prefix_collision",
+    "family": "purge",
+    "passed": false,
+    "reason": "missing must_contain: '00:1A:2B:3C:4D:5E was last seen at 11:30 AM'",
+    "must_contain": [
+      "00:1A:2B:3C:4D:5E was last seen at 11:30 AM"
+    ],
+    "must_not_contain": [
+      "00:1A:2B:3C:4D was last seen"
+    ],
+    "final_query": "When was 00:1A:2B:3C:4D:5E last active?",
+    "retrieved_blob": "Network maintenance is scheduled for midnight."
+  },
+  {
+    "id": "adv_paraphrase_supersession_01",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Stripe'",
+    "must_contain": [
+      "AI safety",
+      "lab"
+    ],
+    "must_not_contain": [
+      "Stripe",
+      "backend engineer"
+    ],
+    "final_query": "What does the user do for work now?",
+    "retrieved_blob": "User quit the payments industry and joined an AI safety lab in San Francisco. User works at Stripe as a senior backend engineer."
+  },
+  {
+    "id": "adv_paraphrase_supersession_02",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'strictly vegan'",
+    "must_contain": [
+      "fish",
+      "omega-3"
+    ],
+    "must_not_contain": [
+      "strictly vegan",
+      "vegan since 2020"
+    ],
+    "final_query": "Is the user vegan?",
+    "retrieved_blob": "User has been strictly vegan since 2020. User now consumes fish as the only animal product, citing omega-3 needs."
+  },
+  {
+    "id": "adv_paraphrase_supersession_03",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'lived in Berlin'",
+    "must_contain": [
+      "Lisbon"
+    ],
+    "must_not_contain": [
+      "lived in Berlin",
+      "since graduating"
+    ],
+    "final_query": "Where does the user live?",
+    "retrieved_blob": "User relocated to Lisbon last spring to escape the German winter. User has lived in Berlin since graduating in 2018."
+  },
+  {
+    "id": "adv_paraphrase_supersession_04",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'writes all backend code in Python'",
+    "must_contain": [
+      "Rust"
+    ],
+    "must_not_contain": [
+      "writes all backend code in Python",
+      "rejects other languages"
+    ],
+    "final_query": "What language does the user write services in?",
+    "retrieved_blob": "User has rebuilt the team's microservices in Rust over the last six months. User writes all backend code in Python and rejects other languages."
+  },
+  {
+    "id": "adv_paraphrase_supersession_05",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'is married and lives'",
+    "must_contain": [
+      "divorce",
+      "alone"
+    ],
+    "must_not_contain": [
+      "is married and lives",
+      "lives with their spouse"
+    ],
+    "final_query": "Is the user married?",
+    "retrieved_blob": "User is married and lives with their spouse in Toronto. User filed for divorce earlier this year and now lives alone."
+  },
+  {
+    "id": "adv_paraphrase_supersession_06",
+    "category": "paraphrase_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "robotics",
+      "Boston"
+    ],
+    "must_not_contain": [
+      "joined Google in 2018",
+      "hedge fund in NYC",
+      "teach mathematics"
+    ],
+    "final_query": "What is the user's current job?",
+    "retrieved_blob": "In 2025 returned to industry, joining a robotics startup in Boston as VP of engineering."
+  },
+  {
+    "id": "adv_paraphrase_supersession_07",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'drives a Tesla'",
+    "must_contain": [
+      "bicycle"
+    ],
+    "must_not_contain": [
+      "drives a Tesla",
+      "Tesla Model 3"
+    ],
+    "final_query": "What does the user drive?",
+    "retrieved_blob": "User sold the car and now commutes exclusively by bicycle, refusing to drive. User drives a Tesla Model 3, purchased new in 2022."
+  },
+  {
+    "id": "adv_paraphrase_supersession_08",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'quiet introvert'",
+    "must_contain": [
+      "organizing",
+      "200-person"
+    ],
+    "must_not_contain": [
+      "quiet introvert",
+      "avoids large gatherings"
+    ],
+    "final_query": "What is the user's social style?",
+    "retrieved_blob": "User is a quiet introvert who avoids large gatherings. User is now organizing a 200-person developer meetup every month and hosts a weekly podcast."
+  },
+  {
+    "id": "adv_paraphrase_supersession_09",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'TikTok'",
+    "must_contain": [
+      "climate modeling",
+      "nonprofit"
+    ],
+    "must_not_contain": [
+      "TikTok",
+      "data scientist"
+    ],
+    "final_query": "What is the user's current role?",
+    "retrieved_blob": "User is a lead data scientist at TikTok. User left social media to lead climate modeling at a nonprofit."
+  },
+  {
+    "id": "adv_paraphrase_supersession_10",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Tesla'",
+    "must_contain": [
+      "public transit"
+    ],
+    "must_not_contain": [
+      "Tesla",
+      "Model 3"
+    ],
+    "final_query": "How does the user commute?",
+    "retrieved_blob": "User switched to public transit after selling the electric car. User drives a Tesla Model 3."
+  },
+  {
+    "id": "adv_paraphrase_supersession_11",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Arabic",
+      "diplomatic"
+    ],
+    "must_not_contain": [
+      "Mandarin",
+      "fluent"
+    ],
+    "final_query": "What language is the user currently studying?",
+    "retrieved_blob": "User collects vintage watches. User shifted focus to learning Arabic for diplomatic work."
+  },
+  {
+    "id": "adv_paraphrase_supersession_12",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Max'",
+    "must_contain": [
+      "greyhound",
+      "rescue"
+    ],
+    "must_not_contain": [
+      "poodle",
+      "Max"
+    ],
+    "final_query": "What pet does the user have now?",
+    "retrieved_blob": "User works as a freelance graphic designer. User adopted a rescue greyhound after Max passed away."
+  },
+  {
+    "id": "adv_paraphrase_supersession_13",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'nut allergy'",
+    "must_contain": [
+      "shellfish"
+    ],
+    "must_not_contain": [
+      "peanuts",
+      "nut allergy"
+    ],
+    "final_query": "What is the user currently allergic to?",
+    "retrieved_blob": "User plays the violin professionally. User outgrew the nut allergy but developed a shellfish sensitivity."
+  },
+  {
+    "id": "adv_paraphrase_supersession_14",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'neuroscience'",
+    "must_contain": [
+      "mindfulness",
+      "coaching"
+    ],
+    "must_not_contain": [
+      "neuroscience",
+      "MIT"
+    ],
+    "final_query": "What does the user do professionally?",
+    "retrieved_blob": "User completed a PhD in neuroscience at MIT. User left academia to start a mindfulness coaching business."
+  },
+  {
+    "id": "adv_paraphrase_supersession_15",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Toronto'",
+    "must_contain": [
+      "Banff",
+      "cottage"
+    ],
+    "must_not_contain": [
+      "Toronto",
+      "downtown"
+    ],
+    "final_query": "Where does the user currently reside?",
+    "retrieved_blob": "User lives in a downtown Toronto condo. User moved to a rural cottage near Banff for a quieter life."
+  },
+  {
+    "id": "adv_paraphrase_supersession_16",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'War and Peace'",
+    "must_contain": [
+      "science fiction",
+      "contemporary"
+    ],
+    "must_not_contain": [
+      "War and Peace",
+      "favorite book"
+    ],
+    "final_query": "What kind of books does the user prefer now?",
+    "retrieved_blob": "User now exclusively reads contemporary science fiction novels. User's favorite book is 'War and Peace'."
+  },
+  {
+    "id": "adv_paraphrase_supersession_17",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Polestar 2"
+    ],
+    "must_not_contain": [
+      "Tesla",
+      "Model 3"
+    ],
+    "final_query": "What car does the user drive?",
+    "retrieved_blob": "User enjoys hiking in the Rockies. User switched to a Polestar 2 after selling the electric sedan."
+  },
+  {
+    "id": "adv_paraphrase_supersession_18",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "shellfish"
+    ],
+    "must_not_contain": [
+      "peanuts"
+    ],
+    "final_query": "What is the user allergic to?",
+    "retrieved_blob": "User has outgrown the peanut allergy but developed a sensitivity to shellfish. User volunteers at an animal shelter."
+  },
+  {
+    "id": "adv_paraphrase_supersession_20",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'architect'",
+    "must_contain": [
+      "urban farming",
+      "collective"
+    ],
+    "must_not_contain": [
+      "architect",
+      "Foster + Partners"
+    ],
+    "final_query": "What is the user's current occupation?",
+    "retrieved_blob": "User left the architecture firm to start an urban farming collective. User works as a lead architect at Foster + Partners."
+  },
+  {
+    "id": "adv_paraphrase_supersession_21",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Max'",
+    "must_contain": [
+      "greyhound"
+    ],
+    "must_not_contain": [
+      "golden retriever",
+      "Max"
+    ],
+    "final_query": "What pet does the user have?",
+    "retrieved_blob": "User has a black belt in karate. User now cares for a rescued greyhound after Max passed away."
+  },
+  {
+    "id": "adv_paraphrase_supersession_22",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "independent"
+    ],
+    "must_not_contain": [
+      "Democrat"
+    ],
+    "final_query": "What is the user's political party?",
+    "retrieved_blob": "User became an independent voter after growing disillusioned with party politics. User enjoys baking sourdough bread."
+  },
+  {
+    "id": "adv_paraphrase_supersession_23",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "triathlons",
+      "knee surgery"
+    ],
+    "must_not_contain": [
+      "Boston Marathon",
+      "2022"
+    ],
+    "final_query": "Has the user run a marathon recently?",
+    "retrieved_blob": "User switched to triathlons after knee surgery prevented marathon running. User writes poetry in their spare time."
+  },
+  {
+    "id": "adv_paraphrase_supersession_24",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'quantum physics'",
+    "must_contain": [
+      "poker",
+      "probability"
+    ],
+    "must_not_contain": [
+      "quantum physics",
+      "MIT"
+    ],
+    "final_query": "What is the user's current profession?",
+    "retrieved_blob": "User holds a PhD in quantum physics from MIT. User transitioned from academia to professional poker, leveraging probability skills."
+  },
+  {
+    "id": "adv_paraphrase_supersession_25",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'allergic to peanuts'",
+    "must_contain": [
+      "tolerates",
+      "immunotherapy"
+    ],
+    "must_not_contain": [
+      "allergic to peanuts"
+    ],
+    "final_query": "Is the user allergic to peanuts?",
+    "retrieved_blob": "User is allergic to peanuts. User now tolerates trace peanut exposure after immunotherapy."
+  },
+  {
+    "id": "adv_paraphrase_supersession_26",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Mandarin"
+    ],
+    "must_not_contain": [
+      "fluent French"
+    ],
+    "final_query": "What languages does the user speak?",
+    "retrieved_blob": "User collects vintage vinyl records. User has mostly forgotten French after years of disuse, now focusing on Mandarin."
+  },
+  {
+    "id": "adv_paraphrase_supersession_27",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "divorced"
+    ],
+    "must_not_contain": [
+      "married to Alex"
+    ],
+    "final_query": "Is the user married?",
+    "retrieved_blob": "User volunteers at an animal shelter. User and Alex divorced amicably last year."
+  },
+  {
+    "id": "adv_paraphrase_supersession_28",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Max'",
+    "must_contain": [
+      "cat",
+      "Luna"
+    ],
+    "must_not_contain": [
+      "golden retriever",
+      "Max"
+    ],
+    "final_query": "What pet does the user have?",
+    "retrieved_blob": "User works as a freelance graphic designer. User adopted a rescue cat named Luna after Max passed away."
+  },
+  {
+    "id": "adv_paraphrase_supersession_29",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'registered Democrat'",
+    "must_contain": [
+      "Independent"
+    ],
+    "must_not_contain": [
+      "registered Democrat"
+    ],
+    "final_query": "What is the user's political party?",
+    "retrieved_blob": "User left the Democratic party and registered as an Independent. User is a registered Democrat."
+  },
+  {
+    "id": "adv_paraphrase_supersession_30",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'PhD'",
+    "must_contain": [
+      "coding bootcamp"
+    ],
+    "must_not_contain": [
+      "PhD",
+      "neuroscience"
+    ],
+    "final_query": "What is the user's highest education level?",
+    "retrieved_blob": "User has a PhD in neuroscience. User abandoned academia and completed a coding bootcamp instead."
+  },
+  {
+    "id": "adv_paraphrase_supersession_31",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "night shifts",
+      "sleeps during the day"
+    ],
+    "must_not_contain": [
+      "morning person"
+    ],
+    "final_query": "Is the user a morning person?",
+    "retrieved_blob": "User has a collection of rare coins. User started working night shifts and now sleeps during the day."
+  },
+  {
+    "id": "adv_paraphrase_supersession_33",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'peanuts'",
+    "must_contain": [
+      "tree nuts"
+    ],
+    "must_not_contain": [
+      "peanuts",
+      "shellfish"
+    ],
+    "final_query": "What is the user allergic to?",
+    "retrieved_blob": "User is allergic to peanuts and shellfish. Recent medical tests show user only has sensitivity to tree nuts now."
+  },
+  {
+    "id": "adv_paraphrase_supersession_34",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Everything Everywhere All At Once"
+    ],
+    "must_not_contain": [
+      "Inception"
+    ],
+    "final_query": "What movie does the user like most?",
+    "retrieved_blob": "User plays the violin on weekends. User now considers Everything Everywhere All At Once as their top cinematic experience."
+  },
+  {
+    "id": "adv_paraphrase_supersession_35",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'particle physics'",
+    "must_contain": [
+      "neuroscience"
+    ],
+    "must_not_contain": [
+      "particle physics",
+      "MIT"
+    ],
+    "final_query": "What is the user's current research field?",
+    "retrieved_blob": "User transitioned to neuroscience research after their physics work. User completed a PhD in particle physics at MIT."
+  },
+  {
+    "id": "adv_paraphrase_supersession_37",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'architect'",
+    "must_contain": [
+      "teach",
+      "RISD"
+    ],
+    "must_not_contain": [
+      "architect",
+      "SOM"
+    ],
+    "final_query": "What is the user's current occupation?",
+    "retrieved_blob": "User works as a senior architect at SOM. User left corporate architecture to teach design at RISD."
+  },
+  {
+    "id": "adv_paraphrase_supersession_38",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Toronto'",
+    "must_contain": [
+      "Vancouver"
+    ],
+    "must_not_contain": [
+      "Toronto",
+      "childhood"
+    ],
+    "final_query": "Where is the user from?",
+    "retrieved_blob": "User's childhood home was in Toronto. User considers Vancouver their true home after living there for 15 years."
+  },
+  {
+    "id": "adv_paraphrase_supersession_36",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "public transit"
+    ],
+    "must_not_contain": [
+      "Tesla",
+      "Model 3"
+    ],
+    "final_query": "What does the user drive?",
+    "retrieved_blob": "User volunteers at animal shelters on weekends. User switched to public transit and sold their electric car last month."
+  },
+  {
+    "id": "adv_paraphrase_supersession_39",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'neurosurgeon'",
+    "must_contain": [
+      "philosophy professor"
+    ],
+    "must_not_contain": [
+      "neurosurgeon",
+      "Mayo Clinic"
+    ],
+    "final_query": "What is the user's current job?",
+    "retrieved_blob": "User works as a neurosurgeon at Mayo Clinic. User left medicine to become a philosophy professor."
+  },
+  {
+    "id": "adv_paraphrase_supersession_40",
+    "category": "paraphrase_supersession",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'golden retriever'",
+    "must_contain": [
+      "rescue cat"
+    ],
+    "must_not_contain": [
+      "golden retriever",
+      "Max"
+    ],
+    "final_query": "What pet does the user have?",
+    "retrieved_blob": "User owns a golden retriever named Max. User adopted a rescue cat after their dog passed away."
+  },
+  {
+    "id": "adv_negation_trap_01",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "joined Anthropic"
+    ],
+    "must_not_contain": [
+      "does NOT work at Anthropic",
+      "never interviewed"
+    ],
+    "final_query": "Does the user work at Anthropic?",
+    "retrieved_blob": "User actually joined Anthropic last quarter. User's coffee preference is espresso."
+  },
+  {
+    "id": "adv_negation_trap_02",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'green tea'",
+    "must_contain": [
+      "green tea"
+    ],
+    "must_not_contain": [
+      "does not drink coffee"
+    ],
+    "final_query": "What does the user drink?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_03",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'does not have any pets'",
+    "must_contain": [
+      "golden retriever",
+      "Mochi"
+    ],
+    "must_not_contain": [
+      "does not have any pets",
+      "stated this firmly"
+    ],
+    "final_query": "Does the user have a pet?",
+    "retrieved_blob": "User does not have any pets and has stated this firmly. User adopted a golden retriever named Mochi last month."
+  },
+  {
+    "id": "adv_negation_trap_04",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "anaphylaxis"
+    ],
+    "must_not_contain": [
+      "no known peanut allergy"
+    ],
+    "final_query": "Does the patient have a peanut allergy?",
+    "retrieved_blob": "Patient was admitted with severe peanut anaphylaxis last week. Patient is currently on lisinopril for hypertension."
+  },
+  {
+    "id": "adv_negation_trap_05",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'Spanish'",
+    "must_contain": [
+      "Spanish"
+    ],
+    "must_not_contain": [
+      "does not speak French"
+    ],
+    "final_query": "What languages does the user speak?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_06",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "using Slack daily"
+    ],
+    "must_not_contain": [
+      "refuses to use Slack"
+    ],
+    "final_query": "Does the user use Slack?",
+    "retrieved_blob": "User started using Slack daily after team-wide rollout. User's email signature includes a Mastodon handle."
+  },
+  {
+    "id": "adv_negation_trap_07",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'onboarding'",
+    "must_contain": [
+      "onboarding"
+    ],
+    "must_not_contain": [
+      "did not attend the 2024 holiday party"
+    ],
+    "final_query": "Which events has the user attended?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_08",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'does not own a car'",
+    "must_contain": [
+      "Tesla",
+      "leasing"
+    ],
+    "must_not_contain": [
+      "does not own a car",
+      "uses public transit exclusively"
+    ],
+    "final_query": "What vehicle does the user have?",
+    "retrieved_blob": "User does not own a car and uses public transit exclusively. User started leasing a Tesla Model Y this summer."
+  },
+  {
+    "id": "adv_negation_trap_09",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Tesla Model 3"
+    ],
+    "must_not_contain": [
+      "does NOT own a car",
+      "never driven one"
+    ],
+    "final_query": "Does the user own a car?",
+    "retrieved_blob": "User bought a Tesla Model 3 last week. User prefers public transportation for daily commute."
+  },
+  {
+    "id": "adv_negation_trap_10",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'classical music'",
+    "must_contain": [
+      "classical music"
+    ],
+    "must_not_contain": [
+      "does not play any musical instruments"
+    ],
+    "final_query": "Does the user play any instruments?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_11",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "spicy Thai food"
+    ],
+    "must_not_contain": [
+      "never eats spicy food",
+      "medical reasons"
+    ],
+    "final_query": "Does the user eat spicy food?",
+    "retrieved_blob": "User has recovered and now enjoys spicy Thai food. User's favorite cuisine is Italian."
+  },
+  {
+    "id": "adv_negation_trap_12",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'Amazon Prime Video'",
+    "must_contain": [
+      "Amazon Prime Video"
+    ],
+    "must_not_contain": [
+      "doesn't have a Netflix subscription"
+    ],
+    "final_query": "Where does the user watch movies?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_13",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'San Francisco'",
+    "must_contain": [
+      "New York",
+      "job opportunity"
+    ],
+    "must_not_contain": [
+      "no longer lives in New York",
+      "San Francisco"
+    ],
+    "final_query": "Where does the user live?",
+    "retrieved_blob": "User's current city is San Francisco. User has returned to New York for a new job opportunity."
+  },
+  {
+    "id": "adv_negation_trap_14",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'email'",
+    "must_contain": [
+      "email"
+    ],
+    "must_not_contain": [
+      "refuses to use social media",
+      "platforms"
+    ],
+    "final_query": "How does the user communicate?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_15",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Microsoft'",
+    "must_contain": [
+      "Google",
+      "Senior Engineer"
+    ],
+    "must_not_contain": [
+      "does NOT work at Google",
+      "Microsoft"
+    ],
+    "final_query": "Where does the user work?",
+    "retrieved_blob": "User's current employer is Microsoft. User accepted a position at Google as a Senior Engineer."
+  },
+  {
+    "id": "adv_negation_trap_16",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'online webinars'",
+    "must_contain": [
+      "online webinars"
+    ],
+    "must_not_contain": [
+      "doesn't attend any conferences"
+    ],
+    "final_query": "How does the user pursue professional development?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_17",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Tesla Model 3"
+    ],
+    "must_not_contain": [
+      "does NOT own a car",
+      "hasn't driven in years"
+    ],
+    "final_query": "Does the user own a car?",
+    "retrieved_blob": "User recently purchased a Tesla Model 3. User prefers to travel by bicycle."
+  },
+  {
+    "id": "adv_negation_trap_18",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'Italian'",
+    "must_contain": [
+      "Italian"
+    ],
+    "must_not_contain": [
+      "never eats spicy food"
+    ],
+    "final_query": "What does the user eat?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_19",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "French immersion program"
+    ],
+    "must_not_contain": [
+      "does not speak French",
+      "no plans to learn"
+    ],
+    "final_query": "Can the user speak French?",
+    "retrieved_blob": "User completed a French immersion program last summer. User is fluent in Spanish."
+  },
+  {
+    "id": "adv_negation_trap_20",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'documentary films'",
+    "must_contain": [
+      "documentary films"
+    ],
+    "must_not_contain": [
+      "doesn't watch any sports"
+    ],
+    "final_query": "What does the user watch?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_21",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Tokyo"
+    ],
+    "must_not_contain": [
+      "never visited Japan",
+      "doesn't plan to"
+    ],
+    "final_query": "Has the user visited Japan?",
+    "retrieved_blob": "User has traveled extensively in Europe. User spent two weeks in Tokyo last spring."
+  },
+  {
+    "id": "adv_negation_trap_22",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'painting'",
+    "must_contain": [
+      "painting"
+    ],
+    "must_not_contain": [
+      "no longer plays the piano"
+    ],
+    "final_query": "What hobbies does the user have?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_23",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Nest thermostat"
+    ],
+    "must_not_contain": [
+      "doesn't own any smart home devices",
+      "refuses to use them"
+    ],
+    "final_query": "Does the user have smart home devices?",
+    "retrieved_blob": "User has an extensive vinyl record collection. User installed a Nest thermostat last winter."
+  },
+  {
+    "id": "adv_negation_trap_24",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'craft soda'",
+    "must_contain": [
+      "craft soda"
+    ],
+    "must_not_contain": [
+      "never drinks alcohol"
+    ],
+    "final_query": "What does the user drink?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_25",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Tesla Model 3"
+    ],
+    "must_not_contain": [
+      "does NOT own a car",
+      "hasn't driven in years"
+    ],
+    "final_query": "Does the user own a car?",
+    "retrieved_blob": "User bought a Tesla Model 3 last week. User enjoys cycling to work daily."
+  },
+  {
+    "id": "adv_negation_trap_26",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'Italian'",
+    "must_contain": [
+      "Italian"
+    ],
+    "must_not_contain": [
+      "never eats spicy food",
+      "medical advice"
+    ],
+    "final_query": "What are the user's dietary preferences?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_27",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "fluent in Spanish",
+      "Barcelona"
+    ],
+    "must_not_contain": [
+      "does not speak Spanish",
+      "despite taking classes"
+    ],
+    "final_query": "Can the user speak Spanish?",
+    "retrieved_blob": "User became fluent in Spanish after living in Barcelona. User is fluent in French."
+  },
+  {
+    "id": "adv_negation_trap_28",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'guitar'",
+    "must_contain": [
+      "guitar"
+    ],
+    "must_not_contain": [
+      "no longer plays the piano",
+      "injuring their hand"
+    ],
+    "final_query": "What instruments does the user play?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_29",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: \"doesn't have any siblings\"",
+    "must_contain": [
+      "half-sister",
+      "DNA testing"
+    ],
+    "must_not_contain": [
+      "doesn't have any siblings",
+      "official records"
+    ],
+    "final_query": "Does the user have any siblings?",
+    "retrieved_blob": "User doesn't have any siblings according to official records. User discovered they have a half-sister through DNA testing."
+  },
+  {
+    "id": "adv_negation_trap_30",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'professional blog'",
+    "must_contain": [
+      "professional blog",
+      "architecture"
+    ],
+    "must_not_contain": [
+      "refuses to use social media"
+    ],
+    "final_query": "How does the user engage online?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_31",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Southeast Asia",
+      "backpacking"
+    ],
+    "must_not_contain": [
+      "never visited Asia",
+      "despite many opportunities"
+    ],
+    "final_query": "Has the user visited Asia?",
+    "retrieved_blob": "User spent two months backpacking across Southeast Asia last year. User frequently travels to Europe for work."
+  },
+  {
+    "id": "adv_negation_trap_32",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'educational podcasts'",
+    "must_contain": [
+      "educational podcasts"
+    ],
+    "must_not_contain": [
+      "does not watch television",
+      "sold their TV"
+    ],
+    "final_query": "What media does the user consume?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_33",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Tesla Model 3"
+    ],
+    "must_not_contain": [
+      "does NOT own a car",
+      "never driven one"
+    ],
+    "final_query": "Does the user own a car?",
+    "retrieved_blob": "User bought a Tesla Model 3 last week. User prefers to travel by bicycle."
+  },
+  {
+    "id": "adv_negation_trap_34",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'Italian cuisine'",
+    "must_contain": [
+      "Italian cuisine"
+    ],
+    "must_not_contain": [
+      "never eats spicy food",
+      "medical reasons"
+    ],
+    "final_query": "What are the user's food preferences?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_35",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "playing piano"
+    ],
+    "must_not_contain": [
+      "does not play any musical instruments"
+    ],
+    "final_query": "Does the user play any musical instruments?",
+    "retrieved_blob": "User has perfect pitch. User has been playing piano for 3 years."
+  },
+  {
+    "id": "adv_negation_trap_36",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'software engineer'",
+    "must_contain": [
+      "software engineer"
+    ],
+    "must_not_contain": [
+      "no longer lives in New York",
+      "as of 2022"
+    ],
+    "final_query": "Where does the user live?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_37",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "fluent in French",
+      "immersion program"
+    ],
+    "must_not_contain": [
+      "doesn't speak French",
+      "despite taking classes"
+    ],
+    "final_query": "Does the user speak French?",
+    "retrieved_blob": "User became fluent in French after immersion program. User is fluent in Spanish."
+  },
+  {
+    "id": "adv_negation_trap_38",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: '20/20 vision'",
+    "must_contain": [
+      "20/20 vision"
+    ],
+    "must_not_contain": [
+      "never wears glasses",
+      "medical records"
+    ],
+    "final_query": "Does the user wear glasses?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_negation_trap_39",
+    "category": "negation_trap",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "two weeks in Tokyo"
+    ],
+    "must_not_contain": [
+      "has never visited Japan"
+    ],
+    "final_query": "Has the user visited Japan?",
+    "retrieved_blob": "User collects rare stamps. User spent two weeks in Tokyo last summer."
+  },
+  {
+    "id": "adv_negation_trap_40",
+    "category": "negation_trap",
+    "family": "decay",
+    "passed": false,
+    "reason": "missing must_contain: 'personal blog'",
+    "must_contain": [
+      "personal blog"
+    ],
+    "must_not_contain": [
+      "refuses to use social media"
+    ],
+    "final_query": "Does the user use social media?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_temporal_qualifier_01",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Meta",
+      "June 2022"
+    ],
+    "must_not_contain": [
+      "joined Google in March 2020"
+    ],
+    "final_query": "Where does the user currently work?",
+    "retrieved_blob": "User moved to Meta in June 2022. User's hobby is competitive chess on weekends."
+  },
+  {
+    "id": "adv_temporal_qualifier_02",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Lisbon",
+      "since 2022"
+    ],
+    "must_not_contain": [
+      "lived in Tokyo",
+      "Berlin from 2018"
+    ],
+    "final_query": "Where does the user live now?",
+    "retrieved_blob": "User's main language is English. User has lived in Lisbon since 2022."
+  },
+  {
+    "id": "adv_temporal_qualifier_03",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Meta"
+    ],
+    "must_not_contain": [
+      "joined Google in 2020 as their first job"
+    ],
+    "final_query": "Where does the user work now?",
+    "retrieved_blob": "User started a chocolate-making side project. User left Google and joined Meta in 2022. User visited Google's campus in 2024 for a conference."
+  },
+  {
+    "id": "adv_temporal_qualifier_04",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Mediterranean"
+    ],
+    "must_not_contain": [
+      "strictly keto",
+      "Throughout 2022"
+    ],
+    "final_query": "What is the user's current diet?",
+    "retrieved_blob": "User's preferred gym is a CrossFit box downtown. Starting January 2024, user switched to a Mediterranean diet for cardiovascular reasons."
+  },
+  {
+    "id": "adv_temporal_qualifier_05",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Green",
+      "2025"
+    ],
+    "must_not_contain": [
+      "registered Libertarian",
+      "registered as Democrat",
+      "registered as independent"
+    ],
+    "final_query": "What is the user's current political registration?",
+    "retrieved_blob": "User registered as Green in 2025."
+  },
+  {
+    "id": "adv_temporal_qualifier_06",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "sold",
+      "October 2024"
+    ],
+    "must_not_contain": [
+      "owned the rental property at 14 Birch Street since 2010"
+    ],
+    "final_query": "Does the user own 14 Birch Street?",
+    "retrieved_blob": "User sold 14 Birch Street in October 2024 and now rents downtown. User maintains a small vegetable garden."
+  },
+  {
+    "id": "adv_temporal_qualifier_07",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Free plan",
+      "2025-02-10"
+    ],
+    "must_not_contain": [
+      "subscribed to Pro plan on 2023-04-15"
+    ],
+    "final_query": "What plan is the customer on?",
+    "retrieved_blob": "Customer is in the European Union jurisdiction. Customer downgraded to Free plan on 2025-02-10 after cancellation."
+  },
+  {
+    "id": "adv_temporal_qualifier_08",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "divorce",
+      "2024"
+    ],
+    "must_not_contain": [
+      "was single in 2018",
+      "got engaged in 2020",
+      "married in 2021"
+    ],
+    "final_query": "What is the user's current marital status?",
+    "retrieved_blob": "User finalized divorce in 2024."
+  },
+  {
+    "id": "adv_temporal_qualifier_09",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Apple",
+      "January 2021"
+    ],
+    "must_not_contain": [
+      "worked at Microsoft"
+    ],
+    "final_query": "Where does Alice currently work?",
+    "retrieved_blob": "Alice enjoys hiking in the Rockies. Alice joined Apple in January 2021."
+  },
+  {
+    "id": "adv_temporal_qualifier_10",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Stanford",
+      "starting 2020"
+    ],
+    "must_not_contain": [
+      "studied at Harvard",
+      "MIT between 2014"
+    ],
+    "final_query": "What is Bob's most recent educational affiliation?",
+    "retrieved_blob": "Bob's favorite color is blue. Bob completed postdoc research at Stanford starting 2020."
+  },
+  {
+    "id": "adv_temporal_qualifier_11",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Rivian",
+      "2023"
+    ],
+    "must_not_contain": [
+      "owned a Tesla"
+    ],
+    "final_query": "What car does Charlie drive now?",
+    "retrieved_blob": "Charlie's favorite food is sushi. Charlie switched to a Rivian truck in 2023."
+  },
+  {
+    "id": "adv_temporal_qualifier_12",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Gamma Ventures",
+      "2022"
+    ],
+    "must_not_contain": [
+      "Acme Corp",
+      "Beta Inc"
+    ],
+    "final_query": "What is Diana's current professional role?",
+    "retrieved_blob": "Diana has two children. Diana founded Gamma Ventures in 2022."
+  },
+  {
+    "id": "adv_temporal_qualifier_13",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Singapore",
+      "2023"
+    ],
+    "must_not_contain": [
+      "Paris",
+      "Barcelona"
+    ],
+    "final_query": "Where does Eve currently reside?",
+    "retrieved_blob": "Eve is allergic to peanuts. Eve relocated to Singapore in 2023."
+  },
+  {
+    "id": "adv_temporal_qualifier_14",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "remission",
+      "2021"
+    ],
+    "must_not_contain": [
+      "diagnosed with Type 2 diabetes"
+    ],
+    "final_query": "What is Frank's current health status regarding diabetes?",
+    "retrieved_blob": "Frank's diabetes went into remission in 2021. Frank plays the piano."
+  },
+  {
+    "id": "adv_temporal_qualifier_15",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "third novel",
+      "bestseller in 2021"
+    ],
+    "must_not_contain": [
+      "first novel in 2010",
+      "second book in 2015"
+    ],
+    "final_query": "What is Grace's most recent publishing achievement?",
+    "retrieved_blob": "Grace's third novel became a bestseller in 2021. Grace has a golden retriever named Max."
+  },
+  {
+    "id": "adv_temporal_qualifier_16",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Emily",
+      "2022"
+    ],
+    "must_not_contain": [
+      "married to Sarah"
+    ],
+    "final_query": "Who is Henry currently married to?",
+    "retrieved_blob": "Henry remarried to Emily in 2022. Henry collects vintage watches."
+  },
+  {
+    "id": "adv_temporal_qualifier_17",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Amazon",
+      "January 2022"
+    ],
+    "must_not_contain": [
+      "Microsoft from 2017"
+    ],
+    "final_query": "Where does Alice currently work?",
+    "retrieved_blob": "Alice enjoys hiking in the mountains. Alice joined Amazon in January 2022 as a senior developer."
+  },
+  {
+    "id": "adv_temporal_qualifier_18",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "PhD",
+      "Cambridge University",
+      "2019"
+    ],
+    "must_not_contain": [
+      "Stanford University",
+      "MIT from 2014"
+    ],
+    "final_query": "What is Bob's highest degree and where?",
+    "retrieved_blob": "Bob's favorite sport is basketball. Bob earned a PhD from Cambridge University in 2019."
+  },
+  {
+    "id": "adv_temporal_qualifier_19",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "SpaceX",
+      "2019"
+    ],
+    "must_not_contain": [
+      "Tesla from 2015"
+    ],
+    "final_query": "Where does Carol work now?",
+    "retrieved_blob": "Carol has a pet cat named Whiskers. Carol joined SpaceX in 2019 as a lead engineer."
+  },
+  {
+    "id": "adv_temporal_qualifier_20",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Singapore",
+      "2020"
+    ],
+    "must_not_contain": [
+      "Paris from 2012",
+      "London in 2016"
+    ],
+    "final_query": "Where does Dave currently live?",
+    "retrieved_blob": "Dave relocated to Singapore in 2020. Dave plays the guitar as a hobby."
+  },
+  {
+    "id": "adv_temporal_qualifier_22",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Porsche Taycan",
+      "2022"
+    ],
+    "must_not_contain": [
+      "Toyota Prius",
+      "Tesla Model 3"
+    ],
+    "final_query": "What car does Frank currently drive?",
+    "retrieved_blob": "Frank enjoys brewing his own coffee. Frank upgraded to a Porsche Taycan in 2022."
+  },
+  {
+    "id": "adv_temporal_qualifier_23",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Disney+",
+      "2021"
+    ],
+    "must_not_contain": [
+      "Netflix from 2016"
+    ],
+    "final_query": "Where does Grace work now?",
+    "retrieved_blob": "Grace is an amateur photographer. Grace joined Disney+ in 2021 as a content strategist."
+  },
+  {
+    "id": "adv_temporal_qualifier_24",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Dubai",
+      "2021"
+    ],
+    "must_not_contain": [
+      "Sydney from 2013",
+      "Melbourne in 2017"
+    ],
+    "final_query": "Where does Henry currently reside?",
+    "retrieved_blob": "Henry collects vintage vinyl records. Henry relocated to Dubai in 2021."
+  },
+  {
+    "id": "adv_temporal_qualifier_25",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "MIT",
+      "2020 to 2022"
+    ],
+    "must_not_contain": [
+      "Stanford University from 2016"
+    ],
+    "final_query": "What is Bob's most recent education?",
+    "retrieved_blob": "Bob's favorite food is sushi. Bob pursued a master's at MIT from 2020 to 2022."
+  },
+  {
+    "id": "adv_temporal_qualifier_26",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Rivian R1T",
+      "March 2023"
+    ],
+    "must_not_contain": [
+      "Tesla Model 3"
+    ],
+    "final_query": "What car does Charlie drive now?",
+    "retrieved_blob": "Charlie plays guitar in a local band. Charlie switched to a Rivian R1T in March 2023."
+  },
+  {
+    "id": "adv_temporal_qualifier_27",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Singapore",
+      "2023"
+    ],
+    "must_not_contain": [
+      "Paris",
+      "Barcelona"
+    ],
+    "final_query": "Where does Diana currently live?",
+    "retrieved_blob": "Diana speaks fluent French. Diana relocated to Singapore in 2023."
+  },
+  {
+    "id": "adv_temporal_qualifier_28",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "iPhone",
+      "2022"
+    ],
+    "must_not_contain": [
+      "Android"
+    ],
+    "final_query": "What phone does Emma use now?",
+    "retrieved_blob": "Emma collects vintage postcards. Emma switched to iPhone in 2022."
+  },
+  {
+    "id": "adv_temporal_qualifier_29",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Tesla",
+      "2020"
+    ],
+    "must_not_contain": [
+      "IBM",
+      "SpaceX"
+    ],
+    "final_query": "What was Frank's most recent executive position?",
+    "retrieved_blob": "Frank enjoys sailing. Frank stepped down and joined Tesla in 2020."
+  },
+  {
+    "id": "adv_temporal_qualifier_30",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "The Washington Post",
+      "2020"
+    ],
+    "must_not_contain": [
+      "CNN in 2018"
+    ],
+    "final_query": "Where does Grace currently work?",
+    "retrieved_blob": "Grace has a black belt in karate. Grace joined The Washington Post in 2020."
+  },
+  {
+    "id": "adv_temporal_qualifier_31",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Boston Consulting Group",
+      "2021"
+    ],
+    "must_not_contain": [
+      "McKinsey",
+      "Bain"
+    ],
+    "final_query": "Where does Henry currently work?",
+    "retrieved_blob": "Henry volunteers at animal shelters. Henry moved to Boston Consulting Group in 2021."
+  },
+  {
+    "id": "adv_temporal_qualifier_33",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Rivian R1T",
+      "2023"
+    ],
+    "must_not_contain": [
+      "owned a Tesla Model 3 in 2020"
+    ],
+    "final_query": "What car does Charlie currently own?",
+    "retrieved_blob": "Charlie enjoys hiking on weekends. Charlie upgraded to a Rivian R1T in 2023."
+  },
+  {
+    "id": "adv_temporal_qualifier_34",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Sydney",
+      "2022"
+    ],
+    "must_not_contain": [
+      "lived in Paris",
+      "moved to Singapore"
+    ],
+    "final_query": "Where does Diana currently live?",
+    "retrieved_blob": "Diana speaks three languages fluently. Diana relocated to Sydney in 2022."
+  },
+  {
+    "id": "adv_temporal_qualifier_36",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "founded his own company",
+      "NewVentures",
+      "2020"
+    ],
+    "must_not_contain": [
+      "was CEO of StartupX",
+      "VP at TechCorp"
+    ],
+    "final_query": "What is Frank's current professional role?",
+    "retrieved_blob": "Frank is an avid scuba diver. Frank founded his own company, NewVentures, in 2020."
+  },
+  {
+    "id": "adv_temporal_qualifier_37",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Vancouver",
+      "2021"
+    ],
+    "must_not_contain": [
+      "lived in Toronto in 2018"
+    ],
+    "final_query": "Where does Grace currently live?",
+    "retrieved_blob": "Grace moved to Vancouver in 2021. Grace has a collection of rare books."
+  },
+  {
+    "id": "adv_temporal_qualifier_38",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "dean at Princeton",
+      "2022"
+    ],
+    "must_not_contain": [
+      "was a professor at Harvard",
+      "joined Yale as department chair"
+    ],
+    "final_query": "What is Henry's current academic position?",
+    "retrieved_blob": "Henry plays the violin professionally. Henry became dean at Princeton starting 2022."
+  },
+  {
+    "id": "adv_temporal_qualifier_39",
+    "category": "temporal_qualifier",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Stanford University",
+      "2020"
+    ],
+    "must_not_contain": [
+      "Harvard from 2005",
+      "MIT in 2012"
+    ],
+    "final_query": "Where does Professor Smith currently teach?",
+    "retrieved_blob": "Professor Smith specializes in quantum computing. Professor Smith joined Stanford University in 2020."
+  },
+  {
+    "id": "adv_temporal_qualifier_40",
+    "category": "temporal_qualifier",
+    "family": "supersession",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Ms. Rodriguez",
+      "2021"
+    ],
+    "must_not_contain": [
+      "Mr. Johnson from 2016"
+    ],
+    "final_query": "Who is the current national team coach?",
+    "retrieved_blob": "Ms. Rodriguez became the new national team coach in 2021. The team's colors are blue and white."
+  },
+  {
+    "id": "adv_shared_attribute_01",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Eve",
+      "Berlin"
+    ],
+    "must_not_contain": [
+      "Dana lives in Berlin"
+    ],
+    "final_query": "Who lives in Berlin?",
+    "retrieved_blob": "Eve lives in Berlin and works at Notion. Frank lives in Tokyo and works at Spotify."
+  },
+  {
+    "id": "adv_shared_attribute_02",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Bob"
+    ],
+    "must_not_contain": [
+      "Alice's favorite hobby is chess"
+    ],
+    "final_query": "Who likes chess?",
+    "retrieved_blob": "Bob's favorite hobby is chess and rock climbing."
+  },
+  {
+    "id": "adv_shared_attribute_03",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Mary'",
+    "must_contain": [
+      "Mary",
+      "diabetes"
+    ],
+    "must_not_contain": [
+      "John has type 2 diabetes"
+    ],
+    "final_query": "Which patients have type 2 diabetes?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_04",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Ivan'",
+    "must_contain": [
+      "Ivan"
+    ],
+    "must_not_contain": [
+      "Hannah and Ivan share"
+    ],
+    "final_query": "Who works on the 4th floor?",
+    "retrieved_blob": "Judy works remotely from Madrid."
+  },
+  {
+    "id": "adv_shared_attribute_05",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'bob@example.com'",
+    "must_contain": [
+      "bob@example.com"
+    ],
+    "must_not_contain": [
+      "alice@example.com used coupon"
+    ],
+    "final_query": "Who used coupon SAVE20?",
+    "retrieved_blob": "Marketing team rotates coupons quarterly."
+  },
+  {
+    "id": "adv_shared_attribute_06",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Mia'",
+    "must_contain": [
+      "Mia"
+    ],
+    "must_not_contain": [
+      "Liam is enrolled in CS 224N"
+    ],
+    "final_query": "Who is enrolled in CS 224N?",
+    "retrieved_blob": "Noah is enrolled in MATH 51 only."
+  },
+  {
+    "id": "adv_shared_attribute_07",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Peter"
+    ],
+    "must_not_contain": [
+      "Olivia speaks English and Mandarin"
+    ],
+    "final_query": "Who on the team speaks Mandarin?",
+    "retrieved_blob": "Peter speaks French and Mandarin. Quinn speaks German only."
+  },
+  {
+    "id": "adv_shared_attribute_08",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Sam'",
+    "must_contain": [
+      "Sam"
+    ],
+    "must_not_contain": [
+      "Riya works on the Atlas"
+    ],
+    "final_query": "Who else works on the Atlas project?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_09",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Victor"
+    ],
+    "must_not_contain": [
+      "Uma works in the platform"
+    ],
+    "final_query": "Who is in the platform team?",
+    "retrieved_blob": "Engineer Victor works in the platform team and writes Rust services. Engineer Wendy works in the data team."
+  },
+  {
+    "id": "adv_shared_attribute_10",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Yara"
+    ],
+    "must_not_contain": [
+      "Xavier owns a MacBook"
+    ],
+    "final_query": "Who owns a MacBook Pro 16?",
+    "retrieved_blob": "Yara owns a MacBook Pro 16 M3 for music production. Zoe owns a desktop PC for gaming."
+  },
+  {
+    "id": "adv_shared_attribute_11",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Bella'",
+    "must_contain": [
+      "Bella"
+    ],
+    "must_not_contain": [
+      "Aiden has a severe shellfish"
+    ],
+    "final_query": "Who else has a shellfish allergy?",
+    "retrieved_blob": "Caleb has no known allergies."
+  },
+  {
+    "id": "adv_shared_attribute_12",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Ethan"
+    ],
+    "must_not_contain": [
+      "Diana co-authored the 2025"
+    ],
+    "final_query": "Who else worked on the 2025 SIGMOD latency paper?",
+    "retrieved_blob": "Ethan co-authored the 2025 latency paper at SIGMOD. Felix co-authored a different paper at VLDB."
+  },
+  {
+    "id": "adv_shared_attribute_13",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'hugo@y.com'",
+    "must_contain": [
+      "hugo@y.com"
+    ],
+    "must_not_contain": [
+      "gina@x.com applied coupon"
+    ],
+    "final_query": "Who else applied AUTUMN15?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_14",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Kai'",
+    "must_contain": [
+      "Kai"
+    ],
+    "must_not_contain": [
+      "Jin lives on Oak Street"
+    ],
+    "final_query": "Who else lives in the Mission district?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_15",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Noah'",
+    "must_contain": [
+      "Noah"
+    ],
+    "must_not_contain": [
+      "Maya is advised by Professor Chen"
+    ],
+    "final_query": "Who else is advised by Professor Chen?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_16",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Quentin'",
+    "must_contain": [
+      "Quentin"
+    ],
+    "must_not_contain": [
+      "Paula plays striker"
+    ],
+    "final_query": "Who else plays striker for FC Lisbon?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_17",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Professor Jones'",
+    "must_contain": [
+      "Professor Jones"
+    ],
+    "must_not_contain": [
+      "Professor Smith teaches Calculus"
+    ],
+    "final_query": "Who teaches Calculus?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_18",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'The Grand Plaza'",
+    "must_contain": [
+      "The Grand Plaza"
+    ],
+    "must_not_contain": [
+      "The Empire Hotel has 5 stars"
+    ],
+    "final_query": "Which hotels have 5 stars?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_19",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Dr. Nguyen'",
+    "must_contain": [
+      "Dr. Nguyen"
+    ],
+    "must_not_contain": [
+      "Dr. Patel specializes in cardiology"
+    ],
+    "final_query": "Which doctors specialize in cardiology?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_20",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Restaurant Luna'",
+    "must_contain": [
+      "Restaurant Luna"
+    ],
+    "must_not_contain": [
+      "Restaurant Bella serves Italian"
+    ],
+    "final_query": "Which restaurants serve Italian cuisine?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_21",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Book B'",
+    "must_contain": [
+      "Book B"
+    ],
+    "must_not_contain": [
+      "Book A is categorized as Mystery"
+    ],
+    "final_query": "Which books are in the Mystery category?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_22",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Employee Y'",
+    "must_contain": [
+      "Employee Y"
+    ],
+    "must_not_contain": [
+      "Employee X works in Marketing"
+    ],
+    "final_query": "Who works in Marketing?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_23",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Team Beta'",
+    "must_contain": [
+      "Team Beta"
+    ],
+    "must_not_contain": [
+      "Team Alpha uses Java"
+    ],
+    "final_query": "Which teams use Java?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_24",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Actor Evans'",
+    "must_contain": [
+      "Actor Evans"
+    ],
+    "must_not_contain": [
+      "Actor Davis has won Oscars"
+    ],
+    "final_query": "Which actors have won Oscars?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_25",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Johnson'",
+    "must_contain": [
+      "Johnson",
+      "Physics 101"
+    ],
+    "must_not_contain": [
+      "Smith teaches Physics 101"
+    ],
+    "final_query": "Who teaches Physics 101?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_26",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "red truck",
+      "Mark"
+    ],
+    "must_not_contain": [
+      "red car belongs to Lisa"
+    ],
+    "final_query": "Which vehicles are red?",
+    "retrieved_blob": "The red truck belongs to Mark."
+  },
+  {
+    "id": "adv_shared_attribute_27",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Building B'",
+    "must_contain": [
+      "Building B",
+      "solar panels"
+    ],
+    "must_not_contain": [
+      "Building A uses solar panels"
+    ],
+    "final_query": "Which buildings use solar panels?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_28",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Patient Y'",
+    "must_contain": [
+      "Patient Y",
+      "penicillin"
+    ],
+    "must_not_contain": [
+      "Patient X has allergy to penicillin"
+    ],
+    "final_query": "Which patients are allergic to penicillin?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_29",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Team Beta'",
+    "must_contain": [
+      "Team Beta",
+      "Python"
+    ],
+    "must_not_contain": [
+      "Team Alpha uses Python"
+    ],
+    "final_query": "Which teams use Python?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_30",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Flight 456'",
+    "must_contain": [
+      "Flight 456",
+      "Gate A5"
+    ],
+    "must_not_contain": [
+      "Flight 123 departs from Gate A5"
+    ],
+    "final_query": "Which flights depart from Gate A5?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_31",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "User2",
+      "Database A"
+    ],
+    "must_not_contain": [
+      "User1 has access to Database A"
+    ],
+    "final_query": "Which users have access to Database A?",
+    "retrieved_blob": "User2 has access to Database A and Database C. User3 has access only to Database D."
+  },
+  {
+    "id": "adv_shared_attribute_32",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Restaurant Y'",
+    "must_contain": [
+      "Restaurant Y",
+      "Italian"
+    ],
+    "must_not_contain": [
+      "Restaurant X serves Italian cuisine"
+    ],
+    "final_query": "Which restaurants serve Italian cuisine?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_33",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Emma"
+    ],
+    "must_not_contain": [
+      "Liam speaks French"
+    ],
+    "final_query": "Who speaks French?",
+    "retrieved_blob": "Emma speaks French and Spanish. Noah speaks Italian."
+  },
+  {
+    "id": "adv_shared_attribute_34",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Ford Mustang Mach-E"
+    ],
+    "must_not_contain": [
+      "Tesla Model 3 has autopilot"
+    ],
+    "final_query": "Which cars have autopilot?",
+    "retrieved_blob": "Ford Mustang Mach-E has autopilot and 250-mile range."
+  },
+  {
+    "id": "adv_shared_attribute_35",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'Professor Lee'",
+    "must_contain": [
+      "Professor Lee"
+    ],
+    "must_not_contain": [
+      "Professor Chen teaches Machine Learning"
+    ],
+    "final_query": "Who teaches Machine Learning?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_shared_attribute_36",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Qantas"
+    ],
+    "must_not_contain": [
+      "Singapore Airlines flies to London"
+    ],
+    "final_query": "Which airlines fly to London?",
+    "retrieved_blob": "Qantas flies to London and Sydney. Delta flies to Atlanta."
+  },
+  {
+    "id": "adv_shared_attribute_37",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Mozart"
+    ],
+    "must_not_contain": [
+      "Beethoven composed Symphony No. 5"
+    ],
+    "final_query": "Who composed Symphony No. 5?",
+    "retrieved_blob": "Mozart composed Symphony No. 5 and Eine kleine Nachtmusik. Chopin composed Nocturnes."
+  },
+  {
+    "id": "adv_shared_attribute_38",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "JavaScript"
+    ],
+    "must_not_contain": [
+      "Python supports list comprehensions"
+    ],
+    "final_query": "Which languages support list comprehensions?",
+    "retrieved_blob": "JavaScript supports list comprehensions and arrow functions."
+  },
+  {
+    "id": "adv_shared_attribute_39",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Google Cloud"
+    ],
+    "must_not_contain": [
+      "Microsoft Azure offers Kubernetes"
+    ],
+    "final_query": "Which clouds offer Kubernetes?",
+    "retrieved_blob": "Google Cloud offers Kubernetes and BigQuery."
+  },
+  {
+    "id": "adv_shared_attribute_40",
+    "category": "shared_attribute",
+    "family": "amnesia",
+    "passed": false,
+    "reason": "missing must_contain: 'The Uffizi'",
+    "must_contain": [
+      "The Uffizi"
+    ],
+    "must_not_contain": [
+      "The Louvre displays the Mona Lisa"
+    ],
+    "final_query": "Which museums display the Mona Lisa?",
+    "retrieved_blob": ""
+  },
+  {
+    "id": "adv_compound_fact_01",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'lives in Berlin'",
+    "must_contain": [
+      "Stripe"
+    ],
+    "must_not_contain": [
+      "lives in Berlin"
+    ],
+    "final_query": "Where does the user work?",
+    "retrieved_blob": "User relocated to Madrid and continues working remotely. User lives in Berlin and works at Stripe as a backend engineer."
+  },
+  {
+    "id": "adv_compound_fact_02",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'married to Jamie'",
+    "must_contain": [
+      "married to Jamie"
+    ],
+    "must_not_contain": [
+      "works at Google"
+    ],
+    "final_query": "Is the user still married?",
+    "retrieved_blob": "User joined Anthropic as a research engineer. User has two cats named Pixel and Bit."
+  },
+  {
+    "id": "adv_compound_fact_03",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Italian'",
+    "must_contain": [
+      "Italian"
+    ],
+    "must_not_contain": [
+      "Mediterranean diet"
+    ],
+    "final_query": "What languages does the user speak?",
+    "retrieved_blob": "User runs a small wine-tasting club in their neighborhood. User switched to a strict vegan diet for ethical reasons."
+  },
+  {
+    "id": "adv_compound_fact_04",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'cello'",
+    "must_contain": [
+      "cello"
+    ],
+    "must_not_contain": [
+      "lives in Vienna"
+    ],
+    "final_query": "Does the user still play the cello?",
+    "retrieved_blob": "User's day job is database administration. User moved to Toronto last autumn for a new opportunity."
+  },
+  {
+    "id": "adv_compound_fact_05",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Border Collie'",
+    "must_contain": [
+      "Border Collie",
+      "Rex"
+    ],
+    "must_not_contain": [
+      "drives a 2018 Subaru"
+    ],
+    "final_query": "What pet does the user have?",
+    "retrieved_blob": "User upgraded to a new electric pickup truck. User's preferred reading genre is hard sci-fi."
+  },
+  {
+    "id": "adv_compound_fact_06",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'PhD in physics'",
+    "must_contain": [
+      "PhD in physics",
+      "MIT"
+    ],
+    "must_not_contain": [
+      "works as a quant at Renaissance"
+    ],
+    "final_query": "What is the user's educational background?",
+    "retrieved_blob": "User's morning routine includes a 5km run. User left finance entirely and joined a nonprofit climate research lab."
+  },
+  {
+    "id": "adv_compound_fact_07",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Enterprise'",
+    "must_contain": [
+      "Enterprise"
+    ],
+    "must_not_contain": [
+      "pays via wire transfer"
+    ],
+    "final_query": "What plan is the customer on?",
+    "retrieved_blob": "Customer's account is in good standing. Customer updated payment method to credit card on file."
+  },
+  {
+    "id": "adv_compound_fact_08",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Atlas'",
+    "must_contain": [
+      "Atlas"
+    ],
+    "must_not_contain": [
+      "reports to the VP of Engineering"
+    ],
+    "final_query": "What project does the user lead?",
+    "retrieved_blob": "User now reports directly to the CTO after a reorg. User's preferred meeting time is afternoons."
+  },
+  {
+    "id": "adv_compound_fact_09",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Max'",
+    "must_contain": [
+      "Max"
+    ],
+    "must_not_contain": [
+      "Tesla Model 3"
+    ],
+    "final_query": "What is the name of the user's pet?",
+    "retrieved_blob": "User recently upgraded to a Rivian R1T. User volunteers at a local animal shelter on weekends."
+  },
+  {
+    "id": "adv_compound_fact_10",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'violin'",
+    "must_contain": [
+      "violin"
+    ],
+    "must_not_contain": [
+      "peanuts"
+    ],
+    "final_query": "What instrument does the user play?",
+    "retrieved_blob": "User has a collection of rare vinyl records. User outgrew their peanut allergy but developed a shellfish allergy."
+  },
+  {
+    "id": "adv_compound_fact_11",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'judo'",
+    "must_contain": [
+      "judo"
+    ],
+    "must_not_contain": [
+      "Stanford"
+    ],
+    "final_query": "What martial art does the user practice?",
+    "retrieved_blob": "User accepted a professorship at MIT this semester. User writes science fiction novels in their spare time."
+  },
+  {
+    "id": "adv_compound_fact_12",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Toronto'",
+    "must_contain": [
+      "Toronto"
+    ],
+    "must_not_contain": [
+      "Green Party"
+    ],
+    "final_query": "Where is the user originally from?",
+    "retrieved_blob": "User switched allegiance to the Socialist Party last election. User runs an urban gardening blog with 50k followers."
+  },
+  {
+    "id": "adv_compound_fact_13",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'neurosurgeon'",
+    "must_contain": [
+      "neurosurgeon"
+    ],
+    "must_not_contain": [
+      "triathlons"
+    ],
+    "final_query": "What is the user's profession?",
+    "retrieved_blob": "User collects antique medical instruments. User has shifted focus to ultramarathons, completing their first 100-miler."
+  },
+  {
+    "id": "adv_compound_fact_14",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Mandarin'",
+    "must_contain": [
+      "Mandarin"
+    ],
+    "must_not_contain": [
+      "cryptocurrency"
+    ],
+    "final_query": "What languages does the user speak?",
+    "retrieved_blob": "User liquidated all crypto holdings after the FTX collapse. User maintains a zero-waste lifestyle."
+  },
+  {
+    "id": "adv_compound_fact_15",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'licensed pilot'",
+    "must_contain": [
+      "sourdough bread"
+    ],
+    "must_not_contain": [
+      "licensed pilot"
+    ],
+    "final_query": "What does the user enjoy baking?",
+    "retrieved_blob": "User is a licensed pilot and enjoys baking sourdough bread. User let their pilot's license expire last year."
+  },
+  {
+    "id": "adv_compound_fact_16",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'firefighter'",
+    "must_contain": [
+      "quantum physics"
+    ],
+    "must_not_contain": [
+      "firefighter"
+    ],
+    "final_query": "What is the user's academic background?",
+    "retrieved_blob": "User stepped back from firefighting due to back injuries. User has a PhD in quantum physics and volunteers as a firefighter."
+  },
+  {
+    "id": "adv_compound_fact_17",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'golden retriever'",
+    "must_contain": [
+      "golden retriever"
+    ],
+    "must_not_contain": [
+      "Tesla Model 3"
+    ],
+    "final_query": "What pet does the user have?",
+    "retrieved_blob": "User recently upgraded to a Rivian R1T. User volunteers at a local animal shelter on weekends."
+  },
+  {
+    "id": "adv_compound_fact_18",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'PhD in neuroscience'",
+    "must_contain": [
+      "PhD in neuroscience"
+    ],
+    "must_not_contain": [
+      "plays chess"
+    ],
+    "final_query": "What is the user's highest academic degree?",
+    "retrieved_blob": "User collects vintage board games. User now focuses on Go as their primary strategy game."
+  },
+  {
+    "id": "adv_compound_fact_19",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'firefighter'",
+    "must_contain": [
+      "firefighter"
+    ],
+    "must_not_contain": [
+      "allergic to peanuts"
+    ],
+    "final_query": "What is the user's profession?",
+    "retrieved_blob": "User participates in triathlons annually. User has outgrown their peanut allergy through immunotherapy."
+  },
+  {
+    "id": "adv_compound_fact_20",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'writes poetry'",
+    "must_contain": [
+      "Japanese"
+    ],
+    "must_not_contain": [
+      "writes poetry"
+    ],
+    "final_query": "What languages does the user speak fluently?",
+    "retrieved_blob": "User has transitioned to writing short stories instead of poetry. User writes poetry in their spare time and is fluent in Japanese."
+  },
+  {
+    "id": "adv_compound_fact_21",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'coffee shop'",
+    "must_contain": [
+      "coffee shop"
+    ],
+    "must_not_contain": [
+      "practices archery"
+    ],
+    "final_query": "What business does the user own?",
+    "retrieved_blob": "User has a collection of rare coffee beans from around the world. User has switched to competitive shooting sports."
+  },
+  {
+    "id": "adv_compound_fact_22",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'heirloom tomatoes'",
+    "must_contain": [
+      "heirloom tomatoes"
+    ],
+    "must_not_contain": [
+      "licensed pilot"
+    ],
+    "final_query": "What does the user grow?",
+    "retrieved_blob": "User built their own greenhouse last summer. User let their pilot license expire due to time constraints."
+  },
+  {
+    "id": "adv_compound_fact_23",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'cello'",
+    "must_contain": [
+      "cello"
+    ],
+    "must_not_contain": [
+      "converted warehouse"
+    ],
+    "final_query": "What instrument does the user play?",
+    "retrieved_blob": "User has perfect pitch. User moved to a lakeside cottage last month."
+  },
+  {
+    "id": "adv_compound_fact_24",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "leaked must_not_contain: '12 marathons'",
+    "must_contain": [
+      "marine biologist"
+    ],
+    "must_not_contain": [
+      "12 marathons"
+    ],
+    "final_query": "What is the user's profession?",
+    "retrieved_blob": "User has completed their 15th marathon this year. User has run 12 marathons and works as a marine biologist."
+  },
+  {
+    "id": "adv_compound_fact_25",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Max'",
+    "must_contain": [
+      "Max"
+    ],
+    "must_not_contain": [
+      "Tesla Model 3"
+    ],
+    "final_query": "What is the name of the user's dog?",
+    "retrieved_blob": "User volunteers at a local animal shelter on weekends. User recently upgraded to a Ford Mustang Mach-E."
+  },
+  {
+    "id": "adv_compound_fact_26",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'violin'",
+    "must_contain": [
+      "violin"
+    ],
+    "must_not_contain": [
+      "Taekwondo"
+    ],
+    "final_query": "What instrument does the user play?",
+    "retrieved_blob": "User collects vintage comic books. User stopped practicing Taekwondo due to an injury."
+  },
+  {
+    "id": "adv_compound_fact_27",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Mandarin'",
+    "must_contain": [
+      "Mandarin"
+    ],
+    "must_not_contain": [
+      "PhD"
+    ],
+    "final_query": "What languages does the user speak?",
+    "retrieved_blob": "User enjoys hiking in the Rocky Mountains. User obtained an MD degree from Harvard Medical School."
+  },
+  {
+    "id": "adv_compound_fact_28",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'peanuts'",
+    "must_contain": [
+      "peanuts"
+    ],
+    "must_not_contain": [
+      "Microsoft"
+    ],
+    "final_query": "What is the user allergic to?",
+    "retrieved_blob": "User participates in competitive chess tournaments. User accepted a position as CTO at a startup."
+  },
+  {
+    "id": "adv_compound_fact_29",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'three'",
+    "must_contain": [
+      "three"
+    ],
+    "must_not_contain": [
+      "Tokyo"
+    ],
+    "final_query": "How many novels has the user published?",
+    "retrieved_blob": "User practices meditation daily. User moved to Kyoto last month."
+  },
+  {
+    "id": "adv_compound_fact_30",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'yoga instructor'",
+    "must_contain": [
+      "yoga instructor"
+    ],
+    "must_not_contain": [
+      "coffee shop"
+    ],
+    "final_query": "What certification does the user hold?",
+    "retrieved_blob": "User sold the coffee shop and now runs a bookstore. User has traveled to over 30 countries."
+  },
+  {
+    "id": "adv_compound_fact_31",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'left-handed'",
+    "must_contain": [
+      "left-handed"
+    ],
+    "must_not_contain": [
+      "tennis"
+    ],
+    "final_query": "Which hand does the user write with?",
+    "retrieved_blob": "User collects rare vinyl records. User retired from competitive tennis to focus on coaching."
+  },
+  {
+    "id": "adv_compound_fact_32",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'twin brother'",
+    "must_contain": [
+      "twin brother"
+    ],
+    "must_not_contain": [
+      "marine biologist"
+    ],
+    "final_query": "Does the user have siblings?",
+    "retrieved_blob": "User enjoys scuba diving in the Caribbean. User transitioned to environmental law."
+  },
+  {
+    "id": "adv_compound_fact_33",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Max'",
+    "must_contain": [
+      "Max"
+    ],
+    "must_not_contain": [
+      "Tesla Model 3"
+    ],
+    "final_query": "What is the name of the user's dog?",
+    "retrieved_blob": "User recently upgraded to a Rivian R1T. User volunteers at a local animal shelter on weekends."
+  },
+  {
+    "id": "adv_compound_fact_34",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'black belt'",
+    "must_contain": [
+      "black belt"
+    ],
+    "must_not_contain": [
+      "pediatrician"
+    ],
+    "final_query": "What martial arts rank does the user hold?",
+    "retrieved_blob": "User transitioned to emergency medicine last year. User enjoys baking sourdough bread as a hobby."
+  },
+  {
+    "id": "adv_compound_fact_35",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'chess'",
+    "must_contain": [
+      "chess"
+    ],
+    "must_not_contain": [
+      "Toronto"
+    ],
+    "final_query": "What competitive game does the user play?",
+    "retrieved_blob": "User collects vintage vinyl records from the 1970s. User moved to Vancouver for a job opportunity."
+  },
+  {
+    "id": "adv_compound_fact_36",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'flight attendant'",
+    "must_contain": [
+      "flight attendant"
+    ],
+    "must_not_contain": [
+      "peanuts"
+    ],
+    "final_query": "What is the user's occupation?",
+    "retrieved_blob": "User developed a shellfish allergy last summer. User has completed marathons in three different countries."
+  },
+  {
+    "id": "adv_compound_fact_37",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'twin sister named Emily'",
+    "must_contain": [
+      "twin sister named Emily"
+    ],
+    "must_not_contain": [
+      "coffee shop"
+    ],
+    "final_query": "Does the user have any siblings?",
+    "retrieved_blob": "User sold the coffee shop and now runs a bookstore. User practices meditation daily before sunrise."
+  },
+  {
+    "id": "adv_compound_fact_38",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'Mandarin'",
+    "must_contain": [
+      "Mandarin"
+    ],
+    "must_not_contain": [
+      "afraid of heights"
+    ],
+    "final_query": "What languages does the user speak fluently?",
+    "retrieved_blob": "User overcame their fear through exposure therapy. User has a collection of rare orchids in their greenhouse."
+  },
+  {
+    "id": "adv_compound_fact_39",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'prescription glasses'",
+    "must_contain": [
+      "prescription glasses"
+    ],
+    "must_not_contain": [
+      "food bank"
+    ],
+    "final_query": "Does the user require vision correction?",
+    "retrieved_blob": "User maintains a perfect credit score. User now volunteers at an after-school tutoring program."
+  },
+  {
+    "id": "adv_compound_fact_40",
+    "category": "compound_fact",
+    "family": "supersession",
+    "passed": false,
+    "reason": "missing must_contain: 'violin'",
+    "must_contain": [
+      "violin"
+    ],
+    "must_not_contain": [
+      "Netflix"
+    ],
+    "final_query": "What musical instrument does the user play?",
+    "retrieved_blob": "User grows heirloom tomatoes in their backyard. User accepted a research position at DeepMind."
+  },
+  {
+    "id": "adv_identifier_obfuscation_01",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "ALICE@ACME.IO subscribed",
+      "alice@acme.io is the same"
+    ],
+    "final_query": "What plan does alice@acme.io have?",
+    "retrieved_blob": "Office lunches are catered on Wednesdays."
+  },
+  {
+    "id": "adv_identifier_obfuscation_02",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "bob@example.com bought 5",
+      "is the same account"
+    ],
+    "final_query": "What did bob@example.com buy?",
+    "retrieved_blob": "Quarterly OKR review is in two weeks."
+  },
+  {
+    "id": "adv_identifier_obfuscation_03",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '+1-415-555-0123'",
+    "must_contain": [],
+    "must_not_contain": [
+      "+1-415-555-0123",
+      "415-555-0123 (no country code)"
+    ],
+    "final_query": "What is the patient's phone number?",
+    "retrieved_blob": "Patient phone on file: +1-415-555-0123. Patient phone alternate format: 415-555-0123 (no country code)."
+  },
+  {
+    "id": "adv_identifier_obfuscation_04",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '550e8400-e29b-41d4'",
+    "must_contain": [],
+    "must_not_contain": [
+      "550e8400-e29b-41d4",
+      "550e8400e29b41d4"
+    ],
+    "final_query": "What is the user token?",
+    "retrieved_blob": "Server maintenance window is Tuesdays. User token: 550e8400-e29b-41d4-a716-446655440000. Same user, compact form: 550e8400e29b41d4a716446655440000."
+  },
+  {
+    "id": "adv_identifier_obfuscation_05",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '123-45-6789'",
+    "must_contain": [],
+    "must_not_contain": [
+      "123-45-6789",
+      "123456789 (no dashes)"
+    ],
+    "final_query": "What is the customer's SSN?",
+    "retrieved_blob": "Customer SSN on file: 123-45-6789. Customer alternate record: 123456789 (no dashes)."
+  },
+  {
+    "id": "adv_identifier_obfuscation_06",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '4111-1111-1111-1111'",
+    "must_contain": [],
+    "must_not_contain": [
+      "4111-1111-1111-1111",
+      "4111111111111111"
+    ],
+    "final_query": "What card is on file?",
+    "retrieved_blob": "Card on file: 4111-1111-1111-1111. Same card, no separators: 4111111111111111."
+  },
+  {
+    "id": "adv_identifier_obfuscation_07",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '\"john.doe\"@company.com subscribed'",
+    "must_contain": [],
+    "must_not_contain": [
+      "\"john.doe\"@company.com subscribed",
+      "Same customer in canonical"
+    ],
+    "final_query": "What plan does john.doe@company.com have?",
+    "retrieved_blob": "Customer \"john.doe\"@company.com subscribed to Pro."
+  },
+  {
+    "id": "adv_identifier_obfuscation_08",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '@acme-engineer is on'",
+    "must_contain": [],
+    "must_not_contain": [
+      "@acme-engineer is on",
+      "acme-engineer."
+    ],
+    "final_query": "Is @acme-engineer still on the access list?",
+    "retrieved_blob": "Contractor @acme-engineer is on the access list. Same contractor without @: acme-engineer. All-hands is the third Friday of each month."
+  },
+  {
+    "id": "adv_identifier_obfuscation_09",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '192.168.001.005 hosts'",
+    "must_contain": [],
+    "must_not_contain": [
+      "192.168.001.005 hosts",
+      "192.168.1.5 (no padding)"
+    ],
+    "final_query": "What does 192.168.1.5 host?",
+    "retrieved_blob": "Same server short form 192.168.1.5 (no padding) was logged. Server IP 192.168.001.005 hosts the staging environment."
+  },
+  {
+    "id": "adv_identifier_obfuscation_10",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'https://api.acme.io/v2/events fires'",
+    "must_contain": [],
+    "must_not_contain": [
+      "https://api.acme.io/v2/events fires",
+      "api.acme.io/v2/events/ (trailing slash)"
+    ],
+    "final_query": "Where does the webhook fire?",
+    "retrieved_blob": "Webhook endpoint https://api.acme.io/v2/events fires on push."
+  },
+  {
+    "id": "adv_identifier_obfuscation_11",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Mr. Alan Turing logged'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Mr. Alan Turing logged",
+      "Dr. Alan Turing accessed"
+    ],
+    "final_query": "Does Alan Turing have any sessions on file?",
+    "retrieved_blob": "Mr. Alan Turing logged into the lab system. Dr. Alan Turing accessed the same project repository."
+  },
+  {
+    "id": "adv_identifier_obfuscation_12",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'ada@example.com signed up'",
+    "must_contain": [],
+    "must_not_contain": [
+      "ada@example.com signed up",
+      "ada+promo@example.com used a coupon"
+    ],
+    "final_query": "Does ada+promo@example.com still have coupon history?",
+    "retrieved_blob": "Same customer email-with-tag: ada+promo@example.com used a coupon. Customer ada@example.com signed up in January."
+  },
+  {
+    "id": "adv_identifier_obfuscation_13",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Robert Smith was hired'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Robert Smith was hired",
+      "Bob Smith, was promoted"
+    ],
+    "final_query": "Show me Bob Smith's promotion record.",
+    "retrieved_blob": "Same employee, nickname Bob Smith, was promoted in 2024. Robert Smith was hired on 2023-01-15."
+  },
+  {
+    "id": "adv_identifier_obfuscation_14",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'PRJ-ATLAS-2024 has 5'",
+    "must_contain": [],
+    "must_not_contain": [
+      "PRJ-ATLAS-2024 has 5",
+      "ATLAS-2024 (no PRJ prefix)"
+    ],
+    "final_query": "How many milestones in ATLAS-2024?",
+    "retrieved_blob": "Project ID PRJ-ATLAS-2024 has 5 milestones. Same project shortcut form ATLAS-2024 (no PRJ prefix) is in slides."
+  },
+  {
+    "id": "adv_identifier_obfuscation_15",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '2025-12-25 is the company gala'",
+    "must_contain": [],
+    "must_not_contain": [
+      "2025-12-25 is the company gala",
+      "12/25/2025 will be at"
+    ],
+    "final_query": "Where is the 12/25/2025 event held?",
+    "retrieved_blob": "Event scheduled for 2025-12-25 is the company gala. Same event in US-format: 12/25/2025 will be at the convention center."
+  },
+  {
+    "id": "adv_identifier_obfuscation_16",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '1234-USD holds the dollar'",
+    "must_contain": [],
+    "must_not_contain": [
+      "1234-USD holds the dollar",
+      "1234 (without currency suffix)"
+    ],
+    "final_query": "What is the balance on account 1234?",
+    "retrieved_blob": "Account 1234-USD holds the dollar balance. Same account 1234 (without currency suffix) appears in the ledger."
+  },
+  {
+    "id": "adv_identifier_obfuscation_19",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'https://www.acme.io/vendor'",
+    "must_contain": [],
+    "must_not_contain": [
+      "https://www.acme.io/vendor",
+      "acme.io/vendor (no scheme"
+    ],
+    "final_query": "Where is the vendor profile?",
+    "retrieved_blob": "Customer's vendor profile is at https://www.acme.io/vendor. Vendor onboarding is finalized. Same profile, bare form: acme.io/vendor (no scheme, no www)."
+  },
+  {
+    "id": "adv_identifier_obfuscation_20",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'api.beta.io/v2/users.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "api.beta.io/v2/users.",
+      "api.beta.io/v2/users/ (with trailing"
+    ],
+    "final_query": "What endpoint is registered?",
+    "retrieved_blob": "Endpoint is registered at https://api.beta.io/v2/users."
+  },
+  {
+    "id": "adv_identifier_obfuscation_21",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'charlie+work@gmail.com.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "charlie+work@gmail.com.",
+      "charlie@gmail.com."
+    ],
+    "final_query": "What is the account holder's email?",
+    "retrieved_blob": "Account holder email: charlie+work@gmail.com."
+  },
+  {
+    "id": "adv_identifier_obfuscation_22",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '@dora_writes.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "@dora_writes.",
+      "without prefix: dora_writes."
+    ],
+    "final_query": "Who is the lead writer?",
+    "retrieved_blob": "Lead writer handle: @dora_writes."
+  },
+  {
+    "id": "adv_identifier_obfuscation_23",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'ABC-1234 registered'",
+    "must_contain": [],
+    "must_not_contain": [
+      "ABC-1234 registered",
+      "abc1234 (no hyphen"
+    ],
+    "final_query": "What vehicle is on file?",
+    "retrieved_blob": "Pickup is at the north lot. Vehicle plate: ABC-1234 registered to corporate fleet."
+  },
+  {
+    "id": "adv_identifier_obfuscation_24",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '4111 1111 1111 1111.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "4111 1111 1111 1111.",
+      "4111111111111111."
+    ],
+    "final_query": "What card is saved on file?",
+    "retrieved_blob": "Saved card on file: 4111 1111 1111 1111. Statement cycle closes on the 28th."
+  },
+  {
+    "id": "adv_identifier_obfuscation_25",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '192.168.1.10 hosts'",
+    "must_contain": [],
+    "must_not_contain": [
+      "192.168.1.10 hosts",
+      "192.168.001.010."
+    ],
+    "final_query": "What is the wiki server's IP?",
+    "retrieved_blob": "Server IP: 192.168.1.10 hosts the internal wiki."
+  },
+  {
+    "id": "adv_identifier_obfuscation_26",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'scheduled at 14:30.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "scheduled at 14:30.",
+      "2:30 PM."
+    ],
+    "final_query": "When is the appointment?",
+    "retrieved_blob": "Patient appointment is scheduled at 14:30. Same appointment in 12-hour form: 2:30 PM."
+  },
+  {
+    "id": "adv_identifier_obfuscation_27",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '978-0-13-468599-1.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "978-0-13-468599-1.",
+      "9780134685991."
+    ],
+    "final_query": "Which book did the customer buy?",
+    "retrieved_blob": "Customer's last purchase: ISBN 978-0-13-468599-1."
+  },
+  {
+    "id": "adv_identifier_obfuscation_28",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'releases\\\\\\\\v3\\\\\\\\bundle.zip.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "releases\\\\v3\\\\bundle.zip.",
+      "releases/v3/bundle.zip."
+    ],
+    "final_query": "Where is the v3 bundle?",
+    "retrieved_blob": "POSIX-equivalent path: C:/releases/v3/bundle.zip. Build artefact lives at C:\\\\releases\\\\v3\\\\bundle.zip."
+  },
+  {
+    "id": "adv_identifier_obfuscation_29",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '#FF7A00.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "#FF7A00.",
+      "FF7A00 (no hash)."
+    ],
+    "final_query": "What is the brand primary colour?",
+    "retrieved_blob": "Brand primary colour code: #FF7A00. Same colour bare hex: FF7A00 (no hash)."
+  },
+  {
+    "id": "adv_identifier_obfuscation_30",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '94107-1234.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "94107-1234.",
+      "941071234."
+    ],
+    "final_query": "What ZIP is on the mailing record?",
+    "retrieved_blob": "Mailing ZIP: 94107-1234. Same ZIP+4 unhyphenated: 941071234."
+  },
+  {
+    "id": "adv_identifier_obfuscation_31",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'SHOE-RNN-42.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "SHOE-RNN-42.",
+      "RNN-42 (no SHOE)."
+    ],
+    "final_query": "What did we restock?",
+    "retrieved_blob": "Warehouse audit happens monthly. Same item, prefix-stripped: RNN-42 (no SHOE). Restocked unit: SKU SHOE-RNN-42."
+  },
+  {
+    "id": "adv_identifier_obfuscation_32",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'XK7L-9P3Q-2RVA-8M1N.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "XK7L-9P3Q-2RVA-8M1N.",
+      "XK7L.9P3Q.2RVA.8M1N."
+    ],
+    "final_query": "What is the licence key?",
+    "retrieved_blob": "Software licence key: XK7L-9P3Q-2RVA-8M1N. Same key, dotted-form: XK7L.9P3Q.2RVA.8M1N."
+  },
+  {
+    "id": "adv_identifier_obfuscation_33",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'ID: 0000847.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "ID: 0000847.",
+      "zero-trimmed: 847."
+    ],
+    "final_query": "Which customer record?",
+    "retrieved_blob": "Customer record ID: 0000847. Same record, zero-trimmed: 847."
+  },
+  {
+    "id": "adv_identifier_obfuscation_34",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '#INC-22184 is open.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "#INC-22184 is open.",
+      "without hash: INC-22184."
+    ],
+    "final_query": "Which support ticket?",
+    "retrieved_blob": "Support ticket reference #INC-22184 is open. Same ticket without hash: INC-22184."
+  },
+  {
+    "id": "adv_identifier_obfuscation_35",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '(650) 555-0177.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "(650) 555-0177.",
+      "650-555-0177."
+    ],
+    "final_query": "What is the emergency contact number?",
+    "retrieved_blob": "Emergency contact phone: (650) 555-0177. Same number unbracketed: 650-555-0177."
+  },
+  {
+    "id": "adv_identifier_obfuscation_36",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'ORD-2026-00921.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "ORD-2026-00921.",
+      "short-form: 00921."
+    ],
+    "final_query": "Which order is pending?",
+    "retrieved_blob": "Pending shipment: order ORD-2026-00921."
+  },
+  {
+    "id": "adv_identifier_obfuscation_37",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '1HGCM82633A004352.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "1HGCM82633A004352.",
+      "1HGCM-82633-A004352."
+    ],
+    "final_query": "What is the test vehicle's VIN?",
+    "retrieved_blob": "Test vehicle VIN: 1HGCM82633A004352. Inspection date is set for next Tuesday. Same VIN, dashed display: 1HGCM-82633-A004352."
+  },
+  {
+    "id": "adv_identifier_obfuscation_38",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'DEUTDEFFXXX.'",
+    "must_contain": [],
+    "must_not_contain": [
+      "DEUTDEFFXXX.",
+      "DEUTDEFF."
+    ],
+    "final_query": "Which BIC is on the wire instruction?",
+    "retrieved_blob": "Wire transfer BIC: DEUTDEFFXXX. Currency hedge ratio is reviewed quarterly. Same BIC without branch suffix: DEUTDEFF."
+  },
+  {
+    "id": "adv_identifier_obfuscation_17",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "@johndoe has admin",
+      "johndoe is the same"
+    ],
+    "final_query": "Does johndoe have admin rights?",
+    "retrieved_blob": "User johndoe (without @ prefix) is the same account."
+  },
+  {
+    "id": "adv_identifier_obfuscation_18",
+    "category": "identifier_obfuscation",
+    "family": "purge",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [],
+    "must_not_contain": [
+      "\"john.doe\"@example.org has admin",
+      "john.doe@example.org refers to the same"
+    ],
+    "final_query": "Does john.doe@example.org have admin rights?",
+    "retrieved_blob": "User john.doe@example.org (unquoted) refers to the same account."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_01",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Zhang Wei subscribed'",
+    "must_contain": [],
+    "must_not_contain": [
+      "张伟",
+      "Zhang Wei subscribed"
+    ],
+    "final_query": "What orders does Zhang Wei have?",
+    "retrieved_blob": "The same customer in pinyin: Zhang Wei subscribed to Plan A."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_02",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Tanaka Taro has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "田中太郎 was prescribed",
+      "Tanaka Taro has"
+    ],
+    "final_query": "What medication did Tanaka Taro receive?",
+    "retrieved_blob": "Same patient romaji form: Tanaka Taro has hypertension."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_03",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Kim Minji has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "김민지 logged",
+      "Kim Minji has"
+    ],
+    "final_query": "Show me Kim Minji's login activity.",
+    "retrieved_blob": "Same user as Kim Minji has 2FA enabled."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_04",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Ivan Petrov, transliterated'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Иван Петров pays",
+      "Ivan Petrov, transliterated"
+    ],
+    "final_query": "What tier is Ivan Petrov on?",
+    "retrieved_blob": "Same customer (Ivan Petrov, transliterated) has Premium tier. Quarterly sales meeting is in November."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_05",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'محمد علي is allergic'",
+    "must_contain": [],
+    "must_not_contain": [
+      "محمد علي is allergic",
+      "Mohammed Ali had surgery"
+    ],
+    "final_query": "Is Mohammed Ali allergic to anything?",
+    "retrieved_blob": "Patient محمد علي is allergic to penicillin. Same patient as Mohammed Ali had surgery last year."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_06",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Alibaba sent invoice'",
+    "must_contain": [],
+    "must_not_contain": [
+      "阿里巴巴 shipped",
+      "Alibaba sent invoice"
+    ],
+    "final_query": "What did Alibaba ship?",
+    "retrieved_blob": "Same vendor as Alibaba sent invoice for $5000."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_07",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'José García placed'",
+    "must_contain": [],
+    "must_not_contain": [
+      "José García placed",
+      "Jose Garcia (no accents)"
+    ],
+    "final_query": "What plan is Jose Garcia on?",
+    "retrieved_blob": "Same customer as Jose Garcia (no accents) has Plan B. Customer José García placed order #42."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_08",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Grossmann GmbH (without'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Großmann GmbH delivered",
+      "Grossmann GmbH (without"
+    ],
+    "final_query": "Show me Grossmann's recent activity.",
+    "retrieved_blob": "Same vendor as Grossmann GmbH (without ß) sent the invoice."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_09",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Raj Sharma (transliterated)'",
+    "must_contain": [],
+    "must_not_contain": [
+      "राज शर्मा placed",
+      "Raj Sharma (transliterated)"
+    ],
+    "final_query": "Does Raj Sharma have a refund?",
+    "retrieved_blob": "Same customer as Raj Sharma (transliterated) has a refund pending."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_10",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'สมชาย ใจดี delivered'",
+    "must_contain": [],
+    "must_not_contain": [
+      "สมชาย ใจดี delivered",
+      "Somchai Jaidee (romanized)"
+    ],
+    "final_query": "Who delivered the parts?",
+    "retrieved_blob": "Vendor สมชาย ใจดี delivered the parts."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_11",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Nikos Papadopoulos (Latin)'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Νίκος Παπαδόπουλος is on",
+      "Nikos Papadopoulos (Latin)"
+    ],
+    "final_query": "How did Nikos Papadopoulos pay?",
+    "retrieved_blob": "Same customer Nikos Papadopoulos (Latin) paid by card."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_12",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'David Cohen (transliterated)'",
+    "must_contain": [],
+    "must_not_contain": [
+      "דוד כהן has an upcoming",
+      "David Cohen (transliterated)"
+    ],
+    "final_query": "What medication is David Cohen taking?",
+    "retrieved_blob": "Same patient David Cohen (transliterated) is on medication."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_13",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '北京 reports to'",
+    "must_contain": [],
+    "must_not_contain": [
+      "北京 reports to",
+      "Beijing (English) hosts"
+    ],
+    "final_query": "How many employees in the Beijing branch?",
+    "retrieved_blob": "Same branch office Beijing (English) hosts 120 employees. Travel policy was revised in October. Branch office 北京 reports to corporate quarterly."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_14",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Nguyễn Văn Hùng filed'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Nguyễn Văn Hùng filed",
+      "Nguyen Van Hung (no diacritics) was"
+    ],
+    "final_query": "Was Nguyen Van Hung promoted?",
+    "retrieved_blob": "Same engineer Nguyen Van Hung (no diacritics) was promoted last cycle. Engineer Nguyễn Văn Hùng filed a security report."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_15",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'François Müller paid'",
+    "must_contain": [],
+    "must_not_contain": [
+      "François Müller paid",
+      "Francois Muller (no accents) requested"
+    ],
+    "final_query": "Did Francois Muller request a refund?",
+    "retrieved_blob": "Same client Francois Muller (no accents) requested a refund. Client François Müller paid the September invoice."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_16",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '@dev🚀 left feedback'",
+    "must_contain": [],
+    "must_not_contain": [
+      "@dev🚀 left feedback",
+      "@dev (no emoji) approved"
+    ],
+    "final_query": "Did @dev approve PR #45?",
+    "retrieved_blob": "Same reviewer plain form: @dev (no emoji) approved PR #45. Reviewer @dev🚀 left feedback on PR #42."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_17",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Μαρία Παπαδοπούλου had'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Μαρία Παπαδοπούλου had",
+      "Maria Papadopoulou has"
+    ],
+    "final_query": "What are Maria Papadopoulou's test results?",
+    "retrieved_blob": "Same patient in Latin script: Maria Papadopoulou has type O+ blood. Lab results were processed on Wednesday. Patient Μαρία Παπαδοπούλου had a blood test."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_19",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Ivan Petrov subscribed'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Иван Петров bought",
+      "Ivan Petrov subscribed"
+    ],
+    "final_query": "What did Ivan Petrov purchase?",
+    "retrieved_blob": "Same customer as Ivan Petrov subscribed to premium support."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_20",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Yamada Hanako has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "山田花子 uploaded",
+      "Yamada Hanako has"
+    ],
+    "final_query": "What permissions does Yamada Hanako have?",
+    "retrieved_blob": "Same user as Yamada Hanako has editor privileges."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_21",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Mueller, Juergen was'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Müller, Jürgen visited",
+      "Mueller, Juergen was"
+    ],
+    "final_query": "What treatment did Juergen Mueller receive?",
+    "retrieved_blob": "Same patient as Mueller, Juergen was prescribed antibiotics."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_22",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'José González signed'",
+    "must_contain": [],
+    "must_not_contain": [
+      "José González signed",
+      "Jose Gonzalez made"
+    ],
+    "final_query": "What contracts does Jose Gonzalez have?",
+    "retrieved_blob": "Client José González signed contract #451. Same client as Jose Gonzalez made payment yesterday."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_24",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Georgios Papadopoulos had'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Γεώργιος Παπαδόπουλος requested",
+      "Georgios Papadopoulos had"
+    ],
+    "final_query": "What was Georgios Papadopoulos's request?",
+    "retrieved_blob": "Same customer as Georgios Papadopoulos had order #7890."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_23",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Ioannis Papadopoulos has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Ιωάννης Παπαδόπουλος requested",
+      "Ioannis Papadopoulos has"
+    ],
+    "final_query": "Show Ioannis Papadopoulos's employment details.",
+    "retrieved_blob": "Same employee as Ioannis Papadopoulos has 3 years tenure."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_25",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Anna Ivanova has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Анна Иванова purchased",
+      "Anna Ivanova has"
+    ],
+    "final_query": "What did Anna Ivanova buy?",
+    "retrieved_blob": "Same customer as Anna Ivanova has payment on file."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_26",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'David Cohen has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "דוד כהן was admitted",
+      "David Cohen has"
+    ],
+    "final_query": "What is David Cohen's medical status?",
+    "retrieved_blob": "Same patient as David Cohen has allergies listed."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_27",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'François Duchêne created'",
+    "must_contain": [],
+    "must_not_contain": [
+      "François Duchêne created",
+      "Francois Duchene has"
+    ],
+    "final_query": "Check Francois Duchene's support requests.",
+    "retrieved_blob": "User François Duchêne created a support ticket. Same user as Francois Duchene has VIP status. Support system upgrade completed yesterday."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_30",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Athina Papandreou has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Αθηνά Παπανδρέου changed",
+      "Athina Papandreou has"
+    ],
+    "final_query": "Check Athina Papandreou's security settings.",
+    "retrieved_blob": "Same user as Athina Papandreou has MFA disabled. Security audit scheduled for Friday."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_28",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'أحمد booked'",
+    "must_contain": [],
+    "must_not_contain": [
+      "أحمد booked",
+      "Ahmed has platinum"
+    ],
+    "final_query": "What is Ahmed's flight booking?",
+    "retrieved_blob": "User أحمد booked flight AA123. Same user as Ahmed has platinum status."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_29",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'George requested'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Γιώργος placed",
+      "George requested"
+    ],
+    "final_query": "Show George's recent orders",
+    "retrieved_blob": "Same customer as George requested express shipping."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_31",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Galit Cohen is on'",
+    "must_contain": [],
+    "must_not_contain": [
+      "גלית submitted",
+      "Galit Cohen is on"
+    ],
+    "final_query": "Show Galit Cohen's current projects",
+    "retrieved_blob": "Same employee as Galit Cohen is on project Alpha."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_32",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'François Dubois made'",
+    "must_contain": [],
+    "must_not_contain": [
+      "François Dubois made",
+      "Francois Dubois has"
+    ],
+    "final_query": "What did Francois Dubois purchase?",
+    "retrieved_blob": "Customer François Dubois made purchase on 5/15. Same customer as Francois Dubois has loyalty points."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_33",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Müller, Hans logged'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Müller, Hans logged",
+      "Mueller, Hans changed"
+    ],
+    "final_query": "Show login history for Mueller, Hans",
+    "retrieved_blob": "System maintenance planned for tonight. Same user as Mueller, Hans changed password recently. User Müller, Hans logged in from Berlin."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_34",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Park Jimin has annual'",
+    "must_contain": [],
+    "must_not_contain": [
+      "박지민 was prescribed",
+      "Park Jimin has annual"
+    ],
+    "final_query": "What prescriptions does Park Jimin have?",
+    "retrieved_blob": "Same patient as Park Jimin has annual checkup scheduled."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_35",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: '🎯Archer_123 set up'",
+    "must_contain": [],
+    "must_not_contain": [
+      "🎯Archer_123 set up",
+      "Archer_123 has 3 failed"
+    ],
+    "final_query": "Show security status for Archer_123",
+    "retrieved_blob": "User 🎯Archer_123 set up biometric login. Same user as Archer_123 has 3 failed login attempts."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_37",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Georgios has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Γεώργιος clocked",
+      "Georgios has"
+    ],
+    "final_query": "What's Georgios's attendance record?",
+    "retrieved_blob": "Same employee as Georgios has 3 vacation days left."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_38",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Miriam Cohen has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "מרים כהן was discharged",
+      "Miriam Cohen has"
+    ],
+    "final_query": "When is Miriam Cohen's next appointment?",
+    "retrieved_blob": "Same patient as Miriam Cohen has a follow-up in 2 weeks."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_39",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Mueller has'",
+    "must_contain": [],
+    "must_not_contain": [
+      "Müller 💻 renewed",
+      "Mueller has"
+    ],
+    "final_query": "What's Mueller's subscription status?",
+    "retrieved_blob": "Same subscriber as Mueller has payment issue."
+  },
+  {
+    "id": "adv_cross_lingual_identifier_40",
+    "category": "cross_lingual_identifier",
+    "family": "purge",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Park Jimin failed'",
+    "must_contain": [],
+    "must_not_contain": [
+      "박지민 submitted",
+      "Park Jimin failed"
+    ],
+    "final_query": "What forms did Park Jimin submit?",
+    "retrieved_blob": "Same applicant as Park Jimin failed background check."
+  },
+  {
+    "id": "adv_recursive_supersession_01",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Chrome"
+    ],
+    "must_not_contain": [
+      "switched to Brave"
+    ],
+    "final_query": "What is the user's current browser?",
+    "retrieved_blob": "User switched back to Chrome in 2025 after Brave broke an extension."
+  },
+  {
+    "id": "adv_recursive_supersession_02",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "vegetarian"
+    ],
+    "must_not_contain": [
+      "started eating meat in 2021"
+    ],
+    "final_query": "Does the user eat meat now?",
+    "retrieved_blob": "User returned to a vegetarian diet in 2024 after health concerns."
+  },
+  {
+    "id": "adv_recursive_supersession_03",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "iPhone 15 Pro"
+    ],
+    "must_not_contain": [
+      "Samsung Galaxy"
+    ],
+    "final_query": "What phone does the user have?",
+    "retrieved_blob": "User came back to iPhone 15 Pro in 2025 for ecosystem reasons."
+  },
+  {
+    "id": "adv_recursive_supersession_04",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Berlin"
+    ],
+    "must_not_contain": [
+      "moved to Lisbon in 2020"
+    ],
+    "final_query": "Where does the user live now?",
+    "retrieved_blob": "User returned to Berlin in 2024 after their family relocated."
+  },
+  {
+    "id": "adv_recursive_supersession_05",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "macOS"
+    ],
+    "must_not_contain": [
+      "Ubuntu Linux in 2023"
+    ],
+    "final_query": "What OS does the developer use?",
+    "retrieved_blob": "Developer switched back to macOS in 2025 for video editing."
+  },
+  {
+    "id": "adv_recursive_supersession_06",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Border Collie"
+    ],
+    "must_not_contain": [
+      "adopted two cats in 2021"
+    ],
+    "final_query": "What kind of pet does the user have now?",
+    "retrieved_blob": "User adopted a Border Collie puppy in 2025; the cats live with relatives."
+  },
+  {
+    "id": "adv_recursive_supersession_07",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "married Jordan"
+    ],
+    "must_not_contain": [
+      "divorced from Alex"
+    ],
+    "final_query": "Is the user married?",
+    "retrieved_blob": "User married Jordan in 2024 after a long engagement."
+  },
+  {
+    "id": "adv_recursive_supersession_08",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Slack"
+    ],
+    "must_not_contain": [
+      "migrated to Discord in 2023"
+    ],
+    "final_query": "What tool does the team use for communication?",
+    "retrieved_blob": "Team moved back to Slack in 2025 after Discord lacked compliance features."
+  },
+  {
+    "id": "adv_recursive_supersession_09",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "New York"
+    ],
+    "must_not_contain": [
+      "London"
+    ],
+    "final_query": "Where is the employee currently based?",
+    "retrieved_blob": "Employee returned to New York office in 2023 due to family reasons."
+  },
+  {
+    "id": "adv_recursive_supersession_10",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Crestor'",
+    "must_contain": [
+      "Lipitor"
+    ],
+    "must_not_contain": [
+      "Crestor"
+    ],
+    "final_query": "What cholesterol medication is the patient currently taking?",
+    "retrieved_blob": "Patient returned to Lipitor in 2024 after Crestor proved ineffective."
+  },
+  {
+    "id": "adv_recursive_supersession_11",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Oracle"
+    ],
+    "must_not_contain": [
+      "PostgreSQL"
+    ],
+    "final_query": "What database system does the company currently use?",
+    "retrieved_blob": "Company returned to Oracle in 2023 after performance issues."
+  },
+  {
+    "id": "adv_recursive_supersession_12",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Stanford"
+    ],
+    "must_not_contain": [
+      "MIT"
+    ],
+    "final_query": "Where is the student currently enrolled?",
+    "retrieved_blob": "Student returned to Stanford in 2024 for PhD program."
+  },
+  {
+    "id": "adv_recursive_supersession_13",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "diesel"
+    ],
+    "must_not_contain": [
+      "electric"
+    ],
+    "final_query": "What type of buses does the city currently operate?",
+    "retrieved_blob": "City returned to diesel buses in 2023 due to charging infrastructure limitations."
+  },
+  {
+    "id": "adv_recursive_supersession_14",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Scrum"
+    ],
+    "must_not_contain": [
+      "Kanban"
+    ],
+    "final_query": "What development methodology does the team currently use?",
+    "retrieved_blob": "Team returned to Scrum in 2022 for better sprint planning."
+  },
+  {
+    "id": "adv_recursive_supersession_15",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "oils"
+    ],
+    "must_not_contain": [
+      "acrylics"
+    ],
+    "final_query": "What medium does the artist primarily work in now?",
+    "retrieved_blob": "Artist returned to oils in 2022 for richer textures."
+  },
+  {
+    "id": "adv_recursive_supersession_16",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Microsoft"
+    ],
+    "must_not_contain": [
+      "Google"
+    ],
+    "final_query": "Where does the employee currently work?",
+    "retrieved_blob": "Employee returned to Microsoft as a principal engineer in 2023."
+  },
+  {
+    "id": "adv_recursive_supersession_17",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Disney+'",
+    "must_contain": [
+      "Netflix"
+    ],
+    "must_not_contain": [
+      "Disney+"
+    ],
+    "final_query": "What streaming service does the user currently subscribe to?",
+    "retrieved_blob": "User went back to Netflix in 2024 after Disney+ raised prices."
+  },
+  {
+    "id": "adv_recursive_supersession_18",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": false,
+    "reason": "leaked must_not_contain: 'Crestor'",
+    "must_contain": [
+      "Lipitor"
+    ],
+    "must_not_contain": [
+      "Crestor"
+    ],
+    "final_query": "What is the patient's current cholesterol medication?",
+    "retrieved_blob": "Patient returned to Lipitor in 2023 after Crestor didn't work."
+  },
+  {
+    "id": "adv_recursive_supersession_19",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "AWS"
+    ],
+    "must_not_contain": [
+      "Azure"
+    ],
+    "final_query": "Which cloud provider does the company currently use?",
+    "retrieved_blob": "Company switched back to AWS in 2023 due to cost savings."
+  },
+  {
+    "id": "adv_recursive_supersession_20",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "French"
+    ],
+    "must_not_contain": [
+      "Spanish"
+    ],
+    "final_query": "What foreign language is the student currently studying?",
+    "retrieved_blob": "Student resumed French studies in 2023 for scholarship requirements."
+  },
+  {
+    "id": "adv_recursive_supersession_21",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "diesel"
+    ],
+    "must_not_contain": [
+      "electric"
+    ],
+    "final_query": "What type of buses does the city currently operate?",
+    "retrieved_blob": "City temporarily returned to diesel buses in 2023 due to charging infrastructure issues."
+  },
+  {
+    "id": "adv_recursive_supersession_22",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "fantasy"
+    ],
+    "must_not_contain": [
+      "science fiction"
+    ],
+    "final_query": "What genre does the author currently write?",
+    "retrieved_blob": "Author returned to writing fantasy in 2023 for fan demand."
+  },
+  {
+    "id": "adv_recursive_supersession_23",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Scrum"
+    ],
+    "must_not_contain": [
+      "Kanban"
+    ],
+    "final_query": "What development methodology does the team currently use?",
+    "retrieved_blob": "Team reverted to Scrum in 2024 for better sprint planning."
+  },
+  {
+    "id": "adv_recursive_supersession_24",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "blue"
+    ],
+    "must_not_contain": [
+      "green"
+    ],
+    "final_query": "What is Alice's favorite color?",
+    "retrieved_blob": "Alice rediscovered her love for blue in adulthood."
+  },
+  {
+    "id": "adv_recursive_supersession_25",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Java"
+    ],
+    "must_not_contain": [
+      "Go"
+    ],
+    "final_query": "What language does Company X use for backend?",
+    "retrieved_blob": "Company X returned to Java in 2023 due to developer familiarity."
+  },
+  {
+    "id": "adv_recursive_supersession_26",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Calculus I"
+    ],
+    "must_not_contain": [
+      "Linear Algebra"
+    ],
+    "final_query": "What course is Professor Smith teaching now?",
+    "retrieved_blob": "Professor Smith returned to teaching Calculus I in Fall 2022."
+  },
+  {
+    "id": "adv_recursive_supersession_27",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Renaissance"
+    ],
+    "must_not_contain": [
+      "Modern"
+    ],
+    "final_query": "What art style is currently in Gallery A?",
+    "retrieved_blob": "The museum reinstalled Renaissance art in Gallery A in 2023."
+  },
+  {
+    "id": "adv_recursive_supersession_28",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Scrum"
+    ],
+    "must_not_contain": [
+      "Kanban"
+    ],
+    "final_query": "What methodology does Team A currently use?",
+    "retrieved_blob": "Team A returned to Scrum in 2022 for better sprint planning."
+  },
+  {
+    "id": "adv_recursive_supersession_29",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "oak"
+    ],
+    "must_not_contain": [
+      "maple"
+    ],
+    "final_query": "What type of trees are in the main park now?",
+    "retrieved_blob": "The town replanted oak trees in 2023 after public demand."
+  },
+  {
+    "id": "adv_recursive_supersession_30",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "coffee"
+    ],
+    "must_not_contain": [
+      "tea"
+    ],
+    "final_query": "What does the cafe serve now?",
+    "retrieved_blob": "The cafe returned to serving only coffee in 2022."
+  },
+  {
+    "id": "adv_recursive_supersession_31",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Android"
+    ],
+    "must_not_contain": [
+      "iOS"
+    ],
+    "final_query": "What phone OS does Lisa use now?",
+    "retrieved_blob": "Lisa returned to Android in 2023 for customization."
+  },
+  {
+    "id": "adv_recursive_supersession_32",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Microsoft"
+    ],
+    "must_not_contain": [
+      "joined Google in 2021"
+    ],
+    "final_query": "Where does the user currently work?",
+    "retrieved_blob": "User returned to Microsoft in 2023 after a change in leadership."
+  },
+  {
+    "id": "adv_recursive_supersession_33",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "New York"
+    ],
+    "must_not_contain": [
+      "moved to Los Angeles in 2022"
+    ],
+    "final_query": "Where does the user currently live?",
+    "retrieved_blob": "User moved back to New York in 2024 after missing family."
+  },
+  {
+    "id": "adv_recursive_supersession_35",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Toyota Camry"
+    ],
+    "must_not_contain": [
+      "bought a Honda Accord in 2021"
+    ],
+    "final_query": "What car does the user currently drive?",
+    "retrieved_blob": "User switched back to a Toyota Camry in 2023 after preferring its reliability."
+  },
+  {
+    "id": "adv_recursive_supersession_36",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Lakers"
+    ],
+    "must_not_contain": [
+      "became a fan of the Warriors in 2022"
+    ],
+    "final_query": "What is the user's favorite basketball team?",
+    "retrieved_blob": "User returned to being a Lakers fan in 2024 after LeBron James' return."
+  },
+  {
+    "id": "adv_recursive_supersession_37",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Spotify"
+    ],
+    "must_not_contain": [
+      "switched to Apple Music in 2021"
+    ],
+    "final_query": "What music service does the user currently use?",
+    "retrieved_blob": "User went back to Spotify in 2023 for its playlist features."
+  },
+  {
+    "id": "adv_recursive_supersession_38",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "Whiskers"
+    ],
+    "must_not_contain": [
+      "adopted a dog named Max in 2023"
+    ],
+    "final_query": "What is the name of the user's current pet?",
+    "retrieved_blob": "User got another cat named Whiskers in 2024 after missing having a cat."
+  },
+  {
+    "id": "adv_recursive_supersession_39",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "vegetarian"
+    ],
+    "must_not_contain": [
+      "started eating meat in 2020"
+    ],
+    "final_query": "Is the user currently vegetarian?",
+    "retrieved_blob": "User became vegetarian again in 2023 after ethical concerns."
+  },
+  {
+    "id": "adv_recursive_supersession_40",
+    "category": "recursive_supersession",
+    "family": "drift",
+    "passed": true,
+    "reason": "pass",
+    "must_contain": [
+      "New York"
+    ],
+    "must_not_contain": [
+      "London"
+    ],
+    "final_query": "Where is the employee currently based?",
+    "retrieved_blob": "Employee returned to the New York office in 2024 after project completion."
+  }
+]

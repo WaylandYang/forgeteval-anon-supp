@@ -1,0 +1,572 @@
+[
+  {
+    "mode": "hybrid_default",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 45,
+        "total": 50,
+        "rate": 0.9
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 245,
+    "overall_total": 250,
+    "overall_rate": 0.98,
+    "wall_seconds": 98.67343690000416,
+    "tag": "ablation__hybrid_default_seed42"
+  },
+  {
+    "mode": "hybrid_default",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 48,
+        "total": 50,
+        "rate": 0.96
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 248,
+    "overall_total": 250,
+    "overall_rate": 0.992,
+    "wall_seconds": 83.20229090000066,
+    "tag": "ablation__hybrid_default_seed43"
+  },
+  {
+    "mode": "hybrid_default",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 250,
+    "overall_total": 250,
+    "overall_rate": 1.0,
+    "wall_seconds": 84.10446570000204,
+    "tag": "ablation__hybrid_default_seed44"
+  },
+  {
+    "mode": "vec_only",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 45,
+        "total": 50,
+        "rate": 0.9
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 245,
+    "overall_total": 250,
+    "overall_rate": 0.98,
+    "wall_seconds": 83.9095965000015,
+    "tag": "ablation__vec_only_seed42"
+  },
+  {
+    "mode": "vec_only",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 48,
+        "total": 50,
+        "rate": 0.96
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 248,
+    "overall_total": 250,
+    "overall_rate": 0.992,
+    "wall_seconds": 76.77900740000041,
+    "tag": "ablation__vec_only_seed43"
+  },
+  {
+    "mode": "vec_only",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 250,
+    "overall_total": 250,
+    "overall_rate": 1.0,
+    "wall_seconds": 88.34902819999843,
+    "tag": "ablation__vec_only_seed44"
+  },
+  {
+    "mode": "bm25_only",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 22,
+        "total": 50,
+        "rate": 0.44
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 222,
+    "overall_total": 250,
+    "overall_rate": 0.888,
+    "wall_seconds": 66.49408530000073,
+    "tag": "ablation__bm25_only_seed42"
+  },
+  {
+    "mode": "bm25_only",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 24,
+        "total": 50,
+        "rate": 0.48
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 224,
+    "overall_total": 250,
+    "overall_rate": 0.896,
+    "wall_seconds": 62.78232420000131,
+    "tag": "ablation__bm25_only_seed43"
+  },
+  {
+    "mode": "bm25_only",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 23,
+        "total": 50,
+        "rate": 0.46
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 223,
+    "overall_total": 250,
+    "overall_rate": 0.892,
+    "wall_seconds": 60.148345199995674,
+    "tag": "ablation__bm25_only_seed44"
+  },
+  {
+    "mode": "fixed_threshold",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 25,
+        "total": 50,
+        "rate": 0.5
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 225,
+    "overall_total": 250,
+    "overall_rate": 0.9,
+    "wall_seconds": 91.38343739999982,
+    "tag": "ablation__fixed_threshold_seed42"
+  },
+  {
+    "mode": "fixed_threshold",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 25,
+        "total": 50,
+        "rate": 0.5
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 225,
+    "overall_total": 250,
+    "overall_rate": 0.9,
+    "wall_seconds": 94.8008445000014,
+    "tag": "ablation__fixed_threshold_seed43"
+  },
+  {
+    "mode": "fixed_threshold",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 25,
+        "total": 50,
+        "rate": 0.5
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 225,
+    "overall_total": 250,
+    "overall_rate": 0.9,
+    "wall_seconds": 102.4803069000045,
+    "tag": "ablation__fixed_threshold_seed44"
+  },
+  {
+    "mode": "rrf_purge",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 45,
+        "total": 50,
+        "rate": 0.9
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 245,
+    "overall_total": 250,
+    "overall_rate": 0.98,
+    "wall_seconds": 99.86444090000441,
+    "tag": "ablation__rrf_purge_seed42"
+  },
+  {
+    "mode": "rrf_purge",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 48,
+        "total": 50,
+        "rate": 0.96
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 248,
+    "overall_total": 250,
+    "overall_rate": 0.992,
+    "wall_seconds": 91.69756049999705,
+    "tag": "ablation__rrf_purge_seed43"
+  },
+  {
+    "mode": "rrf_purge",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 250,
+    "overall_total": 250,
+    "overall_rate": 1.0,
+    "wall_seconds": 92.40351399999781,
+    "tag": "ablation__rrf_purge_seed44"
+  }
+]

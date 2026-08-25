@@ -1,0 +1,762 @@
+{
+ "null": {
+  "none": {
+   "overall_pass": 96,
+   "overall_total": 385,
+   "canonicalization_pass": 76,
+   "by_category": {
+    "substring_trap": {
+     "pass": 20,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 0,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 0,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 0,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 0,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 0,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 38,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 38,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 0,
+     "total": 39
+    }
+   }
+  },
+  "+ survivor": {
+   "overall_pass": 20,
+   "overall_total": 385,
+   "canonicalization_pass": 0,
+   "by_category": {
+    "substring_trap": {
+     "pass": 20,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 0,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 0,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 0,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 0,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 0,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 0,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 0,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 0,
+     "total": 39
+    }
+   }
+  },
+  "+ probing": {
+   "overall_pass": 20,
+   "overall_total": 385,
+   "canonicalization_pass": 0,
+   "by_category": {
+    "substring_trap": {
+     "pass": 20,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 0,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 0,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 0,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 0,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 0,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 0,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 0,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 0,
+     "total": 39
+    }
+   }
+  },
+  "+ one-form request": {
+   "overall_pass": 20,
+   "overall_total": 385,
+   "canonicalization_pass": 0,
+   "by_category": {
+    "substring_trap": {
+     "pass": 20,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 0,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 0,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 0,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 0,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 0,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 0,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 0,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 0,
+     "total": 39
+    }
+   }
+  }
+ },
+ "nuke": {
+  "none": {
+   "overall_pass": 231,
+   "overall_total": 385,
+   "canonicalization_pass": 76,
+   "by_category": {
+    "substring_trap": {
+     "pass": 29,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 0,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 32,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 21,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 37,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 0,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 38,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 38,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 36,
+     "total": 39
+    }
+   }
+  },
+  "+ survivor": {
+   "overall_pass": 155,
+   "overall_total": 385,
+   "canonicalization_pass": 0,
+   "by_category": {
+    "substring_trap": {
+     "pass": 29,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 0,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 32,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 21,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 37,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 0,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 0,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 0,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 36,
+     "total": 39
+    }
+   }
+  },
+  "+ probing": {
+   "overall_pass": 155,
+   "overall_total": 385,
+   "canonicalization_pass": 0,
+   "by_category": {
+    "substring_trap": {
+     "pass": 29,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 0,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 32,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 21,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 37,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 0,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 0,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 0,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 36,
+     "total": 39
+    }
+   }
+  },
+  "+ one-form request": {
+   "overall_pass": 155,
+   "overall_total": 385,
+   "canonicalization_pass": 0,
+   "by_category": {
+    "substring_trap": {
+     "pass": 29,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 0,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 32,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 21,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 37,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 0,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 0,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 0,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 36,
+     "total": 39
+    }
+   }
+  }
+ },
+ "normalize": {
+  "none": {
+   "overall_pass": 240,
+   "overall_total": 385,
+   "canonicalization_pass": 71,
+   "by_category": {
+    "substring_trap": {
+     "pass": 31,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 14,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 5,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 34,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 27,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 25,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 35,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 36,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 33,
+     "total": 39
+    }
+   }
+  },
+  "+ survivor": {
+   "overall_pass": 242,
+   "overall_total": 385,
+   "canonicalization_pass": 73,
+   "by_category": {
+    "substring_trap": {
+     "pass": 31,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 14,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 5,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 34,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 27,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 25,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 36,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 37,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 33,
+     "total": 39
+    }
+   }
+  },
+  "+ probing": {
+   "overall_pass": 208,
+   "overall_total": 385,
+   "canonicalization_pass": 45,
+   "by_category": {
+    "substring_trap": {
+     "pass": 27,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 14,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 3,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 34,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 27,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 25,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 17,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 28,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 33,
+     "total": 39
+    }
+   }
+  },
+  "+ one-form request": {
+   "overall_pass": 187,
+   "overall_total": 385,
+   "canonicalization_pass": 24,
+   "by_category": {
+    "substring_trap": {
+     "pass": 27,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 14,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 3,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 34,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 27,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 25,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 17,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 7,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 33,
+     "total": 39
+    }
+   }
+  }
+ },
+ "oracle": {
+  "none": {
+   "overall_pass": 329,
+   "overall_total": 385,
+   "canonicalization_pass": 76,
+   "by_category": {
+    "substring_trap": {
+     "pass": 36,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 32,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 32,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 40,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 37,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 40,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 38,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 38,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 36,
+     "total": 39
+    }
+   }
+  },
+  "+ survivor": {
+   "overall_pass": 329,
+   "overall_total": 385,
+   "canonicalization_pass": 76,
+   "by_category": {
+    "substring_trap": {
+     "pass": 36,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 32,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 32,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 40,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 37,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 40,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 38,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 38,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 36,
+     "total": 39
+    }
+   }
+  },
+  "+ probing": {
+   "overall_pass": 329,
+   "overall_total": 385,
+   "canonicalization_pass": 76,
+   "by_category": {
+    "substring_trap": {
+     "pass": 36,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 32,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 32,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 40,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 37,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 40,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 38,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 38,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 36,
+     "total": 39
+    }
+   }
+  },
+  "+ one-form request": {
+   "overall_pass": 329,
+   "overall_total": 385,
+   "canonicalization_pass": 76,
+   "by_category": {
+    "substring_trap": {
+     "pass": 36,
+     "total": 36
+    },
+    "prefix_collision": {
+     "pass": 32,
+     "total": 39
+    },
+    "paraphrase_supersession": {
+     "pass": 32,
+     "total": 38
+    },
+    "negation_trap": {
+     "pass": 40,
+     "total": 40
+    },
+    "temporal_qualifier": {
+     "pass": 37,
+     "total": 37
+    },
+    "shared_attribute": {
+     "pass": 40,
+     "total": 40
+    },
+    "compound_fact": {
+     "pass": 0,
+     "total": 40
+    },
+    "identifier_obfuscation": {
+     "pass": 38,
+     "total": 38
+    },
+    "cross_lingual_identifier": {
+     "pass": 38,
+     "total": 38
+    },
+    "recursive_supersession": {
+     "pass": 36,
+     "total": 39
+    }
+   }
+  }
+ }
+}

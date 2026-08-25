@@ -1,0 +1,64 @@
+{
+  "model": "anthropic/claude-opus-4.8",
+  "suite": "adversarial-385",
+  "limit": 0,
+  "overall_pass": 341,
+  "overall_total": 385,
+  "overall_rate": 0.8857142857142857,
+  "by_category": {
+    "substring_trap": {
+      "pass": 34,
+      "total": 36
+    },
+    "prefix_collision": {
+      "pass": 32,
+      "total": 39
+    },
+    "paraphrase_supersession": {
+      "pass": 30,
+      "total": 38
+    },
+    "negation_trap": {
+      "pass": 38,
+      "total": 40
+    },
+    "temporal_qualifier": {
+      "pass": 37,
+      "total": 37
+    },
+    "shared_attribute": {
+      "pass": 40,
+      "total": 40
+    },
+    "compound_fact": {
+      "pass": 36,
+      "total": 40
+    },
+    "identifier_obfuscation": {
+      "pass": 32,
+      "total": 38
+    },
+    "cross_lingual_identifier": {
+      "pass": 26,
+      "total": 38
+    },
+    "recursive_supersession": {
+      "pass": 36,
+      "total": 39
+    }
+  },
+  "usage": {
+    "calls": 445,
+    "cache_hits": 2,
+    "in_tok": 272578,
+    "out_tok": 9870,
+    "errors": 0
+  },
+  "cost_usd": 1.60964,
+  "wall_seconds": 267.5128599999007,
+  "placement_stats": {
+    "inscribe_calls": 0,
+    "annotated": 0,
+    "failed": 0
+  }
+}

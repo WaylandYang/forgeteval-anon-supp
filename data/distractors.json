@@ -1,0 +1,602 @@
+[
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 45,
+        "total": 50,
+        "rate": 0.9
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 245,
+    "overall_total": 250,
+    "overall_rate": 0.98,
+    "wall_seconds": 108.3897935999994,
+    "tag": "distractors__d4_seed42"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 48,
+        "total": 50,
+        "rate": 0.96
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 248,
+    "overall_total": 250,
+    "overall_rate": 0.992,
+    "wall_seconds": 104.42576060000283,
+    "tag": "distractors__d4_seed43"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 4,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 250,
+    "overall_total": 250,
+    "overall_rate": 1.0,
+    "wall_seconds": 118.39384659999632,
+    "tag": "distractors__d4_seed44"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 10,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 249,
+    "overall_total": 250,
+    "overall_rate": 0.996,
+    "wall_seconds": 38.91941210000368,
+    "tag": "distractors__d10_seed42"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 10,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      }
+    },
+    "overall_pass": 248,
+    "overall_total": 250,
+    "overall_rate": 0.992,
+    "wall_seconds": 94.07239049999771,
+    "tag": "distractors__d10_seed43"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 10,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      }
+    },
+    "overall_pass": 248,
+    "overall_total": 250,
+    "overall_rate": 0.992,
+    "wall_seconds": 144.89454560000013,
+    "tag": "distractors__d10_seed44"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 25,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 47,
+        "total": 50,
+        "rate": 0.94
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      }
+    },
+    "overall_pass": 246,
+    "overall_total": 250,
+    "overall_rate": 0.984,
+    "wall_seconds": 292.45110009999917,
+    "tag": "distractors__d25_seed42"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 25,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 47,
+        "total": 50,
+        "rate": 0.94
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 247,
+    "overall_total": 250,
+    "overall_rate": 0.988,
+    "wall_seconds": 223.88141739999992,
+    "tag": "distractors__d25_seed43"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 25,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 249,
+    "overall_total": 250,
+    "overall_rate": 0.996,
+    "wall_seconds": 269.71971889999986,
+    "tag": "distractors__d25_seed44"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 50,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 47,
+        "total": 50,
+        "rate": 0.94
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      }
+    },
+    "overall_pass": 246,
+    "overall_total": 250,
+    "overall_rate": 0.984,
+    "wall_seconds": 537.6629925000016,
+    "tag": "distractors__d50_seed42"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 50,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 44,
+        "total": 50,
+        "rate": 0.88
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      }
+    },
+    "overall_pass": 243,
+    "overall_total": 250,
+    "overall_rate": 0.972,
+    "wall_seconds": 452.9216229999947,
+    "tag": "distractors__d50_seed43"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 50,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 42,
+        "total": 50,
+        "rate": 0.84
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 242,
+    "overall_total": 250,
+    "overall_rate": 0.968,
+    "wall_seconds": 125.47331859999395,
+    "tag": "distractors__d50_seed44"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 42,
+    "scale_per_family": 50,
+    "distractors": 100,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 42,
+        "total": 50,
+        "rate": 0.84
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 47,
+        "total": 50,
+        "rate": 0.94
+      }
+    },
+    "overall_pass": 239,
+    "overall_total": 250,
+    "overall_rate": 0.956,
+    "wall_seconds": 239.46336359999987,
+    "tag": "distractors__d100_seed42"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 43,
+    "scale_per_family": 50,
+    "distractors": 100,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 45,
+        "total": 50,
+        "rate": 0.9
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "overall_pass": 245,
+    "overall_total": 250,
+    "overall_rate": 0.98,
+    "wall_seconds": 239.96597779999865,
+    "tag": "distractors__d100_seed43"
+  },
+  {
+    "adapter": "lethe",
+    "lang": "en",
+    "seed": 44,
+    "scale_per_family": 50,
+    "distractors": 100,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "by_family": {
+      "supersession": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "amnesia": {
+        "pass": 41,
+        "total": 50,
+        "rate": 0.82
+      },
+      "purge": {
+        "pass": 50,
+        "total": 50,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 49,
+        "total": 50,
+        "rate": 0.98
+      }
+    },
+    "overall_pass": 240,
+    "overall_total": 250,
+    "overall_rate": 0.96,
+    "wall_seconds": 233.75371499999892,
+    "tag": "distractors__d100_seed44"
+  }
+]

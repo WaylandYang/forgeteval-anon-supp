@@ -1,0 +1,610 @@
+{
+  "adv_identifier_obfuscation_01": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "email",
+    "add_facts": [
+      "Record for morgan.reyes@acme.io is active on the account.",
+      "Same record, alternate form MORGAN.REYES@ACME.IO, was verified."
+    ],
+    "final_query": "List every record on file, including morgan.reyes@acme.io.",
+    "must_contain": [
+      "morgan.reyes@acme.io"
+    ],
+    "keep_must_not_contain": [
+      "ALICE@ACME.IO subscribed",
+      "alice@acme.io is the same"
+    ]
+  },
+  "adv_identifier_obfuscation_02": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "email",
+    "add_facts": [
+      "Record for morgan.reyes@example.com is active on the account.",
+      "Same record, alternate form MORGAN.REYES@EXAMPLE.COM, was verified."
+    ],
+    "final_query": "List every record on file, including morgan.reyes@example.com.",
+    "must_contain": [
+      "morgan.reyes@example.com"
+    ],
+    "keep_must_not_contain": [
+      "bob@example.com bought 5",
+      "is the same account"
+    ]
+  },
+  "adv_identifier_obfuscation_03": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "phone",
+    "add_facts": [
+      "Record for 415-555-0198 is active on the account.",
+      "Same record, alternate form +1 415 555 0198, was verified."
+    ],
+    "final_query": "List every record on file, including 415-555-0198.",
+    "must_contain": [
+      "415-555-0198"
+    ],
+    "keep_must_not_contain": [
+      "+1-415-555-0123",
+      "415-555-0123 (no country code)"
+    ]
+  },
+  "adv_identifier_obfuscation_04": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "token",
+    "add_facts": [
+      "Record for 7f3a91c2 is active on the account.",
+      "Same record, alternate form 7F3A91C2, was verified."
+    ],
+    "final_query": "List every record on file, including 7f3a91c2.",
+    "must_contain": [
+      "7f3a91c2"
+    ],
+    "keep_must_not_contain": [
+      "550e8400-e29b-41d4",
+      "550e8400e29b41d4"
+    ]
+  },
+  "adv_identifier_obfuscation_05": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "ssn",
+    "add_facts": [
+      "Record for 987-65-4321 is active on the account.",
+      "Same record, alternate form 987654321, was verified."
+    ],
+    "final_query": "List every record on file, including 987-65-4321.",
+    "must_contain": [
+      "987-65-4321"
+    ],
+    "keep_must_not_contain": [
+      "123-45-6789",
+      "123456789 (no dashes)"
+    ]
+  },
+  "adv_identifier_obfuscation_06": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "licence",
+    "add_facts": [
+      "Record for QW9Z-4T2K-7HD5-3BXP is active on the account.",
+      "Same record, alternate form QW9Z4T2K7HD53BXP, was verified."
+    ],
+    "final_query": "List every record on file, including QW9Z-4T2K-7HD5-3BXP.",
+    "must_contain": [
+      "QW9Z-4T2K-7HD5-3BXP"
+    ],
+    "keep_must_not_contain": [
+      "4111-1111-1111-1111",
+      "4111111111111111"
+    ]
+  },
+  "adv_identifier_obfuscation_07": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "email",
+    "add_facts": [
+      "Record for morgan.reyes@company.com is active on the account.",
+      "Same record, alternate form MORGAN.REYES@COMPANY.COM, was verified."
+    ],
+    "final_query": "List every record on file, including morgan.reyes@company.com.",
+    "must_contain": [
+      "morgan.reyes@company.com"
+    ],
+    "keep_must_not_contain": [
+      "\"john.doe\"@company.com subscribed",
+      "Same customer in canonical"
+    ]
+  },
+  "adv_identifier_obfuscation_08": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "handle",
+    "add_facts": [
+      "Record for @quinn-ops is active on the account.",
+      "Same record, alternate form quinn-ops, was verified."
+    ],
+    "final_query": "List every record on file, including @quinn-ops.",
+    "must_contain": [
+      "@quinn-ops"
+    ],
+    "keep_must_not_contain": [
+      "@acme-engineer is on",
+      "acme-engineer."
+    ]
+  },
+  "adv_identifier_obfuscation_09": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "ip",
+    "add_facts": [
+      "Record for 192.168.1.13 is active on the account.",
+      "Same record, alternate form 192.168.001.013, was verified."
+    ],
+    "final_query": "List every record on file, including 192.168.1.13.",
+    "must_contain": [
+      "192.168.1.13"
+    ],
+    "keep_must_not_contain": [
+      "192.168.001.005 hosts",
+      "192.168.1.5 (no padding)"
+    ]
+  },
+  "adv_identifier_obfuscation_10": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "path",
+    "add_facts": [
+      "Record for releases/v4/manifest.zip is active on the account.",
+      "Same record, alternate form releases/v4/manifest.ZIP, was verified."
+    ],
+    "final_query": "List every record on file, including releases/v4/manifest.zip.",
+    "must_contain": [
+      "releases/v4/manifest.zip"
+    ],
+    "keep_must_not_contain": [
+      "https://api.acme.io/v2/events fires",
+      "api.acme.io/v2/events/ (trailing slash)"
+    ]
+  },
+  "adv_identifier_obfuscation_11": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "person",
+    "add_facts": [
+      "Record for Grace Hopper is active on the account.",
+      "Same record, alternate form G. Hopper, was verified."
+    ],
+    "final_query": "List every record on file, including Grace Hopper.",
+    "must_contain": [
+      "Grace Hopper"
+    ],
+    "keep_must_not_contain": [
+      "Mr. Alan Turing logged",
+      "Dr. Alan Turing accessed"
+    ]
+  },
+  "adv_identifier_obfuscation_12": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "email",
+    "add_facts": [
+      "Record for morgan.reyes@example.com is active on the account.",
+      "Same record, alternate form MORGAN.REYES@EXAMPLE.COM, was verified."
+    ],
+    "final_query": "List every record on file, including morgan.reyes@example.com.",
+    "must_contain": [
+      "morgan.reyes@example.com"
+    ],
+    "keep_must_not_contain": [
+      "ada@example.com signed up",
+      "ada+promo@example.com used a coupon"
+    ]
+  },
+  "adv_identifier_obfuscation_13": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "person",
+    "add_facts": [
+      "Record for Grace Hopper is active on the account.",
+      "Same record, alternate form G. Hopper, was verified."
+    ],
+    "final_query": "List every record on file, including Grace Hopper.",
+    "must_contain": [
+      "Grace Hopper"
+    ],
+    "keep_must_not_contain": [
+      "Robert Smith was hired",
+      "Bob Smith, was promoted"
+    ]
+  },
+  "adv_identifier_obfuscation_14": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "sku",
+    "add_facts": [
+      "Record for BOOT-TRK-19 is active on the account.",
+      "Same record, alternate form TRK-19, was verified."
+    ],
+    "final_query": "List every record on file, including BOOT-TRK-19.",
+    "must_contain": [
+      "BOOT-TRK-19"
+    ],
+    "keep_must_not_contain": [
+      "PRJ-ATLAS-2024 has 5",
+      "ATLAS-2024 (no PRJ prefix)"
+    ]
+  },
+  "adv_identifier_obfuscation_15": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "date",
+    "add_facts": [
+      "Record for 2026-03-08 is active on the account.",
+      "Same record, alternate form 03/08/2026, was verified."
+    ],
+    "final_query": "List every record on file, including 2026-03-08.",
+    "must_contain": [
+      "2026-03-08"
+    ],
+    "keep_must_not_contain": [
+      "2025-12-25 is the company gala",
+      "12/25/2025 will be at"
+    ]
+  },
+  "adv_identifier_obfuscation_16": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "account",
+    "add_facts": [
+      "Record for 9876-EUR is active on the account.",
+      "Same record, alternate form 9876, was verified."
+    ],
+    "final_query": "List every record on file, including 9876-EUR.",
+    "must_contain": [
+      "9876-EUR"
+    ],
+    "keep_must_not_contain": [
+      "1234-USD holds the dollar",
+      "1234 (without currency suffix)"
+    ]
+  },
+  "adv_identifier_obfuscation_19": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "url",
+    "add_facts": [
+      "Record for https://acme.io/v2/invoices is active on the account.",
+      "Same record, alternate form acme.io/v2/invoices/, was verified."
+    ],
+    "final_query": "List every record on file, including https://acme.io/v2/invoices.",
+    "must_contain": [
+      "https://acme.io/v2/invoices"
+    ],
+    "keep_must_not_contain": [
+      "https://www.acme.io/vendor",
+      "acme.io/vendor (no scheme"
+    ]
+  },
+  "adv_identifier_obfuscation_20": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "path",
+    "add_facts": [
+      "Record for releases/v4/manifest.zip is active on the account.",
+      "Same record, alternate form releases/v4/manifest.ZIP, was verified."
+    ],
+    "final_query": "List every record on file, including releases/v4/manifest.zip.",
+    "must_contain": [
+      "releases/v4/manifest.zip"
+    ],
+    "keep_must_not_contain": [
+      "api.beta.io/v2/users.",
+      "api.beta.io/v2/users/ (with trailing"
+    ]
+  },
+  "adv_identifier_obfuscation_21": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "email",
+    "add_facts": [
+      "Record for morgan.reyes@gmail.com is active on the account.",
+      "Same record, alternate form MORGAN.REYES@GMAIL.COM, was verified."
+    ],
+    "final_query": "List every record on file, including morgan.reyes@gmail.com.",
+    "must_contain": [
+      "morgan.reyes@gmail.com"
+    ],
+    "keep_must_not_contain": [
+      "charlie+work@gmail.com.",
+      "charlie@gmail.com."
+    ]
+  },
+  "adv_identifier_obfuscation_22": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "snake_handle",
+    "add_facts": [
+      "Record for rowan_builds is active on the account.",
+      "Same record, alternate form @rowan_builds, was verified."
+    ],
+    "final_query": "List every record on file, including rowan_builds.",
+    "must_contain": [
+      "rowan_builds"
+    ],
+    "keep_must_not_contain": [
+      "@dora_writes.",
+      "without prefix: dora_writes."
+    ]
+  },
+  "adv_identifier_obfuscation_23": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "project",
+    "add_facts": [
+      "Record for ORION-1234 is active on the account.",
+      "Same record, alternate form ORION-1234, was verified."
+    ],
+    "final_query": "List every record on file, including ORION-1234.",
+    "must_contain": [
+      "ORION-1234"
+    ],
+    "keep_must_not_contain": [
+      "ABC-1234 registered",
+      "abc1234 (no hyphen"
+    ]
+  },
+  "adv_identifier_obfuscation_24": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "card",
+    "add_facts": [
+      "Record for 4242-4242-4242-4242 is active on the account.",
+      "Same record, alternate form 4242424242424242, was verified."
+    ],
+    "final_query": "List every record on file, including 4242-4242-4242-4242.",
+    "must_contain": [
+      "4242-4242-4242-4242"
+    ],
+    "keep_must_not_contain": [
+      "4111 1111 1111 1111.",
+      "4111111111111111."
+    ]
+  },
+  "adv_identifier_obfuscation_25": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "ip",
+    "add_facts": [
+      "Record for 192.168.1.18 is active on the account.",
+      "Same record, alternate form 192.168.001.018, was verified."
+    ],
+    "final_query": "List every record on file, including 192.168.1.18.",
+    "must_contain": [
+      "192.168.1.18"
+    ],
+    "keep_must_not_contain": [
+      "192.168.1.10 hosts",
+      "192.168.001.010."
+    ]
+  },
+  "adv_identifier_obfuscation_26": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "time",
+    "add_facts": [
+      "Record for 09:15 is active on the account.",
+      "Same record, alternate form 9:15 AM, was verified."
+    ],
+    "final_query": "List every record on file, including 09:15.",
+    "must_contain": [
+      "09:15"
+    ],
+    "keep_must_not_contain": [
+      "scheduled at 14:30.",
+      "2:30 PM."
+    ]
+  },
+  "adv_identifier_obfuscation_27": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "isbn",
+    "add_facts": [
+      "Record for 9781491957660 is active on the account.",
+      "Same record, alternate form 978-1-4919-5766-0, was verified."
+    ],
+    "final_query": "List every record on file, including 9781491957660.",
+    "must_contain": [
+      "9781491957660"
+    ],
+    "keep_must_not_contain": [
+      "978-0-13-468599-1.",
+      "9780134685991."
+    ]
+  },
+  "adv_identifier_obfuscation_28": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "path",
+    "add_facts": [
+      "Record for releases/v4/manifest.zip is active on the account.",
+      "Same record, alternate form releases/v4/manifest.ZIP, was verified."
+    ],
+    "final_query": "List every record on file, including releases/v4/manifest.zip.",
+    "must_contain": [
+      "releases/v4/manifest.zip"
+    ],
+    "keep_must_not_contain": [
+      "releases\\\\v3\\\\bundle.zip.",
+      "releases/v3/bundle.zip."
+    ]
+  },
+  "adv_identifier_obfuscation_29": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "colour",
+    "add_facts": [
+      "Record for 2E9BD6 is active on the account.",
+      "Same record, alternate form #2e9bd6, was verified."
+    ],
+    "final_query": "List every record on file, including 2E9BD6.",
+    "must_contain": [
+      "2E9BD6"
+    ],
+    "keep_must_not_contain": [
+      "#FF7A00.",
+      "FF7A00 (no hash)."
+    ]
+  },
+  "adv_identifier_obfuscation_30": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "zip",
+    "add_facts": [
+      "Record for 02139-4307 is active on the account.",
+      "Same record, alternate form 021394307, was verified."
+    ],
+    "final_query": "List every record on file, including 02139-4307.",
+    "must_contain": [
+      "02139-4307"
+    ],
+    "keep_must_not_contain": [
+      "94107-1234.",
+      "941071234."
+    ]
+  },
+  "adv_identifier_obfuscation_31": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "sku",
+    "add_facts": [
+      "Record for BOOT-TRK-19 is active on the account.",
+      "Same record, alternate form TRK-19, was verified."
+    ],
+    "final_query": "List every record on file, including BOOT-TRK-19.",
+    "must_contain": [
+      "BOOT-TRK-19"
+    ],
+    "keep_must_not_contain": [
+      "SHOE-RNN-42.",
+      "RNN-42 (no SHOE)."
+    ]
+  },
+  "adv_identifier_obfuscation_32": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "licence",
+    "add_facts": [
+      "Record for QW9Z-4T2K-7HD5-3BXP is active on the account.",
+      "Same record, alternate form QW9Z4T2K7HD53BXP, was verified."
+    ],
+    "final_query": "List every record on file, including QW9Z-4T2K-7HD5-3BXP.",
+    "must_contain": [
+      "QW9Z-4T2K-7HD5-3BXP"
+    ],
+    "keep_must_not_contain": [
+      "XK7L-9P3Q-2RVA-8M1N.",
+      "XK7L.9P3Q.2RVA.8M1N."
+    ]
+  },
+  "adv_identifier_obfuscation_33": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "plain_id",
+    "add_facts": [
+      "Record for 5391 is active on the account.",
+      "Same record, alternate form no. 5391, was verified."
+    ],
+    "final_query": "List every record on file, including 5391.",
+    "must_contain": [
+      "5391"
+    ],
+    "keep_must_not_contain": [
+      "ID: 0000847.",
+      "zero-trimmed: 847."
+    ]
+  },
+  "adv_identifier_obfuscation_34": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "ticket",
+    "add_facts": [
+      "Record for INC-77310 is active on the account.",
+      "Same record, alternate form inc-77310, was verified."
+    ],
+    "final_query": "List every record on file, including INC-77310.",
+    "must_contain": [
+      "INC-77310"
+    ],
+    "keep_must_not_contain": [
+      "#INC-22184 is open.",
+      "without hash: INC-22184."
+    ]
+  },
+  "adv_identifier_obfuscation_35": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "phone",
+    "add_facts": [
+      "Record for 650-555-0198 is active on the account.",
+      "Same record, alternate form +1 650 555 0198, was verified."
+    ],
+    "final_query": "List every record on file, including 650-555-0198.",
+    "must_contain": [
+      "650-555-0198"
+    ],
+    "keep_must_not_contain": [
+      "(650) 555-0177.",
+      "650-555-0177."
+    ]
+  },
+  "adv_identifier_obfuscation_36": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "project",
+    "add_facts": [
+      "Record for ORION-2026 is active on the account.",
+      "Same record, alternate form ORION-2026, was verified."
+    ],
+    "final_query": "List every record on file, including ORION-2026.",
+    "must_contain": [
+      "ORION-2026"
+    ],
+    "keep_must_not_contain": [
+      "ORD-2026-00921.",
+      "short-form: 00921."
+    ]
+  },
+  "adv_identifier_obfuscation_37": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "vin",
+    "add_facts": [
+      "Record for 2FTRX18L1XCA71234 is active on the account.",
+      "Same record, alternate form 2ftrx18l1xca71234, was verified."
+    ],
+    "final_query": "List every record on file, including 2FTRX18L1XCA71234.",
+    "must_contain": [
+      "2FTRX18L1XCA71234"
+    ],
+    "keep_must_not_contain": [
+      "1HGCM82633A004352.",
+      "1HGCM-82633-A004352."
+    ]
+  },
+  "adv_identifier_obfuscation_38": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "bic",
+    "add_facts": [
+      "Record for BNPAFRPP is active on the account.",
+      "Same record, alternate form bnpafrpp, was verified."
+    ],
+    "final_query": "List every record on file, including BNPAFRPP.",
+    "must_contain": [
+      "BNPAFRPP"
+    ],
+    "keep_must_not_contain": [
+      "DEUTDEFFXXX.",
+      "DEUTDEFF."
+    ]
+  },
+  "adv_identifier_obfuscation_17": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "handle",
+    "add_facts": [
+      "Record for @quinn-ops is active on the account.",
+      "Same record, alternate form quinn-ops, was verified."
+    ],
+    "final_query": "List every record on file, including @quinn-ops.",
+    "must_contain": [
+      "@quinn-ops"
+    ],
+    "keep_must_not_contain": [
+      "@johndoe has admin",
+      "johndoe is the same"
+    ]
+  },
+  "adv_identifier_obfuscation_18": {
+    "category": "identifier_obfuscation",
+    "sibling_kind": "handle",
+    "add_facts": [
+      "Record for @quinn-ops is active on the account.",
+      "Same record, alternate form quinn-ops, was verified."
+    ],
+    "final_query": "List every record on file, including @quinn-ops.",
+    "must_contain": [
+      "@quinn-ops"
+    ],
+    "keep_must_not_contain": [
+      "\"john.doe\"@example.org has admin",
+      "john.doe@example.org refers to the same"
+    ]
+  }
+}

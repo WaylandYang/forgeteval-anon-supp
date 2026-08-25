@@ -1,0 +1,58 @@
+{
+  "Chinese (Han)": [
+    "adv_cross_lingual_identifier_01",
+    "adv_cross_lingual_identifier_02",
+    "adv_cross_lingual_identifier_06",
+    "adv_cross_lingual_identifier_13",
+    "adv_cross_lingual_identifier_20"
+  ],
+  "Korean (Hangul)": [
+    "adv_cross_lingual_identifier_03",
+    "adv_cross_lingual_identifier_34",
+    "adv_cross_lingual_identifier_40"
+  ],
+  "Cyrillic": [
+    "adv_cross_lingual_identifier_04",
+    "adv_cross_lingual_identifier_19",
+    "adv_cross_lingual_identifier_25"
+  ],
+  "Arabic": [
+    "adv_cross_lingual_identifier_05",
+    "adv_cross_lingual_identifier_28"
+  ],
+  "Latin only": [
+    "adv_cross_lingual_identifier_07",
+    "adv_cross_lingual_identifier_08",
+    "adv_cross_lingual_identifier_14",
+    "adv_cross_lingual_identifier_15",
+    "adv_cross_lingual_identifier_16",
+    "adv_cross_lingual_identifier_21",
+    "adv_cross_lingual_identifier_22",
+    "adv_cross_lingual_identifier_27",
+    "adv_cross_lingual_identifier_32",
+    "adv_cross_lingual_identifier_33",
+    "adv_cross_lingual_identifier_35",
+    "adv_cross_lingual_identifier_39"
+  ],
+  "Devanagari": [
+    "adv_cross_lingual_identifier_09"
+  ],
+  "Thai": [
+    "adv_cross_lingual_identifier_10"
+  ],
+  "Greek": [
+    "adv_cross_lingual_identifier_11",
+    "adv_cross_lingual_identifier_17",
+    "adv_cross_lingual_identifier_24",
+    "adv_cross_lingual_identifier_23",
+    "adv_cross_lingual_identifier_30",
+    "adv_cross_lingual_identifier_29",
+    "adv_cross_lingual_identifier_37"
+  ],
+  "Hebrew": [
+    "adv_cross_lingual_identifier_12",
+    "adv_cross_lingual_identifier_26",
+    "adv_cross_lingual_identifier_31",
+    "adv_cross_lingual_identifier_38"
+  ]
+}

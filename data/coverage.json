@@ -1,0 +1,160 @@
+{
+  "na": {
+    "MemPalace": {
+      "total": 385,
+      "by_category": {
+        "substring_trap": 36,
+        "prefix_collision": 39,
+        "paraphrase_supersession": 38,
+        "negation_trap": 40,
+        "temporal_qualifier": 37,
+        "shared_attribute": 40,
+        "compound_fact": 40,
+        "identifier_obfuscation": 38,
+        "cross_lingual_identifier": 38,
+        "recursive_supersession": 39
+      }
+    },
+    "Lethe": {
+      "total": 0,
+      "by_category": {}
+    },
+    "Mem0": {
+      "total": 0,
+      "by_category": {}
+    },
+    "LangGraph": {
+      "total": 0,
+      "by_category": {}
+    },
+    "Lethe+LLM": {
+      "total": 0,
+      "by_category": {}
+    },
+    "LangGraph+LLM": {
+      "total": 0,
+      "by_category": {}
+    },
+    "Mem0+v3": {
+      "total": 0,
+      "by_category": {}
+    },
+    "A-MEM": {
+      "total": 75,
+      "by_category": {
+        "substring_trap": 16,
+        "negation_trap": 19,
+        "shared_attribute": 40
+      }
+    },
+    "Letta": {
+      "total": 75,
+      "by_category": {
+        "substring_trap": 16,
+        "negation_trap": 19,
+        "shared_attribute": 40
+      }
+    },
+    "Letta+LLM": {
+      "total": 75,
+      "by_category": {
+        "substring_trap": 16,
+        "negation_trap": 19,
+        "shared_attribute": 40
+      }
+    },
+    "OpenMemory": {
+      "total": 75,
+      "by_category": {
+        "substring_trap": 16,
+        "negation_trap": 19,
+        "shared_attribute": 40
+      }
+    },
+    "Graphiti": {
+      "total": 75,
+      "by_category": {
+        "substring_trap": 16,
+        "negation_trap": 19,
+        "shared_attribute": 40
+      }
+    },
+    "HippoRAG": {
+      "total": 201,
+      "by_category": {
+        "substring_trap": 27,
+        "prefix_collision": 39,
+        "negation_trap": 19,
+        "shared_attribute": 40,
+        "identifier_obfuscation": 38,
+        "cross_lingual_identifier": 38
+      }
+    }
+  },
+  "scores": {
+    "MemPalace": {
+      "pass": 0,
+      "strict_total": 385,
+      "na": 385,
+      "evaluable_total": 0,
+      "strict_pct": 0.0,
+      "evaluable_pct": null
+    },
+    "Lethe": {
+      "pass": 245,
+      "strict_total": 385,
+      "na": 0,
+      "evaluable_total": 385,
+      "strict_pct": 63.6,
+      "evaluable_pct": 63.6
+    },
+    "Mem0": {
+      "pass": 252,
+      "strict_total": 385,
+      "na": 0,
+      "evaluable_total": 385,
+      "strict_pct": 65.5,
+      "evaluable_pct": 65.5
+    },
+    "LangGraph": {
+      "pass": 242,
+      "strict_total": 385,
+      "na": 0,
+      "evaluable_total": 385,
+      "strict_pct": 62.9,
+      "evaluable_pct": 62.9
+    },
+    "Mem0+v3": {
+      "pass": 229,
+      "strict_total": 385,
+      "na": 0,
+      "evaluable_total": 385,
+      "strict_pct": 59.5,
+      "evaluable_pct": 59.5
+    },
+    "A-MEM": {
+      "pass": 143,
+      "strict_total": 385,
+      "na": 75,
+      "evaluable_total": 310,
+      "strict_pct": 37.1,
+      "evaluable_pct": 46.1
+    },
+    "Lethe+LLM": {
+      "pass": 342,
+      "strict_total": 385,
+      "na": 0,
+      "evaluable_total": 385,
+      "strict_pct": 88.8,
+      "evaluable_pct": 88.8
+    },
+    "LangGraph+LLM": {
+      "pass": 344,
+      "strict_total": 385,
+      "na": 0,
+      "evaluable_total": 385,
+      "strict_pct": 89.4,
+      "evaluable_pct": 89.4
+    }
+  }
+}

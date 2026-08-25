@@ -1,0 +1,63 @@
+{
+  "system": "Cognee v1.5 (chunks)",
+  "suite": "adversarial-385",
+  "shards": 4,
+  "overall_pass": 228,
+  "overall_total": 385,
+  "na": 0,
+  "evaluable": 385,
+  "overall_rate_strict": 0.5922077922077922,
+  "overall_rate_evaluable": 0.5922077922077922,
+  "by_category": {
+    "substring_trap": {
+      "pass": 29,
+      "total": 36,
+      "na": 0
+    },
+    "prefix_collision": {
+      "pass": 0,
+      "total": 39,
+      "na": 0
+    },
+    "paraphrase_supersession": {
+      "pass": 31,
+      "total": 38,
+      "na": 0
+    },
+    "negation_trap": {
+      "pass": 19,
+      "total": 40,
+      "na": 0
+    },
+    "temporal_qualifier": {
+      "pass": 37,
+      "total": 37,
+      "na": 0
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "total": 40,
+      "na": 0
+    },
+    "compound_fact": {
+      "pass": 0,
+      "total": 40,
+      "na": 0
+    },
+    "identifier_obfuscation": {
+      "pass": 38,
+      "total": 38,
+      "na": 0
+    },
+    "cross_lingual_identifier": {
+      "pass": 38,
+      "total": 38,
+      "na": 0
+    },
+    "recursive_supersession": {
+      "pass": 36,
+      "total": 39,
+      "na": 0
+    }
+  }
+}

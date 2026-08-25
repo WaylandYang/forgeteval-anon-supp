@@ -1,0 +1,58 @@
+{
+  "system": "letta",
+  "by_category": {
+    "substring_trap": {
+      "pass": 19,
+      "fail": 17,
+      "na": 0
+    },
+    "prefix_collision": {
+      "pass": 0,
+      "fail": 39,
+      "na": 0
+    },
+    "paraphrase_supersession": {
+      "pass": 32,
+      "fail": 6,
+      "na": 0
+    },
+    "negation_trap": {
+      "pass": 19,
+      "fail": 21,
+      "na": 0
+    },
+    "temporal_qualifier": {
+      "pass": 21,
+      "fail": 16,
+      "na": 0
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "fail": 40,
+      "na": 0
+    },
+    "compound_fact": {
+      "pass": 0,
+      "fail": 40,
+      "na": 0
+    },
+    "identifier_obfuscation": {
+      "pass": 0,
+      "fail": 38,
+      "na": 0
+    },
+    "cross_lingual_identifier": {
+      "pass": 0,
+      "fail": 38,
+      "na": 0
+    },
+    "recursive_supersession": {
+      "pass": 36,
+      "fail": 3,
+      "na": 0
+    }
+  },
+  "model": "deepseek-ai/DeepSeek-V3.1-Terminus",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_total": 385
+}

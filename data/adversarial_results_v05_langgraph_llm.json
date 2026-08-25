@@ -1,0 +1,2650 @@
+[
+  {
+    "adapter": "langmem_llm",
+    "model": "deepseek-ai/DeepSeek-V3",
+    "suite": "adversarial",
+    "case_count": 365,
+    "overall_pass": 339,
+    "overall_total": 365,
+    "overall_rate": 0.9287671232876712,
+    "by_family": {
+      "supersession": {
+        "pass": 110,
+        "total": 125,
+        "rate": 0.88
+      },
+      "purge": {
+        "pass": 97,
+        "total": 105,
+        "rate": 0.9238095238095239
+      },
+      "amnesia": {
+        "pass": 53,
+        "total": 53,
+        "rate": 1.0
+      },
+      "decay": {
+        "pass": 21,
+        "total": 21,
+        "rate": 1.0
+      },
+      "drift": {
+        "pass": 58,
+        "total": 61,
+        "rate": 0.9508196721311475
+      }
+    },
+    "by_attack_category": {
+      "substring_trap": {
+        "pass": 36,
+        "total": 36,
+        "rate": 1.0
+      },
+      "prefix_collision": {
+        "pass": 31,
+        "total": 39,
+        "rate": 0.7948717948717948
+      },
+      "paraphrase_supersession": {
+        "pass": 31,
+        "total": 38,
+        "rate": 0.8157894736842105
+      },
+      "negation_trap": {
+        "pass": 38,
+        "total": 40,
+        "rate": 0.95
+      },
+      "temporal_qualifier": {
+        "pass": 37,
+        "total": 37,
+        "rate": 1.0
+      },
+      "shared_attribute": {
+        "pass": 40,
+        "total": 40,
+        "rate": 1.0
+      },
+      "compound_fact": {
+        "pass": 34,
+        "total": 40,
+        "rate": 0.85
+      },
+      "identifier_obfuscation": {
+        "pass": 18,
+        "total": 18,
+        "rate": 1.0
+      },
+      "cross_lingual_identifier": {
+        "pass": 38,
+        "total": 38,
+        "rate": 1.0
+      },
+      "recursive_supersession": {
+        "pass": 36,
+        "total": 39,
+        "rate": 0.9230769230769231
+      }
+    },
+    "per_case": [
+      {
+        "id": "adv_substring_trap_01",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_02",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_03",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_04",
+        "family": "decay",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_05",
+        "family": "drift",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_06",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_07",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_08",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_11",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_14",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_12",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_13",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_15",
+        "family": "drift",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_16",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_18",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_17",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_19",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_20",
+        "family": "decay",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_21",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_22",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_26",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_27",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_24",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_25",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_30",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_28",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_31",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_32",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_33",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_35",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_36",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_34",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_37",
+        "family": "supersession",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_38",
+        "family": "purge",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_39",
+        "family": "amnesia",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_substring_trap_40",
+        "family": "drift",
+        "attack_category": "substring_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_01",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_02",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_03",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_04",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_05",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_06",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_07",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_08",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_09",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_10",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_11",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_12",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_13",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_14",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_15",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_16",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_17",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_18",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_19",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_20",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_21",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_22",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_23",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_24",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_25",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_26",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_27",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_28",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_30",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_32",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_31",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_33",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_34",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_35",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_36",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_37",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_38",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_39",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_prefix_collision_40",
+        "family": "purge",
+        "attack_category": "prefix_collision",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_01",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_02",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_03",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_04",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_05",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_06",
+        "family": "drift",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_07",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_08",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_09",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_10",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_11",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_12",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_13",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_14",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_15",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_16",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_17",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_18",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_20",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_21",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_22",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_23",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_24",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_25",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_26",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_27",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_28",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_29",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_30",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_31",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_33",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_34",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_35",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_37",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_38",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_36",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_39",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_paraphrase_supersession_40",
+        "family": "supersession",
+        "attack_category": "paraphrase_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_01",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_02",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_03",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_04",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_05",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_06",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_07",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_08",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_09",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_10",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_11",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_12",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_13",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_14",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_15",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_16",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_17",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_18",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_19",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_20",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_21",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_22",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_23",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_24",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_25",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_26",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_27",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_28",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_29",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_30",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_31",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_32",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_33",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_34",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_35",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_36",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_37",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_38",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_39",
+        "family": "supersession",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_negation_trap_40",
+        "family": "decay",
+        "attack_category": "negation_trap",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_01",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_02",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_03",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_04",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_05",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_06",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_07",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_08",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_09",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_10",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_11",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_12",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_13",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_14",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_15",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_16",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_17",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_18",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_19",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_20",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_22",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_23",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_24",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_25",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_26",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_27",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_28",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_29",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_30",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_31",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_33",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_34",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_36",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_37",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_38",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_39",
+        "family": "drift",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_temporal_qualifier_40",
+        "family": "supersession",
+        "attack_category": "temporal_qualifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_01",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_02",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_03",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_04",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_05",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_06",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_07",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_08",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_09",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_10",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_11",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_12",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_13",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_14",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_15",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_16",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_17",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_18",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_19",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_20",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_21",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_22",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_23",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_24",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_25",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_26",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_27",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_28",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_29",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_30",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_31",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_32",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_33",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_34",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_35",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_36",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_37",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_38",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_39",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_shared_attribute_40",
+        "family": "amnesia",
+        "attack_category": "shared_attribute",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_01",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_02",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_03",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_04",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_05",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_06",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_07",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_08",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_09",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_10",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_11",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_12",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_13",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_14",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_15",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_16",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_17",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_18",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_19",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_20",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_21",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_22",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_23",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_24",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_25",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_26",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_27",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_28",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_29",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_30",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_31",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_32",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_33",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_34",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_35",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_36",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_37",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_38",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_39",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_compound_fact_40",
+        "family": "supersession",
+        "attack_category": "compound_fact",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_01",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_02",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_03",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_04",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_05",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_06",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_07",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_08",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_09",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_10",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_11",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_12",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_13",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_14",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_15",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_16",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_17",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_identifier_obfuscation_18",
+        "family": "purge",
+        "attack_category": "identifier_obfuscation",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_01",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_02",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_03",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_04",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_05",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_06",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_07",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_08",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_09",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_10",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_11",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_12",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_13",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_14",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_15",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_16",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_17",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_19",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_20",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_21",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_22",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_24",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_23",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_25",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_26",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_27",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_30",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_28",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_29",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_31",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_32",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_33",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_34",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_35",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_37",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_38",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_39",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_cross_lingual_identifier_40",
+        "family": "purge",
+        "attack_category": "cross_lingual_identifier",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_01",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_02",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_03",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_04",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_05",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_06",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_07",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_08",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_09",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_10",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_11",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_12",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_13",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_14",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_15",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_16",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_17",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_18",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": false,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_19",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_20",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_21",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_22",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_23",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_24",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_25",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_26",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_27",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_28",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_29",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_30",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_31",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_32",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_33",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_35",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_36",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_37",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_38",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_39",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      },
+      {
+        "id": "adv_recursive_supersession_40",
+        "family": "drift",
+        "attack_category": "recursive_supersession",
+        "passed": true,
+        "error": null
+      }
+    ],
+    "wall_seconds": 737.94584819999,
+    "llm_calls": 425,
+    "llm_cache_hits": 2
+  }
+]

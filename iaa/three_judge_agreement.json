@@ -1,0 +1,208 @@
+{
+  "summary": {
+    "n_cases": 100,
+    "agreement_rates": {
+      "Claude__vs__Qwen-2.5-72B": 0.8,
+      "Claude__vs__Human-majority": 0.99,
+      "Claude__vs__DeepSeek-V3": 0.59,
+      "Qwen-2.5-72B__vs__Human-majority": 0.79,
+      "DeepSeek-V3__vs__Human-majority": 0.58,
+      "Qwen-2.5-72B__vs__DeepSeek-V3": 0.73
+    },
+    "per_judge_distribution": {
+      "Qwen-2.5-72B": {
+        "true": 92,
+        "false": 8
+      },
+      "Claude": {
+        "true": 88,
+        "false": 12
+      },
+      "DeepSeek-V3": {
+        "true": 71,
+        "false": 29
+      },
+      "Human-majority": {
+        "false": 13,
+        "true": 87
+      }
+    },
+    "unanimous_wf": 55,
+    "unanimous_ill": 0,
+    "any_disagreement": 45
+  },
+  "pairwise": {
+    "Claude__vs__Qwen-2.5-72B": {
+      "matches": 80,
+      "total": 100,
+      "rate": 0.8
+    },
+    "Claude__vs__Human-majority": {
+      "matches": 99,
+      "total": 100,
+      "rate": 0.99
+    },
+    "Claude__vs__DeepSeek-V3": {
+      "matches": 59,
+      "total": 100,
+      "rate": 0.59
+    },
+    "Qwen-2.5-72B__vs__Human-majority": {
+      "matches": 79,
+      "total": 100,
+      "rate": 0.79
+    },
+    "DeepSeek-V3__vs__Human-majority": {
+      "matches": 58,
+      "total": 100,
+      "rate": 0.58
+    },
+    "Qwen-2.5-72B__vs__DeepSeek-V3": {
+      "matches": 73,
+      "total": 100,
+      "rate": 0.73
+    }
+  },
+  "claude_qwen_disagreements": [
+    {
+      "case_id": "adv_compound_fact_35",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_compound_fact_07",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_compound_fact_25",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_compound_fact_02",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_03",
+      "qwen": false,
+      "claude": true,
+      "deepseek": false,
+      "human_majority": true
+    },
+    {
+      "case_id": "adv_compound_fact_22",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_compound_fact_04",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_prefix_collision_16",
+      "qwen": false,
+      "claude": true,
+      "deepseek": true,
+      "human_majority": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_02",
+      "qwen": false,
+      "claude": true,
+      "deepseek": true,
+      "human_majority": true
+    },
+    {
+      "case_id": "adv_compound_fact_10",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_08",
+      "qwen": false,
+      "claude": true,
+      "deepseek": false,
+      "human_majority": true
+    },
+    {
+      "case_id": "adv_compound_fact_33",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_07",
+      "qwen": false,
+      "claude": true,
+      "deepseek": false,
+      "human_majority": true
+    },
+    {
+      "case_id": "adv_compound_fact_37",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_compound_fact_09",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_28",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_prefix_collision_07",
+      "qwen": false,
+      "claude": true,
+      "deepseek": true,
+      "human_majority": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_02",
+      "qwen": false,
+      "claude": true,
+      "deepseek": false,
+      "human_majority": true
+    },
+    {
+      "case_id": "adv_prefix_collision_23",
+      "qwen": true,
+      "claude": false,
+      "deepseek": true,
+      "human_majority": false
+    },
+    {
+      "case_id": "adv_shared_attribute_04",
+      "qwen": false,
+      "claude": true,
+      "deepseek": false,
+      "human_majority": true
+    }
+  ]
+}

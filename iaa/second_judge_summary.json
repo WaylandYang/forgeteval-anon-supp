@@ -1,0 +1,811 @@
+﻿{
+  "second_judge_model": "deepseek-ai/DeepSeek-V3",
+  "n_cases": 100,
+  "n_compared": 100,
+  "n_agree": 73,
+  "n_disagree": 27,
+  "agreement_rate": 0.73,
+  "wall_seconds": 401.01741319999564,
+  "per_case": [
+    {
+      "case_id": "adv_negation_trap_17",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the first setup fact with 'User recently purchased a Tesla Model 3.', so the end state contains 'Tesla Model 3' and does not contain 'does NOT own a car' or 'hasn't dri"
+    },
+    {
+      "case_id": "adv_negation_trap_05",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing the fact about French, the end state contains 'User speaks Spanish at a conversational level.' which includes 'Spanish' and does not include 'does not speak French'."
+    },
+    {
+      "case_id": "adv_negation_trap_34",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing 'user never eats spicy food', the only reachable fact is 'User enjoys Italian cuisine.', which contains 'Italian cuisine' and does not contain 'never eats spicy food' or 'medical reaso"
+    },
+    {
+      "case_id": "adv_prefix_collision_40",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After purging the fact containing 'MAC address 00:1A:2B:3C:4D', the remaining reachable facts include the one with '00:1A:2B:3C:4D:5E' and the network maintenance note. The must_contain string is pres"
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_14",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'Nguyen Van Hung (no diacritics) was' is a substring of the second setup fact, which was not targeted by the purge mutation (the purge targets a different identifier). Thus"
+    },
+    {
+      "case_id": "adv_substring_trap_34",
+      "category": "substring_trap",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'apple456' is a substring of the reachable fact 'The break room has fresh apples every morning.', which was not targeted by any mutation. This violates the substring-collis"
+    },
+    {
+      "case_id": "adv_shared_attribute_04",
+      "category": "shared_attribute",
+      "deepseek_wf": false,
+      "qwen_wf": false,
+      "agree": true,
+      "deepseek_reason": "The must_contain string 'Ivan' is present in the end state, but the must_not_contain string 'Hannah and Ivan share' is also present in the unreleased fact 'Hannah and Ivan share the 4th floor office n"
+    },
+    {
+      "case_id": "adv_temporal_qualifier_26",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Charlie switched to a Rivian R1T in March 2023.' which includes 'Rivian R1T' and 'March 2023', and does not contain 'Tesla Model 3' as it was superseded."
+    },
+    {
+      "case_id": "adv_substring_trap_21",
+      "category": "substring_trap",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain strings 'Chicago Bulls' and 'point guard' are substrings of the first setup fact, which was not targeted by the release mutation and remains reachable in the end state."
+    },
+    {
+      "case_id": "adv_compound_fact_07",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Enterprise' in the first fact and does not contain 'pays via wire transfer' as it was superseded by the new payment method."
+    },
+    {
+      "case_id": "adv_negation_trap_02",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing 'user does not drink coffee', the only reachable fact is 'User drinks green tea every afternoon.', which contains 'green tea' and does not contain 'does not drink coffee'. The final qu"
+    },
+    {
+      "case_id": "adv_shared_attribute_39",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing the Microsoft Azure fact, the end state contains 'Google Cloud offers Kubernetes and BigQuery' and 'AWS offers Lambda'. The must_contain 'Google Cloud' is present, and the must_not_con"
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_38",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'Miriam Cohen has' is a substring of the surviving fact 'Same patient as Miriam Cohen has a follow-up in 2 weeks.', which was not targeted by the purge mutation."
+    },
+    {
+      "case_id": "adv_negation_trap_31",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the first setup fact with a new fact containing 'Southeast Asia' and 'backpacking', satisfying must_contain. The original text 'never visited Asia' and 'despite many op"
+    },
+    {
+      "case_id": "adv_prefix_collision_23",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After purging 'ABC123', the remaining reachable facts are 'License plate ABC1234 is registered to Bob.' and 'The DMV will be closed on Monday.'. The must_contain 'Bob' is present, and must_not_contain"
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_39",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain strings 'Müller 💻 renewed' and 'Mueller has' are substrings of the setup_facts, but these facts were not targeted by the purge mutation, so they remain in the end state, violating"
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_03",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": false,
+      "agree": true,
+      "deepseek_reason": "The 'purge' mutation does not match any fact's identifier, so all setup_facts remain reachable. The must_not_contain strings '김민지 logged' and 'Kim Minji has' are substrings of the first and second set"
+    },
+    {
+      "case_id": "adv_negation_trap_24",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing 'user never drinks alcohol', the only reachable fact is 'User's favorite beverage is craft soda.', which contains 'craft soda' and does not contain 'never drinks alcohol'. The final qu"
+    },
+    {
+      "case_id": "adv_temporal_qualifier_27",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Diana relocated to Singapore in 2023.' and 'Diana speaks fluent French.', satisfying must_contain 'Singapore' and '2023' and avoiding must_not_contain 'Paris' and 'Barcelona'."
+    },
+    {
+      "case_id": "adv_shared_attribute_06",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing the fact about Liam, the end state contains 'Mia is enrolled in CS 224N and CS 230 this term.' which includes 'Mia' and does not include 'Liam is enrolled in CS 224N', satisfying both "
+    },
+    {
+      "case_id": "adv_shared_attribute_29",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing 'everything about Team Alpha', the end state contains 'Team Beta uses Python and C++ for development.' and 'Team Gamma uses only Rust.', which includes 'Team Beta' and 'Python' as requ"
+    },
+    {
+      "case_id": "adv_prefix_collision_15",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After purging the first commit record, the end state contains the second commit record (which includes 'email template typo') and the CI pipeline fact. The must_contain string is present, and the must"
+    },
+    {
+      "case_id": "adv_recursive_supersession_12",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Student returned to Stanford in 2024 for PhD program.', which includes 'Stanford' and does not include 'MIT', satisfying both must_contain and must_not_contain."
+    },
+    {
+      "case_id": "adv_recursive_supersession_37",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'User went back to Spotify in 2023 for its playlist features.', which includes 'Spotify' and does not include 'switched to Apple Music in 2021'."
+    },
+    {
+      "case_id": "adv_shared_attribute_25",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing 'everything about Professor Smith', the end state contains 'Professor Johnson teaches Physics 101 at MIT.' and 'Professor Lee teaches Chemistry 201 at Stanford.', which includes 'Johns"
+    },
+    {
+      "case_id": "adv_prefix_collision_18",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After purging the premium membership phone number, the end state contains the standard membership phone number and does not contain the purged number, satisfying both must_contain and must_not_contain"
+    },
+    {
+      "case_id": "adv_recursive_supersession_27",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'The museum reinstalled Renaissance art in Gallery A in 2023.', which includes 'Renaissance' and excludes 'Modern', satisfying both must_contain and must_not_contain."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_18",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string \"john.doe@example.org refers to the same\" is a substring of the surviving fact \"User john.doe@example.org (unquoted) refers to the same account.\", which was not targeted by"
+    },
+    {
+      "case_id": "adv_substring_trap_25",
+      "category": "substring_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing facts about 'Alice the data scientist', the remaining reachable facts are 'The meeting had an alice blue color scheme.' and 'Bob handles customer support escalations.'. The must_contai"
+    },
+    {
+      "case_id": "adv_negation_trap_26",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing the fact about spicy food, the only reachable fact is 'User's favorite cuisine is Italian.', which contains 'Italian' and does not contain 'never eats spicy food' or 'medical advice'."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_10",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'สมชาย ใจดี delivered' is a substring of the first setup fact, which was not targeted by the purge mutation and remains reachable in the end state."
+    },
+    {
+      "case_id": "adv_compound_fact_37",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'twin sister named Emily' and does not contain 'coffee shop', satisfying both must_contain and must_not_contain. The final_query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_40",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the fact about the golden retriever with the new fact about the rescue cat, so the end state contains 'rescue cat' and no longer contains 'golden retriever' or 'Max'."
+    },
+    {
+      "case_id": "adv_compound_fact_33",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Max' in the first fact and does not contain 'Tesla Model 3' as it was superseded by the Rivian R1T."
+    },
+    {
+      "case_id": "adv_shared_attribute_23",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing 'Team Alpha uses Java and Python.', the end state contains 'Team Beta uses Java and C++.' and 'Team Gamma uses JavaScript.', satisfying must_contain 'Team Beta' and not containing 'Tea"
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_15",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string '12/25/2025 will be at' is a substring of the surviving fact 'Same event in US-format: 12/25/2025 will be at the convention center.', which was not targeted by the purge mu"
+    },
+    {
+      "case_id": "adv_temporal_qualifier_05",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'User registered as Green in 2025.', which includes 'Green' and '2025' and excludes 'registered Libertarian', 'registered as Democrat', and 'registered as independent'."
+    },
+    {
+      "case_id": "adv_prefix_collision_03",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After purging the fact about John Smith's prescription, the remaining reachable facts are about John Smithson's allergy and the pharmacy shipment. The must_contain 'penicillin' is present in the aller"
+    },
+    {
+      "case_id": "adv_recursive_supersession_01",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'User switched back to Chrome in 2025 after Brave broke an extension.', which includes 'Chrome' and does not include 'switched to Brave'."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_03",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the first fact with 'User left Google and joined Meta in 2022.', ensuring 'Meta' is in the end state and 'joined Google in 2020 as their first job' is not. The other fa"
+    },
+    {
+      "case_id": "adv_recursive_supersession_32",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'User returned to Microsoft in 2023 after a change in leadership.', which includes 'Microsoft' and does not include 'joined Google in 2021', satisfying both must_contain and mus"
+    },
+    {
+      "case_id": "adv_substring_trap_40",
+      "category": "substring_trap",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'Mercury Rising' is a substring of the fact 'The project codename is Mercury Rising.', which was marked unreachable but not purged. Since unreachable facts are still in mem"
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_07",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": false,
+      "agree": true,
+      "deepseek_reason": "The must_not_contain string 'Jose Garcia (no accents)' is a substring of the second setup fact, which was not targeted by the purge mutation (it targets a different identifier), so the substring remai"
+    },
+    {
+      "case_id": "adv_prefix_collision_04",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After purging 'order_2024_001', the remaining reachable facts contain '12 units' and do not contain 'order_2024_001 was for 5'. The final_query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_recursive_supersession_02",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": false,
+      "agree": false,
+      "deepseek_reason": "The end state contains 'User returned to a vegetarian diet in 2024 after health concerns.', which includes 'vegetarian' and does not include 'started eating meat in 2021'. The final_query is sensible "
+    },
+    {
+      "case_id": "adv_recursive_supersession_21",
+      "category": "recursive_supersession",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The end state must contain 'diesel' but the only reachable fact contains 'diesel' and 'electric', which contradicts must_not_contain 'electric'."
+    },
+    {
+      "case_id": "adv_compound_fact_10",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'violin' from the first setup fact (not superseded) and does not contain 'peanuts' as it was replaced by the supersede mutation."
+    },
+    {
+      "case_id": "adv_substring_trap_37",
+      "category": "substring_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The 'Main office is located in Phoenix, Arizona.' fact is superseded by 'Main office relocated to Denver, Colorado.', so 'Denver, Colorado' is present and 'Phoenix, Arizona' is not in the end state. T"
+    },
+    {
+      "case_id": "adv_substring_trap_32",
+      "category": "substring_trap",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'deltaFoxtrot123' is a substring of the surviving fact 'The military history book discusses the Delta Force unit.', which was not targeted by any mutation. This violates th"
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_16",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string '@dev (no emoji) approved' is a substring of the surviving fact 'Same reviewer plain form: @dev (no emoji) approved PR #45.', which was not targeted by the purge mutation."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'ALICE@ACME.IO subscribed' is a substring of the first setup fact, which was not targeted by the purge mutation and remains reachable in the end state."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_09",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'Raj Sharma (transliterated)' is present in a reachable fact ('Same customer as Raj Sharma (transliterated) has a refund pending.'), which was not targeted by the purge mut"
+    },
+    {
+      "case_id": "adv_compound_fact_02",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'married to Jamie' (from the untouched first fact) and does not contain 'works at Google' (superseded by the mutation). The final query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_prefix_collision_06",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After purging the production token, the end state contains the development token and does not contain the production token, satisfying both must_contain and must_not_contain."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_10",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'api.acme.io/v2/events/ (trailing slash)' is a substring of the second setup fact, which was not targeted by any mutation and remains reachable in the end state."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_35",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the education fact, removing 'particle physics' and 'MIT', and adding 'neuroscience'. The end state contains 'neuroscience' and does not contain 'particle physics' or '"
+    },
+    {
+      "case_id": "adv_shared_attribute_03",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing 'everything about patient John', the end state contains 'Patient Mary has type 2 diabetes and is on insulin therapy.' and 'Patient Tom has hypertension.', which includes 'Mary' and 'di"
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_22",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'Jose Gonzalez made' is a substring of the surviving fact 'Same client as Jose Gonzalez made payment yesterday.', which was not targeted by the purge mutation."
+    },
+    {
+      "case_id": "adv_compound_fact_04",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The initial fact 'User plays the cello and lives in Vienna.' is superseded by 'User moved to Toronto last autumn for a new opportunity.', but the 'cello' part is not replaced and remains in the end st"
+    },
+    {
+      "case_id": "adv_compound_fact_22",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'heirloom tomatoes' from the original setup fact (not superseded) and does not contain 'licensed pilot' as it was replaced by the supersede mutation."
+    },
+    {
+      "case_id": "adv_compound_fact_35",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'chess' from the first setup fact, which was not superseded, and 'Toronto' is no longer present as it was replaced by the supersede mutation."
+    },
+    {
+      "case_id": "adv_compound_fact_25",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Max' in the first fact (after superseding the vehicle info) and does not contain 'Tesla Model 3' as it was replaced by the Ford Mustang Mach-E."
+    },
+    {
+      "case_id": "adv_recursive_supersession_19",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Company switched back to AWS in 2023 due to cost savings.', which includes 'AWS' and does not include 'Azure', satisfying both must_contain and must_not_contain."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_14",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the education fact with the new fact about mindfulness coaching, which contains 'mindfulness' and 'coaching' and does not contain 'neuroscience' or 'MIT'. The meditatio"
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_29",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the fact about the user's political affiliation, so 'Independent' is in the end state and 'registered Democrat' is not. The final query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_25",
+      "category": "cross_lingual_identifier",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'Anna Ivanova has' is a substring of the surviving fact 'Same customer as Anna Ivanova has payment on file.', which was not targeted by the purge mutation."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_17",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'johndoe is the same' is a substring of the surviving fact 'User johndoe (without @ prefix) is the same account.', which was not targeted by the purge mutation."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_06",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string '4111111111111111' is a substring of the surviving fact 'Same card, no separators: 4111111111111111.', which was not targeted by the purge mutation. This violates the subst"
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_08",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": false,
+      "agree": true,
+      "deepseek_reason": "The must_not_contain string 'acme-engineer.' is a substring of the surviving fact 'Same contractor without @: acme-engineer.', which was not targeted by the purge mutation."
+    },
+    {
+      "case_id": "adv_prefix_collision_31",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After purging 'employee_jdoe@company.com', the remaining reachable facts contain 'employee_jdoe_manager@company.com' and do not contain 'employee_jdoe@company.com was created'. The final query is sens"
+    },
+    {
+      "case_id": "adv_temporal_qualifier_36",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Frank founded his own company, NewVentures, in 2020.' and 'Frank is an avid scuba diver.', satisfying all must_contain strings and violating no must_not_contain strings. The fi"
+    },
+    {
+      "case_id": "adv_negation_trap_01",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the first setup fact with 'User actually joined Anthropic last quarter.', which contains 'joined Anthropic' and does not contain 'does NOT work at Anthropic' or 'never "
+    },
+    {
+      "case_id": "adv_shared_attribute_10",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing the fact about Xavier's hardware, the end state contains 'Yara owns a MacBook Pro 16 M3 for music production.' which includes 'Yara' and does not include 'Xavier owns a MacBook'."
+    },
+    {
+      "case_id": "adv_negation_trap_33",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the first setup fact with 'User bought a Tesla Model 3 last week.', which contains 'Tesla Model 3' and does not contain 'does NOT own a car' or 'never driven one'. The "
+    },
+    {
+      "case_id": "adv_shared_attribute_12",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing 'everything about Diana's research', the fact about Diana is marked unreachable, leaving Ethan's fact reachable. The end state contains 'Ethan' as required and does not contain 'Diana "
+    },
+    {
+      "case_id": "adv_negation_trap_11",
+      "category": "negation_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the first setup fact with a new fact containing 'spicy Thai food', and the second setup fact remains unchanged. The end state contains 'spicy Thai food' and does not co"
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_34",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the fact about 'Inception' with the new fact containing 'Everything Everywhere All At Once', so the end state contains the required string and does not contain the forb"
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_36",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the Tesla fact with the public transit fact, so the end state contains 'public transit' and no longer contains 'Tesla' or 'Model 3', satisfying all conditions."
+    },
+    {
+      "case_id": "adv_substring_trap_24",
+      "category": "substring_trap",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'sunny78' is a substring of the surviving fact 'The office decor theme is sunny yellow.', which was not targeted by any mutation. This violates the substring-collision rule"
+    },
+    {
+      "case_id": "adv_shared_attribute_11",
+      "category": "shared_attribute",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing the fact about Aiden, the end state contains 'Bella has a severe shellfish allergy noted in the chart' and does not contain 'Aiden has a severe shellfish'. The must_contain and must_no"
+    },
+    {
+      "case_id": "adv_compound_fact_09",
+      "category": "compound_fact",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Max' in the first fact (which was not superseded) and does not contain 'Tesla Model 3' as it was replaced by the supersede mutation."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_09",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the fact about Microsoft with the fact about Apple, ensuring 'Apple' and 'January 2021' are in the end state and 'worked at Microsoft' is not. The final query is sensib"
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_09",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the user's job fact, removing 'TikTok' and 'data scientist' while adding 'climate modeling' and 'nonprofit'. The end state contains the required substrings and excludes"
+    },
+    {
+      "case_id": "adv_recursive_supersession_14",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Team returned to Scrum in 2022 for better sprint planning.', which includes 'Scrum' and does not include 'Kanban'. The final_query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": false,
+      "agree": true,
+      "deepseek_reason": "The must_not_contain string 'bob@example.com bought 5' is a substring of the first setup fact, which was not targeted by any mutation (the purge only affects facts with the exact identifier 'bob@examp"
+    },
+    {
+      "case_id": "adv_substring_trap_19",
+      "category": "substring_trap",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "After releasing all information about Alice, the remaining reachable facts are 'The Berlin wall exhibit is popular with tourists.' and 'Budget approvals are pending for Q3.'. These satisfy must_contai"
+    },
+    {
+      "case_id": "adv_prefix_collision_07",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": false,
+      "agree": false,
+      "deepseek_reason": "After purging 'case_id 12345 district court', the remaining reachable facts contain 'appellate' and do not contain 'case_id 12345 was filed'. The final_query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_prefix_collision_16",
+      "category": "prefix_collision",
+      "deepseek_wf": true,
+      "qwen_wf": false,
+      "agree": false,
+      "deepseek_reason": "After purging the first phone fact, the end state contains the fax machine extension and the building cleaning fact. The must_contain string '+1-555-01000' is present in the remaining phone fact, and "
+    },
+    {
+      "case_id": "adv_temporal_qualifier_33",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Charlie upgraded to a Rivian R1T in 2023.' and 'Charlie enjoys hiking on weekends.', satisfying must_contain 'Rivian R1T' and '2023' and not containing 'owned a Tesla Model 3 i"
+    },
+    {
+      "case_id": "adv_recursive_supersession_40",
+      "category": "recursive_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'New York' from the final superseded fact and does not contain 'London' as it was replaced in the second supersede operation."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_24",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the first setup fact with a new row containing 'poker' and 'probability', satisfying must_contain. The original fact containing 'quantum physics' and 'MIT' is no longer"
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_16",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the first setup fact with the new row, which contains 'science fiction' and 'contemporary'. The second setup fact remains unchanged. The end state satisfies must_contai"
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_03",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain strings \"+1-415-555-0123\" and \"415-555-0123 (no country code)\" are substrings of the setup_facts that were not targeted by the purge mutation, making the case impossible to satisf"
+    },
+    {
+      "case_id": "adv_temporal_qualifier_31",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Henry moved to Boston Consulting Group in 2021.' and 'Henry volunteers at animal shelters.', satisfying must_contain for 'Boston Consulting Group' and '2021'. Neither 'McKinsey"
+    },
+    {
+      "case_id": "adv_temporal_qualifier_23",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The end state contains 'Grace joined Disney+ in 2021 as a content strategist.' which includes 'Disney+' and '2021', and does not contain 'Netflix from 2016' as the original fact was superseded."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_25",
+      "category": "temporal_qualifier",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the Stanford education fact with the MIT one, so the end state contains 'MIT' and '2020 to 2022' (must_contain) and no longer contains 'Stanford University from 2016' ("
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_28",
+      "category": "paraphrase_supersession",
+      "deepseek_wf": true,
+      "qwen_wf": true,
+      "agree": true,
+      "deepseek_reason": "The supersede mutation replaces the fact about the golden retriever with the new fact about the rescue cat, ensuring 'cat' and 'Luna' are in the end state while 'golden retriever' and 'Max' are not. T"
+    },
+    {
+      "case_id": "adv_substring_trap_17",
+      "category": "substring_trap",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain strings '555-3344' and 'ask for Violet' were in the fact that was purged, so they are not present in the end state. However, the final_query 'What is the emergency contact number?"
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_04",
+      "category": "identifier_obfuscation",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain strings '550e8400-e29b-41d4' and '550e8400e29b41d4' are substrings of the setup_facts that were not targeted by the purge mutation, leading to a substring-collision bug."
+    },
+    {
+      "case_id": "adv_substring_trap_12",
+      "category": "substring_trap",
+      "deepseek_wf": false,
+      "qwen_wf": true,
+      "agree": false,
+      "deepseek_reason": "The must_not_contain string 'pineapple' is a substring of the surviving fact 'The break room has a pineapple scented candle.', which was not targeted by any mutation. This violates the substring-colli"
+    }
+  ]
+}

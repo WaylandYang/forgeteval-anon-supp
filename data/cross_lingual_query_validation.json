@@ -1,0 +1,46 @@
+{
+ "null": {
+  "v06": {
+   "pass": 0,
+   "total": 38
+  },
+  "v07": {
+   "pass": 0,
+   "total": 38
+  },
+  "v07_overall": 20
+ },
+ "nuke": {
+  "v06": {
+   "pass": 0,
+   "total": 38
+  },
+  "v07": {
+   "pass": 0,
+   "total": 38
+  },
+  "v07_overall": 155
+ },
+ "normalize": {
+  "v06": {
+   "pass": 37,
+   "total": 38
+  },
+  "v07": {
+   "pass": 29,
+   "total": 38
+  },
+  "v07_overall": 234
+ },
+ "oracle": {
+  "v06": {
+   "pass": 38,
+   "total": 38
+  },
+  "v07": {
+   "pass": 38,
+   "total": 38
+  },
+  "v07_overall": 329
+ }
+}

@@ -1,0 +1,49 @@
+{
+  "variant": "v0_original",
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "overall_pass": 353,
+  "overall_total": 385,
+  "overall_rate": 0.9168831168831169,
+  "by_category": {
+    "substring_trap": {
+      "p": 36,
+      "t": 36
+    },
+    "prefix_collision": {
+      "p": 32,
+      "t": 39
+    },
+    "paraphrase_supersession": {
+      "p": 31,
+      "t": 38
+    },
+    "negation_trap": {
+      "p": 38,
+      "t": 40
+    },
+    "temporal_qualifier": {
+      "p": 37,
+      "t": 37
+    },
+    "shared_attribute": {
+      "p": 40,
+      "t": 40
+    },
+    "compound_fact": {
+      "p": 28,
+      "t": 40
+    },
+    "identifier_obfuscation": {
+      "p": 37,
+      "t": 38
+    },
+    "cross_lingual_identifier": {
+      "p": 38,
+      "t": 38
+    },
+    "recursive_supersession": {
+      "p": 36,
+      "t": 39
+    }
+  }
+}

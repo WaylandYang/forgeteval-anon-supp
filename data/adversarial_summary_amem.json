@@ -1,0 +1,55 @@
+{
+  "system": "amem",
+  "by_category": {
+    "substring_trap": {
+      "pass": 20,
+      "fail": 0,
+      "na": 16
+    },
+    "prefix_collision": {
+      "pass": 0,
+      "fail": 39,
+      "na": 0
+    },
+    "paraphrase_supersession": {
+      "pass": 31,
+      "fail": 7,
+      "na": 0
+    },
+    "negation_trap": {
+      "pass": 19,
+      "fail": 2,
+      "na": 19
+    },
+    "temporal_qualifier": {
+      "pass": 37,
+      "fail": 0,
+      "na": 0
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "fail": 0,
+      "na": 40
+    },
+    "compound_fact": {
+      "pass": 0,
+      "fail": 40,
+      "na": 0
+    },
+    "identifier_obfuscation": {
+      "pass": 38,
+      "fail": 0,
+      "na": 0
+    },
+    "cross_lingual_identifier": {
+      "pass": 38,
+      "fail": 0,
+      "na": 0
+    },
+    "recursive_supersession": {
+      "pass": 36,
+      "fail": 3,
+      "na": 0
+    }
+  }
+}

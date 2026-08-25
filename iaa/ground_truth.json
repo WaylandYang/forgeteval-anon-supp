@@ -1,0 +1,502 @@
+﻿{
+  "adv_negation_trap_17": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_negation_trap_05": {
+    "judge_verdict": true,
+    "judge_reason": "The 'release' mutation marks the fact 'User does not speak French at all' as unreachable, leaving 'User speaks Spanish at a conversational level' as the only reachable fact. The end state satisfies the must_contain requirement for 'Spanish' and the must_not_contain requirement for 'does not speak French'.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_negation_trap_34": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_prefix_collision_40": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_cross_lingual_identifier_14": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes all facts containing 'Nguyen Van Hung' or 'Nguyễn Văn Hùng', leaving only the 'Quarterly OKR review is next Monday.' fact. The end state satisfies the must_not_contain conditions, and the final_query is a sensible question to ask, though it cannot be answered from the remaining facts.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_substring_trap_34": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_shared_attribute_04": {
+    "judge_verdict": false,
+    "judge_reason": "The 'release' mutation marks the fact 'Hannah leads the backend team' as unreachable, but the must_not_contain string 'Hannah and Ivan share' is a substring of the surviving fact 'Hannah and Ivan share the 4th floor office near the elevator', which means the case cannot be well-formed due to the substring-collision bug.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_temporal_qualifier_26": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_substring_trap_21": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_compound_fact_07": {
+    "judge_verdict": true,
+    "judge_reason": "The 'Enterprise' plan is still mentioned in the end state, and the fact about 'pays via wire transfer' has been replaced, so it does not appear in the end state. The final query is sensible and can be answered from the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_negation_trap_02": {
+    "judge_verdict": true,
+    "judge_reason": "The 'release' mutation marks the fact 'User does not drink coffee under any circumstances.' as unreachable, leaving 'User drinks green tea every afternoon.' as the only reachable fact. The end state satisfies the must_contain ['green tea'] and must_not_contain ['does not drink coffee'] conditions, and the final_query is a sensible question to ask.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_shared_attribute_39": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_cross_lingual_identifier_38": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_negation_trap_31": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_prefix_collision_23": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label unsolvable",
+    "source": "v0.5_generated"
+  },
+  "adv_cross_lingual_identifier_39": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_cross_lingual_identifier_03": {
+    "judge_verdict": false,
+    "judge_reason": "The 'purge' mutation removes the fact 'User 김민지 logged in from Seoul.' and 'Same user as Kim Minji has 2FA enabled.', but the final_query asks for Kim Minji's login activity, which cannot be answered from the end state. Additionally, the must_not_contain strings '김민지 logged' and 'Kim Minji has' are substrings of the purged facts, which is a valid condition, but the query is not sensible given the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_negation_trap_24": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_temporal_qualifier_27": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_shared_attribute_06": {
+    "judge_verdict": true,
+    "judge_reason": "Liam's enrollment information is released, leaving only Mia and Noah's information. Mia is still enrolled in CS 224N, and the must_not_contain string is not a substring of any remaining facts.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_shared_attribute_29": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_prefix_collision_15": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes the fact about commit abc1234, leaving the fact about commit abc12345 fixing the email template typo. The end state satisfies the must_contain and must_not_contain conditions, and the final_query is sensible.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_recursive_supersession_12": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_recursive_supersession_37": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_shared_attribute_25": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_prefix_collision_18": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_recursive_supersession_27": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_identifier_obfuscation_18": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_substring_trap_25": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_negation_trap_26": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_cross_lingual_identifier_10": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes the facts containing 'Somchai Jaidee / สมชาย ใจดี vendor', thus the end state does not contain any of the must_not_contain substrings. The final_query is sensible as it asks about information that was present in the setup but has been purged, making it a valid test of memory retention and recall.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_compound_fact_37": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label unsolvable",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_40": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_compound_fact_33": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_shared_attribute_23": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_identifier_obfuscation_15": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes the facts containing '2025-12-25 gala' and '12/25/2025 will be at', leaving only 'Holiday schedule was published.' in the end state. The final_query is sensible and does not contradict the must_contain and must_not_contain assertions.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_temporal_qualifier_05": {
+    "judge_verdict": true,
+    "judge_reason": "The end state contains the fact 'User registered as Green in 2025.' which satisfies the must_contain conditions ('Green', '2025'). The must_not_contain conditions ('registered Libertarian', 'registered as Democrat', 'registered as independent') are not present in the end state, as all previous political registrations were superseded.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_prefix_collision_03": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes the prescription fact for John Smith, leaving the allergy fact for John Smithson intact. The end state contains 'penicillin' and does not contain 'John Smith was prescribed' or 'metformin 500mg', satisfying the must_contain and must_not_contain conditions. The final_query is specific and can be answered from the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_recursive_supersession_01": {
+    "judge_verdict": true,
+    "judge_reason": "The end state contains the fact 'User switched back to Chrome in 2025 after Brave broke an extension.', which literally contains 'Chrome'. The substring 'switched to Brave' is not present in any reachable fact, as it was replaced by the final supersede mutation.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_temporal_qualifier_03": {
+    "judge_verdict": true,
+    "judge_reason": "The 'supersede' mutation replaces the fact about the user's first job at Google with the fact that they joined Meta in 2022. The end state contains 'Meta' and does not contain 'joined Google in 2020 as their first job', satisfying both must_contain and must_not_contain conditions.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_recursive_supersession_32": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_substring_trap_40": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_cross_lingual_identifier_07": {
+    "judge_verdict": false,
+    "judge_reason": "The 'purge' mutation removes all facts containing 'Jose Garcia' or 'José García', but the final_query asks about 'Jose Garcia's plan, which cannot be answered from the end state. Additionally, the must_not_contain strings are substrings of the purged facts, which is a substring-collision bug.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_prefix_collision_04": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes the row containing 'order_2024_001', leaving the row 'Order order_2024_0010 was for 12 units at $150 each.' and 'Warehouse 3 inventory was audited Friday.' in the end state. The end state satisfies 'must_contain' with '12 units' and 'must_not_contain' as 'order_2024_001 was for 5' is no longer present.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_recursive_supersession_02": {
+    "judge_verdict": false,
+    "judge_reason": "The end state contains the fact 'User returned to a vegetarian diet in 2024 after health concerns.' which includes the substring 'started eating meat in 2021' as part of the superseded fact, violating the must_not_contain condition.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_recursive_supersession_21": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_compound_fact_10": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_substring_trap_37": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_substring_trap_32": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_cross_lingual_identifier_16": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes both facts containing '@dev' and '@dev🚀', leaving only the 'CI runner pool was scaled up.' fact. The must_not_contain strings are not present in the remaining fact, and the final_query is a sensible question to ask, though it cannot be answered from the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_identifier_obfuscation_01": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes all facts containing 'alice@acme.io', including the case-normalized version. The end state only contains 'Office lunches are catered on Wednesdays.', which satisfies the must_not_contain conditions and does not contradict the must_contain conditions. The final_query is sensible but cannot be answered from the remaining facts, which is not a requirement for well-formedness.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_cross_lingual_identifier_09": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes all facts containing 'Raj Sharma / राज शर्मा', which eliminates the two facts about the customer. The remaining fact about the holiday calendar does not contain any of the must_not_contain substrings, and the final_query is a sensible question to ask given the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_compound_fact_02": {
+    "judge_verdict": true,
+    "judge_reason": "The end state contains 'User is married to Jamie and' from the original setup, and the fact 'User joined Anthropic as a research engineer.' replaces 'User is married to Jamie and works at Google.' Thus, 'married to Jamie' is still present and 'works at Google' is not, satisfying both must_contain and must_not_contain conditions.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_prefix_collision_06": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes the production token, leaving the development token and the office plants fact. The end state contains 'sk-abc-dev-2c7b' and does not contain 'sk-abc-prod-9f3a', satisfying both must_contain and must_not_contain conditions. The final_query is a sensible question to ask of the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_identifier_obfuscation_10": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes the facts containing 'api.acme.io/v2/events webhook', which includes both the exact and trailing slash variants. The end state does not contain any of the must_not_contain substrings, and the final_query is sensible given the remaining fact about the Slack channel.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_paraphrase_supersession_35": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label unsolvable",
+    "source": "v0.5_generated"
+  },
+  "adv_shared_attribute_03": {
+    "judge_verdict": true,
+    "judge_reason": "After applying the 'release' mutation for 'everything about patient John', the remaining facts are 'Patient Mary has type 2 diabetes and is on insulin therapy.' and 'Patient Tom has hypertension.'. The end state satisfies the must_contain conditions ('Mary', 'diabetes') and the must_not_contain condition ('John has type 2 diabetes') as John's information is no longer reachable.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_cross_lingual_identifier_22": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_compound_fact_04": {
+    "judge_verdict": true,
+    "judge_reason": "The end state contains the fact 'User plays the cello and moved to Toronto last autumn for a new opportunity.' which literally contains 'cello' and does not contain 'lives in Vienna'. The final_query is a sensible question to ask of the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_compound_fact_22": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_compound_fact_35": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_compound_fact_25": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_recursive_supersession_19": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_14": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_29": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_cross_lingual_identifier_25": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_identifier_obfuscation_17": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_identifier_obfuscation_06": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes both card facts, leaving only the 'Office holiday party will be online.' fact. The must_not_contain strings are not present in the remaining fact, and the final_query is a sensible question to ask, though it cannot be answered from the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_identifier_obfuscation_08": {
+    "judge_verdict": false,
+    "judge_reason": "The 'purge' mutation removes the fact 'Contractor @acme-engineer is on the access list.', but the must_not_contain string 'acme-engineer.' is a substring of the surviving fact 'Same contractor without @: acme-engineer.', causing a substring-collision bug.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_prefix_collision_31": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_temporal_qualifier_36": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_negation_trap_01": {
+    "judge_verdict": true,
+    "judge_reason": "The 'supersede' mutation replaces the fact about the user's employment status with a new fact that the user joined Anthropic last quarter. The end state contains 'joined Anthropic' and does not contain 'does NOT work at Anthropic' or 'never interviewed', satisfying the must_contain and must_not_contain conditions. The final_query is a sensible question to ask given the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_shared_attribute_10": {
+    "judge_verdict": true,
+    "judge_reason": "After applying the 'release' mutation, the fact about Xavier's hardware is marked unreachable, leaving only the facts about Yara and Zoe. The end state contains 'Yara owns a MacBook Pro 16 M3 for music production.' which satisfies the must_contain requirement for 'Yara'. The must_not_contain string 'Xavier owns a MacBook' is not a substring of any reachable fact, and the final_query is a sensible question to ask of the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_negation_trap_33": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_shared_attribute_12": {
+    "judge_verdict": true,
+    "judge_reason": "After applying the 'release' mutation, the fact about Diana is marked unreachable, leaving the facts about Ethan and Felix. The end state contains 'Ethan' and does not contain 'Diana co-authored the 2025', satisfying the must_contain and must_not_contain conditions. The final_query is sensible and can be answered from the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_negation_trap_11": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_34": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_36": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_substring_trap_24": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_shared_attribute_11": {
+    "judge_verdict": true,
+    "judge_reason": "After applying the 'release' mutation, Aiden's fact is marked unreachable, leaving Bella's and Caleb's facts. Bella's fact contains the required substring 'Bella', and no reachable fact contains the substring 'Aiden has a severe shellfish'. The final query is sensible given the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_compound_fact_09": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label llm_lift",
+    "source": "v0.5_generated"
+  },
+  "adv_temporal_qualifier_09": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_09": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_recursive_supersession_14": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_identifier_obfuscation_02": {
+    "judge_verdict": false,
+    "judge_reason": "The 'purge' mutation removes all facts containing 'bob@example.com', but the final_query asks about 'bob@example.com', which is a contradiction since no information about 'bob@example.com' should remain in the end state.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_substring_trap_19": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_prefix_collision_07": {
+    "judge_verdict": false,
+    "judge_reason": "The must_not_contain string 'case_id 12345 was filed' is a substring of the surviving fact 'Legal case_id 123456 was filed in appellate court.', which means the case cannot be well-formed due to the substring-collision bug.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_prefix_collision_16": {
+    "judge_verdict": false,
+    "judge_reason": "The must_not_contain string \"+1-555-0100 is the main\" is a substring of the setup fact \"Phone +1-555-0100 is the main office line.\", which was not targeted by the purge mutation, leading to a substring-collision bug.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_temporal_qualifier_33": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_recursive_supersession_40": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_24": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_16": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_identifier_obfuscation_03": {
+    "judge_verdict": true,
+    "judge_reason": "Both phone numbers are purged, leaving the clinic's move as the only fact in the end state. The final_query is sensible as it asks about information that was present in the setup but is now absent, and the must_not_contain conditions are satisfied.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_temporal_qualifier_31": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_temporal_qualifier_23": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_temporal_qualifier_25": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_paraphrase_supersession_28": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label unsolvable",
+    "source": "v0.5_generated"
+  },
+  "adv_substring_trap_17": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  },
+  "adv_identifier_obfuscation_04": {
+    "judge_verdict": true,
+    "judge_reason": "The 'purge' mutation removes both the 'User token' and 'Same user, compact form' facts, leaving only the 'Server maintenance window is Tuesdays.' fact, which does not contain any of the must_not_contain substrings. The final_query is sensible as it asks about a fact that was purged, and the must_contain list is empty, so there are no contradictions.",
+    "source": "hand_crafted_v0.4 + judge"
+  },
+  "adv_substring_trap_12": {
+    "judge_verdict": true,
+    "judge_reason": "admitted by judge with label easy",
+    "source": "v0.5_generated"
+  }
+}

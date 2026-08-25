@@ -1,0 +1,507 @@
+{
+  "n": 75,
+  "results": [
+    {
+      "case_id": "ext_dxy_substring_interference_01",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_substring_interference_02",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_substring_interference_01",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_substring_interference_02",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_substring_interference_01",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_substring_interference_02",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_substring_interference_01",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_substring_interference_02",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_identifier_prefix_collision_01",
+      "category": "prefix_collision",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_identifier_prefix_collision_02",
+      "category": "prefix_collision",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_identifier_prefix_collision_01",
+      "category": "prefix_collision",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_identifier_prefix_collision_02",
+      "category": "prefix_collision",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_identifier_prefix_collision_01",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "error": "TypeError: expected string or bytes-like object, got 'NoneType'"
+    },
+    {
+      "case_id": "ext_dxy_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "error": "TypeError: expected string or bytes-like object, got 'NoneType'"
+    },
+    {
+      "case_id": "ext_dxy2_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "error": "TypeError: expected string or bytes-like object, got 'NoneType'"
+    },
+    {
+      "case_id": "ext_med_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_negation_inconsistency_01",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_negation_inconsistency_02",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_negation_inconsistency_01",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_negation_inconsistency_02",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_negation_inconsistency_01",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_negation_inconsistency_02",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_negation_inconsistency_01",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_negation_inconsistency_02",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "error": "TypeError: expected string or bytes-like object, got 'NoneType'"
+    },
+    {
+      "case_id": "ext_dxy_shared_attribute_01",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_shared_attribute_02",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_shared_attribute_01",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_shared_attribute_02",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_shared_attribute_01",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_shared_attribute_02",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_shared_attribute_01",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_shared_attribute_02",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_partial_fact_mutation_01",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_partial_fact_mutation_02",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_partial_fact_mutation_01",
+      "category": "compound_fact",
+      "passed": false,
+      "error": "TypeError: expected string or bytes-like object, got 'NoneType'"
+    },
+    {
+      "case_id": "ext_dxy2_partial_fact_mutation_02",
+      "category": "compound_fact",
+      "passed": false,
+      "error": "TypeError: expected string or bytes-like object, got 'NoneType'"
+    },
+    {
+      "case_id": "ext_dxy3_partial_fact_mutation_01",
+      "category": "compound_fact",
+      "passed": false,
+      "error": "TypeError: expected string or bytes-like object, got 'NoneType'"
+    },
+    {
+      "case_id": "ext_dxy3_partial_fact_mutation_02",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_partial_fact_mutation_01",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_partial_fact_mutation_02",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "error": "TypeError: expected string or bytes-like object, got 'NoneType'"
+    },
+    {
+      "case_id": "ext_dxy_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_med_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_cyclic_supersession_01",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy_cyclic_supersession_02",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_cyclic_supersession_01",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy2_cyclic_supersession_02",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_cyclic_supersession_01",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "ext_dxy3_cyclic_supersession_02",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    }
+  ],
+  "by_cat": {
+    "substring_trap": {
+      "pass": 8,
+      "fail": 0,
+      "na": 0
+    },
+    "prefix_collision": {
+      "pass": 4,
+      "fail": 1,
+      "na": 0
+    },
+    "paraphrase_supersession": {
+      "pass": 5,
+      "fail": 3,
+      "na": 0
+    },
+    "negation_trap": {
+      "pass": 0,
+      "fail": 8,
+      "na": 0
+    },
+    "temporal_qualifier": {
+      "pass": 5,
+      "fail": 3,
+      "na": 0
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "fail": 8,
+      "na": 0
+    },
+    "compound_fact": {
+      "pass": 0,
+      "fail": 8,
+      "na": 0
+    },
+    "identifier_obfuscation": {
+      "pass": 7,
+      "fail": 1,
+      "na": 0
+    },
+    "cross_lingual_identifier": {
+      "pass": 0,
+      "fail": 8,
+      "na": 0
+    },
+    "recursive_supersession": {
+      "pass": 2,
+      "fail": 4,
+      "na": 0
+    }
+  }
+}

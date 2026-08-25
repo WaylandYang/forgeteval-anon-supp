@@ -1,0 +1,35 @@
+﻿.env
+*.db
+*.sqlite
+*.db-shm
+*.db-wal
+*.sqlite-shm
+*.sqlite-wal
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+logs/
+.DS_Store
+Thumbs.db
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# local experiment scratch
+.cognee_shards/
+.venv-cognee/
+logs/
+
+# local venv for the Graphiti integration (isolated from the main env)
+.venv-graphiti/
+submission/

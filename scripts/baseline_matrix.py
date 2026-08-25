@@ -1,0 +1,247 @@
+"""The baseline matrix the paper reports: what each suite/scorer version
+credits to a store that is not doing the work.
+
+Three reference points, none of which is a memory system:
+
+  null       recall_texts returns []. Cannot pass any case that requires
+             something to survive; passes anything scored only on absence.
+  nuke       deletes the entire store on any mutation. The strongest
+             possible "forgetting", with no selectivity whatsoever.
+  normalize  five lines of Unicode hygiene (NFKC, casefold, combining
+             marks, separators, plus-tags) over a flat row list. Not
+             degenerate -- it is a legitimate cheap alternative, and it is
+             reported in the paper as a baseline rather than as a bug.
+
+and one upper reference:
+
+  oracle     deletes exactly the rows containing a forbidden substring.
+             Establishes that cases are satisfiable, so a suite that
+             crushes the three baselines has not simply become impossible.
+
+Reading the columns left to right is the audit trail of two defects and
+their repairs; every published number is reproducible under each column.
+
+  python scripts/baseline_matrix.py
+"""
+from __future__ import annotations
+
+import json
+import sys
+from collections import defaultdict
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from runs import resolve  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+DATA = ROOT / "data"
+
+from bench.forgeteval.adversarial import (  # noqa: E402
+    ADVERSARIAL_TESTS, case_to_attack_category,
+)
+from bench.forgeteval.repaired import REPAIRED_TESTS  # noqa: E402
+from bench.forgeteval.scoring import run_scored  # noqa: E402
+from scripts.run_degenerate_baselines import (  # noqa: E402
+    NullAdapter, NukeAdapter, NormalizingStore,
+)
+from scripts.repair_cross_lingual_queries import (  # noqa: E402
+    OracleAdapter, build_suite,
+)
+
+CANON = ("identifier_obfuscation", "cross_lingual_identifier")
+
+BASELINES = [
+    ("null", lambda c: NullAdapter()),
+    ("nuke", lambda c: NukeAdapter()),
+    ("normalize", lambda c: NormalizingStore()),
+    ("oracle", lambda c: OracleAdapter(c.must_not_contain)),
+]
+
+
+def evaluate(suite, make_adapter, probed):
+    by_cat = defaultdict(lambda: {"pass": 0, "total": 0})
+    passed = 0
+    for c in suite:
+        ok = run_scored(c, make_adapter(c), probed=probed)
+        cat = case_to_attack_category(c.id)
+        by_cat[cat]["total"] += 1
+        if ok:
+            by_cat[cat]["pass"] += 1
+            passed += 1
+    return passed, dict(by_cat)
+
+
+def main():
+    sys.stdout.reconfigure(encoding="utf-8")
+    v07, n_reduced = build_suite()
+
+    # Columns are named by the requirement each adds, not by the version
+    # it happened to arrive in -- what a reader needs is what each rule
+    # buys, and the development order is ours, not theirs.
+    columns = [
+        ("none", ADVERSARIAL_TESTS, False),
+        ("+ survivor", REPAIRED_TESTS, False),
+        ("+ probing", REPAIRED_TESTS, True),
+        ("+ one-form request", v07, True),
+    ]
+
+    print(f"cross-lingual purge queries reduced to one surface form: "
+          f"{n_reduced}/38\n")
+    header = f"{'baseline':<11}" + "".join(f"{c[0]:>13}" for c in columns)
+    print(header)
+    print("-" * len(header))
+
+    out = {}
+    for name, mk in BASELINES:
+        cells, row = [], {}
+        for label, suite, probed in columns:
+            passed, by_cat = evaluate(suite, mk, probed)
+            canon = sum(by_cat[c]["pass"] for c in CANON)
+            row[label] = {"overall_pass": passed, "overall_total": len(suite),
+                          "canonicalization_pass": canon,
+                          "by_category": by_cat}
+            cells.append(f"{passed:>8}/{len(suite)%1000}")
+        out[name] = row
+        print(f"{name:<11}" + "".join(f"{c:>13}" for c in cells))
+
+    print(f"\n{'baseline':<11}" + "".join(f"{c[0]:>13}" for c in columns)
+          + "   (the two canonicalization categories, /76)")
+    for name, _ in BASELINES:
+        cells = [f"{out[name][label]['canonicalization_pass']:>8}/76"
+                 for label, _, _ in columns]
+        print(f"{name:<11}" + "".join(f"{c:>13}" for c in cells))
+
+    (resolve("baseline_matrix.json")).write_text(
+        json.dumps(out, indent=1), encoding="utf-8")
+    print("\nwrote data/baseline_matrix.json")
+
+    tex = emit_tex(out, [c[0] for c in columns])
+    (ROOT / "paper" / "tab_baselines.tex").write_text(tex, encoding="utf-8")
+    print("wrote paper/tab_baselines.tex")
+
+
+LABEL = {
+    "null": r"\emph{null} (returns nothing)",
+    "nuke": r"\emph{nuke} (deletes everything)",
+    "normalize": r"\emph{normalize} (5 lines, no LLM)",
+    "oracle": r"\emph{oracle} (deletes exactly the target)",
+}
+
+
+def emit_tex(out, cols):
+    """Emit the baseline table so the paper cannot drift from the data."""
+    lines = [
+        r"% generated by scripts/baseline_matrix.py -- do not hand-edit",
+        r"\begin{tabular}{l" + "c" * len(cols) + r"}",
+        r"\toprule",
+        r"\textbf{Reference point} & "
+        + " & ".join(rf"\textbf{{{c}}}" for c in cols) + r"\\",
+        r"\midrule",
+    ]
+    for name in ("null", "nuke", "normalize"):
+        cells = []
+        for c in cols:
+            r = out[name][c]
+            cells.append(f"{100 * r['overall_pass'] / r['overall_total']:.1f}")
+        lines.append(f"{LABEL[name]} & " + " & ".join(cells) + r"\\")
+    lines.append(r"\midrule")
+    r0 = out["oracle"]
+    cells = [f"{100 * r0[c]['overall_pass'] / r0[c]['overall_total']:.1f}"
+             for c in cols]
+    lines.append(f"{LABEL['oracle']} & " + " & ".join(cells) + r"\\")
+    lines += [r"\midrule",
+              r"\multicolumn{" + str(len(cols) + 1)
+              + r"}{l}{\emph{the two canonicalization categories only (\%~of 76)}}\\"]
+    for name in ("null", "nuke", "normalize", "oracle"):
+        cells = [f"{100 * out[name][c]['canonicalization_pass'] / 76:.0f}"
+                 for c in cols]
+        lines.append(f"\\quad {LABEL[name]} & " + " & ".join(cells) + r"\\")
+    measured = load_measured()
+    measured["det"]["+ probing"] = measure_det_probing()
+    if measured:
+        lines += [r"\midrule",
+                  r"\multicolumn{" + str(len(cols) + 1)
+                  + r"}{l}{\emph{measured systems, same adapter, "
+                    r"identical hook}}\\"]
+        for label, key in (("\\quad deterministic (no hook)", "det"),
+                           ("\\quad $+$ mutation-time hook", "hook")):
+            cells = []
+            for c in cols:
+                v = measured[key].get(c)
+                cells.append("---" if v is None else f"{v:.1f}")
+            lines.append(f"{label} & " + " & ".join(cells) + r"\\")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines) + "\n"
+
+
+# run files for the one configuration re-run under every repair
+# Requirement level -> the run that enforces it. Keys must match the
+# column labels in columns[]; they did not, which is why both measured
+# rows printed as "---". "+ probing" has no run of its own: probing and
+# the one-form request were introduced together, so that cell is left
+# empty rather than filled from a neighbouring column.
+P_ = "openrouter_hook_deepseek_deepseek-v4-flash"
+RUNS = {
+    "det": {
+        # the "none" column used to repeat the v06 run on the argument
+        # that the survivor requirement cannot cost a store that already
+        # fails both canonicalization categories. That is an argument,
+        # and the run is free, so it is measured: v05 is 244 and v06 is
+        # 244, which is what the argument predicted.
+        "none": f"{P_}_nollm.json",
+        "+ survivor": f"{P_}_nollm_v06.json",
+        "+ one-form request": f"{P_}_nollm_v07_probed.json",
+    },
+    "hook": {
+        "none": f"{P_}.json",
+        "+ survivor": f"{P_}_v06.json",
+        "+ one-form request": f"{P_}_v07_probed.json",
+    },
+}
+
+
+def measure_det_probing():
+    """The deterministic store's + probing cell, measured rather than left blank.
+
+    No run file sits at (survivor suite, probing on): probing and the
+    one-form request were introduced together, so the cell printed "---"
+    while three places in the paper asserted a value for it -- and two of
+    them disagreed, 244 against 245. Both were right about different
+    columns. The deterministic store needs no API key and no network, so
+    the cell is measured here instead of argued about.
+    """
+    from bench.forgeteval.adapter import LetheAdapter
+    from fastembed import TextEmbedding
+    emb = TextEmbedding("sentence-transformers/all-MiniLM-L6-v2")
+
+    def mk(_c):
+        return LetheAdapter(
+            embedder=lambda s: list(next(iter(emb.embed([s])))))
+
+    passed, _ = evaluate(REPAIRED_TESTS, mk, True)
+    return 100 * passed / len(REPAIRED_TESTS)
+
+
+def load_measured():
+    """Pass rates for the DeepSeek-V4-Flash configuration under each repair.
+
+    The deterministic store is unaffected by the survivor requirement --
+    it already failed both canonicalization categories -- so the same run
+    fills the first two columns.
+    """
+    out = {}
+    for key, files in RUNS.items():
+        row = {}
+        for col, name in files.items():
+            p = resolve(name)
+            if p.exists():
+                d = json.loads(p.read_text(encoding="utf-8-sig"))
+                row[col] = 100 * d["overall_pass"] / d["overall_total"]
+        out[key] = row
+    return out
+
+
+if __name__ == "__main__":
+    main()

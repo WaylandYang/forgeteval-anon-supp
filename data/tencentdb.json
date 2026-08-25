@@ -1,0 +1,64 @@
+{
+  "system": "tencentdb-agent-memory-2.0.0",
+  "suite": "adversarial-385",
+  "overall_pass": 90,
+  "overall_total": 385,
+  "na": 75,
+  "evaluable": 310,
+  "overall_rate_strict": 0.23376623376623376,
+  "overall_rate_evaluable": 0.2903225806451613,
+  "by_category": {
+    "substring_trap": {
+      "pass": 11,
+      "total": 36,
+      "na": 16
+    },
+    "prefix_collision": {
+      "pass": 3,
+      "total": 39,
+      "na": 0
+    },
+    "paraphrase_supersession": {
+      "pass": 0,
+      "total": 38,
+      "na": 0
+    },
+    "negation_trap": {
+      "pass": 0,
+      "total": 40,
+      "na": 19
+    },
+    "temporal_qualifier": {
+      "pass": 0,
+      "total": 37,
+      "na": 0
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "total": 40,
+      "na": 40
+    },
+    "compound_fact": {
+      "pass": 0,
+      "total": 40,
+      "na": 0
+    },
+    "identifier_obfuscation": {
+      "pass": 38,
+      "total": 38,
+      "na": 0
+    },
+    "cross_lingual_identifier": {
+      "pass": 38,
+      "total": 38,
+      "na": 0
+    },
+    "recursive_supersession": {
+      "pass": 0,
+      "total": 39,
+      "na": 0
+    }
+  },
+  "case_errors": 0,
+  "wall_seconds": 2617.709002199932
+}

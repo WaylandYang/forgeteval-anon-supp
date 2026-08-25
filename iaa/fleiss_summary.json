@@ -1,0 +1,410 @@
+{
+  "n_annotators": 10,
+  "n_cases": 100,
+  "fleiss_kappa": 0.9581899847094798,
+  "interpretation": "almost perfect",
+  "P_bar_observed": 0.9906666666666666,
+  "P_e_expected": 0.7767679999999999,
+  "per_case_label_counts": {
+    "adv_compound_fact_02": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_04": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_07": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_09": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_10": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_22": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_25": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_33": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_35": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_compound_fact_37": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_cross_lingual_identifier_03": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_07": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_09": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_10": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_14": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_16": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_22": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_25": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_38": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_cross_lingual_identifier_39": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_01": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_02": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_03": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_04": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_06": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_08": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_10": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_15": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_17": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_identifier_obfuscation_18": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_01": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_02": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_05": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_11": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_17": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_24": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_26": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_31": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_33": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_negation_trap_34": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_09": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_14": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_16": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_24": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_28": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_paraphrase_supersession_29": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_34": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_35": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_36": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_paraphrase_supersession_40": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_prefix_collision_03": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_prefix_collision_04": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_prefix_collision_06": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_prefix_collision_07": {
+      "wf": 9,
+      "ill": 1
+    },
+    "adv_prefix_collision_15": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_prefix_collision_16": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_prefix_collision_18": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_prefix_collision_23": {
+      "wf": 0,
+      "ill": 10
+    },
+    "adv_prefix_collision_31": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_prefix_collision_40": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_01": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_02": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_12": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_14": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_19": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_21": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_27": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_32": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_37": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_recursive_supersession_40": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_03": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_04": {
+      "wf": 9,
+      "ill": 1
+    },
+    "adv_shared_attribute_06": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_10": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_11": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_12": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_23": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_25": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_29": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_shared_attribute_39": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_12": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_17": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_19": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_21": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_24": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_25": {
+      "wf": 4,
+      "ill": 6
+    },
+    "adv_substring_trap_32": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_34": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_37": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_substring_trap_40": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_03": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_05": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_09": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_23": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_25": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_26": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_27": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_31": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_33": {
+      "wf": 10,
+      "ill": 0
+    },
+    "adv_temporal_qualifier_36": {
+      "wf": 10,
+      "ill": 0
+    }
+  }
+}
