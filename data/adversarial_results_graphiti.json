@@ -1,0 +1,2316 @@
+{
+  "system": "graphiti",
+  "model": "deepseek/deepseek-v4-flash",
+  "results": [
+    {
+      "case_id": "adv_substring_trap_04",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_03",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_06",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_05",
+      "category": "substring_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_01",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_07",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_08",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_11",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_02",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_12",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_14",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_13",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_15",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_16",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_17",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_18",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_19",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_22",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_20",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_26",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_21",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_27",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_24",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_25",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_28",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_30",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_32",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_31",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_35",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_33",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_36",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_38",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_37",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_39",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_34",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_substring_trap_40",
+      "category": "substring_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_02",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_01",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_04",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_06",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_05",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_07",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_09",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_10",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_08",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_11",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_12",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_13",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_03",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_14",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_16",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_18",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_17",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_15",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_19",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_21",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_20",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_23",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_22",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_25",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_24",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_26",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_27",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_28",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_32",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_31",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_30",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_33",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_35",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_34",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_36",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_37",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_38",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_39",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_prefix_collision_40",
+      "category": "prefix_collision",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_05",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_03",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_04",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_08",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_11",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_10",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_14",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_13",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_06",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_12",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_09",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_15",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_07",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_17",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_16",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_18",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_20",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_22",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_23",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_25",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_24",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_26",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_29",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_21",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_31",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_27",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_28",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_30",
+      "category": "paraphrase_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_34",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_39",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_38",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_36",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_35",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_33",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_37",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_40",
+      "category": "paraphrase_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_02",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_01",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_04",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_05",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_03",
+      "category": "negation_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_07",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_06",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_10",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_09",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_08",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_11",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_12",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_16",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_18",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_14",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_13",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_19",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_20",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_17",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_22",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_15",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_21",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_24",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_25",
+      "category": "negation_trap",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_26",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_30",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_23",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_28",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_27",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_29",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_32",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_34",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_38",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_33",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_35",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_31",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_39",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_40",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_36",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_negation_trap_37",
+      "category": "negation_trap",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_04",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_05",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_03",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_08",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_06",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_07",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_11",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_09",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_10",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_14",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_13",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_15",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_16",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_17",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_12",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_19",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_22",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_24",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_20",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_23",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_25",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_18",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_26",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_28",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_27",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_33",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_30",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_29",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_31",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_37",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_36",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_40",
+      "category": "temporal_qualifier",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_39",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_01",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_38",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_02",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_05",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_04",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_03",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_07",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_09",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_08",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_06",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_11",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_10",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_16",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_14",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_13",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_15",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_12",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_17",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_18",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_20",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_19",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_21",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_23",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_22",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_24",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_26",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_28",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_27",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_29",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_31",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_30",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_33",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_32",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_34",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_35",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_temporal_qualifier_34",
+      "category": "temporal_qualifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_36",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_37",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_40",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_39",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_38",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_01",
+      "category": "compound_fact",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_02",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_03",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_05",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_08",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_07",
+      "category": "compound_fact",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_06",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_shared_attribute_25",
+      "category": "shared_attribute",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_04",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_09",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_11",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_13",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_12",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_10",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_14",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_16",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_17",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_18",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_21",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_22",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_15",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_20",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_19",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_23",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_25",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_24",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_26",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_28",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_31",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_29",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_27",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_34",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_32",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_33",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_30",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_36",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_38",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_35",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_40",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_39",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_compound_fact_37",
+      "category": "compound_fact",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_04",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_03",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_06",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_05",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_07",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_08",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_09",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_12",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_10",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_13",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_11",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_14",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_16",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_15",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_19",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_21",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_20",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_22",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_23",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_24",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_26",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_25",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_28",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_30",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_29",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_31",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_27",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_32",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_33",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_34",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_37",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_35",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_38",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_36",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_17",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_18",
+      "category": "identifier_obfuscation",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_03",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_04",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_05",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_06",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_07",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_12",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_08",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_11",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_13",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_10",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_09",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_14",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_15",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_17",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_16",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_19",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_21",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_20",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_22",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_23",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_25",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_26",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_24",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_30",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_27",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_31",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_28",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_29",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_32",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_33",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_35",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_37",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_34",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_02",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_01",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_40",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_03",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_04",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_05",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_39",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_07",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_08",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_09",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_11",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_06",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_12",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_13",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_10",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_38",
+      "category": "cross_lingual_identifier",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_14",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_15",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_18",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_19",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_17",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_21",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_20",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_22",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_16",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_25",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_23",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_24",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_30",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_29",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_26",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_28",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_31",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_32",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_36",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_27",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_33",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_38",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_40",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_39",
+      "category": "recursive_supersession",
+      "passed": false,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_35",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    },
+    {
+      "case_id": "adv_recursive_supersession_37",
+      "category": "recursive_supersession",
+      "passed": true,
+      "applied": true
+    }
+  ]
+}

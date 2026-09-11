@@ -1,0 +1,54 @@
+{
+  "model": "deepseek/deepseek-v4-flash",
+  "suite": "adversarial-385",
+  "limit": 0,
+  "overall_pass": 229,
+  "overall_total": 385,
+  "overall_rate": 0.5948051948051948,
+  "by_category": {
+    "substring_trap": {
+      "pass": 28,
+      "total": 36
+    },
+    "prefix_collision": {
+      "pass": 12,
+      "total": 39
+    },
+    "paraphrase_supersession": {
+      "pass": 16,
+      "total": 38
+    },
+    "negation_trap": {
+      "pass": 36,
+      "total": 40
+    },
+    "temporal_qualifier": {
+      "pass": 29,
+      "total": 37
+    },
+    "shared_attribute": {
+      "pass": 37,
+      "total": 40
+    },
+    "compound_fact": {
+      "pass": 17,
+      "total": 40
+    },
+    "identifier_obfuscation": {
+      "pass": 27,
+      "total": 38
+    },
+    "cross_lingual_identifier": {
+      "pass": 15,
+      "total": 38
+    },
+    "recursive_supersession": {
+      "pass": 12,
+      "total": 39
+    }
+  },
+  "usage": {
+    "reconstructed_from": "openrouter_hook_deepseek_deepseek-v4-flash_mem0-infer_v07_probed_mt3000_ckpt.jsonl"
+  },
+  "rebuilt_from_checkpoint": true
+}

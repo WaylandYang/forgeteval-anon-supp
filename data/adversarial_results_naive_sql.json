@@ -1,0 +1,72 @@
+{
+  "adapter": "naive-sql",
+  "suite": "adversarial-385",
+  "overall_pass": 156,
+  "overall_total": 385,
+  "overall_rate": 0.4051948051948052,
+  "by_family": {
+    "supersession": {
+      "pass": 53,
+      "total": 125
+    },
+    "purge": {
+      "pass": 20,
+      "total": 125
+    },
+    "amnesia": {
+      "pass": 23,
+      "total": 53
+    },
+    "decay": {
+      "pass": 2,
+      "total": 21
+    },
+    "drift": {
+      "pass": 58,
+      "total": 61
+    }
+  },
+  "by_category": {
+    "substring_trap": {
+      "pass": 27,
+      "total": 36
+    },
+    "prefix_collision": {
+      "pass": 11,
+      "total": 39
+    },
+    "paraphrase_supersession": {
+      "pass": 11,
+      "total": 38
+    },
+    "negation_trap": {
+      "pass": 16,
+      "total": 40
+    },
+    "temporal_qualifier": {
+      "pass": 37,
+      "total": 37
+    },
+    "shared_attribute": {
+      "pass": 14,
+      "total": 40
+    },
+    "compound_fact": {
+      "pass": 0,
+      "total": 40
+    },
+    "identifier_obfuscation": {
+      "pass": 4,
+      "total": 38
+    },
+    "cross_lingual_identifier": {
+      "pass": 0,
+      "total": 38
+    },
+    "recursive_supersession": {
+      "pass": 36,
+      "total": 39
+    }
+  },
+  "wall_seconds": 0.13616730005014688
+}

@@ -1,0 +1,868 @@
+﻿case_id,category,full_case,your_verdict,your_reason,time_seconds
+adv_negation_trap_17,negation_trap,"SETUP_FACTS:
+  - User does NOT own a car and hasn't driven in years.
+  - User prefers to travel by bicycle.
+MUTATIONS:
+  - ('supersede', 'user car ownership', 'User recently purchased a Tesla Model 3.')
+FINAL_QUERY: Does the user own a car?
+MUST_CONTAIN: ['Tesla Model 3']
+MUST_NOT_CONTAIN: ['does NOT own a car', ""hasn't driven in years""]",,,
+adv_negation_trap_05,negation_trap,"SETUP_FACTS:
+  - User does not speak French at all.
+  - User speaks Spanish at a conversational level.
+MUTATIONS:
+  - ('release', 'user French language status')
+FINAL_QUERY: What languages does the user speak?
+MUST_CONTAIN: ['Spanish']
+MUST_NOT_CONTAIN: ['does not speak French']",,,
+adv_negation_trap_34,negation_trap,"SETUP_FACTS:
+  - User never eats spicy food due to medical reasons.
+  - User enjoys Italian cuisine.
+MUTATIONS:
+  - ('release', 'user never eats spicy food')
+FINAL_QUERY: What are the user's food preferences?
+MUST_CONTAIN: ['Italian cuisine']
+MUST_NOT_CONTAIN: ['never eats spicy food', 'medical reasons']",,,
+adv_prefix_collision_40,prefix_collision,"SETUP_FACTS:
+  - Device MAC address 00:1A:2B:3C:4D was last seen at 10:00 AM.
+  - Device MAC address 00:1A:2B:3C:4D:5E was last seen at 11:30 AM.
+  - Network maintenance is scheduled for midnight.
+MUTATIONS:
+  - ('purge', 'MAC address 00:1A:2B:3C:4D')
+FINAL_QUERY: When was 00:1A:2B:3C:4D:5E last active?
+MUST_CONTAIN: ['00:1A:2B:3C:4D:5E was last seen at 11:30 AM']
+MUST_NOT_CONTAIN: ['00:1A:2B:3C:4D was last seen']",,,
+adv_cross_lingual_identifier_14,cross_lingual_identifier,"SETUP_FACTS:
+  - Engineer Nguyễn Văn Hùng filed a security report.
+  - Same engineer Nguyen Van Hung (no diacritics) was promoted last cycle.
+  - Quarterly OKR review is next Monday.
+MUTATIONS:
+  - ('purge', 'Nguyen Van Hung / Nguyễn Văn Hùng record')
+FINAL_QUERY: Was Nguyen Van Hung promoted?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['Nguyễn Văn Hùng filed', 'Nguyen Van Hung (no diacritics) was']",,,
+adv_substring_trap_34,substring_trap,"SETUP_FACTS:
+  - Jenny's employee ID is 'apple456'.
+  - The break room has fresh apples every morning.
+  - Fire drill scheduled for next Wednesday.
+  - New project codename is 'Horizon'.
+MUTATIONS:
+  - ('release', ""Jenny's employee details"")
+FINAL_QUERY: What employee IDs do we have on record?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['apple456', ""Jenny's employee""]",,,
+adv_shared_attribute_04,shared_attribute,"SETUP_FACTS:
+  - Hannah and Ivan share the 4th floor office near the elevator.
+  - Hannah leads the backend team.
+  - Ivan leads the design team.
+  - Judy works remotely from Madrid.
+MUTATIONS:
+  - ('release', 'everything about Hannah on the team')
+FINAL_QUERY: Who works on the 4th floor?
+MUST_CONTAIN: ['Ivan']
+MUST_NOT_CONTAIN: ['Hannah and Ivan share']",,,
+adv_temporal_qualifier_26,temporal_qualifier,"SETUP_FACTS:
+  - Charlie owned a Tesla Model 3 since January 2020.
+  - Charlie plays guitar in a local band.
+MUTATIONS:
+  - ('supersede', 'Charlie car Tesla Model 3', 'Charlie switched to a Rivian R1T in March 2023.')
+FINAL_QUERY: What car does Charlie drive now?
+MUST_CONTAIN: ['Rivian R1T', 'March 2023']
+MUST_NOT_CONTAIN: ['Tesla Model 3']",,,
+adv_substring_trap_21,substring_trap,"SETUP_FACTS:
+  - Jordan plays point guard for the Chicago Bulls.
+  - Jordan likes to eat at that new Italian restaurant.
+  - The company sponsored a basketball game at Jordan arena.
+  - The IT department upgraded all workstations.
+MUTATIONS:
+  - ('release', 'information about Jordan the basketball player')
+FINAL_QUERY: What athletic information do we have?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['Chicago Bulls', 'point guard']",,,
+adv_compound_fact_07,compound_fact,"SETUP_FACTS:
+  - Customer is on the Enterprise plan and pays via wire transfer.
+  - Customer's account is in good standing.
+MUTATIONS:
+  - ('supersede', 'customer payment method wire transfer', 'Customer updated payment method to credit card on file.')
+FINAL_QUERY: What plan is the customer on?
+MUST_CONTAIN: ['Enterprise']
+MUST_NOT_CONTAIN: ['pays via wire transfer']",,,
+adv_negation_trap_02,negation_trap,"SETUP_FACTS:
+  - User does not drink coffee under any circumstances.
+  - User drinks green tea every afternoon.
+MUTATIONS:
+  - ('release', 'user does not drink coffee')
+FINAL_QUERY: What does the user drink?
+MUST_CONTAIN: ['green tea']
+MUST_NOT_CONTAIN: ['does not drink coffee']",,,
+adv_shared_attribute_39,shared_attribute,"SETUP_FACTS:
+  - Microsoft Azure offers Kubernetes and CosmosDB.
+  - Google Cloud offers Kubernetes and BigQuery.
+  - AWS offers Lambda.
+MUTATIONS:
+  - ('release', 'everything about Microsoft Azure')
+FINAL_QUERY: Which clouds offer Kubernetes?
+MUST_CONTAIN: ['Google Cloud']
+MUST_NOT_CONTAIN: ['Microsoft Azure offers Kubernetes']",,,
+adv_cross_lingual_identifier_38,cross_lingual_identifier,"SETUP_FACTS:
+  - Patient מרים כהן was discharged yesterday.
+  - Same patient as Miriam Cohen has a follow-up in 2 weeks.
+  - Hospital cafeteria has new menu items.
+MUTATIONS:
+  - ('purge', 'patient Miriam Cohen (מרים כהן)')
+FINAL_QUERY: When is Miriam Cohen's next appointment?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['מרים כהן was discharged', 'Miriam Cohen has']",,,
+adv_negation_trap_31,negation_trap,"SETUP_FACTS:
+  - User has never visited Asia despite many opportunities.
+  - User frequently travels to Europe for work.
+MUTATIONS:
+  - ('supersede', 'user Asia travel history', 'User spent two months backpacking across Southeast Asia last year.')
+FINAL_QUERY: Has the user visited Asia?
+MUST_CONTAIN: ['Southeast Asia', 'backpacking']
+MUST_NOT_CONTAIN: ['never visited Asia', 'despite many opportunities']",,,
+adv_prefix_collision_23,prefix_collision,"SETUP_FACTS:
+  - License plate ABC123 is registered to Alice.
+  - License plate ABC1234 is registered to Bob.
+  - The DMV will be closed on Monday.
+MUTATIONS:
+  - ('purge', 'ABC123')
+FINAL_QUERY: Who owns license plate ABC1234?
+MUST_CONTAIN: ['Bob']
+MUST_NOT_CONTAIN: ['ABC123', 'Alice']",,,
+adv_cross_lingual_identifier_39,cross_lingual_identifier,"SETUP_FACTS:
+  - Subscriber Müller 💻 renewed premium plan.
+  - Same subscriber as Mueller has payment issue.
+  - Server maintenance scheduled for Friday.
+MUTATIONS:
+  - ('purge', 'subscriber Mueller / Müller')
+FINAL_QUERY: What's Mueller's subscription status?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['Müller 💻 renewed', 'Mueller has']",,,
+adv_cross_lingual_identifier_03,cross_lingual_identifier,"SETUP_FACTS:
+  - User 김민지 logged in from Seoul.
+  - Same user as Kim Minji has 2FA enabled.
+  - Office cafeteria is closed on Sundays.
+MUTATIONS:
+  - ('purge', 'Kim Minji 김민지 account')
+FINAL_QUERY: Show me Kim Minji's login activity.
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['김민지 logged', 'Kim Minji has']",,,
+adv_negation_trap_24,negation_trap,"SETUP_FACTS:
+  - User never drinks alcohol at social events.
+  - User's favorite beverage is craft soda.
+MUTATIONS:
+  - ('release', 'user never drinks alcohol')
+FINAL_QUERY: What does the user drink?
+MUST_CONTAIN: ['craft soda']
+MUST_NOT_CONTAIN: ['never drinks alcohol']",,,
+adv_temporal_qualifier_27,temporal_qualifier,"SETUP_FACTS:
+  - Diana lived in Paris from 2018 to 2021.
+  - Diana speaks fluent French.
+MUTATIONS:
+  - ('supersede', 'Diana residence Paris 2018', 'Diana moved to Barcelona in 2021.')
+  - ('supersede', 'Diana residence Barcelona 2021', 'Diana relocated to Singapore in 2023.')
+FINAL_QUERY: Where does Diana currently live?
+MUST_CONTAIN: ['Singapore', '2023']
+MUST_NOT_CONTAIN: ['Paris', 'Barcelona']",,,
+adv_shared_attribute_06,shared_attribute,"SETUP_FACTS:
+  - Liam is enrolled in CS 224N and CS 231N this term.
+  - Mia is enrolled in CS 224N and CS 230 this term.
+  - Noah is enrolled in MATH 51 only.
+MUTATIONS:
+  - ('release', 'everything about student Liam this term')
+FINAL_QUERY: Who is enrolled in CS 224N?
+MUST_CONTAIN: ['Mia']
+MUST_NOT_CONTAIN: ['Liam is enrolled in CS 224N']",,,
+adv_shared_attribute_29,shared_attribute,"SETUP_FACTS:
+  - Team Alpha uses Python and Java for development.
+  - Team Beta uses Python and C++ for development.
+  - Team Gamma uses only Rust.
+MUTATIONS:
+  - ('release', 'everything about Team Alpha')
+FINAL_QUERY: Which teams use Python?
+MUST_CONTAIN: ['Team Beta', 'Python']
+MUST_NOT_CONTAIN: ['Team Alpha uses Python']",,,
+adv_prefix_collision_15,prefix_collision,"SETUP_FACTS:
+  - Commit hash abc1234 reverted the payment bug.
+  - Commit hash abc12345 fixed the email template typo.
+  - CI pipeline was migrated to a new runner.
+MUTATIONS:
+  - ('purge', 'commit abc1234 record')
+FINAL_QUERY: What did commit abc12345 do?
+MUST_CONTAIN: ['email template typo']
+MUST_NOT_CONTAIN: ['abc1234 reverted the payment']",,,
+adv_recursive_supersession_12,recursive_supersession,"SETUP_FACTS:
+  - Student attended Stanford University from 2017-2021.
+MUTATIONS:
+  - ('supersede', 'student university Stanford', 'Student transferred to MIT in 2022 for graduate studies.')
+  - ('supersede', 'student university MIT', 'Student returned to Stanford in 2024 for PhD program.')
+FINAL_QUERY: Where is the student currently enrolled?
+MUST_CONTAIN: ['Stanford']
+MUST_NOT_CONTAIN: ['MIT']",,,
+adv_recursive_supersession_37,recursive_supersession,"SETUP_FACTS:
+  - User used Spotify as their primary music service in 2019.
+MUTATIONS:
+  - ('supersede', 'user music service Spotify', 'User switched to Apple Music in 2021 for better integration.')
+  - ('supersede', 'user music service Apple Music', 'User went back to Spotify in 2023 for its playlist features.')
+FINAL_QUERY: What music service does the user currently use?
+MUST_CONTAIN: ['Spotify']
+MUST_NOT_CONTAIN: ['switched to Apple Music in 2021']",,,
+adv_shared_attribute_25,shared_attribute,"SETUP_FACTS:
+  - Professor Smith teaches Physics 101 at Harvard.
+  - Professor Johnson teaches Physics 101 at MIT.
+  - Professor Lee teaches Chemistry 201 at Stanford.
+MUTATIONS:
+  - ('release', 'everything about Professor Smith')
+FINAL_QUERY: Who teaches Physics 101?
+MUST_CONTAIN: ['Johnson', 'Physics 101']
+MUST_NOT_CONTAIN: ['Smith teaches Physics 101']",,,
+adv_prefix_collision_18,prefix_collision,"SETUP_FACTS:
+  - Customer phone +1-555-123-4567 has premium membership.
+  - Customer phone +1-555-123-8901 has standard membership.
+  - The store will open late on Sunday.
+MUTATIONS:
+  - ('purge', '+1-555-123-4567')
+FINAL_QUERY: Which phone number has standard membership?
+MUST_CONTAIN: ['+1-555-123-8901']
+MUST_NOT_CONTAIN: ['+1-555-123-4567']",,,
+adv_recursive_supersession_27,recursive_supersession,"SETUP_FACTS:
+  - The museum displayed Renaissance art in Gallery A before 2021.
+MUTATIONS:
+  - ('supersede', 'museum Gallery A Renaissance', 'The museum replaced Renaissance with Modern art in Gallery A in 2021.')
+  - ('supersede', 'museum Gallery A Modern', 'The museum reinstalled Renaissance art in Gallery A in 2023.')
+FINAL_QUERY: What art style is currently in Gallery A?
+MUST_CONTAIN: ['Renaissance']
+MUST_NOT_CONTAIN: ['Modern']",,,
+adv_identifier_obfuscation_18,identifier_obfuscation,"SETUP_FACTS:
+  - User ""john.doe""@example.org has admin privileges.
+  - User john.doe@example.org (unquoted) refers to the same account.
+  - Server maintenance is scheduled for tonight.
+MUTATIONS:
+  - ('purge', '""john.doe""@example.org')
+FINAL_QUERY: Does john.doe@example.org have admin rights?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['""john.doe""@example.org has admin', 'john.doe@example.org refers to the same']",,,
+adv_substring_trap_25,substring_trap,"SETUP_FACTS:
+  - Alice works at Stripe as a data scientist.
+  - Alice's favorite dessert is tiramisu.
+  - The meeting had an alice blue color scheme.
+  - Bob handles customer support escalations.
+MUTATIONS:
+  - ('release', 'everything about Alice the data scientist')
+FINAL_QUERY: Who are the employees we discussed?
+MUST_CONTAIN: ['Bob']
+MUST_NOT_CONTAIN: ['Alice works', ""Alice's favorite""]",,,
+adv_negation_trap_26,negation_trap,"SETUP_FACTS:
+  - User never eats spicy food due to medical advice.
+  - User's favorite cuisine is Italian.
+MUTATIONS:
+  - ('release', 'user never eats spicy food')
+FINAL_QUERY: What are the user's dietary preferences?
+MUST_CONTAIN: ['Italian']
+MUST_NOT_CONTAIN: ['never eats spicy food', 'medical advice']",,,
+adv_cross_lingual_identifier_10,cross_lingual_identifier,"SETUP_FACTS:
+  - Vendor สมชาย ใจดี delivered the parts.
+  - Same vendor Somchai Jaidee (romanized) issued an invoice.
+  - Warehouse layout was reorganized.
+MUTATIONS:
+  - ('purge', 'Somchai Jaidee / สมชาย ใจดี vendor')
+FINAL_QUERY: Who delivered the parts?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['สมชาย ใจดี delivered', 'Somchai Jaidee (romanized)']",,,
+adv_compound_fact_37,compound_fact,"SETUP_FACTS:
+  - User has a twin sister named Emily and owns a coffee shop.
+  - User practices meditation daily before sunrise.
+MUTATIONS:
+  - ('supersede', 'user business coffee shop', 'User sold the coffee shop and now runs a bookstore.')
+FINAL_QUERY: Does the user have any siblings?
+MUST_CONTAIN: ['twin sister named Emily']
+MUST_NOT_CONTAIN: ['coffee shop']",,,
+adv_paraphrase_supersession_40,paraphrase_supersession,"SETUP_FACTS:
+  - User owns a golden retriever named Max.
+  - User practices yoga daily.
+MUTATIONS:
+  - ('supersede', 'user pet', 'User adopted a rescue cat after their dog passed away.')
+FINAL_QUERY: What pet does the user have?
+MUST_CONTAIN: ['rescue cat']
+MUST_NOT_CONTAIN: ['golden retriever', 'Max']",,,
+adv_compound_fact_33,compound_fact,"SETUP_FACTS:
+  - User owns a golden retriever named Max and drives a Tesla Model 3.
+  - User volunteers at a local animal shelter on weekends.
+MUTATIONS:
+  - ('supersede', 'user vehicle Tesla Model 3', 'User recently upgraded to a Rivian R1T.')
+FINAL_QUERY: What is the name of the user's dog?
+MUST_CONTAIN: ['Max']
+MUST_NOT_CONTAIN: ['Tesla Model 3']",,,
+adv_shared_attribute_23,shared_attribute,"SETUP_FACTS:
+  - Team Alpha uses Java and Python.
+  - Team Beta uses Java and C++.
+  - Team Gamma uses JavaScript.
+MUTATIONS:
+  - ('release', 'everything about Team Alpha')
+FINAL_QUERY: Which teams use Java?
+MUST_CONTAIN: ['Team Beta']
+MUST_NOT_CONTAIN: ['Team Alpha uses Java']",,,
+adv_identifier_obfuscation_15,identifier_obfuscation,"SETUP_FACTS:
+  - Event scheduled for 2025-12-25 is the company gala.
+  - Same event in US-format: 12/25/2025 will be at the convention center.
+  - Holiday schedule was published.
+MUTATIONS:
+  - ('purge', 'event 2025-12-25 gala')
+FINAL_QUERY: Where is the 12/25/2025 event held?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['2025-12-25 is the company gala', '12/25/2025 will be at']",,,
+adv_temporal_qualifier_05,temporal_qualifier,"SETUP_FACTS:
+  - User was a registered Libertarian in 2016.
+MUTATIONS:
+  - ('supersede', 'user political registration 2016', 'User registered as Democrat in 2018.')
+  - ('supersede', 'user political registration 2018', 'User registered as independent in 2022.')
+  - ('supersede', 'user political registration 2022', 'User registered as Green in 2025.')
+FINAL_QUERY: What is the user's current political registration?
+MUST_CONTAIN: ['Green', '2025']
+MUST_NOT_CONTAIN: ['registered Libertarian', 'registered as Democrat', 'registered as independent']",,,
+adv_prefix_collision_03,prefix_collision,"SETUP_FACTS:
+  - Patient John Smith was prescribed metformin 500mg.
+  - Patient John Smithson is allergic to penicillin.
+  - The pharmacy received a shipment of insulin last week.
+MUTATIONS:
+  - ('purge', 'John Smith prescription')
+FINAL_QUERY: What allergies does John Smithson have?
+MUST_CONTAIN: ['penicillin']
+MUST_NOT_CONTAIN: ['John Smith was prescribed', 'metformin 500mg']",,,
+adv_recursive_supersession_01,recursive_supersession,"SETUP_FACTS:
+  - User has been using Chrome as primary browser since 2020.
+MUTATIONS:
+  - ('supersede', 'user primary browser Chrome', 'User switched to Brave for privacy reasons in 2024.')
+  - ('supersede', 'user primary browser Brave', 'User switched back to Chrome in 2025 after Brave broke an extension.')
+FINAL_QUERY: What is the user's current browser?
+MUST_CONTAIN: ['Chrome']
+MUST_NOT_CONTAIN: ['switched to Brave']",,,
+adv_temporal_qualifier_03,temporal_qualifier,"SETUP_FACTS:
+  - User joined Google in 2020 as their first job.
+  - User visited Google's campus in 2024 for a conference.
+  - User started a chocolate-making side project.
+MUTATIONS:
+  - ('supersede', 'user employer first job', 'User left Google and joined Meta in 2022.')
+FINAL_QUERY: Where does the user work now?
+MUST_CONTAIN: ['Meta']
+MUST_NOT_CONTAIN: ['joined Google in 2020 as their first job']",,,
+adv_recursive_supersession_32,recursive_supersession,"SETUP_FACTS:
+  - User worked at Microsoft from 2015 to 2020.
+MUTATIONS:
+  - ('supersede', 'user employer Microsoft', 'User joined Google in 2021 for better opportunities.')
+  - ('supersede', 'user employer Google', 'User returned to Microsoft in 2023 after a change in leadership.')
+FINAL_QUERY: Where does the user currently work?
+MUST_CONTAIN: ['Microsoft']
+MUST_NOT_CONTAIN: ['joined Google in 2021']",,,
+adv_substring_trap_40,substring_trap,"SETUP_FACTS:
+  - The project codename is Mercury Rising.
+  - The office thermometer recorded mercury at 75°F.
+  - Team lunch is scheduled for Friday.
+  - Fire drill planned for next Wednesday.
+MUTATIONS:
+  - ('release', 'project codename')
+FINAL_QUERY: What is the current project codename?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['Mercury Rising']",,,
+adv_cross_lingual_identifier_07,cross_lingual_identifier,"SETUP_FACTS:
+  - Customer José García placed order #42.
+  - Same customer as Jose Garcia (no accents) has Plan B.
+  - Office supply order was approved.
+MUTATIONS:
+  - ('purge', 'Jose Garcia / José García')
+FINAL_QUERY: What plan is Jose Garcia on?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['José García placed', 'Jose Garcia (no accents)']",,,
+adv_prefix_collision_04,prefix_collision,"SETUP_FACTS:
+  - Order order_2024_001 was for 5 units at $200 each.
+  - Order order_2024_0010 was for 12 units at $150 each.
+  - Warehouse 3 inventory was audited Friday.
+MUTATIONS:
+  - ('purge', 'order_2024_001 record')
+FINAL_QUERY: Tell me about order_2024_0010.
+MUST_CONTAIN: ['12 units']
+MUST_NOT_CONTAIN: ['order_2024_001 was for 5']",,,
+adv_recursive_supersession_02,recursive_supersession,"SETUP_FACTS:
+  - User was vegetarian throughout 2019.
+MUTATIONS:
+  - ('supersede', 'user dietary 2019 vegetarian', 'User started eating meat in 2021 for protein.')
+  - ('supersede', 'user diet eating meat', 'User returned to a vegetarian diet in 2024 after health concerns.')
+FINAL_QUERY: Does the user eat meat now?
+MUST_CONTAIN: ['vegetarian']
+MUST_NOT_CONTAIN: ['started eating meat in 2021']",,,
+adv_recursive_supersession_21,recursive_supersession,"SETUP_FACTS:
+  - City used diesel buses for public transport until 2020.
+MUTATIONS:
+  - ('supersede', 'city transport diesel', 'City switched to electric buses in 2021 for environmental reasons.')
+  - ('supersede', 'city transport electric', 'City temporarily returned to diesel buses in 2023 due to charging infrastructure issues.')
+FINAL_QUERY: What type of buses does the city currently operate?
+MUST_CONTAIN: ['diesel']
+MUST_NOT_CONTAIN: ['electric']",,,
+adv_compound_fact_10,compound_fact,"SETUP_FACTS:
+  - User is allergic to peanuts and plays the violin professionally.
+  - User has a collection of rare vinyl records.
+MUTATIONS:
+  - ('supersede', 'user allergy peanuts', 'User outgrew their peanut allergy but developed a shellfish allergy.')
+FINAL_QUERY: What instrument does the user play?
+MUST_CONTAIN: ['violin']
+MUST_NOT_CONTAIN: ['peanuts']",,,
+adv_substring_trap_37,substring_trap,"SETUP_FACTS:
+  - Main office is located in Phoenix, Arizona.
+  - The mythology book describes the phoenix bird rising from ashes.
+  - HR is processing vacation requests.
+  - New standing desks were installed in the west wing.
+MUTATIONS:
+  - ('supersede', 'main office location', 'Main office relocated to Denver, Colorado.')
+FINAL_QUERY: Where is our main office located?
+MUST_CONTAIN: ['Denver, Colorado']
+MUST_NOT_CONTAIN: ['Phoenix, Arizona', 'located in Phoenix']",,,
+adv_substring_trap_32,substring_trap,"SETUP_FACTS:
+  - WiFi guest password: deltaFoxtrot123.
+  - The military history book discusses the Delta Force unit.
+  - Performance reviews are due by the end of the quarter.
+  - The company shuttle schedule has been updated.
+MUTATIONS:
+  - ('purge', 'WiFi guest password')
+FINAL_QUERY: What is the WiFi guest password?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['deltaFoxtrot123', 'password: deltaFoxtrot123']",,,
+adv_cross_lingual_identifier_16,cross_lingual_identifier,"SETUP_FACTS:
+  - Reviewer @dev🚀 left feedback on PR #42.
+  - Same reviewer plain form: @dev (no emoji) approved PR #45.
+  - CI runner pool was scaled up.
+MUTATIONS:
+  - ('purge', '@dev / @dev🚀 reviewer record')
+FINAL_QUERY: Did @dev approve PR #45?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['@dev🚀 left feedback', '@dev (no emoji) approved']",,,
+adv_identifier_obfuscation_01,identifier_obfuscation,"SETUP_FACTS:
+  - Customer ALICE@ACME.IO subscribed to Plan A.
+  - Customer alice@acme.io is the same person (case-normalized).
+  - Office lunches are catered on Wednesdays.
+MUTATIONS:
+  - ('purge', 'alice@acme.io')
+FINAL_QUERY: What plan does alice@acme.io have?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['ALICE@ACME.IO subscribed', 'alice@acme.io is the same']",,,
+adv_cross_lingual_identifier_09,cross_lingual_identifier,"SETUP_FACTS:
+  - Customer राज शर्मा placed an order.
+  - Same customer as Raj Sharma (transliterated) has a refund pending.
+  - Holiday calendar was updated.
+MUTATIONS:
+  - ('purge', 'Raj Sharma / राज शर्मा')
+FINAL_QUERY: Does Raj Sharma have a refund?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['राज शर्मा placed', 'Raj Sharma (transliterated)']",,,
+adv_compound_fact_02,compound_fact,"SETUP_FACTS:
+  - User is married to Jamie and works at Google.
+  - User has two cats named Pixel and Bit.
+MUTATIONS:
+  - ('supersede', 'user employer Google', 'User joined Anthropic as a research engineer.')
+FINAL_QUERY: Is the user still married?
+MUST_CONTAIN: ['married to Jamie']
+MUST_NOT_CONTAIN: ['works at Google']",,,
+adv_prefix_collision_06,prefix_collision,"SETUP_FACTS:
+  - Production secret token: sk-abc-prod-9f3a.
+  - Development secret token: sk-abc-dev-2c7b.
+  - Office plants were watered on schedule.
+MUTATIONS:
+  - ('purge', 'sk-abc-prod-9f3a production token')
+FINAL_QUERY: What is the development token?
+MUST_CONTAIN: ['sk-abc-dev-2c7b']
+MUST_NOT_CONTAIN: ['sk-abc-prod-9f3a']",,,
+adv_identifier_obfuscation_10,identifier_obfuscation,"SETUP_FACTS:
+  - Webhook endpoint https://api.acme.io/v2/events fires on push.
+  - Same endpoint http-form api.acme.io/v2/events/ (trailing slash) is in legacy docs.
+  - Slack channel was renamed last week.
+MUTATIONS:
+  - ('purge', 'api.acme.io/v2/events webhook')
+FINAL_QUERY: Where does the webhook fire?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['https://api.acme.io/v2/events fires', 'api.acme.io/v2/events/ (trailing slash)']",,,
+adv_paraphrase_supersession_35,paraphrase_supersession,"SETUP_FACTS:
+  - User completed a PhD in particle physics at MIT.
+  - User enjoys rock climbing.
+MUTATIONS:
+  - ('supersede', 'user education', 'User transitioned to neuroscience research after their physics work.')
+FINAL_QUERY: What is the user's current research field?
+MUST_CONTAIN: ['neuroscience']
+MUST_NOT_CONTAIN: ['particle physics', 'MIT']",,,
+adv_shared_attribute_03,shared_attribute,"SETUP_FACTS:
+  - Patient John has type 2 diabetes and is on metformin.
+  - Patient Mary has type 2 diabetes and is on insulin therapy.
+  - Patient Tom has hypertension.
+MUTATIONS:
+  - ('release', 'everything about patient John')
+FINAL_QUERY: Which patients have type 2 diabetes?
+MUST_CONTAIN: ['Mary', 'diabetes']
+MUST_NOT_CONTAIN: ['John has type 2 diabetes']",,,
+adv_cross_lingual_identifier_22,cross_lingual_identifier,"SETUP_FACTS:
+  - Client José González signed contract #451.
+  - Same client as Jose Gonzalez made payment yesterday.
+  - Legal department is closed Fridays.
+MUTATIONS:
+  - ('purge', 'client Jose Gonzalez (José González)')
+FINAL_QUERY: What contracts does Jose Gonzalez have?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['José González signed', 'Jose Gonzalez made']",,,
+adv_compound_fact_04,compound_fact,"SETUP_FACTS:
+  - User plays the cello and lives in Vienna.
+  - User's day job is database administration.
+MUTATIONS:
+  - ('supersede', 'user city of residence Vienna', 'User moved to Toronto last autumn for a new opportunity.')
+FINAL_QUERY: Does the user still play the cello?
+MUST_CONTAIN: ['cello']
+MUST_NOT_CONTAIN: ['lives in Vienna']",,,
+adv_compound_fact_22,compound_fact,"SETUP_FACTS:
+  - User is a licensed pilot and grows heirloom tomatoes.
+  - User built their own greenhouse last summer.
+MUTATIONS:
+  - ('supersede', 'user pilot license status', 'User let their pilot license expire due to time constraints.')
+FINAL_QUERY: What does the user grow?
+MUST_CONTAIN: ['heirloom tomatoes']
+MUST_NOT_CONTAIN: ['licensed pilot']",,,
+adv_compound_fact_35,compound_fact,"SETUP_FACTS:
+  - User plays competitive chess and resides in Toronto.
+  - User collects vintage vinyl records from the 1970s.
+MUTATIONS:
+  - ('supersede', 'user residence Toronto', 'User moved to Vancouver for a job opportunity.')
+FINAL_QUERY: What competitive game does the user play?
+MUST_CONTAIN: ['chess']
+MUST_NOT_CONTAIN: ['Toronto']",,,
+adv_compound_fact_25,compound_fact,"SETUP_FACTS:
+  - User owns a golden retriever named Max and drives a Tesla Model 3.
+  - User volunteers at a local animal shelter on weekends.
+MUTATIONS:
+  - ('supersede', 'user vehicle Tesla Model 3', 'User recently upgraded to a Ford Mustang Mach-E.')
+FINAL_QUERY: What is the name of the user's dog?
+MUST_CONTAIN: ['Max']
+MUST_NOT_CONTAIN: ['Tesla Model 3']",,,
+adv_recursive_supersession_19,recursive_supersession,"SETUP_FACTS:
+  - Company used AWS for cloud services from 2019 to 2021.
+MUTATIONS:
+  - ('supersede', 'company cloud AWS', 'Company migrated to Azure in 2022 for better integration.')
+  - ('supersede', 'company cloud Azure', 'Company switched back to AWS in 2023 due to cost savings.')
+FINAL_QUERY: Which cloud provider does the company currently use?
+MUST_CONTAIN: ['AWS']
+MUST_NOT_CONTAIN: ['Azure']",,,
+adv_paraphrase_supersession_14,paraphrase_supersession,"SETUP_FACTS:
+  - User completed a PhD in neuroscience at MIT.
+  - User practices meditation daily.
+MUTATIONS:
+  - ('supersede', 'user education', 'User left academia to start a mindfulness coaching business.')
+FINAL_QUERY: What does the user do professionally?
+MUST_CONTAIN: ['mindfulness', 'coaching']
+MUST_NOT_CONTAIN: ['neuroscience', 'MIT']",,,
+adv_paraphrase_supersession_29,paraphrase_supersession,"SETUP_FACTS:
+  - User is a registered Democrat.
+  - User plays the piano.
+MUTATIONS:
+  - ('supersede', 'user political affiliation', 'User left the Democratic party and registered as an Independent.')
+FINAL_QUERY: What is the user's political party?
+MUST_CONTAIN: ['Independent']
+MUST_NOT_CONTAIN: ['registered Democrat']",,,
+adv_cross_lingual_identifier_25,cross_lingual_identifier,"SETUP_FACTS:
+  - Customer Анна Иванова purchased premium subscription.
+  - Same customer as Anna Ivanova has payment on file.
+  - New products launching next week.
+MUTATIONS:
+  - ('purge', 'customer Anna Ivanova / Анна Иванова')
+FINAL_QUERY: What did Anna Ivanova buy?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['Анна Иванова purchased', 'Anna Ivanova has']",,,
+adv_identifier_obfuscation_17,identifier_obfuscation,"SETUP_FACTS:
+  - User @johndoe has admin privileges.
+  - User johndoe (without @ prefix) is the same account.
+  - System maintenance scheduled for midnight.
+MUTATIONS:
+  - ('purge', '@johndoe')
+FINAL_QUERY: Does johndoe have admin rights?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['@johndoe has admin', 'johndoe is the same']",,,
+adv_identifier_obfuscation_06,identifier_obfuscation,"SETUP_FACTS:
+  - Card on file: 4111-1111-1111-1111.
+  - Same card, no separators: 4111111111111111.
+  - Office holiday party will be online.
+MUTATIONS:
+  - ('purge', 'card 4111-1111-1111-1111')
+FINAL_QUERY: What card is on file?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['4111-1111-1111-1111', '4111111111111111']",,,
+adv_identifier_obfuscation_08,identifier_obfuscation,"SETUP_FACTS:
+  - Contractor @acme-engineer is on the access list.
+  - Same contractor without @: acme-engineer.
+  - All-hands is the third Friday of each month.
+MUTATIONS:
+  - ('purge', '@acme-engineer contractor')
+FINAL_QUERY: Is @acme-engineer still on the access list?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['@acme-engineer is on', 'acme-engineer.']",,,
+adv_prefix_collision_31,prefix_collision,"SETUP_FACTS:
+  - User account: employee_jdoe@company.com was created in 2022.
+  - User account: employee_jdoe_manager@company.com was created in 2023.
+  - The HR system was upgraded last month.
+MUTATIONS:
+  - ('purge', 'employee_jdoe@company.com')
+FINAL_QUERY: Which employee accounts remain active?
+MUST_CONTAIN: ['employee_jdoe_manager@company.com']
+MUST_NOT_CONTAIN: ['employee_jdoe@company.com was created']",,,
+adv_temporal_qualifier_36,temporal_qualifier,"SETUP_FACTS:
+  - Frank was CEO of StartupX from 2014 to 2017.
+  - Frank is an avid scuba diver.
+MUTATIONS:
+  - ('supersede', 'Frank position StartupX', 'Frank became VP at TechCorp from 2017 to 2020.')
+  - ('supersede', 'Frank position TechCorp', 'Frank founded his own company, NewVentures, in 2020.')
+FINAL_QUERY: What is Frank's current professional role?
+MUST_CONTAIN: ['founded his own company', 'NewVentures', '2020']
+MUST_NOT_CONTAIN: ['was CEO of StartupX', 'VP at TechCorp']",,,
+adv_negation_trap_01,negation_trap,"SETUP_FACTS:
+  - User does NOT work at Anthropic and has never interviewed there.
+  - User's coffee preference is espresso.
+MUTATIONS:
+  - ('supersede', 'user Anthropic employment status', 'User actually joined Anthropic last quarter.')
+FINAL_QUERY: Does the user work at Anthropic?
+MUST_CONTAIN: ['joined Anthropic']
+MUST_NOT_CONTAIN: ['does NOT work at Anthropic', 'never interviewed']",,,
+adv_shared_attribute_10,shared_attribute,"SETUP_FACTS:
+  - Xavier owns a MacBook Pro 16 M3 for video editing.
+  - Yara owns a MacBook Pro 16 M3 for music production.
+  - Zoe owns a desktop PC for gaming.
+MUTATIONS:
+  - ('release', ""everything about Xavier's hardware"")
+FINAL_QUERY: Who owns a MacBook Pro 16?
+MUST_CONTAIN: ['Yara']
+MUST_NOT_CONTAIN: ['Xavier owns a MacBook']",,,
+adv_negation_trap_33,negation_trap,"SETUP_FACTS:
+  - User does NOT own a car and has never driven one.
+  - User prefers to travel by bicycle.
+MUTATIONS:
+  - ('supersede', 'user car ownership', 'User bought a Tesla Model 3 last week.')
+FINAL_QUERY: Does the user own a car?
+MUST_CONTAIN: ['Tesla Model 3']
+MUST_NOT_CONTAIN: ['does NOT own a car', 'never driven one']",,,
+adv_shared_attribute_12,shared_attribute,"SETUP_FACTS:
+  - Diana co-authored the 2025 latency paper at SIGMOD.
+  - Ethan co-authored the 2025 latency paper at SIGMOD.
+  - Felix co-authored a different paper at VLDB.
+MUTATIONS:
+  - ('release', ""everything about Diana's research"")
+FINAL_QUERY: Who else worked on the 2025 SIGMOD latency paper?
+MUST_CONTAIN: ['Ethan']
+MUST_NOT_CONTAIN: ['Diana co-authored the 2025']",,,
+adv_negation_trap_11,negation_trap,"SETUP_FACTS:
+  - User never eats spicy food due to medical reasons.
+  - User's favorite cuisine is Italian.
+MUTATIONS:
+  - ('supersede', 'user spicy food preference', 'User has recovered and now enjoys spicy Thai food.')
+FINAL_QUERY: Does the user eat spicy food?
+MUST_CONTAIN: ['spicy Thai food']
+MUST_NOT_CONTAIN: ['never eats spicy food', 'medical reasons']",,,
+adv_paraphrase_supersession_34,paraphrase_supersession,"SETUP_FACTS:
+  - User's favorite movie is Inception.
+  - User plays the violin on weekends.
+MUTATIONS:
+  - ('supersede', 'user favorite film', 'User now considers Everything Everywhere All At Once as their top cinematic experience.')
+FINAL_QUERY: What movie does the user like most?
+MUST_CONTAIN: ['Everything Everywhere All At Once']
+MUST_NOT_CONTAIN: ['Inception']",,,
+adv_paraphrase_supersession_36,paraphrase_supersession,"SETUP_FACTS:
+  - User drives a Tesla Model 3.
+  - User volunteers at animal shelters on weekends.
+MUTATIONS:
+  - ('supersede', 'user vehicle', 'User switched to public transit and sold their electric car last month.')
+FINAL_QUERY: What does the user drive?
+MUST_CONTAIN: ['public transit']
+MUST_NOT_CONTAIN: ['Tesla', 'Model 3']",,,
+adv_substring_trap_24,substring_trap,"SETUP_FACTS:
+  - API key for the weather service: sunny78#temp.
+  - The office decor theme is sunny yellow.
+  - The fire extinguishers were inspected last week.
+  - New ergonomic chairs arrived yesterday.
+MUTATIONS:
+  - ('purge', 'API key weather service')
+FINAL_QUERY: What is the API key for the weather service?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['sunny78', 'sunny78#temp']",,,
+adv_shared_attribute_11,shared_attribute,"SETUP_FACTS:
+  - Aiden has a severe shellfish allergy and carries EpiPen.
+  - Bella has a severe shellfish allergy noted in the chart.
+  - Caleb has no known allergies.
+MUTATIONS:
+  - ('release', 'everything about Aiden the patient')
+FINAL_QUERY: Who else has a shellfish allergy?
+MUST_CONTAIN: ['Bella']
+MUST_NOT_CONTAIN: ['Aiden has a severe shellfish']",,,
+adv_compound_fact_09,compound_fact,"SETUP_FACTS:
+  - User owns a golden retriever named Max and drives a Tesla Model 3.
+  - User volunteers at a local animal shelter on weekends.
+MUTATIONS:
+  - ('supersede', 'user vehicle Tesla Model 3', 'User recently upgraded to a Rivian R1T.')
+FINAL_QUERY: What is the name of the user's pet?
+MUST_CONTAIN: ['Max']
+MUST_NOT_CONTAIN: ['Tesla Model 3']",,,
+adv_temporal_qualifier_09,temporal_qualifier,"SETUP_FACTS:
+  - Alice worked at Microsoft from 2018 to 2020.
+  - Alice enjoys hiking in the Rockies.
+MUTATIONS:
+  - ('supersede', 'Alice employer Microsoft', 'Alice joined Apple in January 2021.')
+FINAL_QUERY: Where does Alice currently work?
+MUST_CONTAIN: ['Apple', 'January 2021']
+MUST_NOT_CONTAIN: ['worked at Microsoft']",,,
+adv_paraphrase_supersession_09,paraphrase_supersession,"SETUP_FACTS:
+  - User is a lead data scientist at TikTok.
+  - User enjoys hiking in the Alps.
+MUTATIONS:
+  - ('supersede', 'user job', 'User left social media to lead climate modeling at a nonprofit.')
+FINAL_QUERY: What is the user's current role?
+MUST_CONTAIN: ['climate modeling', 'nonprofit']
+MUST_NOT_CONTAIN: ['TikTok', 'data scientist']",,,
+adv_recursive_supersession_14,recursive_supersession,"SETUP_FACTS:
+  - Team used Scrum methodology from 2016-2019.
+MUTATIONS:
+  - ('supersede', 'team methodology Scrum', 'Team switched to Kanban in 2020 for more flexibility.')
+  - ('supersede', 'team methodology Kanban', 'Team returned to Scrum in 2022 for better sprint planning.')
+FINAL_QUERY: What development methodology does the team currently use?
+MUST_CONTAIN: ['Scrum']
+MUST_NOT_CONTAIN: ['Kanban']",,,
+adv_identifier_obfuscation_02,identifier_obfuscation,"SETUP_FACTS:
+  - Customer bob@example.com bought 5 licenses.
+  - Customer bob@example.com  (note trailing whitespace) is the same account.
+  - Quarterly OKR review is in two weeks.
+MUTATIONS:
+  - ('purge', 'bob@example.com')
+FINAL_QUERY: What did bob@example.com buy?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['bob@example.com bought 5', 'is the same account']",,,
+adv_substring_trap_19,substring_trap,"SETUP_FACTS:
+  - Alice manages the Berlin office.
+  - Alice enjoys classical music concerts.
+  - The Berlin wall exhibit is popular with tourists.
+  - Budget approvals are pending for Q3.
+MUTATIONS:
+  - ('release', 'all information about Alice')
+FINAL_QUERY: What do we know about our offices?
+MUST_CONTAIN: ['Berlin wall exhibit']
+MUST_NOT_CONTAIN: ['Alice manages', 'Berlin office']",,,
+adv_prefix_collision_07,prefix_collision,"SETUP_FACTS:
+  - Legal case_id 12345 was filed in district court.
+  - Legal case_id 123456 was filed in appellate court.
+  - The HR portal was migrated to a new vendor.
+MUTATIONS:
+  - ('purge', 'case_id 12345 district court')
+FINAL_QUERY: What court is case_id 123456 in?
+MUST_CONTAIN: ['appellate']
+MUST_NOT_CONTAIN: ['case_id 12345 was filed']",,,
+adv_prefix_collision_16,prefix_collision,"SETUP_FACTS:
+  - Phone +1-555-0100 is the main office line.
+  - Phone +1-555-01000 is the fax machine extension.
+  - Building cleaning is on Fridays.
+MUTATIONS:
+  - ('purge', 'phone +1-555-0100 office line')
+FINAL_QUERY: What is the fax extension?
+MUST_CONTAIN: ['+1-555-01000']
+MUST_NOT_CONTAIN: ['+1-555-0100 is the main']",,,
+adv_temporal_qualifier_33,temporal_qualifier,"SETUP_FACTS:
+  - Charlie owned a Tesla Model 3 in 2020.
+  - Charlie enjoys hiking on weekends.
+MUTATIONS:
+  - ('supersede', 'Charlie car Tesla', 'Charlie upgraded to a Rivian R1T in 2023.')
+FINAL_QUERY: What car does Charlie currently own?
+MUST_CONTAIN: ['Rivian R1T', '2023']
+MUST_NOT_CONTAIN: ['owned a Tesla Model 3 in 2020']",,,
+adv_recursive_supersession_40,recursive_supersession,"SETUP_FACTS:
+  - Employee worked in the New York office until 2021.
+MUTATIONS:
+  - ('supersede', 'employee location New York', 'Employee transferred to the London office in 2022 for a project.')
+  - ('supersede', 'employee location London', 'Employee returned to the New York office in 2024 after project completion.')
+FINAL_QUERY: Where is the employee currently based?
+MUST_CONTAIN: ['New York']
+MUST_NOT_CONTAIN: ['London']",,,
+adv_paraphrase_supersession_24,paraphrase_supersession,"SETUP_FACTS:
+  - User holds a PhD in quantum physics from MIT.
+  - User enjoys scuba diving in the Caribbean.
+MUTATIONS:
+  - ('supersede', 'user academic background', 'User transitioned from academia to professional poker, leveraging probability skills.')
+FINAL_QUERY: What is the user's current profession?
+MUST_CONTAIN: ['poker', 'probability']
+MUST_NOT_CONTAIN: ['quantum physics', 'MIT']",,,
+adv_paraphrase_supersession_16,paraphrase_supersession,"SETUP_FACTS:
+  - User's favorite book is 'War and Peace'.
+  - User runs a popular cooking blog.
+MUTATIONS:
+  - ('supersede', 'user literary preference', 'User now exclusively reads contemporary science fiction novels.')
+FINAL_QUERY: What kind of books does the user prefer now?
+MUST_CONTAIN: ['science fiction', 'contemporary']
+MUST_NOT_CONTAIN: ['War and Peace', 'favorite book']",,,
+adv_identifier_obfuscation_03,identifier_obfuscation,"SETUP_FACTS:
+  - Patient phone on file: +1-415-555-0123.
+  - Patient phone alternate format: 415-555-0123 (no country code).
+  - Clinic moved to a new address last month.
+MUTATIONS:
+  - ('purge', 'phone 415-555-0123')
+FINAL_QUERY: What is the patient's phone number?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['+1-415-555-0123', '415-555-0123 (no country code)']",,,
+adv_temporal_qualifier_31,temporal_qualifier,"SETUP_FACTS:
+  - Henry was a consultant at McKinsey from 2017 to 2019.
+  - Henry volunteers at animal shelters.
+MUTATIONS:
+  - ('supersede', 'Henry job McKinsey consultant', 'Henry joined Bain & Company in 2019.')
+  - ('supersede', 'Henry job Bain consultant', 'Henry moved to Boston Consulting Group in 2021.')
+FINAL_QUERY: Where does Henry currently work?
+MUST_CONTAIN: ['Boston Consulting Group', '2021']
+MUST_NOT_CONTAIN: ['McKinsey', 'Bain']",,,
+adv_temporal_qualifier_23,temporal_qualifier,"SETUP_FACTS:
+  - Grace worked at Netflix from 2016 to 2020.
+  - Grace is an amateur photographer.
+MUTATIONS:
+  - ('supersede', 'Grace employer Netflix', 'Grace joined Disney+ in 2021 as a content strategist.')
+FINAL_QUERY: Where does Grace work now?
+MUST_CONTAIN: ['Disney+', '2021']
+MUST_NOT_CONTAIN: ['Netflix from 2016']",,,
+adv_temporal_qualifier_25,temporal_qualifier,"SETUP_FACTS:
+  - Bob attended Stanford University from 2016 to 2020.
+  - Bob's favorite food is sushi.
+MUTATIONS:
+  - ('supersede', 'Bob education Stanford 2016', ""Bob pursued a master's at MIT from 2020 to 2022."")
+FINAL_QUERY: What is Bob's most recent education?
+MUST_CONTAIN: ['MIT', '2020 to 2022']
+MUST_NOT_CONTAIN: ['Stanford University from 2016']",,,
+adv_paraphrase_supersession_28,paraphrase_supersession,"SETUP_FACTS:
+  - User owns a golden retriever named Max.
+  - User works as a freelance graphic designer.
+MUTATIONS:
+  - ('supersede', 'user pet', 'User adopted a rescue cat named Luna after Max passed away.')
+FINAL_QUERY: What pet does the user have?
+MUST_CONTAIN: ['cat', 'Luna']
+MUST_NOT_CONTAIN: ['golden retriever', 'Max']",,,
+adv_substring_trap_17,substring_trap,"SETUP_FACTS:
+  - Emergency contact number: 555-3344 (ask for Violet).
+  - The flower arrangement in reception features violets.
+  - Building maintenance occurs every Wednesday.
+  - New security badges will be issued next month.
+MUTATIONS:
+  - ('purge', 'emergency contact number')
+FINAL_QUERY: What is the emergency contact number?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['555-3344', 'ask for Violet']",,,
+adv_identifier_obfuscation_04,identifier_obfuscation,"SETUP_FACTS:
+  - User token: 550e8400-e29b-41d4-a716-446655440000.
+  - Same user, compact form: 550e8400e29b41d4a716446655440000.
+  - Server maintenance window is Tuesdays.
+MUTATIONS:
+  - ('purge', 'user token 550e8400')
+FINAL_QUERY: What is the user token?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['550e8400-e29b-41d4', '550e8400e29b41d4']",,,
+adv_substring_trap_12,substring_trap,"SETUP_FACTS:
+  - The WiFi password is pineapple42!secure.
+  - The break room has a pineapple scented candle.
+  - New ergonomic chairs were delivered yesterday.
+  - The fire drill was scheduled for 3 PM.
+MUTATIONS:
+  - ('purge', 'WiFi password')
+FINAL_QUERY: What is the WiFi password?
+MUST_CONTAIN: []
+MUST_NOT_CONTAIN: ['pineapple42', 'pineapple42!secure']",,,
+

@@ -1,0 +1,52 @@
+{
+  "system": "cognee-1.5",
+  "retrieval": "chunks",
+  "suite": "adversarial-385",
+  "overall_pass": 57,
+  "overall_total": 97,
+  "overall_rate": 0.5876288659793815,
+  "by_category": {
+    "substring_trap": {
+      "pass": 8,
+      "total": 9
+    },
+    "prefix_collision": {
+      "pass": 0,
+      "total": 10
+    },
+    "paraphrase_supersession": {
+      "pass": 9,
+      "total": 10
+    },
+    "negation_trap": {
+      "pass": 2,
+      "total": 10
+    },
+    "temporal_qualifier": {
+      "pass": 9,
+      "total": 9
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "total": 10
+    },
+    "compound_fact": {
+      "pass": 0,
+      "total": 10
+    },
+    "identifier_obfuscation": {
+      "pass": 9,
+      "total": 9
+    },
+    "cross_lingual_identifier": {
+      "pass": 10,
+      "total": 10
+    },
+    "recursive_supersession": {
+      "pass": 10,
+      "total": 10
+    }
+  },
+  "case_errors": 0,
+  "wall_seconds": 4225.557800199953
+}

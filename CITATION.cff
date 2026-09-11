@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If using this submission package, cite the anonymized ICLR submission."
+title: "Agent Memory Can Only Forget What Its Deletion Path Can See"
+authors:
+  - family-names: "Anonymous"
+    given-names: "Authors"
+license: MIT

@@ -1,0 +1,29 @@
+{
+  "note": "controlled placement ablation, hand-crafted cases only",
+  "by_arm": {
+    "no model": {
+      "pass": 70,
+      "total": 132
+    },
+    "annotation": {
+      "pass": 69,
+      "total": 132
+    },
+    "readable annotation": {
+      "pass": 101,
+      "total": 132
+    },
+    "merge authority": {
+      "pass": 111,
+      "total": 132
+    },
+    "mutation": {
+      "pass": 123,
+      "total": 132
+    },
+    "both": {
+      "pass": 124,
+      "total": 132
+    }
+  }
+}

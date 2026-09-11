@@ -1,0 +1,697 @@
+{
+  "note": "Two- and three-form cross-lingual cases, identical in every respect but the number of surface forms the target entity carries.",
+  "two_form": [
+    {
+      "id": "adv_cross_lingual_2form_01",
+      "category": "cross_lingual_identifier",
+      "script": "Han",
+      "n_forms": 2,
+      "setup_facts": [
+        "Customer 张伟 placed an order in March.",
+        "The same customer in romanised form: Zhang Wei subscribed to Plan A.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer 王芳 opened a separate account in April.",
+        "The same customer, written Wang Fang, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Zhang Wei"
+        ]
+      ],
+      "final_query": "List every customer on file, including Wang Fang.",
+      "must_contain": [
+        "Wang Fang"
+      ],
+      "must_not_contain": [
+        "张伟",
+        "Zhang Wei"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_2form_02",
+      "category": "cross_lingual_identifier",
+      "script": "Han",
+      "n_forms": 2,
+      "setup_facts": [
+        "Customer 李娜 placed an order in March.",
+        "The same customer in romanised form: Li Na subscribed to Plan A.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer 刘洋 opened a separate account in April.",
+        "The same customer, written Liu Yang, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Li Na"
+        ]
+      ],
+      "final_query": "List every customer on file, including Liu Yang.",
+      "must_contain": [
+        "Liu Yang"
+      ],
+      "must_not_contain": [
+        "李娜",
+        "Li Na"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_2form_03",
+      "category": "cross_lingual_identifier",
+      "script": "Kana",
+      "n_forms": 2,
+      "setup_facts": [
+        "Customer 田中太郎 placed an order in March.",
+        "The same customer in romanised form: Tanaka Taro subscribed to Plan A.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer 鈴木花子 opened a separate account in April.",
+        "The same customer, written Suzuki Hanako, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Tanaka Taro"
+        ]
+      ],
+      "final_query": "List every customer on file, including Suzuki Hanako.",
+      "must_contain": [
+        "Suzuki Hanako"
+      ],
+      "must_not_contain": [
+        "田中太郎",
+        "Tanaka Taro"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_2form_04",
+      "category": "cross_lingual_identifier",
+      "script": "Cyrillic",
+      "n_forms": 2,
+      "setup_facts": [
+        "Customer Дмитрий Иванов placed an order in March.",
+        "The same customer in romanised form: Dmitry Ivanov subscribed to Plan A.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer Ольга Петрова opened a separate account in April.",
+        "The same customer, written Olga Petrova, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Dmitry Ivanov"
+        ]
+      ],
+      "final_query": "List every customer on file, including Olga Petrova.",
+      "must_contain": [
+        "Olga Petrova"
+      ],
+      "must_not_contain": [
+        "Дмитрий Иванов",
+        "Dmitry Ivanov"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_2form_05",
+      "category": "cross_lingual_identifier",
+      "script": "Greek",
+      "n_forms": 2,
+      "setup_facts": [
+        "Customer Γιώργος Παπάς placed an order in March.",
+        "The same customer in romanised form: Giorgos Papas subscribed to Plan A.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer Ελένη Νικολάου opened a separate account in April.",
+        "The same customer, written Eleni Nikolaou, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Giorgos Papas"
+        ]
+      ],
+      "final_query": "List every customer on file, including Eleni Nikolaou.",
+      "must_contain": [
+        "Eleni Nikolaou"
+      ],
+      "must_not_contain": [
+        "Γιώργος Παπάς",
+        "Giorgos Papas"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_2form_06",
+      "category": "cross_lingual_identifier",
+      "script": "Hangul",
+      "n_forms": 2,
+      "setup_facts": [
+        "Customer 김민준 placed an order in March.",
+        "The same customer in romanised form: Kim Minjun subscribed to Plan A.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer 박지훈 opened a separate account in April.",
+        "The same customer, written Park Jihoon, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Kim Minjun"
+        ]
+      ],
+      "final_query": "List every customer on file, including Park Jihoon.",
+      "must_contain": [
+        "Park Jihoon"
+      ],
+      "must_not_contain": [
+        "김민준",
+        "Kim Minjun"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_2form_07",
+      "category": "cross_lingual_identifier",
+      "script": "Arabic",
+      "n_forms": 2,
+      "setup_facts": [
+        "Customer محمد الأمين placed an order in March.",
+        "The same customer in romanised form: Mohamed Al-Amin subscribed to Plan A.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer فاطمة الزهراء opened a separate account in April.",
+        "The same customer, written Fatima Al-Zahra, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Mohamed Al-Amin"
+        ]
+      ],
+      "final_query": "List every customer on file, including Fatima Al-Zahra.",
+      "must_contain": [
+        "Fatima Al-Zahra"
+      ],
+      "must_not_contain": [
+        "محمد الأمين",
+        "Mohamed Al-Amin"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_2form_08",
+      "category": "cross_lingual_identifier",
+      "script": "Devanagari",
+      "n_forms": 2,
+      "setup_facts": [
+        "Customer आरव शर्मा placed an order in March.",
+        "The same customer in romanised form: Aarav Sharma subscribed to Plan A.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer प्रिया वर्मा opened a separate account in April.",
+        "The same customer, written Priya Verma, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Aarav Sharma"
+        ]
+      ],
+      "final_query": "List every customer on file, including Priya Verma.",
+      "must_contain": [
+        "Priya Verma"
+      ],
+      "must_not_contain": [
+        "आरव शर्मा",
+        "Aarav Sharma"
+      ]
+    }
+  ],
+  "three_form": [
+    {
+      "id": "adv_cross_lingual_3form_01",
+      "category": "cross_lingual_identifier",
+      "script": "Han",
+      "n_forms": 3,
+      "setup_facts": [
+        "Customer 张伟 placed an order in March.",
+        "The same customer in romanised form: Zhang Wei subscribed to Plan A.",
+        "Billing records list the same customer as Chang Wei, invoice 4471.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer 王芳 opened a separate account in April.",
+        "The same customer, written Wang Fang, is on the Premium tier.",
+        "Support notes record Wong Fang as the contact."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Zhang Wei"
+        ]
+      ],
+      "final_query": "List every customer on file, including Wang Fang.",
+      "must_contain": [
+        "Wang Fang"
+      ],
+      "must_not_contain": [
+        "张伟",
+        "Zhang Wei",
+        "Chang Wei"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_3form_02",
+      "category": "cross_lingual_identifier",
+      "script": "Han",
+      "n_forms": 3,
+      "setup_facts": [
+        "Customer 李娜 placed an order in March.",
+        "The same customer in romanised form: Li Na subscribed to Plan A.",
+        "Billing records list the same customer as Lee Na, invoice 4471.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer 刘洋 opened a separate account in April.",
+        "The same customer, written Liu Yang, is on the Premium tier.",
+        "Support notes record Lau Yang as the contact."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Li Na"
+        ]
+      ],
+      "final_query": "List every customer on file, including Liu Yang.",
+      "must_contain": [
+        "Liu Yang"
+      ],
+      "must_not_contain": [
+        "李娜",
+        "Li Na",
+        "Lee Na"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_3form_03",
+      "category": "cross_lingual_identifier",
+      "script": "Kana",
+      "n_forms": 3,
+      "setup_facts": [
+        "Customer 田中太郎 placed an order in March.",
+        "The same customer in romanised form: Tanaka Taro subscribed to Plan A.",
+        "Billing records list the same customer as Taro Tanaka, invoice 4471.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer 鈴木花子 opened a separate account in April.",
+        "The same customer, written Suzuki Hanako, is on the Premium tier.",
+        "Support notes record Hanako Suzuki as the contact."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Tanaka Taro"
+        ]
+      ],
+      "final_query": "List every customer on file, including Suzuki Hanako.",
+      "must_contain": [
+        "Suzuki Hanako"
+      ],
+      "must_not_contain": [
+        "田中太郎",
+        "Tanaka Taro",
+        "Taro Tanaka"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_3form_04",
+      "category": "cross_lingual_identifier",
+      "script": "Cyrillic",
+      "n_forms": 3,
+      "setup_facts": [
+        "Customer Дмитрий Иванов placed an order in March.",
+        "The same customer in romanised form: Dmitry Ivanov subscribed to Plan A.",
+        "Billing records list the same customer as Dmitrii Ivanov, invoice 4471.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer Ольга Петрова opened a separate account in April.",
+        "The same customer, written Olga Petrova, is on the Premium tier.",
+        "Support notes record Olha Petrova as the contact."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Dmitry Ivanov"
+        ]
+      ],
+      "final_query": "List every customer on file, including Olga Petrova.",
+      "must_contain": [
+        "Olga Petrova"
+      ],
+      "must_not_contain": [
+        "Дмитрий Иванов",
+        "Dmitry Ivanov",
+        "Dmitrii Ivanov"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_3form_05",
+      "category": "cross_lingual_identifier",
+      "script": "Greek",
+      "n_forms": 3,
+      "setup_facts": [
+        "Customer Γιώργος Παπάς placed an order in March.",
+        "The same customer in romanised form: Giorgos Papas subscribed to Plan A.",
+        "Billing records list the same customer as Yorgos Papas, invoice 4471.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer Ελένη Νικολάου opened a separate account in April.",
+        "The same customer, written Eleni Nikolaou, is on the Premium tier.",
+        "Support notes record Helene Nikolaou as the contact."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Giorgos Papas"
+        ]
+      ],
+      "final_query": "List every customer on file, including Eleni Nikolaou.",
+      "must_contain": [
+        "Eleni Nikolaou"
+      ],
+      "must_not_contain": [
+        "Γιώργος Παπάς",
+        "Giorgos Papas",
+        "Yorgos Papas"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_3form_06",
+      "category": "cross_lingual_identifier",
+      "script": "Hangul",
+      "n_forms": 3,
+      "setup_facts": [
+        "Customer 김민준 placed an order in March.",
+        "The same customer in romanised form: Kim Minjun subscribed to Plan A.",
+        "Billing records list the same customer as Kim Min-jun, invoice 4471.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer 박지훈 opened a separate account in April.",
+        "The same customer, written Park Jihoon, is on the Premium tier.",
+        "Support notes record Park Ji-hoon as the contact."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Kim Minjun"
+        ]
+      ],
+      "final_query": "List every customer on file, including Park Jihoon.",
+      "must_contain": [
+        "Park Jihoon"
+      ],
+      "must_not_contain": [
+        "김민준",
+        "Kim Minjun",
+        "Kim Min-jun"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_3form_07",
+      "category": "cross_lingual_identifier",
+      "script": "Arabic",
+      "n_forms": 3,
+      "setup_facts": [
+        "Customer محمد الأمين placed an order in March.",
+        "The same customer in romanised form: Mohamed Al-Amin subscribed to Plan A.",
+        "Billing records list the same customer as Muhammad Alamin, invoice 4471.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer فاطمة الزهراء opened a separate account in April.",
+        "The same customer, written Fatima Al-Zahra, is on the Premium tier.",
+        "Support notes record Fatma Alzahra as the contact."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Mohamed Al-Amin"
+        ]
+      ],
+      "final_query": "List every customer on file, including Fatima Al-Zahra.",
+      "must_contain": [
+        "Fatima Al-Zahra"
+      ],
+      "must_not_contain": [
+        "محمد الأمين",
+        "Mohamed Al-Amin",
+        "Muhammad Alamin"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_3form_08",
+      "category": "cross_lingual_identifier",
+      "script": "Devanagari",
+      "n_forms": 3,
+      "setup_facts": [
+        "Customer आरव शर्मा placed an order in March.",
+        "The same customer in romanised form: Aarav Sharma subscribed to Plan A.",
+        "Billing records list the same customer as Arav Sharma, invoice 4471.",
+        "Marketing team rotated coupons last quarter.",
+        "Customer प्रिया वर्मा opened a separate account in April.",
+        "The same customer, written Priya Verma, is on the Premium tier.",
+        "Support notes record Priya Varma as the contact."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "customer Aarav Sharma"
+        ]
+      ],
+      "final_query": "List every customer on file, including Priya Verma.",
+      "must_contain": [
+        "Priya Verma"
+      ],
+      "must_not_contain": [
+        "आरव शर्मा",
+        "Aarav Sharma",
+        "Arav Sharma"
+      ]
+    }
+  ],
+  "exonym": [
+    {
+      "id": "adv_cross_lingual_exonym_01",
+      "category": "cross_lingual_identifier",
+      "script": "Han",
+      "n_forms": 3,
+      "setup_facts": [
+        "The regional operations center is located in Beijing.",
+        "Internal documents refer to the city as 北京.",
+        "Older logistics records still use the spelling Peking.",
+        "The compliance audit finished in April.",
+        "Customer 王芳 opened a separate account in April.",
+        "The same customer, written Wang Fang, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Beijing regional operations center"
+        ]
+      ],
+      "final_query": "List every customer on file, including Wang Fang.",
+      "must_contain": [
+        "Wang Fang"
+      ],
+      "must_not_contain": [
+        "Beijing",
+        "北京",
+        "Peking"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_exonym_02",
+      "category": "cross_lingual_identifier",
+      "script": "Han",
+      "n_forms": 3,
+      "setup_facts": [
+        "The regional operations center is located in Guangzhou.",
+        "Internal documents refer to the city as 广州.",
+        "Older logistics records still use the spelling Canton.",
+        "The compliance audit finished in April.",
+        "Customer 刘洋 opened a separate account in April.",
+        "The same customer, written Liu Yang, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Guangzhou regional operations center"
+        ]
+      ],
+      "final_query": "List every customer on file, including Liu Yang.",
+      "must_contain": [
+        "Liu Yang"
+      ],
+      "must_not_contain": [
+        "Guangzhou",
+        "广州",
+        "Canton"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_exonym_03",
+      "category": "cross_lingual_identifier",
+      "script": "Devanagari",
+      "n_forms": 3,
+      "setup_facts": [
+        "The regional operations center is located in Mumbai.",
+        "Internal documents refer to the city as मुंबई.",
+        "Older logistics records still use the spelling Bombay.",
+        "The compliance audit finished in April.",
+        "Customer 鈴木花子 opened a separate account in April.",
+        "The same customer, written Suzuki Hanako, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Mumbai regional operations center"
+        ]
+      ],
+      "final_query": "List every customer on file, including Suzuki Hanako.",
+      "must_contain": [
+        "Suzuki Hanako"
+      ],
+      "must_not_contain": [
+        "Mumbai",
+        "मुंबई",
+        "Bombay"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_exonym_04",
+      "category": "cross_lingual_identifier",
+      "script": "Burmese",
+      "n_forms": 3,
+      "setup_facts": [
+        "The regional operations center is located in Yangon.",
+        "Internal documents refer to the city as ရန်ကုန်.",
+        "Older logistics records still use the spelling Rangoon.",
+        "The compliance audit finished in April.",
+        "Customer Ольга Петрова opened a separate account in April.",
+        "The same customer, written Olga Petrova, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Yangon regional operations center"
+        ]
+      ],
+      "final_query": "List every customer on file, including Olga Petrova.",
+      "must_contain": [
+        "Olga Petrova"
+      ],
+      "must_not_contain": [
+        "Yangon",
+        "ရန်ကုန်",
+        "Rangoon"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_exonym_05",
+      "category": "cross_lingual_identifier",
+      "script": "Tamil",
+      "n_forms": 3,
+      "setup_facts": [
+        "The regional operations center is located in Chennai.",
+        "Internal documents refer to the city as சென்னை.",
+        "Older logistics records still use the spelling Madras.",
+        "The compliance audit finished in April.",
+        "Customer Ελένη Νικολάου opened a separate account in April.",
+        "The same customer, written Eleni Nikolaou, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Chennai regional operations center"
+        ]
+      ],
+      "final_query": "List every customer on file, including Eleni Nikolaou.",
+      "must_contain": [
+        "Eleni Nikolaou"
+      ],
+      "must_not_contain": [
+        "Chennai",
+        "சென்னை",
+        "Madras"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_exonym_06",
+      "category": "cross_lingual_identifier",
+      "script": "Bengali",
+      "n_forms": 3,
+      "setup_facts": [
+        "The regional operations center is located in Kolkata.",
+        "Internal documents refer to the city as কলকাতা.",
+        "Older logistics records still use the spelling Calcutta.",
+        "The compliance audit finished in April.",
+        "Customer 박지훈 opened a separate account in April.",
+        "The same customer, written Park Jihoon, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Kolkata regional operations center"
+        ]
+      ],
+      "final_query": "List every customer on file, including Park Jihoon.",
+      "must_contain": [
+        "Park Jihoon"
+      ],
+      "must_not_contain": [
+        "Kolkata",
+        "কলকাতা",
+        "Calcutta"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_exonym_07",
+      "category": "cross_lingual_identifier",
+      "script": "Latin",
+      "n_forms": 3,
+      "setup_facts": [
+        "The regional operations center is located in Istanbul.",
+        "Internal documents refer to the city as İstanbul.",
+        "Older logistics records still use the spelling Constantinople.",
+        "The compliance audit finished in April.",
+        "Customer فاطمة الزهراء opened a separate account in April.",
+        "The same customer, written Fatima Al-Zahra, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Istanbul regional operations center"
+        ]
+      ],
+      "final_query": "List every customer on file, including Fatima Al-Zahra.",
+      "must_contain": [
+        "Fatima Al-Zahra"
+      ],
+      "must_not_contain": [
+        "Istanbul",
+        "İstanbul",
+        "Constantinople"
+      ]
+    },
+    {
+      "id": "adv_cross_lingual_exonym_08",
+      "category": "cross_lingual_identifier",
+      "script": "Greek",
+      "n_forms": 3,
+      "setup_facts": [
+        "The regional operations center is located in Thessaloniki.",
+        "Internal documents refer to the city as Θεσσαλονίκη.",
+        "Older logistics records still use the spelling Salonica.",
+        "The compliance audit finished in April.",
+        "Customer प्रिया वर्मा opened a separate account in April.",
+        "The same customer, written Priya Verma, is on the Premium tier."
+      ],
+      "mutations": [
+        [
+          "purge",
+          "Thessaloniki regional operations center"
+        ]
+      ],
+      "final_query": "List every customer on file, including Priya Verma.",
+      "must_contain": [
+        "Priya Verma"
+      ],
+      "must_not_contain": [
+        "Thessaloniki",
+        "Θεσσαλονίκη",
+        "Salonica"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+﻿{
+  "n_cases": 112,
+  "admitted": 96,
+  "rejected": 16,
+  "errored": 0,
+  "wall_seconds": 364.33922349999193,
+  "per_case": [
+    {
+      "case_id": "adv_substring_trap_01",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "The 'supersede' mutation replaces 'User currently lives in Vienna.' with 'User moved to Oslo last month.', which is the only fact that contains 'Oslo'. The end state does not contain 'lives in Vienna' or 'currently lives', and the final query 'Where does the user live?' is a sensible question to ask given the end state."
+    },
+    {
+      "case_id": "adv_substring_trap_02",
+      "category": "substring_trap",
+      "well_formed": false,
+      "reason": "The 'purge' mutation removes the row 'Account password for backup: raven42#secure.', but the must_not_contain strings 'raven42' and 'raven42#secure' are substrings of the purged row, leading to a substring-collision bug."
+    },
+    {
+      "case_id": "adv_substring_trap_03",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "The 'release' mutation marks the first two facts about Frank as unreachable, but the fact about Grace remains reachable. The end state satisfies the must_contain requirement for 'Grace' and the must_not_contain requirements for 'Frank works' and 'Frank's favorite'."
+    },
+    {
+      "case_id": "adv_substring_trap_04",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "The 'release' mutation marks the fact containing 'kappa7-2025-08' as unreachable, and the end state does not contain any reachable rows with the substrings 'kappa7-2025' or 'kappa7-'. The final_query is sensible as it asks about the current session token, which is no longer available in the reachable facts."
+    },
+    {
+      "case_id": "adv_substring_trap_05",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User joined Anthropic in 2025.' which satisfies the must_contain condition. The must_not_contain conditions 'started at Google' and 'moved to Meta' are not present in the end state, as they were both superseded."
+    },
+    {
+      "case_id": "adv_substring_trap_06",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "The 'supersede' mutation replaces the fact 'User follows a vegan diet strictly.' with 'User now eats pescatarian, including fish.' The end state contains the required 'pescatarian' and does not contain the substrings 'follows a vegan' or 'vegan diet strictly'. The final query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_substring_trap_07",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the fact containing 'alice@beta.io', and the end state does not contain any reachable rows with the substrings 'alice@beta.io has' or 'alice@beta.io's'. The final_query is sensible as it asks for data that was explicitly purged."
+    },
+    {
+      "case_id": "adv_substring_trap_08",
+      "category": "substring_trap",
+      "well_formed": true,
+      "reason": "The 'release' mutation marks the first two facts about Charlie as unreachable, leaving the third fact about Charlie and the fact about Diana as reachable. The end state satisfies the must_contain requirement for 'Diana' and the must_not_contain requirements for 'Charlie joined' and 'Charlie speaks', as these substrings are no longer in reachable facts."
+    },
+    {
+      "case_id": "adv_prefix_collision_01",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'alice@acme.io' fact is purged, leaving 'alice.smith@acme.io' as the only reachable fact, which satisfies the must_contain requirement. The must_not_contain string 'alice@acme.io subscribed' is not present in any reachable fact, and the final_query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_prefix_collision_02",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the 'api_key_v1_abc123' fact, leaving 'api_key_v2_def456' and the office WiFi fact. The end state satisfies the must_contain and must_not_contain conditions, and the final_query is sensible."
+    },
+    {
+      "case_id": "adv_prefix_collision_03",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the prescription fact for John Smith, leaving the allergy fact for John Smithson intact. The end state contains 'penicillin' and does not contain 'John Smith was prescribed' or 'metformin 500mg', satisfying the must_contain and must_not_contain conditions. The final_query is specific and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_prefix_collision_04",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the row containing 'order_2024_001', leaving the row 'Order order_2024_0010 was for 12 units at $150 each.' and 'Warehouse 3 inventory was audited Friday.' in the end state. The end state satisfies 'must_contain' with '12 units' and 'must_not_contain' as 'order_2024_001 was for 5' is no longer present."
+    },
+    {
+      "case_id": "adv_prefix_collision_05",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the fact about 'bob@example.com NDA', leaving the fact about 'bob@example.com.uk' intact. The end state contains 'bob@example.com.uk' and does not contain 'bob@example.com signed', satisfying both must_contain and must_not_contain conditions."
+    },
+    {
+      "case_id": "adv_prefix_collision_06",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the production token, leaving the development token and the office plants fact. The end state contains 'sk-abc-dev-2c7b' and does not contain 'sk-abc-prod-9f3a', satisfying both must_contain and must_not_contain conditions. The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_prefix_collision_07",
+      "category": "prefix_collision",
+      "well_formed": false,
+      "reason": "The must_not_contain string 'case_id 12345 was filed' is a substring of the surviving fact 'Legal case_id 123456 was filed in appellate court.', which means the case cannot be well-formed due to the substring-collision bug."
+    },
+    {
+      "case_id": "adv_prefix_collision_08",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the fact 'Customer dana@startup.com purchased Plan A.' from the memory, leaving 'Customer dana@startup.com.au purchased Plan B.' and 'Marketing emails are sent on Wednesdays.' in the end state. The end state satisfies the must_contain requirement ('Plan B') and the must_not_contain requirement ('dana@startup.com purchased Plan A') as the purged fact is no longer present."
+    },
+    {
+      "case_id": "adv_prefix_collision_09",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the fact 'User admin has full root access.' from the memory, leaving 'User admin1 has read-only dashboard access.' and 'Audit log was archived last week.' in the end state. The end state contains 'read-only' and does not contain 'admin has full root'."
+    },
+    {
+      "case_id": "adv_prefix_collision_10",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'project_2024 budget is $500K.' fact is purged, leaving 'project_2024_v2 budget is $750K.' and 'Coffee inventory was restocked.' in memory. The end state satisfies the must_contain and must_not_contain conditions, and the final_query is a sensible question to ask."
+    },
+    {
+      "case_id": "adv_prefix_collision_11",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the 'Department engineering reports to CTO' fact, leaving 'Department engineering-platform reports to VP Platform' and 'All-hands meeting moved to Wednesday' in the memory. The end state satisfies the must_contain and must_not_contain conditions, and the final_query is answerable from the remaining facts."
+    },
+    {
+      "case_id": "adv_prefix_collision_12",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The purge mutation removes the row containing 'TKT-100 was resolved in March.', leaving the other facts intact. The end state contains 'still open' and does not contain 'TKT-100 was resolved', satisfying both must_contain and must_not_contain conditions."
+    },
+    {
+      "case_id": "adv_prefix_collision_13",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the fact about the active configuration, but the fact about the .bak file remains, satisfying 'must_contain' and 'must_not_contain'."
+    },
+    {
+      "case_id": "adv_prefix_collision_14",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the fact about 'mycompany.com domain registration', which does not affect the fact about 'mycompany.com.br' being owned by a different entity. The end state contains 'different entity' and does not contain 'mycompany.com expires', satisfying both must_contain and must_not_contain conditions."
+    },
+    {
+      "case_id": "adv_prefix_collision_15",
+      "category": "prefix_collision",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the fact about commit abc1234, leaving the fact about commit abc12345 fixing the email template typo. The end state satisfies the must_contain and must_not_contain conditions, and the final_query is sensible."
+    },
+    {
+      "case_id": "adv_prefix_collision_16",
+      "category": "prefix_collision",
+      "well_formed": false,
+      "reason": "The must_not_contain string \"+1-555-0100 is the main\" is a substring of the setup fact \"Phone +1-555-0100 is the main office line.\", which was not targeted by the purge mutation, leading to a substring-collision bug."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_01",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "The setup fact 'User works at Stripe as a senior backend engineer.' is superseded by 'User quit the payments industry and joined an AI safety lab in San Francisco.', which removes 'Stripe' and 'backend engineer' while introducing 'AI safety' and 'lab'. The other setup fact remains unchanged and does not conflict with the must_not_contain strings. The final_query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_02",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User now consumes fish as the only animal product, citing omega-3 needs.' which satisfies the must_contain conditions ('fish', 'omega-3'). The must_not_contain conditions ('strictly vegan', 'vegan since 2020') are not present in the end state, as the original fact was superseded."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_03",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "The setup fact 'User has lived in Berlin since graduating in 2018.' is superseded by 'User relocated to Lisbon last spring to escape the German winter.', which is the only reachable fact in the end state. This fact contains 'Lisbon' and does not contain 'lived in Berlin' or 'since graduating', satisfying the must_contain and must_not_contain conditions."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_04",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "The setup fact 'User writes all backend code in Python and rejects other languages.' is replaced by 'User has rebuilt the team's microservices in Rust over the last six months.' which contains 'Rust'. The fact 'User uses an ergonomic keyboard.' remains unchanged and does not contain any of the must_not_contain strings. The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_05",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User filed for divorce earlier this year and now lives alone.' which literally contains 'divorce' and 'alone'. The strings 'is married and lives' and 'lives with their spouse' are not present in any reachable facts, satisfying the must_not_contain conditions. The final_query 'Is the user married?' is a sensible question to ask given the end state."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_06",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'In 2025 returned to industry, joining a robotics startup in Boston as VP of engineering.' which literally contains the substrings 'robotics' and 'Boston'. The substrings 'joined Google in 2018', 'hedge fund in NYC', and 'teach mathematics' are not present in any reachable facts."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_07",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "The setup fact 'User drives a Tesla Model 3, purchased new in 2022.' is superseded by 'User sold the car and now commutes exclusively by bicycle, refusing to drive.' The end state contains 'bicycle' and does not contain 'drives a Tesla' or 'Tesla Model 3', satisfying the must_contain and must_not_contain conditions. The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_paraphrase_supersession_08",
+      "category": "paraphrase_supersession",
+      "well_formed": true,
+      "reason": "The 'supersede' mutation replaces the 'User is a quiet introvert who avoids large gatherings' fact with 'User is now organizing a 200-person developer meetup every month and hosts a weekly podcast.' The end state contains the required substrings 'organizing' and '200-person' and does not contain 'quiet introvert' or 'avoids large gatherings'. The final query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_negation_trap_01",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "The 'supersede' mutation replaces the fact about the user's employment status with a new fact that the user joined Anthropic last quarter. The end state contains 'joined Anthropic' and does not contain 'does NOT work at Anthropic' or 'never interviewed', satisfying the must_contain and must_not_contain conditions. The final_query is a sensible question to ask given the end state."
+    },
+    {
+      "case_id": "adv_negation_trap_02",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "The 'release' mutation marks the fact 'User does not drink coffee under any circumstances.' as unreachable, leaving 'User drinks green tea every afternoon.' as the only reachable fact. The end state satisfies the must_contain ['green tea'] and must_not_contain ['does not drink coffee'] conditions, and the final_query is a sensible question to ask."
+    },
+    {
+      "case_id": "adv_negation_trap_03",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "The 'supersede' mutation replaces the fact about the user not having pets with the new fact about adopting a golden retriever named Mochi. The end state contains the new fact, which includes both 'golden retriever' and 'Mochi', and does not contain the substrings 'does not have any pets' or 'stated this firmly'."
+    },
+    {
+      "case_id": "adv_negation_trap_04",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'Patient was admitted with severe peanut anaphylaxis last week.' which includes 'anaphylaxis' and does not contain 'no known peanut allergy'. The final query is a sensible question to ask given the end state."
+    },
+    {
+      "case_id": "adv_negation_trap_05",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "The 'release' mutation marks the fact 'User does not speak French at all' as unreachable, leaving 'User speaks Spanish at a conversational level' as the only reachable fact. The end state satisfies the must_contain requirement for 'Spanish' and the must_not_contain requirement for 'does not speak French'."
+    },
+    {
+      "case_id": "adv_negation_trap_06",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "The setup fact 'User refuses to use Slack and only communicates via email.' is superseded by 'User started using Slack daily after team-wide rollout.', which is then the only reachable fact regarding Slack usage. The end state contains 'using Slack daily' and does not contain 'refuses to use Slack', satisfying both must_contain and must_not_contain conditions. The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_negation_trap_07",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "The 'release' mutation marks the 2024 holiday party fact as unreachable, leaving only the 2025 onboarding session fact as reachable. The end state satisfies the must_contain requirement for 'onboarding' and the must_not_contain requirement for 'did not attend the 2024 holiday party'."
+    },
+    {
+      "case_id": "adv_negation_trap_08",
+      "category": "negation_trap",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User started leasing a Tesla Model Y this summer.' which satisfies the must_contain conditions ('Tesla', 'leasing') and does not contain the must_not_contain conditions ('does not own a car', 'uses public transit exclusively'). The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_01",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "The setup fact 'User joined Google in March 2020 as a software engineer.' is superseded by 'User moved to Meta in June 2022.', and the other setup fact remains unchanged. The end state contains 'Meta' and 'June 2022' as required, and does not contain 'joined Google in March 2020'."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_02",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User has lived in Lisbon since 2022.' which satisfies both must_contain conditions ('Lisbon' and 'since 2022'). The must_not_contain conditions ('lived in Tokyo' and 'Berlin from 2018') are not present in any reachable facts."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_03",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "The 'supersede' mutation replaces the fact about the user's first job at Google with the fact that they joined Meta in 2022. The end state contains 'Meta' and does not contain 'joined Google in 2020 as their first job', satisfying both must_contain and must_not_contain conditions."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_04",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "The setup fact 'Throughout 2022 user was strictly keto.' is superseded by 'Starting January 2024, user switched to a Mediterranean diet for cardiovascular reasons.' which is reachable in the end state. The end state contains 'Mediterranean' and does not contain 'strictly keto' or 'Throughout 2022', satisfying all conditions."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_05",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User registered as Green in 2025.' which satisfies the must_contain conditions ('Green', '2025'). The must_not_contain conditions ('registered Libertarian', 'registered as Democrat', 'registered as independent') are not present in the end state, as all previous political registrations were superseded."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_06",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "The setup fact 'User has owned the rental property at 14 Birch Street since 2010.' is replaced by 'User sold 14 Birch Street in October 2024 and now rents downtown.' The second setup fact remains unchanged. The end state contains 'sold' and 'October 2024' as required, and does not contain 'owned the rental property at 14 Birch Street since 2010'."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_07",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "The 'supersede' mutation replaces the 'Pro plan' fact with the 'Free plan' fact, which includes the required 'Free plan' and '2025-02-10' substrings. The 'subscribed to Pro plan on 2023-04-15' string is no longer present in the reachable facts, satisfying the must_not_contain condition."
+    },
+    {
+      "case_id": "adv_temporal_qualifier_08",
+      "category": "temporal_qualifier",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User finalized divorce in 2024.' which literally includes both 'divorce' and '2024'. The facts 'User was single in 2018.', 'User got engaged in 2020.', and 'User married in 2021.' have been superseded and are not reachable, thus the must_not_contain conditions are satisfied."
+    },
+    {
+      "case_id": "adv_shared_attribute_01",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation on 'everything about Dana', the remaining facts are 'Eve lives in Berlin and works at Notion.' and 'Frank lives in Tokyo and works at Spotify.'. The end state satisfies the must_contain conditions ('Eve', 'Berlin') and the must_not_contain condition ('Dana lives in Berlin'). The final_query 'Who lives in Berlin?' is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_shared_attribute_02",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation on 'everything about Alice', the fact 'Alice's favorite hobby is chess and competitive bridge.' is marked unreachable. The end state contains 'Bob's favorite hobby is chess and rock climbing.' and 'Carla's favorite hobby is pottery.' which satisfies the must_contain ['Bob'] and must_not_contain ['Alice's favorite hobby is chess'] conditions. The final_query 'Who likes chess?' is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_shared_attribute_03",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation for 'everything about patient John', the remaining facts are 'Patient Mary has type 2 diabetes and is on insulin therapy.' and 'Patient Tom has hypertension.'. The end state satisfies the must_contain conditions ('Mary', 'diabetes') and the must_not_contain condition ('John has type 2 diabetes') as John's information is no longer reachable."
+    },
+    {
+      "case_id": "adv_shared_attribute_04",
+      "category": "shared_attribute",
+      "well_formed": false,
+      "reason": "The 'release' mutation marks the fact 'Hannah leads the backend team' as unreachable, but the must_not_contain string 'Hannah and Ivan share' is a substring of the surviving fact 'Hannah and Ivan share the 4th floor office near the elevator', which means the case cannot be well-formed due to the substring-collision bug."
+    },
+    {
+      "case_id": "adv_shared_attribute_05",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation, the fact about 'alice@example.com' is marked unreachable, leaving only the fact about 'bob@example.com' and the marketing team's practice. The end state satisfies the must_contain and must_not_contain conditions, and the final_query is a sensible question to ask."
+    },
+    {
+      "case_id": "adv_shared_attribute_06",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "Liam's enrollment information is released, leaving only Mia and Noah's information. Mia is still enrolled in CS 224N, and the must_not_contain string is not a substring of any remaining facts."
+    },
+    {
+      "case_id": "adv_shared_attribute_07",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation, the fact about Olivia's languages is marked unreachable, leaving the facts about Peter and Quinn. The end state contains 'Peter speaks French and Mandarin', which satisfies the must_contain requirement for 'Peter' and the must_not_contain requirement for 'Olivia speaks English and Mandarin'."
+    },
+    {
+      "case_id": "adv_shared_attribute_08",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation to 'everything about client Riya', the remaining facts are 'Client Sam works on the Atlas project and pays annually.' and 'Client Tara works on a different project entirely.'. The end state satisfies the must_contain requirement for 'Sam' and the must_not_contain requirement for 'Riya works on the Atlas', as the latter is no longer reachable."
+    },
+    {
+      "case_id": "adv_shared_attribute_09",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation on 'everything about Uma', the fact about Uma is marked unreachable, leaving the facts about Victor and Wendy. The end state contains 'Victor' and does not contain 'Uma works in the platform', satisfying the must_contain and must_not_contain conditions. The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_shared_attribute_10",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation, the fact about Xavier's hardware is marked unreachable, leaving only the facts about Yara and Zoe. The end state contains 'Yara owns a MacBook Pro 16 M3 for music production.' which satisfies the must_contain requirement for 'Yara'. The must_not_contain string 'Xavier owns a MacBook' is not a substring of any reachable fact, and the final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_shared_attribute_11",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation, Aiden's fact is marked unreachable, leaving Bella's and Caleb's facts. Bella's fact contains the required substring 'Bella', and no reachable fact contains the substring 'Aiden has a severe shellfish'. The final query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_shared_attribute_12",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation, the fact about Diana is marked unreachable, leaving the facts about Ethan and Felix. The end state contains 'Ethan' and does not contain 'Diana co-authored the 2025', satisfying the must_contain and must_not_contain conditions. The final_query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_shared_attribute_13",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation, the fact about gina@x.com is marked unreachable, leaving the facts about hugo@y.com and iris@z.com. The end state satisfies the must_contain and must_not_contain conditions, and the final_query is sensible."
+    },
+    {
+      "case_id": "adv_shared_attribute_14",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'Resident Kai lives on Pine Street in the Mission district.' which satisfies the must_contain requirement for 'Kai'. The fact about Jin has been released, so 'Jin lives on Oak Street' is not present, satisfying the must_not_contain requirement. The final_query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_shared_attribute_15",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation on 'everything about student Maya', the fact about Maya is marked unreachable, leaving the facts about Noah and Owen. The end state contains 'Noah' and does not contain 'Maya is advised by Professor Chen', satisfying the must_contain and must_not_contain conditions. The final_query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_shared_attribute_16",
+      "category": "shared_attribute",
+      "well_formed": true,
+      "reason": "After applying the 'release' mutation for 'everything about athlete Paula', the fact 'Athlete Paula plays striker for FC Lisbon' is marked unreachable. The remaining fact 'Athlete Quentin plays striker for FC Lisbon' contains 'Quentin' and does not contain 'Paula plays striker'. The final_query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_compound_fact_01",
+      "category": "compound_fact",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User relocated to Madrid and continues working remotely.' which does not contain 'lives in Berlin', and the fact 'User uses an ergonomic mechanical keyboard.' which does not contradict the must_not_contain. The must_contain 'Stripe' is still present in the first fact, and the final_query 'Where does the user work?' is a sensible question to ask given the end state."
+    },
+    {
+      "case_id": "adv_compound_fact_02",
+      "category": "compound_fact",
+      "well_formed": true,
+      "reason": "The end state contains 'User is married to Jamie and' from the original setup, and the fact 'User joined Anthropic as a research engineer.' replaces 'User is married to Jamie and works at Google.' Thus, 'married to Jamie' is still present and 'works at Google' is not, satisfying both must_contain and must_not_contain conditions."
+    },
+    {
+      "case_id": "adv_compound_fact_03",
+      "category": "compound_fact",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User speaks Italian fluently and follows a vegan diet for ethical reasons.' which satisfies the must_contain requirement for 'Italian'. The must_not_contain requirement for 'Mediterranean diet' is also met as the original fact was superseded and no longer contains this substring. The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_compound_fact_04",
+      "category": "compound_fact",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User plays the cello and moved to Toronto last autumn for a new opportunity.' which literally contains 'cello' and does not contain 'lives in Vienna'. The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_compound_fact_05",
+      "category": "compound_fact",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User drives a 2018 Subaru and owns a Border Collie named Rex.' which is superseded to 'User upgraded to a new electric pickup truck.' The fact 'User's preferred reading genre is hard sci-fi.' remains unchanged. The end state thus contains 'Border Collie' and 'Rex' as required, and does not contain 'drives a 2018 Subaru'. The final query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_compound_fact_06",
+      "category": "compound_fact",
+      "well_formed": true,
+      "reason": "The 'supersede' mutation replaces the fact about the user's employment, but the educational background remains intact. The end state contains 'PhD in physics from MIT' and does not contain 'works as a quant at Renaissance', satisfying both must_contain and must_not_contain conditions."
+    },
+    {
+      "case_id": "adv_compound_fact_07",
+      "category": "compound_fact",
+      "well_formed": true,
+      "reason": "The 'Enterprise' plan is still mentioned in the end state, and the fact about 'pays via wire transfer' has been replaced, so it does not appear in the end state. The final query is sensible and can be answered from the end state."
+    },
+    {
+      "case_id": "adv_compound_fact_08",
+      "category": "compound_fact",
+      "well_formed": true,
+      "reason": "The 'User leads the Atlas project' fact remains reachable, satisfying 'must_contain': ['Atlas']. The 'reports to the VP of Engineering' substring is replaced, satisfying 'must_not_contain': ['reports to the VP of Engineering']. The final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_01",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts containing 'alice@acme.io', including the case-normalized version. The end state only contains 'Office lunches are catered on Wednesdays.', which satisfies the must_not_contain conditions and does not contradict the must_contain conditions. The final_query is sensible but cannot be answered from the remaining facts, which is not a requirement for well-formedness."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_02",
+      "category": "identifier_obfuscation",
+      "well_formed": false,
+      "reason": "The 'purge' mutation removes all facts containing 'bob@example.com', but the final_query asks about 'bob@example.com', which is a contradiction since no information about 'bob@example.com' should remain in the end state."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_03",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "Both phone numbers are purged, leaving the clinic's move as the only fact in the end state. The final_query is sensible as it asks about information that was present in the setup but is now absent, and the must_not_contain conditions are satisfied."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_04",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes both the 'User token' and 'Same user, compact form' facts, leaving only the 'Server maintenance window is Tuesdays.' fact, which does not contain any of the must_not_contain substrings. The final_query is sensible as it asks about a fact that was purged, and the must_contain list is empty, so there are no contradictions."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_05",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes both the 'SSN 123-45-6789' and '123456789 (no dashes)' facts, leaving 'Tax filings are due in April.' as the only reachable fact. The must_not_contain strings are not present in the remaining fact, and the final_query is sensible given the context."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_06",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes both card facts, leaving only the 'Office holiday party will be online.' fact. The must_not_contain strings are not present in the remaining fact, and the final_query is a sensible question to ask, though it cannot be answered from the end state."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_07",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts containing 'john.doe@company.com', leaving only the 'Annual leave policy updates take effect next quarter.' fact, which satisfies the must_not_contain conditions. The final_query is sensible as it asks about a customer whose information has been purged, and the must_contain list is empty, so there are no contradictions."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_08",
+      "category": "identifier_obfuscation",
+      "well_formed": false,
+      "reason": "The 'purge' mutation removes the fact 'Contractor @acme-engineer is on the access list.', but the must_not_contain string 'acme-engineer.' is a substring of the surviving fact 'Same contractor without @: acme-engineer.', causing a substring-collision bug."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_09",
+      "category": "identifier_obfuscation",
+      "well_formed": false,
+      "reason": "The 'purge' mutation targets 'server 192.168.1.5 record', which is a substring of both setup facts. However, the must_not_contain list includes '192.168.001.005 hosts' and '192.168.1.5 (no padding)', which are substrings of the original facts and would still be present in the end state, leading to a contradiction."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_10",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the facts containing 'api.acme.io/v2/events webhook', which includes both the exact and trailing slash variants. The end state does not contain any of the must_not_contain substrings, and the final_query is sensible given the remaining fact about the Slack channel."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_11",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts containing 'Alan Turing user account', which are the first two facts. The third fact remains, and it does not contain any of the must_not_contain substrings. The final_query is sensible as it asks about the presence of sessions for Alan Turing, which can be answered from the end state."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_12",
+      "category": "identifier_obfuscation",
+      "well_formed": false,
+      "reason": "The 'must_not_contain' list includes 'ada+promo@example.com used a coupon', which is a substring of the surviving fact 'Same customer email-with-tag: ada+promo@example.com used a coupon.', causing a substring-collision bug."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_13",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes both 'Robert Smith was hired on 2023-01-15.' and 'Same employee, nickname Bob Smith, was promoted in 2024.' from the memory, leaving 'Annual review window opens next month.' as the only reachable fact. The must_not_contain strings are not present in the surviving fact, and the final_query is sensible given the context of the removed facts."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_14",
+      "category": "identifier_obfuscation",
+      "well_formed": false,
+      "reason": "The purge mutation targets a string that is not exactly present in the setup facts, leading to no facts being purged. As a result, the end state still contains facts that must_not_contain checks for, specifically 'PRJ-ATLAS-2024 has 5' and 'ATLAS-2024 (no PRJ prefix)'. This violates the well-formed criteria."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_15",
+      "category": "identifier_obfuscation",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the facts containing '2025-12-25 gala' and '12/25/2025 will be at', leaving only 'Holiday schedule was published.' in the end state. The final_query is sensible and does not contradict the must_contain and must_not_contain assertions."
+    },
+    {
+      "case_id": "adv_identifier_obfuscation_16",
+      "category": "identifier_obfuscation",
+      "well_formed": false,
+      "reason": "The 'purge' mutation targets 'account 1234 / 1234-USD record', but the must_not_contain strings '1234-USD holds the dollar' and '1234 (without currency suffix)' are substrings of the original facts, which means the end state will still contain these substrings, violating the must_not_contain condition."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_01",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts related to 'customer Zhang Wei aka 张伟', which includes the order placed in March and the subscription to Plan A. The marketing fact remains, and it does not contain any of the 'must_not_contain' strings. The 'must_contain' list is empty, so there are no required substrings to check for. The final query is sensible given the end state, as it asks about orders that should not exist in the memory."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_02",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts related to 'patient Tanaka Taro / 田中太郎', leaving only the 'Pharmacy was inspected on Tuesday.' fact. The end state satisfies the must_not_contain conditions as neither '田中太郎 was prescribed' nor 'Tanaka Taro has' are present, and the final_query is sensible given the context, although it cannot be answered from the remaining facts."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_03",
+      "category": "cross_lingual_identifier",
+      "well_formed": false,
+      "reason": "The 'purge' mutation removes the fact 'User 김민지 logged in from Seoul.' and 'Same user as Kim Minji has 2FA enabled.', but the final_query asks for Kim Minji's login activity, which cannot be answered from the end state. Additionally, the must_not_contain strings '김민지 logged' and 'Kim Minji has' are substrings of the purged facts, which is a valid condition, but the query is not sensible given the end state."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_04",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts containing 'Ivan Petrov / Иван Петров', leaving only the 'Quarterly sales meeting is in November.' fact. The end state satisfies the must_not_contain conditions and the final_query is sensible as it can be answered by the absence of the customer's information."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_05",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts related to Mohammed Ali / محمد علي, leaving no reachable rows that contain the substrings 'محمد علي is allergic' or 'Mohammed Ali had surgery'. The final_query is sensible as it asks about the allergy status of a patient whose records have been purged."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_06",
+      "category": "cross_lingual_identifier",
+      "well_formed": false,
+      "reason": "The 'purge' mutation targets 'vendor Alibaba 阿里巴巴', which would remove both 'Vendor 阿里巴巴 shipped 50 units.' and 'Same vendor as Alibaba sent invoice for $5000.' from the memory. However, the must_not_contain list includes substrings '阿里巴巴 shipped' and 'Alibaba sent invoice', which are substrings of the facts that would be purged, leading to a substring-collision bug."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_07",
+      "category": "cross_lingual_identifier",
+      "well_formed": false,
+      "reason": "The 'purge' mutation removes all facts containing 'Jose Garcia' or 'José García', but the final_query asks about 'Jose Garcia's plan, which cannot be answered from the end state. Additionally, the must_not_contain strings are substrings of the purged facts, which is a substring-collision bug."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_08",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts containing 'Grossmann / Großmann GmbH', resulting in no reachable facts containing the substrings in must_not_contain. The final_query is sensible as it asks about the activity of a vendor whose records have been purged, which can be answered by noting the lack of recent activity."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_09",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts containing 'Raj Sharma / राज शर्मा', which eliminates the two facts about the customer. The remaining fact about the holiday calendar does not contain any of the must_not_contain substrings, and the final_query is a sensible question to ask given the end state."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_10",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes the facts containing 'Somchai Jaidee / สมชาย ใจดี vendor', thus the end state does not contain any of the must_not_contain substrings. The final_query is sensible as it asks about information that was present in the setup but has been purged, making it a valid test of memory retention and recall."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_11",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "After applying the 'purge' mutation, the end state contains only the fact 'DNS migration finished overnight.', which does not contain any of the must_not_contain strings. The final_query is sensible as it can be clearly answered as 'not applicable' or 'unknown' from the end state."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_12",
+      "category": "cross_lingual_identifier",
+      "well_formed": false,
+      "reason": "The 'purge' mutation targets 'David Cohen / דוד כהן patient', which would remove the facts about the patient's appointment and medication. However, the must_not_contain strings are substrings of the facts that should be purged, leading to a substring-collision bug. The final_query also presupposes information that would be purged, making it unsuitable for the end state."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_13",
+      "category": "cross_lingual_identifier",
+      "well_formed": false,
+      "reason": "The 'purge' mutation targets 'Beijing / 北京 branch office', but the setup facts do not contain this exact string, leading to no facts being purged. As a result, the end state still contains facts that contradict the must_not_contain assertions."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_14",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts containing 'Nguyen Van Hung' or 'Nguyễn Văn Hùng', leaving only the 'Quarterly OKR review is next Monday.' fact. The end state satisfies the must_not_contain conditions, and the final_query is a sensible question to ask, though it cannot be answered from the remaining facts."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_15",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes all facts related to 'Francois Muller / François Müller client', resulting in the end state containing only the 'Conference room schedule was updated.' fact. This satisfies the must_not_contain conditions and the final_query is sensible given the end state."
+    },
+    {
+      "case_id": "adv_cross_lingual_identifier_16",
+      "category": "cross_lingual_identifier",
+      "well_formed": true,
+      "reason": "The 'purge' mutation removes both facts containing '@dev' and '@dev🚀', leaving only the 'CI runner pool was scaled up.' fact. The must_not_contain strings are not present in the remaining fact, and the final_query is a sensible question to ask, though it cannot be answered from the end state."
+    },
+    {
+      "case_id": "adv_recursive_supersession_01",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User switched back to Chrome in 2025 after Brave broke an extension.', which literally contains 'Chrome'. The substring 'switched to Brave' is not present in any reachable fact, as it was replaced by the final supersede mutation."
+    },
+    {
+      "case_id": "adv_recursive_supersession_02",
+      "category": "recursive_supersession",
+      "well_formed": false,
+      "reason": "The end state contains the fact 'User returned to a vegetarian diet in 2024 after health concerns.' which includes the substring 'started eating meat in 2021' as part of the superseded fact, violating the must_not_contain condition."
+    },
+    {
+      "case_id": "adv_recursive_supersession_03",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User came back to iPhone 15 Pro in 2025 for ecosystem reasons.' which satisfies the must_contain requirement. The must_not_contain string 'Samsung Galaxy' is not present in any reachable fact, and the final_query is a sensible question to ask of the end state."
+    },
+    {
+      "case_id": "adv_recursive_supersession_04",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User returned to Berlin in 2024 after their family relocated.' which literally contains 'Berlin'. The fact 'User moved to Lisbon in 2020 for the climate.' does not contain 'moved to Lisbon in 2020' as a literal substring, thus satisfying the must_not_contain condition."
+    },
+    {
+      "case_id": "adv_recursive_supersession_05",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'Developer switched back to macOS in 2025 for video editing.' which literally contains 'macOS'. The fact 'Developer switched to Ubuntu Linux in 2023 for kernel work.' was superseded and does not appear in the end state, thus 'Ubuntu Linux in 2023' is not present as a substring."
+    },
+    {
+      "case_id": "adv_recursive_supersession_06",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User adopted a Border Collie puppy in 2025; the cats live with relatives.' which literally contains 'Border Collie'. The fact 'adopted two cats in 2021' was superseded and no longer exists in the end state, thus it does not contain 'adopted two cats in 2021' as a substring."
+    },
+    {
+      "case_id": "adv_recursive_supersession_07",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'User married Jordan in 2024 after a long engagement.' which includes 'married Jordan'. The fact 'divorced from Alex' is not present in the end state, as it was superseded by the marriage to Jordan."
+    },
+    {
+      "case_id": "adv_recursive_supersession_08",
+      "category": "recursive_supersession",
+      "well_formed": true,
+      "reason": "The end state contains the fact 'Team moved back to Slack in 2025 after Discord lacked compliance features.' which literally contains 'Slack' and does not contain 'migrated to Discord in 2023'. The final_query is a sensible question to ask of the end state."
+    }
+  ]
+}

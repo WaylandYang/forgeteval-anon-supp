@@ -1,0 +1,18 @@
+{
+  "two-form": {
+    "n": 8,
+    "deterministic": 0,
+    "hook": 8
+  },
+  "three-form": {
+    "n": 8,
+    "deterministic": 0,
+    "hook": 7
+  },
+  "exonym": {
+    "n": 8,
+    "deterministic": 0,
+    "hook": 0
+  },
+  "llm_errors": 0
+}

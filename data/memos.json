@@ -1,0 +1,64 @@
+{
+  "system": "memos-2.0.30",
+  "suite": "adversarial-385",
+  "overall_pass": 173,
+  "overall_total": 385,
+  "na": 75,
+  "evaluable": 310,
+  "overall_rate_strict": 0.44935064935064933,
+  "overall_rate_evaluable": 0.5580645161290323,
+  "by_category": {
+    "substring_trap": {
+      "pass": 20,
+      "total": 36,
+      "na": 16
+    },
+    "prefix_collision": {
+      "pass": 27,
+      "total": 39,
+      "na": 0
+    },
+    "paraphrase_supersession": {
+      "pass": 31,
+      "total": 38,
+      "na": 0
+    },
+    "negation_trap": {
+      "pass": 19,
+      "total": 40,
+      "na": 19
+    },
+    "temporal_qualifier": {
+      "pass": 37,
+      "total": 37,
+      "na": 0
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "total": 40,
+      "na": 40
+    },
+    "compound_fact": {
+      "pass": 0,
+      "total": 40,
+      "na": 0
+    },
+    "identifier_obfuscation": {
+      "pass": 2,
+      "total": 38,
+      "na": 0
+    },
+    "cross_lingual_identifier": {
+      "pass": 1,
+      "total": 38,
+      "na": 0
+    },
+    "recursive_supersession": {
+      "pass": 36,
+      "total": 39,
+      "na": 0
+    }
+  },
+  "case_errors": 0,
+  "wall_seconds": 74.9187584000174
+}

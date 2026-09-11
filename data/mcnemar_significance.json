@@ -1,0 +1,462 @@
+{
+ "scoring": "probe-based, survivor and one-form requirements in force",
+ "test": "exact McNemar, Holm-Bonferroni within each comparison",
+ "comparisons": [
+  {
+   "label": "Lethe deterministic vs Lethe+LLM (mutation-time hook, V4-Flash)",
+   "n_paired": 385,
+   "a_pass": 245,
+   "b_pass": 342,
+   "overall": {
+    "a_only": 2,
+    "b_only": 99,
+    "discordant": 101,
+    "p_exact": 4.064211383698653e-27
+   },
+   "by_category": {
+    "compound_fact": {
+     "n": 40,
+     "a_pass": 0,
+     "b_pass": 27,
+     "a_only": 0,
+     "b_only": 27,
+     "discordant": 27,
+     "p_exact": 1.4901161193847656e-08,
+     "p_holm": 1.1920928955078125e-07
+    },
+    "cross_lingual_identifier": {
+     "n": 38,
+     "a_pass": 1,
+     "b_pass": 32,
+     "a_only": 0,
+     "b_only": 31,
+     "discordant": 31,
+     "p_exact": 9.313225746154785e-10,
+     "p_holm": 8.381903171539307e-09
+    },
+    "identifier_obfuscation": {
+     "n": 38,
+     "a_pass": 2,
+     "b_pass": 35,
+     "a_only": 0,
+     "b_only": 33,
+     "discordant": 33,
+     "p_exact": 2.3283064365386963e-10,
+     "p_holm": 2.3283064365386963e-09
+    },
+    "negation_trap": {
+     "n": 40,
+     "a_pass": 38,
+     "b_pass": 36,
+     "a_only": 2,
+     "b_only": 0,
+     "discordant": 2,
+     "p_exact": 0.5,
+     "p_holm": 1.0
+    },
+    "paraphrase_supersession": {
+     "n": 38,
+     "a_pass": 31,
+     "b_pass": 31,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "prefix_collision": {
+     "n": 39,
+     "a_pass": 32,
+     "b_pass": 32,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "recursive_supersession": {
+     "n": 39,
+     "a_pass": 36,
+     "b_pass": 36,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "shared_attribute": {
+     "n": 40,
+     "a_pass": 35,
+     "b_pass": 40,
+     "a_only": 0,
+     "b_only": 5,
+     "discordant": 5,
+     "p_exact": 0.0625,
+     "p_holm": 0.4375
+    },
+    "substring_trap": {
+     "n": 36,
+     "a_pass": 33,
+     "b_pass": 36,
+     "a_only": 0,
+     "b_only": 3,
+     "discordant": 3,
+     "p_exact": 0.25,
+     "p_holm": 1.0
+    },
+    "temporal_qualifier": {
+     "n": 37,
+     "a_pass": 37,
+     "b_pass": 37,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    }
+   }
+  },
+  {
+   "label": "LangGraph deterministic vs LangGraph+LLM",
+   "n_paired": 385,
+   "a_pass": 242,
+   "b_pass": 344,
+   "overall": {
+    "a_only": 5,
+    "b_only": 107,
+    "discordant": 112,
+    "p_exact": 5.415668049444863e-26
+   },
+   "by_category": {
+    "compound_fact": {
+     "n": 40,
+     "a_pass": 0,
+     "b_pass": 27,
+     "a_only": 0,
+     "b_only": 27,
+     "discordant": 27,
+     "p_exact": 1.4901161193847656e-08,
+     "p_holm": 1.1920928955078125e-07
+    },
+    "cross_lingual_identifier": {
+     "n": 38,
+     "a_pass": 1,
+     "b_pass": 37,
+     "a_only": 0,
+     "b_only": 36,
+     "discordant": 36,
+     "p_exact": 2.9103830456733704e-11,
+     "p_holm": 2.9103830456733704e-10
+    },
+    "identifier_obfuscation": {
+     "n": 38,
+     "a_pass": 2,
+     "b_pass": 35,
+     "a_only": 0,
+     "b_only": 33,
+     "discordant": 33,
+     "p_exact": 2.3283064365386963e-10,
+     "p_holm": 2.0954757928848267e-09
+    },
+    "negation_trap": {
+     "n": 40,
+     "a_pass": 38,
+     "b_pass": 35,
+     "a_only": 3,
+     "b_only": 0,
+     "discordant": 3,
+     "p_exact": 0.25,
+     "p_holm": 1.0
+    },
+    "paraphrase_supersession": {
+     "n": 38,
+     "a_pass": 31,
+     "b_pass": 31,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "prefix_collision": {
+     "n": 39,
+     "a_pass": 27,
+     "b_pass": 32,
+     "a_only": 0,
+     "b_only": 5,
+     "discordant": 5,
+     "p_exact": 0.0625,
+     "p_holm": 0.4375
+    },
+    "recursive_supersession": {
+     "n": 39,
+     "a_pass": 36,
+     "b_pass": 36,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "shared_attribute": {
+     "n": 40,
+     "a_pass": 35,
+     "b_pass": 38,
+     "a_only": 2,
+     "b_only": 5,
+     "discordant": 7,
+     "p_exact": 0.453125,
+     "p_holm": 1.0
+    },
+    "substring_trap": {
+     "n": 36,
+     "a_pass": 35,
+     "b_pass": 36,
+     "a_only": 0,
+     "b_only": 1,
+     "discordant": 1,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "temporal_qualifier": {
+     "n": 37,
+     "a_pass": 37,
+     "b_pass": 37,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    }
+   }
+  },
+  {
+   "label": "Lethe deterministic vs LangGraph deterministic",
+   "n_paired": 385,
+   "a_pass": 245,
+   "b_pass": 242,
+   "overall": {
+    "a_only": 5,
+    "b_only": 2,
+    "discordant": 7,
+    "p_exact": 0.453125
+   },
+   "by_category": {
+    "compound_fact": {
+     "n": 40,
+     "a_pass": 0,
+     "b_pass": 0,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "cross_lingual_identifier": {
+     "n": 38,
+     "a_pass": 1,
+     "b_pass": 1,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "identifier_obfuscation": {
+     "n": 38,
+     "a_pass": 2,
+     "b_pass": 2,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "negation_trap": {
+     "n": 40,
+     "a_pass": 38,
+     "b_pass": 38,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "paraphrase_supersession": {
+     "n": 38,
+     "a_pass": 31,
+     "b_pass": 31,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "prefix_collision": {
+     "n": 39,
+     "a_pass": 32,
+     "b_pass": 27,
+     "a_only": 5,
+     "b_only": 0,
+     "discordant": 5,
+     "p_exact": 0.0625,
+     "p_holm": 0.625
+    },
+    "recursive_supersession": {
+     "n": 39,
+     "a_pass": 36,
+     "b_pass": 36,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "shared_attribute": {
+     "n": 40,
+     "a_pass": 35,
+     "b_pass": 35,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "substring_trap": {
+     "n": 36,
+     "a_pass": 33,
+     "b_pass": 35,
+     "a_only": 0,
+     "b_only": 2,
+     "discordant": 2,
+     "p_exact": 0.5,
+     "p_holm": 1.0
+    },
+    "temporal_qualifier": {
+     "n": 37,
+     "a_pass": 37,
+     "b_pass": 37,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    }
+   }
+  },
+  {
+   "label": "Lethe deterministic vs Mem0 infer=False",
+   "n_paired": 385,
+   "a_pass": 245,
+   "b_pass": 252,
+   "overall": {
+    "a_only": 22,
+    "b_only": 29,
+    "discordant": 51,
+    "p_exact": 0.4010619910279374
+   },
+   "by_category": {
+    "compound_fact": {
+     "n": 40,
+     "a_pass": 0,
+     "b_pass": 0,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "cross_lingual_identifier": {
+     "n": 38,
+     "a_pass": 1,
+     "b_pass": 7,
+     "a_only": 0,
+     "b_only": 6,
+     "discordant": 6,
+     "p_exact": 0.03125,
+     "p_holm": 0.25
+    },
+    "identifier_obfuscation": {
+     "n": 38,
+     "a_pass": 2,
+     "b_pass": 23,
+     "a_only": 0,
+     "b_only": 21,
+     "discordant": 21,
+     "p_exact": 9.5367431640625e-07,
+     "p_holm": 9.5367431640625e-06
+    },
+    "negation_trap": {
+     "n": 40,
+     "a_pass": 38,
+     "b_pass": 38,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "paraphrase_supersession": {
+     "n": 38,
+     "a_pass": 31,
+     "b_pass": 31,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "prefix_collision": {
+     "n": 39,
+     "a_pass": 32,
+     "b_pass": 13,
+     "a_only": 19,
+     "b_only": 0,
+     "discordant": 19,
+     "p_exact": 3.814697265625e-06,
+     "p_holm": 3.4332275390625e-05
+    },
+    "recursive_supersession": {
+     "n": 39,
+     "a_pass": 36,
+     "b_pass": 36,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    "shared_attribute": {
+     "n": 40,
+     "a_pass": 35,
+     "b_pass": 37,
+     "a_only": 0,
+     "b_only": 2,
+     "discordant": 2,
+     "p_exact": 0.5,
+     "p_holm": 1.0
+    },
+    "substring_trap": {
+     "n": 36,
+     "a_pass": 33,
+     "b_pass": 30,
+     "a_only": 3,
+     "b_only": 0,
+     "discordant": 3,
+     "p_exact": 0.25,
+     "p_holm": 1.0
+    },
+    "temporal_qualifier": {
+     "n": 37,
+     "a_pass": 37,
+     "b_pass": 37,
+     "a_only": 0,
+     "b_only": 0,
+     "discordant": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    }
+   }
+  }
+ ]
+}

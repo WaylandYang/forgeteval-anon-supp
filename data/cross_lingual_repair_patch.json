@@ -1,0 +1,458 @@
+{
+  "adv_cross_lingual_identifier_01": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Chinese (Han)",
+    "add_facts": [
+      "Customer 李娜 opened a separate account in April.",
+      "The same customer, written Li Na, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Li Na.",
+    "must_contain": [
+      "Li Na"
+    ]
+  },
+  "adv_cross_lingual_identifier_02": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Chinese (Han)",
+    "add_facts": [
+      "Customer 李娜 opened a separate account in April.",
+      "The same customer, written Li Na, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Li Na.",
+    "must_contain": [
+      "Li Na"
+    ]
+  },
+  "adv_cross_lingual_identifier_03": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Korean (Hangul)",
+    "add_facts": [
+      "Customer 박지훈 opened a separate account in April.",
+      "The same customer, written Park Jihoon, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Park Jihoon.",
+    "must_contain": [
+      "Park Jihoon"
+    ]
+  },
+  "adv_cross_lingual_identifier_04": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Cyrillic",
+    "add_facts": [
+      "Customer Ольга Соколова opened a separate account in April.",
+      "The same customer, written Olga Sokolova, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Olga Sokolova.",
+    "must_contain": [
+      "Olga Sokolova"
+    ]
+  },
+  "adv_cross_lingual_identifier_05": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Arabic",
+    "add_facts": [
+      "Customer نور الحسن opened a separate account in April.",
+      "The same customer, written Nour Al-Hassan, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Nour Al-Hassan.",
+    "must_contain": [
+      "Nour Al-Hassan"
+    ]
+  },
+  "adv_cross_lingual_identifier_06": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Chinese (Han)",
+    "add_facts": [
+      "Customer 李娜 opened a separate account in April.",
+      "The same customer, written Li Na, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Li Na.",
+    "must_contain": [
+      "Li Na"
+    ]
+  },
+  "adv_cross_lingual_identifier_07": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_08": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_09": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Devanagari",
+    "add_facts": [
+      "Customer अर्जुन शर्मा opened a separate account in April.",
+      "The same customer, written Arjun Sharma, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Arjun Sharma.",
+    "must_contain": [
+      "Arjun Sharma"
+    ]
+  },
+  "adv_cross_lingual_identifier_10": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Thai",
+    "add_facts": [
+      "Customer มาลี ศรีสุข opened a separate account in April.",
+      "The same customer, written Malee Srisuk, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Malee Srisuk.",
+    "must_contain": [
+      "Malee Srisuk"
+    ]
+  },
+  "adv_cross_lingual_identifier_11": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Greek",
+    "add_facts": [
+      "Customer Ελένη Παπαδάκη opened a separate account in April.",
+      "The same customer, written Eleni Papadaki, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Eleni Papadaki.",
+    "must_contain": [
+      "Eleni Papadaki"
+    ]
+  },
+  "adv_cross_lingual_identifier_12": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Hebrew",
+    "add_facts": [
+      "Customer דנה לוי opened a separate account in April.",
+      "The same customer, written Dana Levi, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Dana Levi.",
+    "must_contain": [
+      "Dana Levi"
+    ]
+  },
+  "adv_cross_lingual_identifier_13": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Chinese (Han)",
+    "add_facts": [
+      "Customer 李娜 opened a separate account in April.",
+      "The same customer, written Li Na, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Li Na.",
+    "must_contain": [
+      "Li Na"
+    ]
+  },
+  "adv_cross_lingual_identifier_14": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_15": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_16": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_17": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Greek",
+    "add_facts": [
+      "Customer Ελένη Παπαδάκη opened a separate account in April.",
+      "The same customer, written Eleni Papadaki, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Eleni Papadaki.",
+    "must_contain": [
+      "Eleni Papadaki"
+    ]
+  },
+  "adv_cross_lingual_identifier_19": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Cyrillic",
+    "add_facts": [
+      "Customer Ольга Соколова opened a separate account in April.",
+      "The same customer, written Olga Sokolova, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Olga Sokolova.",
+    "must_contain": [
+      "Olga Sokolova"
+    ]
+  },
+  "adv_cross_lingual_identifier_20": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Chinese (Han)",
+    "add_facts": [
+      "Customer 李娜 opened a separate account in April.",
+      "The same customer, written Li Na, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Li Na.",
+    "must_contain": [
+      "Li Na"
+    ]
+  },
+  "adv_cross_lingual_identifier_21": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_22": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_24": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Greek",
+    "add_facts": [
+      "Customer Ελένη Παπαδάκη opened a separate account in April.",
+      "The same customer, written Eleni Papadaki, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Eleni Papadaki.",
+    "must_contain": [
+      "Eleni Papadaki"
+    ]
+  },
+  "adv_cross_lingual_identifier_23": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Greek",
+    "add_facts": [
+      "Customer Ελένη Παπαδάκη opened a separate account in April.",
+      "The same customer, written Eleni Papadaki, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Eleni Papadaki.",
+    "must_contain": [
+      "Eleni Papadaki"
+    ]
+  },
+  "adv_cross_lingual_identifier_25": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Cyrillic",
+    "add_facts": [
+      "Customer Ольга Соколова opened a separate account in April.",
+      "The same customer, written Olga Sokolova, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Olga Sokolova.",
+    "must_contain": [
+      "Olga Sokolova"
+    ]
+  },
+  "adv_cross_lingual_identifier_26": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Hebrew",
+    "add_facts": [
+      "Customer דנה לוי opened a separate account in April.",
+      "The same customer, written Dana Levi, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Dana Levi.",
+    "must_contain": [
+      "Dana Levi"
+    ]
+  },
+  "adv_cross_lingual_identifier_27": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_30": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Greek",
+    "add_facts": [
+      "Customer Ελένη Παπαδάκη opened a separate account in April.",
+      "The same customer, written Eleni Papadaki, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Eleni Papadaki.",
+    "must_contain": [
+      "Eleni Papadaki"
+    ]
+  },
+  "adv_cross_lingual_identifier_28": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Arabic",
+    "add_facts": [
+      "Customer نور الحسن opened a separate account in April.",
+      "The same customer, written Nour Al-Hassan, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Nour Al-Hassan.",
+    "must_contain": [
+      "Nour Al-Hassan"
+    ]
+  },
+  "adv_cross_lingual_identifier_29": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Greek",
+    "add_facts": [
+      "Customer Ελένη Παπαδάκη opened a separate account in April.",
+      "The same customer, written Eleni Papadaki, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Eleni Papadaki.",
+    "must_contain": [
+      "Eleni Papadaki"
+    ]
+  },
+  "adv_cross_lingual_identifier_31": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Hebrew",
+    "add_facts": [
+      "Customer דנה לוי opened a separate account in April.",
+      "The same customer, written Dana Levi, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Dana Levi.",
+    "must_contain": [
+      "Dana Levi"
+    ]
+  },
+  "adv_cross_lingual_identifier_32": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_33": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_34": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Korean (Hangul)",
+    "add_facts": [
+      "Customer 박지훈 opened a separate account in April.",
+      "The same customer, written Park Jihoon, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Park Jihoon.",
+    "must_contain": [
+      "Park Jihoon"
+    ]
+  },
+  "adv_cross_lingual_identifier_35": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_37": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Greek",
+    "add_facts": [
+      "Customer Ελένη Παπαδάκη opened a separate account in April.",
+      "The same customer, written Eleni Papadaki, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Eleni Papadaki.",
+    "must_contain": [
+      "Eleni Papadaki"
+    ]
+  },
+  "adv_cross_lingual_identifier_38": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Hebrew",
+    "add_facts": [
+      "Customer דנה לוי opened a separate account in April.",
+      "The same customer, written Dana Levi, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Dana Levi.",
+    "must_contain": [
+      "Dana Levi"
+    ]
+  },
+  "adv_cross_lingual_identifier_39": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Latin only",
+    "add_facts": [
+      "Customer Renée Dubois opened a separate account in April.",
+      "The same customer, written Renee Dubois, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Renee Dubois.",
+    "must_contain": [
+      "Renee Dubois"
+    ]
+  },
+  "adv_cross_lingual_identifier_40": {
+    "category": "cross_lingual_identifier",
+    "script_family": "Korean (Hangul)",
+    "add_facts": [
+      "Customer 박지훈 opened a separate account in April.",
+      "The same customer, written Park Jihoon, is on the Premium tier."
+    ],
+    "final_query": "List every customer on file, including Park Jihoon.",
+    "must_contain": [
+      "Park Jihoon"
+    ]
+  }
+}

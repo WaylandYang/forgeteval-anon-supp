@@ -1,0 +1,59 @@
+{
+  "model": "deepseek/deepseek-v4-pro",
+  "suite": "adversarial-385",
+  "limit": 0,
+  "overall_pass": 323,
+  "overall_total": 385,
+  "overall_rate": 0.8389610389610389,
+  "by_category": {
+    "substring_trap": {
+      "pass": 35,
+      "total": 36
+    },
+    "prefix_collision": {
+      "pass": 32,
+      "total": 39
+    },
+    "paraphrase_supersession": {
+      "pass": 30,
+      "total": 38
+    },
+    "negation_trap": {
+      "pass": 37,
+      "total": 40
+    },
+    "temporal_qualifier": {
+      "pass": 37,
+      "total": 37
+    },
+    "shared_attribute": {
+      "pass": 40,
+      "total": 40
+    },
+    "compound_fact": {
+      "pass": 31,
+      "total": 40
+    },
+    "identifier_obfuscation": {
+      "pass": 27,
+      "total": 38
+    },
+    "cross_lingual_identifier": {
+      "pass": 18,
+      "total": 38
+    },
+    "recursive_supersession": {
+      "pass": 36,
+      "total": 39
+    }
+  },
+  "usage": {
+    "calls": 445,
+    "cache_hits": 2,
+    "in_tok": 176240,
+    "out_tok": 105902,
+    "errors": 0
+  },
+  "cost_usd": 0.154012335336,
+  "wall_seconds": 3334.09310180007
+}

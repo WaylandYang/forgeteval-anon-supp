@@ -1,0 +1,59 @@
+{
+  "model": "google/gemini-3.1-pro-preview",
+  "suite": "adversarial-385",
+  "limit": 0,
+  "overall_pass": 348,
+  "overall_total": 385,
+  "overall_rate": 0.9038961038961039,
+  "by_category": {
+    "substring_trap": {
+      "pass": 36,
+      "total": 36
+    },
+    "prefix_collision": {
+      "pass": 32,
+      "total": 39
+    },
+    "paraphrase_supersession": {
+      "pass": 31,
+      "total": 38
+    },
+    "negation_trap": {
+      "pass": 38,
+      "total": 40
+    },
+    "temporal_qualifier": {
+      "pass": 37,
+      "total": 37
+    },
+    "shared_attribute": {
+      "pass": 40,
+      "total": 40
+    },
+    "compound_fact": {
+      "pass": 28,
+      "total": 40
+    },
+    "identifier_obfuscation": {
+      "pass": 32,
+      "total": 38
+    },
+    "cross_lingual_identifier": {
+      "pass": 38,
+      "total": 38
+    },
+    "recursive_supersession": {
+      "pass": 36,
+      "total": 39
+    }
+  },
+  "usage": {
+    "calls": 445,
+    "cache_hits": 2,
+    "in_tok": 166936,
+    "out_tok": 128648,
+    "errors": 0
+  },
+  "cost_usd": 1.877648,
+  "wall_seconds": 2449.8007739000022
+}

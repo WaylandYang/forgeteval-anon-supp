@@ -1,0 +1,54 @@
+{
+ "adapter": "lethe",
+ "model": null,
+ "suite": "external-77-v0.7",
+ "scorer": "probe",
+ "overall_pass": 26,
+ "overall_total": 77,
+ "by_category": {
+  "substring_trap": {
+   "pass": 8,
+   "total": 8
+  },
+  "prefix_collision": {
+   "pass": 5,
+   "total": 5
+  },
+  "paraphrase_supersession": {
+   "pass": 6,
+   "total": 8
+  },
+  "negation_trap": {
+   "pass": 0,
+   "total": 8
+  },
+  "temporal_qualifier": {
+   "pass": 3,
+   "total": 8
+  },
+  "shared_attribute": {
+   "pass": 3,
+   "total": 8
+  },
+  "compound_fact": {
+   "pass": 0,
+   "total": 8
+  },
+  "identifier_obfuscation": {
+   "pass": 0,
+   "total": 8
+  },
+  "cross_lingual_identifier": {
+   "pass": 0,
+   "total": 8
+  },
+  "recursive_supersession": {
+   "pass": 1,
+   "total": 8
+  }
+ },
+ "usage": {
+  "calls": 0,
+  "errors": 0
+ }
+}

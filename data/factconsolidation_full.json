@@ -1,0 +1,294 @@
+{
+  "scope": "MemoryAgentBench Conflict_Resolution: sh+mh × 6k+32k buckets, full 100 questions per bucket, 6 systems",
+  "scoring": "case-insensitive substring of gold in top-k retrieval",
+  "blocks": {
+    "factconsolidation_sh_6k": {
+      "n_facts": 455,
+      "n_questions": 100,
+      "results": {
+        "Lethe": {
+          "n": 100,
+          "pass_k1": 36,
+          "rate_k1": 0.36,
+          "pass_k5": 100,
+          "rate_k5": 1.0,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 3.8425612449645996,
+          "recall_s": 0.8840234279632568
+        },
+        "LangGraph": {
+          "n": 100,
+          "pass_k1": 36,
+          "rate_k1": 0.36,
+          "pass_k5": 100,
+          "rate_k5": 1.0,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 4.326163291931152,
+          "recall_s": 1.5165462493896484
+        },
+        "MemPalace": {
+          "n": 100,
+          "pass_k1": 100,
+          "rate_k1": 1.0,
+          "pass_k5": 100,
+          "rate_k5": 1.0,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 17.05496311187744,
+          "recall_s": 3.2771506309509277
+        },
+        "Mem0": {
+          "n": 100,
+          "pass_k1": 36,
+          "rate_k1": 0.36,
+          "pass_k5": 100,
+          "rate_k5": 1.0,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 10.092674493789673,
+          "recall_s": 6.336145877838135
+        },
+        "Lethe+LLM": {
+          "n": 100,
+          "pass_k1": 36,
+          "rate_k1": 0.36,
+          "pass_k5": 100,
+          "rate_k5": 1.0,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 3.9941611289978027,
+          "recall_s": 0.9348735809326172
+        },
+        "LangGraph+LLM": {
+          "n": 100,
+          "pass_k1": 36,
+          "rate_k1": 0.36,
+          "pass_k5": 100,
+          "rate_k5": 1.0,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 3.8448290824890137,
+          "recall_s": 1.9215586185455322
+        }
+      }
+    },
+    "factconsolidation_mh_6k": {
+      "n_facts": 455,
+      "n_questions": 100,
+      "results": {
+        "Lethe": {
+          "n": 100,
+          "pass_k1": 0,
+          "rate_k1": 0.0,
+          "pass_k5": 14,
+          "rate_k5": 0.14,
+          "pass_k10": 28,
+          "rate_k10": 0.28,
+          "inscribe_s": 4.160057544708252,
+          "recall_s": 3.135662794113159
+        },
+        "LangGraph": {
+          "n": 100,
+          "pass_k1": 0,
+          "rate_k1": 0.0,
+          "pass_k5": 14,
+          "rate_k5": 0.14,
+          "pass_k10": 28,
+          "rate_k10": 0.28,
+          "inscribe_s": 4.337396621704102,
+          "recall_s": 1.8603222370147705
+        },
+        "MemPalace": {
+          "n": 100,
+          "pass_k1": 28,
+          "rate_k1": 0.28,
+          "pass_k5": 28,
+          "rate_k5": 0.28,
+          "pass_k10": 28,
+          "rate_k10": 0.28,
+          "inscribe_s": 18.15871787071228,
+          "recall_s": 2.953453779220581
+        },
+        "Mem0": {
+          "n": 100,
+          "pass_k1": 0,
+          "rate_k1": 0.0,
+          "pass_k5": 15,
+          "rate_k5": 0.15,
+          "pass_k10": 37,
+          "rate_k10": 0.37,
+          "inscribe_s": 7.894070863723755,
+          "recall_s": 6.700517654418945
+        },
+        "Lethe+LLM": {
+          "n": 100,
+          "pass_k1": 0,
+          "rate_k1": 0.0,
+          "pass_k5": 14,
+          "rate_k5": 0.14,
+          "pass_k10": 28,
+          "rate_k10": 0.28,
+          "inscribe_s": 4.065894842147827,
+          "recall_s": 0.957273006439209
+        },
+        "LangGraph+LLM": {
+          "n": 100,
+          "pass_k1": 0,
+          "rate_k1": 0.0,
+          "pass_k5": 14,
+          "rate_k5": 0.14,
+          "pass_k10": 28,
+          "rate_k10": 0.28,
+          "inscribe_s": 3.8452861309051514,
+          "recall_s": 1.711069107055664
+        }
+      }
+    },
+    "factconsolidation_sh_32k": {
+      "n_facts": 2310,
+      "n_questions": 100,
+      "results": {
+        "Lethe": {
+          "n": 100,
+          "pass_k1": 54,
+          "rate_k1": 0.54,
+          "pass_k5": 99,
+          "rate_k5": 0.99,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 22.525343656539917,
+          "recall_s": 1.0597233772277832
+        },
+        "LangGraph": {
+          "n": 100,
+          "pass_k1": 54,
+          "rate_k1": 0.54,
+          "pass_k5": 99,
+          "rate_k5": 0.99,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 19.969565629959106,
+          "recall_s": 4.5543529987335205
+        },
+        "MemPalace": {
+          "n": 100,
+          "pass_k1": 100,
+          "rate_k1": 1.0,
+          "pass_k5": 100,
+          "rate_k5": 1.0,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 114.72250771522522,
+          "recall_s": 4.0026466846466064
+        },
+        "Mem0": {
+          "n": 100,
+          "pass_k1": 54,
+          "rate_k1": 0.54,
+          "pass_k5": 100,
+          "rate_k5": 1.0,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 52.17621469497681,
+          "recall_s": 12.957815885543823
+        },
+        "Lethe+LLM": {
+          "n": 100,
+          "pass_k1": 54,
+          "rate_k1": 0.54,
+          "pass_k5": 99,
+          "rate_k5": 0.99,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 21.58783721923828,
+          "recall_s": 1.0947420597076416
+        },
+        "LangGraph+LLM": {
+          "n": 100,
+          "pass_k1": 54,
+          "rate_k1": 0.54,
+          "pass_k5": 99,
+          "rate_k5": 0.99,
+          "pass_k10": 100,
+          "rate_k10": 1.0,
+          "inscribe_s": 25.160192012786865,
+          "recall_s": 5.0499584674835205
+        }
+      }
+    },
+    "factconsolidation_mh_32k": {
+      "n_facts": 2310,
+      "n_questions": 100,
+      "results": {
+        "Lethe": {
+          "n": 100,
+          "pass_k1": 1,
+          "rate_k1": 0.01,
+          "pass_k5": 11,
+          "rate_k5": 0.11,
+          "pass_k10": 17,
+          "rate_k10": 0.17,
+          "inscribe_s": 23.811274766921997,
+          "recall_s": 1.129415512084961
+        },
+        "LangGraph": {
+          "n": 100,
+          "pass_k1": 1,
+          "rate_k1": 0.01,
+          "pass_k5": 11,
+          "rate_k5": 0.11,
+          "pass_k10": 17,
+          "rate_k10": 0.17,
+          "inscribe_s": 23.481832265853882,
+          "recall_s": 4.789944171905518
+        },
+        "MemPalace": {
+          "n": 100,
+          "pass_k1": 17,
+          "rate_k1": 0.17,
+          "pass_k5": 17,
+          "rate_k5": 0.17,
+          "pass_k10": 17,
+          "rate_k10": 0.17,
+          "inscribe_s": 115.11994194984436,
+          "recall_s": 3.64097261428833
+        },
+        "Mem0": {
+          "n": 100,
+          "pass_k1": 1,
+          "rate_k1": 0.01,
+          "pass_k5": 12,
+          "rate_k5": 0.12,
+          "pass_k10": 19,
+          "rate_k10": 0.19,
+          "inscribe_s": 41.98107933998108,
+          "recall_s": 10.998197793960571
+        },
+        "Lethe+LLM": {
+          "n": 100,
+          "pass_k1": 1,
+          "rate_k1": 0.01,
+          "pass_k5": 11,
+          "rate_k5": 0.11,
+          "pass_k10": 17,
+          "rate_k10": 0.17,
+          "inscribe_s": 20.59545922279358,
+          "recall_s": 1.0347769260406494
+        },
+        "LangGraph+LLM": {
+          "n": 100,
+          "pass_k1": 1,
+          "rate_k1": 0.01,
+          "pass_k5": 11,
+          "rate_k5": 0.11,
+          "pass_k10": 17,
+          "rate_k10": 0.17,
+          "inscribe_s": 20.33331608772278,
+          "recall_s": 4.637996196746826
+        }
+      }
+    }
+  }
+}

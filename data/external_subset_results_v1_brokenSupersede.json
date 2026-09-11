@@ -1,0 +1,4188 @@
+{
+  "systems": {
+    "Lethe": {
+      "n_pass": 31,
+      "n_eval": 77,
+      "n_na": 0,
+      "rate": 40.25974025974026,
+      "by_category": {
+        "substring_trap": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "prefix_collision": {
+          "pass": 5,
+          "total": 5,
+          "na": 0
+        },
+        "paraphrase_supersession": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "negation_trap": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "temporal_qualifier": {
+          "pass": 7,
+          "total": 8,
+          "na": 0
+        },
+        "shared_attribute": {
+          "pass": 3,
+          "total": 8,
+          "na": 0
+        },
+        "compound_fact": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "identifier_obfuscation": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "cross_lingual_identifier": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "recursive_supersession": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        }
+      },
+      "per_case": [
+        {
+          "id": "ext_dxy_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        }
+      ],
+      "wall_s": 3.6762375831604004
+    },
+    "LangGraph": {
+      "n_pass": 25,
+      "n_eval": 77,
+      "n_na": 0,
+      "rate": 32.467532467532465,
+      "by_category": {
+        "substring_trap": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "prefix_collision": {
+          "pass": 5,
+          "total": 5,
+          "na": 0
+        },
+        "paraphrase_supersession": {
+          "pass": 6,
+          "total": 8,
+          "na": 0
+        },
+        "negation_trap": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "temporal_qualifier": {
+          "pass": 3,
+          "total": 8,
+          "na": 0
+        },
+        "shared_attribute": {
+          "pass": 2,
+          "total": 8,
+          "na": 0
+        },
+        "compound_fact": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "identifier_obfuscation": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "cross_lingual_identifier": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "recursive_supersession": {
+          "pass": 1,
+          "total": 8,
+          "na": 0
+        }
+      },
+      "per_case": [
+        {
+          "id": "ext_dxy_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        }
+      ],
+      "wall_s": 5.682927846908569
+    },
+    "MemPalace": {
+      "n_pass": 0,
+      "n_eval": 0,
+      "n_na": 77,
+      "rate": 0,
+      "by_category": {
+        "substring_trap": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "prefix_collision": {
+          "pass": 0,
+          "total": 0,
+          "na": 5
+        },
+        "paraphrase_supersession": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "negation_trap": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "temporal_qualifier": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "shared_attribute": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "compound_fact": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "identifier_obfuscation": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "cross_lingual_identifier": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "recursive_supersession": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        }
+      },
+      "per_case": [
+        {
+          "id": "ext_dxy_substring_interference_01",
+          "category": "substring_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_substring_interference_02",
+          "category": "substring_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_substring_interference_01",
+          "category": "substring_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_substring_interference_02",
+          "category": "substring_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_substring_interference_01",
+          "category": "substring_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_substring_interference_02",
+          "category": "substring_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_substring_interference_01",
+          "category": "substring_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_substring_interference_02",
+          "category": "substring_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": null,
+          "error": "N/A"
+        }
+      ],
+      "wall_s": 15.705256462097168
+    },
+    "Mem0": {
+      "n_pass": 16,
+      "n_eval": 77,
+      "n_na": 0,
+      "rate": 20.77922077922078,
+      "by_category": {
+        "substring_trap": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "prefix_collision": {
+          "pass": 3,
+          "total": 5,
+          "na": 0
+        },
+        "paraphrase_supersession": {
+          "pass": 2,
+          "total": 8,
+          "na": 0
+        },
+        "negation_trap": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "temporal_qualifier": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "shared_attribute": {
+          "pass": 2,
+          "total": 8,
+          "na": 0
+        },
+        "compound_fact": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "identifier_obfuscation": {
+          "pass": 1,
+          "total": 8,
+          "na": 0
+        },
+        "cross_lingual_identifier": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "recursive_supersession": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        }
+      },
+      "per_case": [
+        {
+          "id": "ext_dxy_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        }
+      ],
+      "wall_s": 56.834914207458496
+    },
+    "Lethe+LLM": {
+      "n_pass": 30,
+      "n_eval": 77,
+      "n_na": 0,
+      "rate": 38.961038961038966,
+      "by_category": {
+        "substring_trap": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "prefix_collision": {
+          "pass": 5,
+          "total": 5,
+          "na": 0
+        },
+        "paraphrase_supersession": {
+          "pass": 3,
+          "total": 8,
+          "na": 0
+        },
+        "negation_trap": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "temporal_qualifier": {
+          "pass": 3,
+          "total": 8,
+          "na": 0
+        },
+        "shared_attribute": {
+          "pass": 3,
+          "total": 8,
+          "na": 0
+        },
+        "compound_fact": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "identifier_obfuscation": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "cross_lingual_identifier": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "recursive_supersession": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        }
+      },
+      "per_case": [
+        {
+          "id": "ext_dxy_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        }
+      ],
+      "wall_s": 207.9204604625702
+    },
+    "LangGraph+LLM": {
+      "n_pass": 32,
+      "n_eval": 77,
+      "n_na": 0,
+      "rate": 41.55844155844156,
+      "by_category": {
+        "substring_trap": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "prefix_collision": {
+          "pass": 5,
+          "total": 5,
+          "na": 0
+        },
+        "paraphrase_supersession": {
+          "pass": 1,
+          "total": 8,
+          "na": 0
+        },
+        "negation_trap": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "temporal_qualifier": {
+          "pass": 1,
+          "total": 8,
+          "na": 0
+        },
+        "shared_attribute": {
+          "pass": 4,
+          "total": 8,
+          "na": 0
+        },
+        "compound_fact": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "identifier_obfuscation": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "cross_lingual_identifier": {
+          "pass": 5,
+          "total": 8,
+          "na": 0
+        },
+        "recursive_supersession": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        }
+      },
+      "per_case": [
+        {
+          "id": "ext_dxy_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        }
+      ],
+      "wall_s": 223.67414236068726
+    },
+    "Letta": {
+      "n_pass": 16,
+      "n_eval": 61,
+      "n_na": 16,
+      "rate": 26.229508196721312,
+      "by_category": {
+        "substring_trap": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "prefix_collision": {
+          "pass": 0,
+          "total": 5,
+          "na": 0
+        },
+        "paraphrase_supersession": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "negation_trap": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "temporal_qualifier": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "shared_attribute": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "compound_fact": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "identifier_obfuscation": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "cross_lingual_identifier": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "recursive_supersession": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        }
+      },
+      "per_case": [
+        {
+          "id": "ext_dxy_substring_interference_01",
+          "category": "substring_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_substring_interference_02",
+          "category": "substring_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_01",
+          "category": "substring_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_02",
+          "category": "substring_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_01",
+          "category": "substring_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_02",
+          "category": "substring_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_01",
+          "category": "substring_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_02",
+          "category": "substring_trap",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        }
+      ],
+      "wall_s": 168.6219403743744
+    },
+    "Letta+LLM": {
+      "n_pass": 26,
+      "n_eval": 61,
+      "n_na": 16,
+      "rate": 42.62295081967213,
+      "by_category": {
+        "substring_trap": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "prefix_collision": {
+          "pass": 3,
+          "total": 5,
+          "na": 0
+        },
+        "paraphrase_supersession": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "negation_trap": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "temporal_qualifier": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "shared_attribute": {
+          "pass": 0,
+          "total": 0,
+          "na": 8
+        },
+        "compound_fact": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        },
+        "identifier_obfuscation": {
+          "pass": 8,
+          "total": 8,
+          "na": 0
+        },
+        "cross_lingual_identifier": {
+          "pass": 7,
+          "total": 8,
+          "na": 0
+        },
+        "recursive_supersession": {
+          "pass": 0,
+          "total": 8,
+          "na": 0
+        }
+      },
+      "per_case": [
+        {
+          "id": "ext_dxy_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy2_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_prefix_collision_02",
+          "category": "prefix_collision",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_dxy3_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_01",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_substring_interference_02",
+          "category": "substring_trap",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_prefix_collision_01",
+          "category": "prefix_collision",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_01",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_paraphrase_supersession_02",
+          "category": "paraphrase_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_negation_inconsistency_01",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_negation_inconsistency_02",
+          "category": "negation_trap",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_temporal_qualifier_01",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_temporal_qualifier_02",
+          "category": "temporal_qualifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_shared_attribute_01",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_shared_attribute_02",
+          "category": "shared_attribute",
+          "passed": null,
+          "error": "N/A"
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_01",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_partial_fact_mutation_02",
+          "category": "compound_fact",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_01",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_identifier_obfuscation_02",
+          "category": "identifier_obfuscation",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_01",
+          "category": "cross_lingual_identifier",
+          "passed": true,
+          "error": null
+        },
+        {
+          "id": "ext_med_cross_lingual_identifier_02",
+          "category": "cross_lingual_identifier",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_01",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        },
+        {
+          "id": "ext_med_cyclic_supersession_02",
+          "category": "recursive_supersession",
+          "passed": false,
+          "error": null
+        }
+      ],
+      "wall_s": 648.2605743408203
+    }
+  }
+}

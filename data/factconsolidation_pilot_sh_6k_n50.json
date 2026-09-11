@@ -1,0 +1,1849 @@
+{
+  "source": "factconsolidation_sh_6k",
+  "n_facts": 455,
+  "n_questions": 50,
+  "scoring": "case-insensitive substring of gold in top-k recall (k=1,5,10)",
+  "results": {
+    "Lethe": {
+      "n": 50,
+      "pass_k1": 16,
+      "rate_k1": 0.32,
+      "pass_k5": 50,
+      "rate_k5": 1.0,
+      "pass_k10": 50,
+      "rate_k10": 1.0,
+      "inscribe_s": 3.8629465103149414,
+      "recall_s": 0.45744967460632324
+    },
+    "LangGraph": {
+      "n": 50,
+      "pass_k1": 16,
+      "rate_k1": 0.32,
+      "pass_k5": 50,
+      "rate_k5": 1.0,
+      "pass_k10": 50,
+      "rate_k10": 1.0,
+      "inscribe_s": 3.7352797985076904,
+      "recall_s": 0.8731379508972168
+    },
+    "MemPalace": {
+      "n": 50,
+      "pass_k1": 50,
+      "rate_k1": 1.0,
+      "pass_k5": 50,
+      "rate_k5": 1.0,
+      "pass_k10": 50,
+      "rate_k10": 1.0,
+      "inscribe_s": 20.50283169746399,
+      "recall_s": 1.6420025825500488
+    }
+  },
+  "per_question": {
+    "Lethe": [
+      {
+        "q": "Which sport is goaltender associated with?",
+        "gold": [
+          "pesäpallo"
+        ],
+        "top1": [
+          "goaltender is associated with the sport of ice hockey."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is Nobuhiro Watsuki famous for?",
+        "gold": [
+          "The Fairly OddParents"
+        ],
+        "top1": [
+          "Nobuhiro Watsuki is famous for Rurouni Kenshin."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was rugby union created in?",
+        "gold": [
+          "India"
+        ],
+        "top1": [
+          "rugby union was created in the country of England."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is Ferdowsi famous for?",
+        "gold": [
+          "Shahnameh"
+        ],
+        "top1": [
+          "Ferdowsi is famous for Shahnameh."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which university was Joan Didion educated at?",
+        "gold": [
+          "University of California, Berkeley"
+        ],
+        "top1": [
+          "The univeristy where Joan Didion was educated is University of California, Berkeley."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of The Marriage of Figaro?",
+        "gold": [
+          "Thomas Kyd"
+        ],
+        "top1": [
+          "The author of The Marriage of Figaro is Pierre Beaumarchais."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is Tunisia national football team associated with?",
+        "gold": [
+          "basketball"
+        ],
+        "top1": [
+          "Tunisia national football team is associated with the sport of association football."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is quarterback associated with?",
+        "gold": [
+          "Muay Thai"
+        ],
+        "top1": [
+          "quarterback is associated with the sport of American football."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the official language of Japan?",
+        "gold": [
+          "Swedish"
+        ],
+        "top1": [
+          "The official language of Japan is Japanese."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the name of the current head of the Tucson government?",
+        "gold": [
+          "Jonathan Rothschild"
+        ],
+        "top1": [
+          "The name of the current head of the Tucson government is Jonathan Rothschild."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the name of the current head of the Italy government?",
+        "gold": [
+          "Giuseppe Conte"
+        ],
+        "top1": [
+          "The name of the current head of the Italy government is Giuseppe Conte."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Meredith Grey?",
+        "gold": [
+          "Ellen Pompeo"
+        ],
+        "top1": [
+          "Meredith Grey was performed by Ellen Pompeo."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What position does Robert Parish play?",
+        "gold": [
+          "quarterback"
+        ],
+        "top1": [
+          "Robert Parish plays the position of center."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Cédric Klapisch?",
+        "gold": [
+          "Malaysia"
+        ],
+        "top1": [
+          "Cédric Klapisch is a citizen of France."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of Sidereus Nuncius?",
+        "gold": [
+          "Samuel Beckett"
+        ],
+        "top1": [
+          "The author of Sidereus Nuncius is Samuel Beckett."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which continent is Germany located in?",
+        "gold": [
+          "Africa"
+        ],
+        "top1": [
+          "Germany is located in the continent of Europe."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which religion is Kingdom of Ireland affiliated with?",
+        "gold": [
+          "Zoroastrianism"
+        ],
+        "top1": [
+          "Kingdom of Ireland is affiliated with the religion of Catholic Church."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was association football created in?",
+        "gold": [
+          "Italy"
+        ],
+        "top1": [
+          "association football was created in the country of England."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the developer of Windows Phone?",
+        "gold": [
+          "Microsoft"
+        ],
+        "top1": [
+          "Windows Phone was developed by Microsoft."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the chief executive officer of Microsoft?",
+        "gold": [
+          "Steve Jobs"
+        ],
+        "top1": [
+          "The chief executive officer of Microsoft is Steve Jobs."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the chairperson of Harvard University?",
+        "gold": [
+          "Peter Diamandis"
+        ],
+        "top1": [
+          "The chairperson of Harvard University is Lawrence S. Bacow."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who founded Church of Scotland?",
+        "gold": [
+          "John Knox"
+        ],
+        "top1": [
+          "Church of Scotland was founded by John Knox."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is Galwegians RFC associated with?",
+        "gold": [
+          "rugby union"
+        ],
+        "top1": [
+          "Galwegians RFC is associated with the sport of rugby union."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the director of American Broadcasting Company?",
+        "gold": [
+          "Ernst Heinkel"
+        ],
+        "top1": [
+          "The director of American Broadcasting Company is Bob Iger."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city did Gennady Rozhdestvensky die in?",
+        "gold": [
+          "United States of America"
+        ],
+        "top1": [
+          "Gennady Rozhdestvensky died in the city of Moscow."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Tang Empire?",
+        "gold": [
+          "Beaumont"
+        ],
+        "top1": [
+          "The capital of Tang Empire is Chang'an."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the director of British Broadcasting Corporation?",
+        "gold": [
+          "Narendra Modi"
+        ],
+        "top1": [
+          "The director of British Broadcasting Corporation is Narendra Modi."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Benjamin Mazar?",
+        "gold": [
+          "Israel"
+        ],
+        "top1": [
+          "Benjamin Mazar is a citizen of Israel."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What type of music does Michael Mantler play?",
+        "gold": [
+          "post-punk"
+        ],
+        "top1": [
+          "The type of music that Michael Mantler plays is jazz."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city did Oscar Wilde die in?",
+        "gold": [
+          "Guangzhou"
+        ],
+        "top1": [
+          "Oscar Wilde died in the city of Paris."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was baseball created in?",
+        "gold": [
+          "Japan"
+        ],
+        "top1": [
+          "baseball was created in the country of United States of America."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Ernst Heinkel?",
+        "gold": [
+          "Tang Empire"
+        ],
+        "top1": [
+          "Ernst Heinkel is a citizen of Germany."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city is the headquarter of The University of the Arts located in?",
+        "gold": [
+          "Philadelphia"
+        ],
+        "top1": [
+          "The headquarters of The University of the Arts is located in the city of Philadelphia."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was rap rock created in?",
+        "gold": [
+          "Russian Empire"
+        ],
+        "top1": [
+          "rap rock was created in the country of United States of America."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Where was Christianity founded?",
+        "gold": [
+          "Taipei"
+        ],
+        "top1": [
+          "Christianity was founded in the city of Jerusalem."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the official language of United States of America?",
+        "gold": [
+          "German"
+        ],
+        "top1": [
+          "The official language of United States of America is American English."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Past Masters?",
+        "gold": [
+          "Madonna"
+        ],
+        "top1": [
+          "Past Masters was performed by The Beatles."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Japan?",
+        "gold": [
+          "Tokyo"
+        ],
+        "top1": [
+          "The capital of Japan is Tokyo."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of France?",
+        "gold": [
+          "Harare"
+        ],
+        "top1": [
+          "The capital of France is Paris."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the developer of SteamOS?",
+        "gold": [
+          "ABB Group"
+        ],
+        "top1": [
+          "SteamOS was developed by Valve Corporation."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city is the headquarter of University of Bucharest located in?",
+        "gold": [
+          "Ankara"
+        ],
+        "top1": [
+          "The headquarters of University of Bucharest is located in the city of Bucharest."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is wide receiver associated with?",
+        "gold": [
+          "rugby"
+        ],
+        "top1": [
+          "wide receiver is associated with the sport of American football."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What position does Hines Ward play?",
+        "gold": [
+          "cornerback"
+        ],
+        "top1": [
+          "Hines Ward plays the position of wide receiver."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Australia?",
+        "gold": [
+          "Oderzo"
+        ],
+        "top1": [
+          "The capital of Australia is Canberra."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which continent is Malaysia located in?",
+        "gold": [
+          "Antarctica"
+        ],
+        "top1": [
+          "Malaysia is located in the continent of Asia."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of A Wizard of Earthsea?",
+        "gold": [
+          "Pius XII"
+        ],
+        "top1": [
+          "The author of A Wizard of Earthsea is Ursula K. Le Guin."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Free as a Bird?",
+        "gold": [
+          "The Beatles"
+        ],
+        "top1": [
+          "Free as a Bird was performed by The Beatles."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of Our Mutual Friend?",
+        "gold": [
+          "Charles Darwin"
+        ],
+        "top1": [
+          "The author of Our Mutual Friend is Charles Dickens."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was basketball created in?",
+        "gold": [
+          "Soviet Union"
+        ],
+        "top1": [
+          "basketball was created in the country of United States of America."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Hal Needham?",
+        "gold": [
+          "United States of America"
+        ],
+        "top1": [
+          "Hal Needham is a citizen of United States of America."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      }
+    ],
+    "LangGraph": [
+      {
+        "q": "Which sport is goaltender associated with?",
+        "gold": [
+          "pesäpallo"
+        ],
+        "top1": [
+          "goaltender is associated with the sport of ice hockey."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is Nobuhiro Watsuki famous for?",
+        "gold": [
+          "The Fairly OddParents"
+        ],
+        "top1": [
+          "Nobuhiro Watsuki is famous for Rurouni Kenshin."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was rugby union created in?",
+        "gold": [
+          "India"
+        ],
+        "top1": [
+          "rugby union was created in the country of England."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is Ferdowsi famous for?",
+        "gold": [
+          "Shahnameh"
+        ],
+        "top1": [
+          "Ferdowsi is famous for Shahnameh."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which university was Joan Didion educated at?",
+        "gold": [
+          "University of California, Berkeley"
+        ],
+        "top1": [
+          "The univeristy where Joan Didion was educated is University of California, Berkeley."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of The Marriage of Figaro?",
+        "gold": [
+          "Thomas Kyd"
+        ],
+        "top1": [
+          "The author of The Marriage of Figaro is Pierre Beaumarchais."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is Tunisia national football team associated with?",
+        "gold": [
+          "basketball"
+        ],
+        "top1": [
+          "Tunisia national football team is associated with the sport of association football."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is quarterback associated with?",
+        "gold": [
+          "Muay Thai"
+        ],
+        "top1": [
+          "quarterback is associated with the sport of American football."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the official language of Japan?",
+        "gold": [
+          "Swedish"
+        ],
+        "top1": [
+          "The official language of Japan is Japanese."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the name of the current head of the Tucson government?",
+        "gold": [
+          "Jonathan Rothschild"
+        ],
+        "top1": [
+          "The name of the current head of the Tucson government is Jonathan Rothschild."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the name of the current head of the Italy government?",
+        "gold": [
+          "Giuseppe Conte"
+        ],
+        "top1": [
+          "The name of the current head of the Italy government is Giuseppe Conte."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Meredith Grey?",
+        "gold": [
+          "Ellen Pompeo"
+        ],
+        "top1": [
+          "Meredith Grey was performed by Ellen Pompeo."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What position does Robert Parish play?",
+        "gold": [
+          "quarterback"
+        ],
+        "top1": [
+          "Robert Parish plays the position of center."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Cédric Klapisch?",
+        "gold": [
+          "Malaysia"
+        ],
+        "top1": [
+          "Cédric Klapisch is a citizen of France."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of Sidereus Nuncius?",
+        "gold": [
+          "Samuel Beckett"
+        ],
+        "top1": [
+          "The author of Sidereus Nuncius is Samuel Beckett."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which continent is Germany located in?",
+        "gold": [
+          "Africa"
+        ],
+        "top1": [
+          "Germany is located in the continent of Europe."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which religion is Kingdom of Ireland affiliated with?",
+        "gold": [
+          "Zoroastrianism"
+        ],
+        "top1": [
+          "Kingdom of Ireland is affiliated with the religion of Catholic Church."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was association football created in?",
+        "gold": [
+          "Italy"
+        ],
+        "top1": [
+          "association football was created in the country of England."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the developer of Windows Phone?",
+        "gold": [
+          "Microsoft"
+        ],
+        "top1": [
+          "Windows Phone was developed by Microsoft."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the chief executive officer of Microsoft?",
+        "gold": [
+          "Steve Jobs"
+        ],
+        "top1": [
+          "The chief executive officer of Microsoft is Steve Jobs."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the chairperson of Harvard University?",
+        "gold": [
+          "Peter Diamandis"
+        ],
+        "top1": [
+          "The chairperson of Harvard University is Lawrence S. Bacow."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who founded Church of Scotland?",
+        "gold": [
+          "John Knox"
+        ],
+        "top1": [
+          "Church of Scotland was founded by John Knox."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is Galwegians RFC associated with?",
+        "gold": [
+          "rugby union"
+        ],
+        "top1": [
+          "Galwegians RFC is associated with the sport of rugby union."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the director of American Broadcasting Company?",
+        "gold": [
+          "Ernst Heinkel"
+        ],
+        "top1": [
+          "The director of American Broadcasting Company is Bob Iger."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city did Gennady Rozhdestvensky die in?",
+        "gold": [
+          "United States of America"
+        ],
+        "top1": [
+          "Gennady Rozhdestvensky died in the city of Moscow."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Tang Empire?",
+        "gold": [
+          "Beaumont"
+        ],
+        "top1": [
+          "The capital of Tang Empire is Chang'an."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the director of British Broadcasting Corporation?",
+        "gold": [
+          "Narendra Modi"
+        ],
+        "top1": [
+          "The director of British Broadcasting Corporation is Narendra Modi."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Benjamin Mazar?",
+        "gold": [
+          "Israel"
+        ],
+        "top1": [
+          "Benjamin Mazar is a citizen of Israel."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What type of music does Michael Mantler play?",
+        "gold": [
+          "post-punk"
+        ],
+        "top1": [
+          "The type of music that Michael Mantler plays is jazz."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city did Oscar Wilde die in?",
+        "gold": [
+          "Guangzhou"
+        ],
+        "top1": [
+          "Oscar Wilde died in the city of Paris."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was baseball created in?",
+        "gold": [
+          "Japan"
+        ],
+        "top1": [
+          "baseball was created in the country of United States of America."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Ernst Heinkel?",
+        "gold": [
+          "Tang Empire"
+        ],
+        "top1": [
+          "Ernst Heinkel is a citizen of Germany."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city is the headquarter of The University of the Arts located in?",
+        "gold": [
+          "Philadelphia"
+        ],
+        "top1": [
+          "The headquarters of The University of the Arts is located in the city of Philadelphia."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was rap rock created in?",
+        "gold": [
+          "Russian Empire"
+        ],
+        "top1": [
+          "rap rock was created in the country of United States of America."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Where was Christianity founded?",
+        "gold": [
+          "Taipei"
+        ],
+        "top1": [
+          "Christianity was founded in the city of Jerusalem."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the official language of United States of America?",
+        "gold": [
+          "German"
+        ],
+        "top1": [
+          "The official language of United States of America is American English."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Past Masters?",
+        "gold": [
+          "Madonna"
+        ],
+        "top1": [
+          "Past Masters was performed by The Beatles."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Japan?",
+        "gold": [
+          "Tokyo"
+        ],
+        "top1": [
+          "The capital of Japan is Tokyo."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of France?",
+        "gold": [
+          "Harare"
+        ],
+        "top1": [
+          "The capital of France is Paris."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the developer of SteamOS?",
+        "gold": [
+          "ABB Group"
+        ],
+        "top1": [
+          "SteamOS was developed by Valve Corporation."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city is the headquarter of University of Bucharest located in?",
+        "gold": [
+          "Ankara"
+        ],
+        "top1": [
+          "The headquarters of University of Bucharest is located in the city of Bucharest."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is wide receiver associated with?",
+        "gold": [
+          "rugby"
+        ],
+        "top1": [
+          "wide receiver is associated with the sport of American football."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What position does Hines Ward play?",
+        "gold": [
+          "cornerback"
+        ],
+        "top1": [
+          "Hines Ward plays the position of wide receiver."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Australia?",
+        "gold": [
+          "Oderzo"
+        ],
+        "top1": [
+          "The capital of Australia is Canberra."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which continent is Malaysia located in?",
+        "gold": [
+          "Antarctica"
+        ],
+        "top1": [
+          "Malaysia is located in the continent of Asia."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of A Wizard of Earthsea?",
+        "gold": [
+          "Pius XII"
+        ],
+        "top1": [
+          "The author of A Wizard of Earthsea is Ursula K. Le Guin."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Free as a Bird?",
+        "gold": [
+          "The Beatles"
+        ],
+        "top1": [
+          "Free as a Bird was performed by The Beatles."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of Our Mutual Friend?",
+        "gold": [
+          "Charles Darwin"
+        ],
+        "top1": [
+          "The author of Our Mutual Friend is Charles Dickens."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was basketball created in?",
+        "gold": [
+          "Soviet Union"
+        ],
+        "top1": [
+          "basketball was created in the country of United States of America."
+        ],
+        "pass_k1": false,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Hal Needham?",
+        "gold": [
+          "United States of America"
+        ],
+        "top1": [
+          "Hal Needham is a citizen of United States of America."
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      }
+    ],
+    "MemPalace": [
+      {
+        "q": "Which sport is goaltender associated with?",
+        "gold": [
+          "pesäpallo"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which sport is goaltender associated with?\"\n  [1] bench/conv (sim=0.849)\n      goaltender is associated with the sport of ice hockey.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.746)\n      goaltender is associated with the sport of pesäpallo.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.655)\n      goalkeeper is associated with the sport of association football.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.612)\n      cornerback is associated with the sport of field hockey.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.557)\n      Lisa Leslie plays the position of goaltender.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.537)\n      Joe Hockey is a citizen of Australia.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.524)\n      placekicker is associated with the sport of rugby.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.514)\n      placekicker is associated with the sport of American football.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.496)\n      point guard is associated with the sport of basketball.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.49)\n      point guard is associated with the sport of cricket.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is Nobuhiro Watsuki famous for?",
+        "gold": [
+          "The Fairly OddParents"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is Nobuhiro Watsuki famous for?\"\n  [1] bench/conv (sim=0.797)\n      Nobuhiro Watsuki is famous for Rurouni Kenshin.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.779)\n      Nobuhiro Watsuki is famous for The Fairly OddParents.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.589)\n      Vito Corleone was created by Nobuhiro Watsuki.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.433)\n      Ayumi Hamasaki is a citizen of Japan.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.385)\n      The author of Sidereus Nuncius is Samuel Beckett.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.384)\n      Ferdowsi is famous for Shahnameh.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.368)\n      Shingon Buddhism was founded by William Waynflete.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.367)\n      Shingon Buddhism was founded by Kūkai.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.362)\n      sumo was created in the country of Japan.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.358)\n      Sarit Thanarat is affiliated with the religion of Buddhism.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was rugby union created in?",
+        "gold": [
+          "India"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which country was rugby union created in?\"\n  [1] bench/conv (sim=0.921)\n      rugby union was created in the country of England.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.88)\n      rugby union was created in the country of India.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.607)\n      Galwegians RFC is associated with the sport of rugby union.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.577)\n      flanker is associated with the sport of rugby union.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.554)\n      association football was created in the country of England.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.55)\n      Gala RFC is associated with the sport of rugby union.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.525)\n      cricket was created in the country of England.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.502)\n      cricket was created in the country of Australia.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.498)\n      wide receiver is associated with the sport of rugby.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.476)\n      association football was created in the country of Italy.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is Ferdowsi famous for?",
+        "gold": [
+          "Shahnameh"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is Ferdowsi famous for?\"\n  [1] bench/conv (sim=0.718)\n      Ferdowsi is famous for Shahnameh.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.352)\n      Rand al'Thor was created by Ferdowsi.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.34)\n      Charlie Hebdo was created in the country of Italy.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.333)\n      Friedrich Nietzsche is famous for Thus Spoke Zarathustra.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.33)\n      Mario Puzo is famous for The Godfather.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.319)\n      Nobuhiro Watsuki is famous for Rurouni Kenshin.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.317)\n      Madame du Barry is a citizen of Great Britain.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.303)\n      Le Petit Parisien was created in the country of Germany.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.3)\n      Thus Spoke Zarathustra was created in the country of Germany.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.291)\n      Joe Hockey is a citizen of Italy.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which university was Joan Didion educated at?",
+        "gold": [
+          "University of California, Berkeley"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which university was Joan Didion educated at?\"\n  [1] bench/conv (sim=0.823)\n      The univeristy where Joan Didion was educated is University of California, Berkeley.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.543)\n      Sophia Hawthorne is married to Joan Didion.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.514)\n      The univeristy where Wilhelm II was educated is University of Bonn.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.504)\n      The univeristy where Elena Ceaușescu was educated is University of Bucharest.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.503)\n      The univeristy where Lou Reed was educated is Fordham University.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.492)\n      The univeristy where Bill Frisell was educated is The University of the Arts.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.482)\n      The univeristy where Lou Reed was educated is Syracuse University.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.451)\n      The univeristy where Wilhelm II was educated is Baldwin Wallace University.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.448)\n      The univeristy where Galileo Galilei was educated is University of Pisa.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.407)\n      The univeristy where Nathaniel Hawthorne was educated is Bowdoin College.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of The Marriage of Figaro?",
+        "gold": [
+          "Thomas Kyd"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the author of The Marriage of Figaro?\"\n  [1] bench/conv (sim=0.806)\n      The author of The Marriage of Figaro is Pierre Beaumarchais.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.797)\n      The author of The Marriage of Figaro is Thomas Kyd.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.469)\n      Charles Darwin is married to Amala Paul.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.425)\n      Charles Darwin is married to Emma Darwin.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.414)\n      Ferdinand Marcos is married to Imelda Marcos.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.406)\n      Sophia Hawthorne is married to Nathaniel Hawthorne.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.385)\n      The author of The Witcher is Andrzej Sapkowski.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.383)\n      Sophia Hawthorne is married to Joan Didion.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.382)\n      The author of Our Mutual Friend is Charles Darwin.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.376)\n      Tony Blair is married to Cherie Blair.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is Tunisia national football team associated with?",
+        "gold": [
+          "basketball"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which sport is Tunisia national football team associated with?\"\n  [1] bench/conv (sim=0.911)\n      Tunisia national football team is associated with the sport of association football.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.886)\n      Tunisia national football team is associated with the sport of basketball.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.554)\n      Slovakia national football team is associated with the sport of association football.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.535)\n      midfielder is associated with the sport of association football.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.515)\n      Slovakia national football team is associated with the sport of cricket.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.506)\n      association football was created in the country of Italy.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.47)\n      New Firm is associated with the sport of association football.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.462)\n      FC Vorskla Poltava is associated with the sport of association football.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.446)\n      goalkeeper is associated with the sport of association football.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.418)\n      association football was created in the country of England.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is quarterback associated with?",
+        "gold": [
+          "Muay Thai"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which sport is quarterback associated with?\"\n  [1] bench/conv (sim=0.861)\n      quarterback is associated with the sport of American football.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.705)\n      cornerback is associated with the sport of American football.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.667)\n      cornerback is associated with the sport of field hockey.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.652)\n      quarterback is associated with the sport of Muay Thai.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.604)\n      wide receiver is associated with the sport of American football.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.558)\n      Bo Ryan is associated with the sport of association football.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.531)\n      David Beckham is associated with the sport of association football.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.529)\n      midfielder is associated with the sport of association football.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.525)\n      placekicker is associated with the sport of American football.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.516)\n      Steve Sax is associated with the sport of association football.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the official language of Japan?",
+        "gold": [
+          "Swedish"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the official language of Japan?\"\n  [1] bench/conv (sim=0.921)\n      The official language of Japan is Japanese.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.8)\n      The official language of Japan is Swedish.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.713)\n      Kūkai speaks the language of Japanese.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.621)\n      The capital of Japan is Tokyo.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.524)\n      The name of the current head of the Japan government is Shinzō Abe.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.519)\n      sumo was created in the country of Japan.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.478)\n      The official language of Australia is English.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.468)\n      Ayumi Hamasaki is a citizen of Japan.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.463)\n      baseball was created in the country of Japan.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.463)\n      The official language of Moscow is German.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the name of the current head of the Tucson government?",
+        "gold": [
+          "Jonathan Rothschild"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the name of the current head of the Tucson government?\"\n  [1] bench/conv (sim=0.812)\n      The name of the current head of the Tucson government is Jonathan Rothschild.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.485)\n      Canadair was founded in the city of Tucson.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.475)\n      The name of the current head of the United States of America government is Donald Trump.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.464)\n      The name of the current head of the Council of People's Commissars government is Tony Blair.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.46)\n      The name of the current head of the Council of People's Commissars government is Vladimir Lenin.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.444)\n      The name of the current head of state in United States of America is Donald Trump.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.415)\n      The name of the current head of state in Soviet Union is Mikhail Gorbachev.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.362)\n      The name of the current head of state in Soviet Union is Elizabeth II.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.342)\n      The name of the current head of the Japan government is Shinzō Abe.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.326)\n      The name of the current head of state in United States of America is Connachta.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the name of the current head of the Italy government?",
+        "gold": [
+          "Giuseppe Conte"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the name of the current head of the Italy government?\"\n  [1] bench/conv (sim=0.834)\n      The name of the current head of the Italy government is Giuseppe Conte.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.621)\n      The capital of Italy is Rome.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.484)\n      Joe Hockey is a citizen of Italy.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.461)\n      The name of the current head of the Japan government is Shinzō Abe.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.446)\n      Charlie Hebdo was created in the country of Italy.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.436)\n      The capital of Papal States is Rome.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.427)\n      The name of the current head of the Pittsburgh government is Bill Peduto.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.42)\n      The name of the current head of the United States of America government is Donald Trump.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.414)\n      The capital of Italy is Duluth.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.398)\n      association football was created in the country of Italy.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Meredith Grey?",
+        "gold": [
+          "Ellen Pompeo"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who performed Meredith Grey?\"\n  [1] bench/conv (sim=0.862)\n      Meredith Grey was performed by Ellen Pompeo.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.562)\n      Derek Shepherd is married to Meredith Grey.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.506)\n      Back to Black was performed by Amy Winehouse.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.4)\n      Lisa Leslie plays the position of center.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.394)\n      Hermione Granger was performed by Emma Watson.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.375)\n      Blood on the Tracks was performed by Lou Reed.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.346)\n      Aladdin Sane was performed by David Bowie.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.343)\n      Back to Black was performed by Frank Zappa.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.332)\n      Past Masters was performed by Madonna.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.326)\n      Past Masters was performed by The Beatles.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What position does Robert Parish play?",
+        "gold": [
+          "quarterback"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What position does Robert Parish play?\"\n  [1] bench/conv (sim=0.848)\n      Robert Parish plays the position of center.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.829)\n      Robert Parish plays the position of quarterback.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.509)\n      Blair Walsh plays the position of placekicker.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.468)\n      Irving Fryar plays the position of wide receiver.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.422)\n      Daniele De Rossi plays the position of midfielder.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.413)\n      Mike D'Antoni plays the position of point guard.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.388)\n      Lisa Leslie plays the position of goaltender.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.382)\n      Rogério Ceni plays the position of flanker.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.356)\n      Lisa Leslie plays the position of center.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.34)\n      Hines Ward plays the position of wide receiver.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Cédric Klapisch?",
+        "gold": [
+          "Malaysia"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the country of citizenship of Cédric Klapisch?\"\n  [1] bench/conv (sim=0.803)\n      Cédric Klapisch is a citizen of France.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.737)\n      Cédric Klapisch is a citizen of Malaysia.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.527)\n      Country Joe McDonald is a citizen of Romania.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.477)\n      Catherine Dickens is a citizen of United Kingdom.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.466)\n      Joe Hockey is a citizen of Italy.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.453)\n      Bernard Arnault is a citizen of France.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.448)\n      Amala Paul is a citizen of Belgium.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.443)\n      Country Joe McDonald is a citizen of United States of America.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.434)\n      Joe Hockey is a citizen of Australia.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.429)\n      Ferdinand von Richthofen is a citizen of Canada.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of Sidereus Nuncius?",
+        "gold": [
+          "Samuel Beckett"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the author of Sidereus Nuncius?\"\n  [1] bench/conv (sim=0.855)\n      The author of Sidereus Nuncius is Samuel Beckett.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.822)\n      The author of Sidereus Nuncius is Galileo Galilei.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.447)\n      The author of A Wizard of Earthsea is Pius XII.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.414)\n      The author of The Witcher is Andrzej Sapkowski.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.385)\n      The author of The Witcher is T. S. Eliot.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.373)\n      The author of Our Mutual Friend is Charles Darwin.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.356)\n      The chairperson of Harvard University is Lawrence S. Bacow.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.356)\n      Sarit Thanarat is affiliated with the religion of Buddhism.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.356)\n      Nobuhiro Watsuki is famous for The Fairly OddParents.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.356)\n      Shingon Buddhism was founded by William Waynflete.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which continent is Germany located in?",
+        "gold": [
+          "Africa"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which continent is Germany located in?\"\n  [1] bench/conv (sim=0.914)\n      Germany is located in the continent of Europe.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.89)\n      Germany is located in the continent of Africa.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.632)\n      France is located in the continent of Europe.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.623)\n      England is located in the continent of Europe.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.621)\n      United Kingdom is located in the continent of Europe.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.592)\n      The capital of Germany is Berlin.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.53)\n      London is located in the continent of Europe.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.525)\n      India is located in the continent of Africa.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.522)\n      Australia is located in the continent of Oceania.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.521)\n      Canada is located in the continent of Asia.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which religion is Kingdom of Ireland affiliated with?",
+        "gold": [
+          "Zoroastrianism"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which religion is Kingdom of Ireland affiliated with?\"\n  [1] bench/conv (sim=0.912)\n      Kingdom of Ireland is affiliated with the religion of Catholic Church.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.774)\n      Kingdom of Ireland is affiliated with the religion of Zoroastrianism.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.503)\n      Edmund Burke is a citizen of Kingdom of Ireland.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.446)\n      Karen Armstrong is affiliated with the religion of Church of Scotland.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.446)\n      John Walsh is affiliated with the religion of Catholic Church.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.414)\n      Adalbert of Prague is affiliated with the religion of Catholic Church.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.403)\n      Adalbert of Prague is affiliated with the religion of atheism.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.4)\n      Princess Alice, Duchess of Gloucester is affiliated with the religion of Anglicanism.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.394)\n      Catholic Church was founded by Jesus Christ.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.388)\n      Iman is affiliated with the religion of Islam.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was association football created in?",
+        "gold": [
+          "Italy"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which country was association football created in?\"\n  [1] bench/conv (sim=0.882)\n      association football was created in the country of England.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.84)\n      association football was created in the country of Italy.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.681)\n      New Firm is associated with the sport of association football.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.62)\n      Slovakia national football team is associated with the sport of association football.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.585)\n      midfielder is associated with the sport of association football.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.564)\n      Tunisia national football team is associated with the sport of association football.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.545)\n      basketball was created in the country of Soviet Union.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.529)\n      Alta IF is associated with the sport of association football.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.528)\n      rugby union was created in the country of India.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.523)\n      cricket was created in the country of England.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the developer of Windows Phone?",
+        "gold": [
+          "Microsoft"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the developer of Windows Phone?\"\n  [1] bench/conv (sim=0.802)\n      Windows Phone was developed by Microsoft.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.532)\n      The chief executive officer of Microsoft is Steve Jobs.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.44)\n      The chief executive officer of Microsoft is Satya Nadella.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.396)\n      The chief executive officer of Apple Inc. is Tim Cook.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.39)\n      The chief executive officer of Apple Inc. is Vijay Mallya.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.377)\n      AppleScript was developed by Apple Inc..\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.302)\n      The director of British Broadcasting Corporation is Narendra Modi.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.293)\n      Andrew Carnegie is a citizen of United Kingdom.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.286)\n      The chief executive officer of Twitter is Jack Dorsey.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.282)\n      The chief executive officer of Valve Corporation is Gabe Newell.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the chief executive officer of Microsoft?",
+        "gold": [
+          "Steve Jobs"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the chief executive officer of Microsoft?\"\n  [1] bench/conv (sim=0.857)\n      The chief executive officer of Microsoft is Steve Jobs.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.743)\n      The chief executive officer of Microsoft is Satya Nadella.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.562)\n      The chief executive officer of Apple Inc. is Tim Cook.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.556)\n      The chief executive officer of Apple Inc. is Vijay Mallya.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.518)\n      The chief executive officer of Boeing is Dennis Muilenburg.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.503)\n      The chief executive officer of Twitter is Jack Dorsey.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.495)\n      The chief executive officer of Boeing is Adel al-Jubeir.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.486)\n      The chief executive officer of Valve Corporation is Gabe Newell.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.481)\n      The chief executive officer of Lockheed Martin is Marillyn Hewson.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.474)\n      The chief executive officer of Twitter is Bernard Arnault.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the chairperson of Harvard University?",
+        "gold": [
+          "Peter Diamandis"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the chairperson of Harvard University?\"\n  [1] bench/conv (sim=0.829)\n      The chairperson of Harvard University is Lawrence S. Bacow.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.816)\n      The chairperson of Harvard University is Peter Diamandis.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.539)\n      Joseph Story is employed by Harvard University.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.482)\n      The chief executive officer of Boeing is Dennis Muilenburg.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.455)\n      The chief executive officer of Boeing is Adel al-Jubeir.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.455)\n      The chairperson of Fatah is Moshe Kahlon.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.432)\n      The headquarters of Fordham University is located in the city of New York City.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.406)\n      The chairperson of Fatah is Mahmoud Abbas.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.404)\n      Boston was founded by John Winthrop.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.399)\n      The chief executive officer of Microsoft is Satya Nadella.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who founded Church of Scotland?",
+        "gold": [
+          "John Knox"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who founded Church of Scotland?\"\n  [1] bench/conv (sim=0.763)\n      Church of Scotland was founded by John Knox.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.613)\n      Catholic Church was founded by Jesus Christ.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.481)\n      Karen Armstrong is affiliated with the religion of Church of Scotland.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.445)\n      Kingdom of Ireland is affiliated with the religion of Catholic Church.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.429)\n      Christianity was founded in the city of Jerusalem.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.411)\n      John Knox worked in the city of Edinburgh.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.39)\n      Canadair was founded in the city of Tucson.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.375)\n      Canadair was founded in the city of Montreal.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.363)\n      John Walsh is affiliated with the religion of Catholic Church.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.359)\n      Israel was founded by David Ben-Gurion.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is Galwegians RFC associated with?",
+        "gold": [
+          "rugby union"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which sport is Galwegians RFC associated with?\"\n  [1] bench/conv (sim=0.862)\n      Galwegians RFC is associated with the sport of rugby union.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.715)\n      Gala RFC is associated with the sport of rugby union.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.511)\n      point guard is associated with the sport of cricket.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.495)\n      Slovakia national football team is associated with the sport of cricket.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.464)\n      Alta IF is associated with the sport of baseball.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.453)\n      wide receiver is associated with the sport of rugby.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.439)\n      Sandy Alderson is associated with the sport of association football.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.436)\n      Alta IF is associated with the sport of association football.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.428)\n      cricket was created in the country of England.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.428)\n      New Firm is associated with the sport of association football.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the director of American Broadcasting Company?",
+        "gold": [
+          "Ernst Heinkel"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the director of American Broadcasting Company?\"\n  [1] bench/conv (sim=0.779)\n      The director of American Broadcasting Company is Bob Iger.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.733)\n      The director of American Broadcasting Company is Ernst Heinkel.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.637)\n      The director of British Broadcasting Corporation is Narendra Modi.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.58)\n      The director of British Broadcasting Corporation is Tony Hall, Baron Hall of Birkenhead.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.487)\n      The chief executive officer of Apple Inc. is Tim Cook.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.467)\n      Dave Filoni is employed by British Broadcasting Corporation.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.459)\n      The chief executive officer of Twitter is Bernard Arnault.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.458)\n      The chief executive officer of Boeing is Dennis Muilenburg.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.45)\n      The origianl broadcaster of 666 Park Avenue is American Broadcasting Company.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.442)\n      The chief executive officer of Boeing is Adel al-Jubeir.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city did Gennady Rozhdestvensky die in?",
+        "gold": [
+          "United States of America"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which city did Gennady Rozhdestvensky die in?\"\n  [1] bench/conv (sim=0.897)\n      Gennady Rozhdestvensky died in the city of Moscow.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.864)\n      Gennady Rozhdestvensky died in the city of United States of America.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.552)\n      Nadezhda Krupskaya died in the city of Moscow.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.49)\n      Olga of Kiev died in the city of Kyiv.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.482)\n      Olga of Kiev died in the city of Rodez.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.444)\n      Vladimir Lenin is married to Nadezhda Krupskaya.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.424)\n      The capital of Soviet Union is Russellville.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.411)\n      Igor of Kiev is married to Olga of Kiev.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.411)\n      The capital of Soviet Union is Moscow.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.392)\n      Sigmund Freud died in the city of London.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Tang Empire?",
+        "gold": [
+          "Beaumont"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the capital of Tang Empire?\"\n  [1] bench/conv (sim=0.845)\n      The capital of Tang Empire is Chang'an.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.814)\n      The capital of Tang Empire is Beaumont.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.527)\n      Ernst Heinkel is a citizen of Tang Empire.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.413)\n      The capital of Soviet Union is Russellville.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.406)\n      Bagratuni Dynasty is affiliated with the religion of Christianity.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.395)\n      Sasanian Empire was founded by Ardashir I.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.386)\n      The capital of Australia is Canberra.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.368)\n      The capital of Australia is Oderzo.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.363)\n      The capital of France is Harare.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.36)\n      Sasanian Empire was founded by Walter Chrysler.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the director of British Broadcasting Corporation?",
+        "gold": [
+          "Narendra Modi"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the director of British Broadcasting Corporation?\"\n  [1] bench/conv (sim=0.771)\n      The director of British Broadcasting Corporation is Narendra Modi.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.704)\n      The director of British Broadcasting Corporation is Tony Hall, Baron Hall of Birkenhead.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.644)\n      The director of American Broadcasting Company is Bob Iger.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.609)\n      The director of American Broadcasting Company is Ernst Heinkel.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.533)\n      Dave Filoni is employed by British Broadcasting Corporation.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.42)\n      The director of The Beatles is Brian Epstein.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.406)\n      The name of the current head of the Council of People's Commissars government is Tony Blair.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.399)\n      The chief executive officer of Microsoft is Steve Jobs.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.392)\n      Colin Irwin is a citizen of United Kingdom.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.389)\n      The chief executive officer of Boeing is Dennis Muilenburg.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Benjamin Mazar?",
+        "gold": [
+          "Israel"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the country of citizenship of Benjamin Mazar?\"\n  [1] bench/conv (sim=0.788)\n      Benjamin Mazar is a citizen of Israel.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.499)\n      Country Joe McDonald is a citizen of Romania.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.49)\n      Charles Messier is a citizen of Iran.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.46)\n      Bob Iger is a citizen of United States of America.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.445)\n      Colin Irwin is a citizen of Israel.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.443)\n      Narendra Modi is a citizen of Australia.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.442)\n      Ferdinand von Richthofen is a citizen of Canada.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.426)\n      Cédric Klapisch is a citizen of Malaysia.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.418)\n      Country Joe McDonald is a citizen of United States of America.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.412)\n      Sable is a citizen of Czech Republic.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What type of music does Michael Mantler play?",
+        "gold": [
+          "post-punk"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What type of music does Michael Mantler play?\"\n  [1] bench/conv (sim=0.805)\n      The type of music that Michael Mantler plays is jazz.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.762)\n      The type of music that Michael Mantler plays is post-punk.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.545)\n      The type of music that John McVie plays is rock music.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.524)\n      The type of music that Bruce Springsteen plays is rock music.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.491)\n      The type of music that John McVie plays is rap rock.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.457)\n      The type of music that Dale Evans plays is country music.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.406)\n      Past Masters was performed by The Beatles.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.402)\n      Steve Sax is associated with the sport of baseball.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.392)\n      Rocket Man was performed by Elton John.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.385)\n      Irving Fryar plays the position of wide receiver.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city did Oscar Wilde die in?",
+        "gold": [
+          "Guangzhou"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which city did Oscar Wilde die in?\"\n  [1] bench/conv (sim=0.881)\n      Oscar Wilde died in the city of Paris.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.831)\n      Oscar Wilde died in the city of Guangzhou.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.557)\n      The author of Lady Windermere's Fan is Oscar Wilde.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.495)\n      Sigmund Freud died in the city of London.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.468)\n      Andy Warhol died in the city of Montmélian.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.462)\n      Andy Warhol died in the city of New York City.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.419)\n      Gennady Rozhdestvensky died in the city of Moscow.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.416)\n      Amy Winehouse died in the city of Camden Town.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.399)\n      Charles Dickens died in the city of Gads Hill Place.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.399)\n      Olga of Kiev died in the city of Rodez.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was baseball created in?",
+        "gold": [
+          "Japan"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which country was baseball created in?\"\n  [1] bench/conv (sim=0.875)\n      baseball was created in the country of United States of America.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.838)\n      baseball was created in the country of Japan.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.672)\n      cricket was created in the country of England.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.66)\n      basketball was created in the country of United States of America.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.622)\n      cricket was created in the country of Australia.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.583)\n      basketball was created in the country of Soviet Union.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.546)\n      New Firm is associated with the sport of baseball.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.524)\n      association football was created in the country of England.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.504)\n      rugby union was created in the country of India.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.489)\n      country music was created in the country of United States of America.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Ernst Heinkel?",
+        "gold": [
+          "Tang Empire"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the country of citizenship of Ernst Heinkel?\"\n  [1] bench/conv (sim=0.833)\n      Ernst Heinkel is a citizen of Germany.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.698)\n      Ernst Heinkel is a citizen of Tang Empire.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.535)\n      Cédric Klapisch is a citizen of France.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.532)\n      The director of American Broadcasting Company is Ernst Heinkel.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.517)\n      Robert A. Heinlein is a citizen of United States of America.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.492)\n      Ferdinand von Richthofen is a citizen of Germany.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.46)\n      Leo Stein is a citizen of United States of America.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.456)\n      Amala Paul is a citizen of Belgium.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.455)\n      Bob Iger is a citizen of United States of America.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.443)\n      Charlie Hebdo was created in the country of Italy.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city is the headquarter of The University of the Arts located in?",
+        "gold": [
+          "Philadelphia"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which city is the headquarter of The University of the Arts located in?\"\n  [1] bench/conv (sim=0.785)\n      The headquarters of The University of the Arts is located in the city of Philadelphia.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.574)\n      The univeristy where Bill Frisell was educated is The University of the Arts.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.552)\n      The headquarters of University of Bucharest is located in the city of Ankara.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.54)\n      The headquarters of University of Bucharest is located in the city of Bucharest.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.477)\n      The headquarters of University of California, Berkeley is located in the city of Berkeley.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.473)\n      The headquarters of University of California, Berkeley is located in the city of Botevgrad.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.463)\n      The headquarters of Fordham University is located in the city of New York City.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.434)\n      The headquarters of University of Minnesota is located in the city of Minneapolis.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.405)\n      The headquarters of Berklee College of Music is located in the city of Boston.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.403)\n      The univeristy where Samuel Beckett was educated is University of Southern California.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was rap rock created in?",
+        "gold": [
+          "Russian Empire"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which country was rap rock created in?\"\n  [1] bench/conv (sim=0.897)\n      rap rock was created in the country of United States of America.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.824)\n      rap rock was created in the country of Russian Empire.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.613)\n      country music was created in the country of United States of America.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.556)\n      The type of music that John McVie plays is rap rock.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.527)\n      jazz was created in the country of United States of America.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.506)\n      post-punk was created in the country of United Kingdom.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.505)\n      post-punk was created in the country of Canada.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.481)\n      basketball was created in the country of United States of America.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.463)\n      basketball was created in the country of Soviet Union.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.414)\n      The type of music that John McVie plays is rock music.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Where was Christianity founded?",
+        "gold": [
+          "Taipei"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Where was Christianity founded?\"\n  [1] bench/conv (sim=0.764)\n      Christianity was founded in the city of Jerusalem.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.664)\n      Catholic Church was founded by Jesus Christ.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.642)\n      Christianity was founded in the city of Taipei.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.508)\n      Buddhism was founded by Gautama Buddha.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.479)\n      Bagratuni Dynasty is affiliated with the religion of Christianity.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.465)\n      Jesus Christ worked in the city of Galilee.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.458)\n      Methodism was founded by Joseph Goebbels.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.456)\n      Buddhism was founded by Mekere Morauta.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.447)\n      Shingon Buddhism was founded by William Waynflete.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.436)\n      Shingon Buddhism was founded by Kūkai.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the official language of United States of America?",
+        "gold": [
+          "German"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the official language of United States of America?\"\n  [1] bench/conv (sim=0.858)\n      The official language of United States of America is American English.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.802)\n      The official language of United States of America is German.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.577)\n      The official language of United Kingdom is English.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.552)\n      The official language of England is English.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.502)\n      The official language of Australia is English.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.47)\n      The official language of Moscow is German.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.446)\n      The official language of Australia is Arabic.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.442)\n      The official language of Moscow is Russian.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.437)\n      The name of the current head of state in United States of America is Connachta.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.434)\n      The capital of United States of America is Washington, D.C..\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Past Masters?",
+        "gold": [
+          "Madonna"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who performed Past Masters?\"\n  [1] bench/conv (sim=0.792)\n      Past Masters was performed by The Beatles.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.791)\n      Past Masters was performed by Madonna.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.414)\n      Back to Black was performed by Frank Zappa.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.398)\n      Back to Black was performed by Amy Winehouse.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.367)\n      Aladdin Sane was performed by David Bowie.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.34)\n      Rocket Man was performed by Elton John.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.337)\n      The univeristy where Bill Frisell was educated is The University of the Arts.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.333)\n      The type of music that John McVie plays is rap rock.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.324)\n      The type of music that Michael Mantler plays is post-punk.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.324)\n      The type of music that John McVie plays is rock music.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Japan?",
+        "gold": [
+          "Tokyo"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the capital of Japan?\"\n  [1] bench/conv (sim=0.879)\n      The capital of Japan is Tokyo.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.621)\n      The official language of Japan is Japanese.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.517)\n      The name of the current head of the Japan government is Shinzō Abe.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.5)\n      The official language of Japan is Swedish.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.49)\n      sumo was created in the country of Japan.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.474)\n      The capital of Italy is Duluth.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.474)\n      Kūkai speaks the language of Japanese.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.462)\n      The capital of Soviet Union is Moscow.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.459)\n      baseball was created in the country of Japan.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.448)\n      The capital of Germany is Berlin.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of France?",
+        "gold": [
+          "Harare"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the capital of France?\"\n  [1] bench/conv (sim=0.879)\n      The capital of France is Paris.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.757)\n      The capital of France is Harare.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.643)\n      France is located in the continent of Europe.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.524)\n      The capital of Papal States is Rome.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.505)\n      Le Petit Parisien was created in the country of France.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.489)\n      The capital of Italy is Rome.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.461)\n      Charles Messier is a citizen of France.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.444)\n      Madame du Barry is a citizen of France.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.44)\n      The capital of Germany is Berlin.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.436)\n      The capital of Czech Republic is Prague.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the developer of SteamOS?",
+        "gold": [
+          "ABB Group"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the developer of SteamOS?\"\n  [1] bench/conv (sim=0.809)\n      SteamOS was developed by Valve Corporation.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.73)\n      SteamOS was developed by ABB Group.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.506)\n      The chief executive officer of Valve Corporation is Gabe Newell.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.392)\n      The chief executive officer of Apple Inc. is Tim Cook.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.379)\n      The chief executive officer of Microsoft is Steve Jobs.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.374)\n      The chief executive officer of Microsoft is Satya Nadella.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.323)\n      The chief executive officer of Lockheed Martin is Marillyn Hewson.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.318)\n      AppleScript was developed by Apple Inc..\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.312)\n      The chairperson of Fatah is Moshe Kahlon.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.308)\n      The company that produced Il-2 Shturmovik is Ilyushin.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which city is the headquarter of University of Bucharest located in?",
+        "gold": [
+          "Ankara"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which city is the headquarter of University of Bucharest located in?\"\n  [1] bench/conv (sim=0.902)\n      The headquarters of University of Bucharest is located in the city of Bucharest.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.857)\n      The headquarters of University of Bucharest is located in the city of Ankara.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.732)\n      The capital of Romania is Bucharest.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.711)\n      The univeristy where Elena Ceaușescu was educated is University of Bucharest.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.602)\n      Leonte Răutu is employed by University of Bucharest.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.534)\n      The capital of Romania is Rajanpur.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.442)\n      The headquarters of University of California, Berkeley is located in the city of Berkeley.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.435)\n      The headquarters of The University of the Arts is located in the city of Philadelphia.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.425)\n      The headquarters of University of California, Berkeley is located in the city of Botevgrad.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.407)\n      The univeristy where Galileo Galilei was educated is University of Pisa.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which sport is wide receiver associated with?",
+        "gold": [
+          "rugby"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which sport is wide receiver associated with?\"\n  [1] bench/conv (sim=0.858)\n      wide receiver is associated with the sport of American football.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.802)\n      wide receiver is associated with the sport of rugby.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.552)\n      Hines Ward plays the position of wide receiver.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.524)\n      Irving Fryar plays the position of wide receiver.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.521)\n      cornerback is associated with the sport of American football.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.5)\n      quarterback is associated with the sport of American football.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.498)\n      Alta IF is associated with the sport of baseball.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.489)\n      cornerback is associated with the sport of field hockey.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.478)\n      Alta IF is associated with the sport of association football.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.43)\n      quarterback is associated with the sport of Muay Thai.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What position does Hines Ward play?",
+        "gold": [
+          "cornerback"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What position does Hines Ward play?\"\n  [1] bench/conv (sim=0.896)\n      Hines Ward plays the position of wide receiver.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.893)\n      Hines Ward plays the position of cornerback.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.521)\n      Irving Fryar plays the position of wide receiver.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.477)\n      Mike D'Antoni plays the position of point guard.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.454)\n      cornerback is associated with the sport of American football.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.434)\n      cornerback is associated with the sport of field hockey.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.417)\n      Rogério Ceni plays the position of flanker.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.413)\n      Robert Parish plays the position of quarterback.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.409)\n      wide receiver is associated with the sport of American football.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.408)\n      Blair Walsh plays the position of placekicker.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the capital of Australia?",
+        "gold": [
+          "Oderzo"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the capital of Australia?\"\n  [1] bench/conv (sim=0.823)\n      The capital of Australia is Canberra.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.696)\n      The capital of Australia is Oderzo.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.624)\n      Australia is located in the continent of Oceania.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.607)\n      Australia is located in the continent of South America.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.576)\n      The official language of Australia is English.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.536)\n      The official language of Australia is Arabic.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.499)\n      cricket was created in the country of Australia.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.446)\n      The capital of Tang Empire is Beaumont.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.393)\n      The capital of England is London.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.381)\n      Narendra Modi is a citizen of Australia.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which continent is Malaysia located in?",
+        "gold": [
+          "Antarctica"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which continent is Malaysia located in?\"\n  [1] bench/conv (sim=0.936)\n      Malaysia is located in the continent of Asia.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.879)\n      Malaysia is located in the continent of Antarctica.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.593)\n      India is located in the continent of Asia.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.576)\n      Hyderabad is located in the continent of Asia.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.55)\n      Australia is located in the continent of Oceania.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.539)\n      Israel is located in the continent of Asia.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.527)\n      India is located in the continent of Africa.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.52)\n      Canada is located in the continent of Asia.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.509)\n      London is located in the continent of Europe.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.501)\n      Germany is located in the continent of Africa.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of A Wizard of Earthsea?",
+        "gold": [
+          "Pius XII"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the author of A Wizard of Earthsea?\"\n  [1] bench/conv (sim=0.835)\n      The author of A Wizard of Earthsea is Ursula K. Le Guin.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.774)\n      The author of A Wizard of Earthsea is Pius XII.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.499)\n      The author of The Witcher is Andrzej Sapkowski.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.452)\n      The author of The Witcher is T. S. Eliot.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.414)\n      The author of Sidereus Nuncius is Samuel Beckett.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.379)\n      The author of The Birth of Tragedy is Friedrich Nietzsche.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.358)\n      The author of Sidereus Nuncius is Galileo Galilei.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.357)\n      The author of The Birth of Tragedy is Stephen Crane.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.349)\n      The author of Endymion is John Keats.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.339)\n      Nobuhiro Watsuki is famous for Rurouni Kenshin.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who performed Free as a Bird?",
+        "gold": [
+          "The Beatles"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who performed Free as a Bird?\"\n  [1] bench/conv (sim=0.84)\n      Free as a Bird was performed by The Beatles.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.396)\n      Back to Black was performed by Amy Winehouse.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.391)\n      Past Masters was performed by Madonna.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.372)\n      Back to Black was performed by Frank Zappa.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.364)\n      Aladdin Sane was performed by David Bowie.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.329)\n      Blood on the Tracks was performed by Bob Dylan.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.32)\n      Blood on the Tracks was performed by Lou Reed.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.317)\n      Aladdin Sane was performed by Yves Montand.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.307)\n      Rocket Man was performed by Elton John.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.307)\n      The director of Madonna is Guy Oseary.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Who is the author of Our Mutual Friend?",
+        "gold": [
+          "Charles Darwin"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Who is the author of Our Mutual Friend?\"\n  [1] bench/conv (sim=0.791)\n      The author of Our Mutual Friend is Charles Dickens.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.718)\n      The author of Our Mutual Friend is Charles Darwin.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.401)\n      The author of Lady Windermere's Fan is Oscar Wilde.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.388)\n      The author of The Marriage of Figaro is Pierre Beaumarchais.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.375)\n      The author of The Marriage of Figaro is Thomas Kyd.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.353)\n      The author of Endymion is John Keats.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.349)\n      Yves Montand is married to Simone Signoret.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.349)\n      The author of Sidereus Nuncius is Samuel Beckett.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.342)\n      The author of Starship Troopers is Daphne du Maurier.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.341)\n      The author of The Witcher is Andrzej Sapkowski.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "Which country was basketball created in?",
+        "gold": [
+          "Soviet Union"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"Which country was basketball created in?\"\n  [1] bench/conv (sim=0.866)\n      basketball was created in the country of United States of America.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.815)\n      basketball was created in the country of Soviet Union.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.628)\n      baseball was created in the country of United States of America.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.602)\n      cricket was created in the country of England.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.591)\n      baseball was created in the country of Japan.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.575)\n      cricket was created in the country of Australia.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.55)\n      jazz was created in the country of United States of America.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.535)\n      association football was created in the country of Italy.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.523)\n      association football was created in the country of England.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.517)\n      Tunisia national football team is associated with the sport of basketball.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      },
+      {
+        "q": "What is the country of citizenship of Hal Needham?",
+        "gold": [
+          "United States of America"
+        ],
+        "top1": [
+          "## L3 — SEARCH RESULTS for \"What is the country of citizenship of Hal Needham?\"\n  [1] bench/conv (sim=0.777)\n      Hal Needham is a citizen of United States of America.\n      src: forgeteval.txt\n  [2] bench/conv (sim=0.443)\n      Country Joe McDonald is a citizen of Romania.\n      src: forgeteval.txt\n  [3] bench/conv (sim=0.424)\n      Amala Paul is a citizen of Belgium.\n      src: forgeteval.txt\n  [4] bench/conv (sim=0.415)\n      Ferdinand von Richthofen is a citizen of Germany.\n      src: forgeteval.txt\n  [5] bench/conv (sim=0.404)\n      Cédric Klapisch is a citizen of Malaysia.\n      src: forgeteval.txt\n  [6] bench/conv (sim=0.39)\n      Ferdinand von Richthofen is a citizen of Canada.\n      src: forgeteval.txt\n  [7] bench/conv (sim=0.378)\n      Amala Paul is a citizen of India.\n      src: forgeteval.txt\n  [8] bench/conv (sim=0.376)\n      Iman is affiliated with the religion of Islam.\n      src: forgeteval.txt\n  [9] bench/conv (sim=0.371)\n      Country Joe McDonald is a citizen of United States of America.\n      src: forgeteval.txt\n  [10] bench/conv (sim=0.367)\n      Benjamin Mazar is a citizen of Israel.\n      src: forgeteval.txt"
+        ],
+        "pass_k1": true,
+        "pass_k5": true,
+        "pass_k10": true
+      }
+    ]
+  }
+}

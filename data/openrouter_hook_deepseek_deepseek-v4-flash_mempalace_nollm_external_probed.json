@@ -1,0 +1,74 @@
+{
+  "model": "deepseek/deepseek-v4-flash",
+  "suite": "adversarial-385",
+  "limit": 0,
+  "overall_pass": 0,
+  "overall_total": 77,
+  "overall_rate": 0.0,
+  "by_category": {
+    "substring_trap": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    },
+    "prefix_collision": {
+      "pass": 0,
+      "total": 5,
+      "na": 5
+    },
+    "paraphrase_supersession": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    },
+    "negation_trap": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    },
+    "temporal_qualifier": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    },
+    "shared_attribute": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    },
+    "compound_fact": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    },
+    "identifier_obfuscation": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    },
+    "cross_lingual_identifier": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    },
+    "recursive_supersession": {
+      "pass": 0,
+      "total": 8,
+      "na": 8
+    }
+  },
+  "usage": {
+    "calls": 0,
+    "cache_hits": 0,
+    "in_tok": 0,
+    "out_tok": 0,
+    "errors": 0
+  },
+  "cost_usd": 0.0,
+  "wall_seconds": 30.30108820006717,
+  "placement_stats": {
+    "inscribe_calls": 0,
+    "annotated": 0,
+    "failed": 0
+  }
+}

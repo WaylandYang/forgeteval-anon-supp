@@ -1,0 +1,620 @@
+[
+  {
+    "system": "lethe",
+    "persona": "academic_researcher",
+    "timescale": "weekly",
+    "n_sessions": 158,
+    "ingest_seconds": 0.7630519000085769,
+    "eval_seconds": 0.14785690000280738,
+    "by_task": {
+      "remembering": {
+        "total": 5,
+        "pass": 1
+      },
+      "reasoning": {
+        "total": 5,
+        "pass": 3
+      },
+      "recommending": {
+        "total": 5,
+        "pass": 0
+      }
+    },
+    "overall_pass": 4,
+    "overall_total": 15,
+    "per_question": [
+      {
+        "question_id": "activity_todos_158",
+        "n_must": 5,
+        "n_must_hit": 0,
+        "n_must_miss": 5,
+        "n_must_not": 8,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_project_proposal_158_project_proposal_2",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 4,
+        "n_must_not_hit": 2,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 0.5,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_email_writeup_158_email_writeup_1",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 1,
+        "n_must_not_hit": 1,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 0.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_meeting_notes_158_meeting_notes_2",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 1,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_project_proposal_158_project_proposal_1",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 1,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 0.5,
+        "task": "remembering"
+      },
+      {
+        "question_id": "activity_food_total_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "activity_steps_total_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "goal_food_expenses_lunch_158_1",
+        "n_must": 1,
+        "n_must_hit": 0,
+        "n_must_miss": 1,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "goal_step_tracker_daily_steps_158_0",
+        "n_must": 1,
+        "n_must_hit": 0,
+        "n_must_miss": 1,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "activity_food_coffee_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "pref_movies_general_158",
+        "n_must": 2,
+        "n_must_hit": 2,
+        "n_must_miss": 0,
+        "n_must_not": 3,
+        "n_must_not_hit": 1,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.6666666666666667,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_books_general_158",
+        "n_must": 3,
+        "n_must_hit": 3,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 2,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_music_general_158",
+        "n_must": 2,
+        "n_must_hit": 1,
+        "n_must_miss": 1,
+        "n_must_not": 3,
+        "n_must_not_hit": 3,
+        "passed": false,
+        "memory_recall_rate": 0.5,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_travel_general_158",
+        "n_must": 3,
+        "n_must_hit": 3,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 2,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_books_topics_158",
+        "n_must": 2,
+        "n_must_hit": 2,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 2,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      }
+    ]
+  },
+  {
+    "system": "langgraph",
+    "persona": "academic_researcher",
+    "timescale": "weekly",
+    "n_sessions": 158,
+    "ingest_seconds": 0.7745002000010572,
+    "eval_seconds": 0.144602100001066,
+    "by_task": {
+      "remembering": {
+        "total": 5,
+        "pass": 3
+      },
+      "reasoning": {
+        "total": 5,
+        "pass": 3
+      },
+      "recommending": {
+        "total": 5,
+        "pass": 0
+      }
+    },
+    "overall_pass": 6,
+    "overall_total": 15,
+    "per_question": [
+      {
+        "question_id": "activity_todos_158",
+        "n_must": 5,
+        "n_must_hit": 0,
+        "n_must_miss": 5,
+        "n_must_not": 8,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_project_proposal_158_project_proposal_2",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 4,
+        "n_must_not_hit": 2,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 0.5,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_email_writeup_158_email_writeup_1",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 1,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_meeting_notes_158_meeting_notes_2",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 1,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_project_proposal_158_project_proposal_1",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "activity_food_total_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "activity_steps_total_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "goal_food_expenses_lunch_158_1",
+        "n_must": 1,
+        "n_must_hit": 0,
+        "n_must_miss": 1,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "goal_step_tracker_daily_steps_158_0",
+        "n_must": 1,
+        "n_must_hit": 0,
+        "n_must_miss": 1,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "activity_food_coffee_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "pref_movies_general_158",
+        "n_must": 2,
+        "n_must_hit": 1,
+        "n_must_miss": 1,
+        "n_must_not": 3,
+        "n_must_not_hit": 1,
+        "passed": false,
+        "memory_recall_rate": 0.5,
+        "forgetting_rate": 0.6666666666666667,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_books_general_158",
+        "n_must": 3,
+        "n_must_hit": 3,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 1,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.5,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_music_general_158",
+        "n_must": 2,
+        "n_must_hit": 1,
+        "n_must_miss": 1,
+        "n_must_not": 3,
+        "n_must_not_hit": 3,
+        "passed": false,
+        "memory_recall_rate": 0.5,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_travel_general_158",
+        "n_must": 3,
+        "n_must_hit": 3,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 1,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.5,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_books_topics_158",
+        "n_must": 2,
+        "n_must_hit": 2,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 1,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.5,
+        "task": "recommending"
+      }
+    ]
+  },
+  {
+    "system": "mempalace",
+    "persona": "academic_researcher",
+    "timescale": "weekly",
+    "n_sessions": 158,
+    "ingest_seconds": 2.7903054999915184,
+    "eval_seconds": 0.4799757000000682,
+    "by_task": {
+      "remembering": {
+        "total": 5,
+        "pass": 4
+      },
+      "reasoning": {
+        "total": 5,
+        "pass": 3
+      },
+      "recommending": {
+        "total": 5,
+        "pass": 0
+      }
+    },
+    "overall_pass": 7,
+    "overall_total": 15,
+    "per_question": [
+      {
+        "question_id": "activity_todos_158",
+        "n_must": 5,
+        "n_must_hit": 0,
+        "n_must_miss": 5,
+        "n_must_not": 8,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_project_proposal_158_project_proposal_2",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 4,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_email_writeup_158_email_writeup_1",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 1,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_meeting_notes_158_meeting_notes_2",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 1,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "content_project_proposal_158_project_proposal_1",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "remembering"
+      },
+      {
+        "question_id": "activity_food_total_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "activity_steps_total_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "goal_food_expenses_lunch_158_1",
+        "n_must": 1,
+        "n_must_hit": 0,
+        "n_must_miss": 1,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "goal_step_tracker_daily_steps_158_0",
+        "n_must": 1,
+        "n_must_hit": 0,
+        "n_must_miss": 1,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": false,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "activity_food_coffee_158",
+        "n_must": 0,
+        "n_must_hit": 0,
+        "n_must_miss": 0,
+        "n_must_not": 0,
+        "n_must_not_hit": 0,
+        "passed": true,
+        "memory_recall_rate": 0.0,
+        "forgetting_rate": 1.0,
+        "task": "reasoning"
+      },
+      {
+        "question_id": "pref_movies_general_158",
+        "n_must": 2,
+        "n_must_hit": 2,
+        "n_must_miss": 0,
+        "n_must_not": 3,
+        "n_must_not_hit": 1,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.6666666666666667,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_books_general_158",
+        "n_must": 3,
+        "n_must_hit": 3,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 2,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_music_general_158",
+        "n_must": 2,
+        "n_must_hit": 1,
+        "n_must_miss": 1,
+        "n_must_not": 3,
+        "n_must_not_hit": 3,
+        "passed": false,
+        "memory_recall_rate": 0.5,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_travel_general_158",
+        "n_must": 3,
+        "n_must_hit": 3,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 2,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      },
+      {
+        "question_id": "pref_books_topics_158",
+        "n_must": 2,
+        "n_must_hit": 2,
+        "n_must_miss": 0,
+        "n_must_not": 2,
+        "n_must_not_hit": 2,
+        "passed": false,
+        "memory_recall_rate": 1.0,
+        "forgetting_rate": 0.0,
+        "task": "recommending"
+      }
+    ]
+  }
+]
